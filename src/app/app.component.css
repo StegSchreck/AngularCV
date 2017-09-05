@@ -1,0 +1,15 @@
+h1 {
+  margin-top: 50px;
+  font-size: 1.2em;
+  color: #999;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a.mat-tab-link {
+  min-width: 75px;
+  text-decoration: none;
+}
