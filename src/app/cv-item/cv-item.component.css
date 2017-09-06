@@ -1,19 +1,20 @@
-md-card.cv-card {
+md-card {
   margin-bottom: 1em;
   min-height: 100px;
 }
-md-card.cv-card md-card-header,
-md-card.cv-card md-card-actions,
-md-card.cv-card md-card-content {
+md-card-header,
+md-card-actions,
+md-card-content {
   margin-left: 142px;
 }
-md-card.cv-card md-card-content {
+md-card-content {
   padding-left: 8px;
+  display: none;
 }
-md-card.cv-card md-card-subtitle {
+md-card-subtitle {
   font-size: 1.2em;
 }
-md-card.cv-card img.cv-thumbnail {
+img.cv-thumbnail {
   position: absolute;
   left: 24px;
   top: 24px;
@@ -21,10 +22,49 @@ md-card.cv-card img.cv-thumbnail {
   margin-bottom: 24px;
   margin-right: 24px;
 }
-md-card .vertical-divider {
+.vertical-divider {
   position: absolute;
   border-left: 2px solid #303030;
   top: 24px;
   left: 148px;
   bottom: 24px;
+}
+.toggle-details {
+  position: absolute;
+  right: 24px;
+  bottom: 12px;
+  font-size: 1em;
+  float:right;
+}
+.toggle-details md-icon {
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  font-size: 3em;
+}
+
+md-card.opened md-card-content,
+md-card.opened md-card-actions {
+  display: block;
+}
+
+md-card.closed md-card-content,
+md-card.closed md-card-actions {
+  display: none;
+}
+
+md-card.opened md-card-actions {
+  margin-bottom: 0;
+}
+
+md-card.opened .toggle-details md-icon:before {
+  content: 'expand_less';
+}
+md-card.closed .toggle-details md-icon:before {
+  content: 'expand_more';
+}
+.timespan {
+  position: absolute;
+  right: 24px;
+  color: #888;
 }

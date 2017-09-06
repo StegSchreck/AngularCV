@@ -16,4 +16,17 @@ export class CvItemComponent {
 
   ngOnInit(): void { }
 
+  toggleDetails(event) {
+    let card = event.target.closest('md-card');
+    if (card.classList .contains('opened')) {
+      card.classList.add('closed');
+      card.classList.remove('opened');
+      // event.target.closest('.toggle-details md-icon').innerHTML = 'expand_more'
+    } else {
+      card.classList.add('opened');
+      card.classList.remove('closed');
+      // event.target.closest('.toggle-details md-icon').innerHTML = 'expand_less'
+    }
+  }
+
 }
