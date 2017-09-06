@@ -1,0 +1,20 @@
+md-toolbar.footer {
+  position: fixed;
+  margin-bottom: 0;
+  width: 750px;
+  bottom: 0;
+  padding-left: 24px;
+  font-size: 1em;
+}
+md-toolbar.footer a {
+  position: absolute;
+  right: 24px;
+  top: 12px;
+}
+md-toolbar.footer img {
+  height: 36px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}

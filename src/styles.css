@@ -2,11 +2,12 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "assets/icon-font/style.css";
 body {
-  margin: 2em auto;
+  margin: 0 auto;
   min-width: 750px;
   width: 750px;
   max-width: 750px;
   background-color: #303030 !important;
+  padding-bottom: 100px;
 }
 /* everywhere else */
 * {
