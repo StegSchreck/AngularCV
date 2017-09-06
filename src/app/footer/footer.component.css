@@ -1,7 +1,12 @@
 md-toolbar.footer {
   position: fixed;
   margin-bottom: 0;
+  min-width: 750px;
   width: 750px;
+  max-width: 750px;
+  min-height: 64px;
+  height: 64px;
+  max-height: 64px;
   bottom: 0;
   padding-left: 24px;
   font-size: 1em;

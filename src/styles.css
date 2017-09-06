@@ -7,7 +7,8 @@ body {
   width: 750px;
   max-width: 750px;
   background-color: #303030 !important;
-  padding-bottom: 100px;
+  padding-bottom: 88px;
+  padding-top: 64px;
 }
 /* everywhere else */
 * {
@@ -24,11 +25,11 @@ md-card {
 }
 md-card.page-title {
   background-color: #aaa;
-  padding: 12px;
+  padding: 12px 24px;
 }
 md-card.page-title md-icon {
   position: absolute;
-  font-size: 1.5em;
+  font-size: 1.4em;
   top: 8px;
   right: 18px;
 }
