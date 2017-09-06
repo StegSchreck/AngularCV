@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV.png" width="300px">
+</p>
+
+
 # AngularCV
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.

@@ -1,0 +1,22 @@
+md-card.text-card md-card-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+}
+md-card.text-card md-card-content {
+  margin-left: 8px;
+}
+md-card.text-card img {
+  float: right;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+md-card.text-card i {
+  position: relative;
+  font-size: 1.4em;
+  top: -0.1em;
+  margin-right: 0.2em;
+}
+md-card.text-card md-chip {
+  margin-bottom: 2em;
+}
