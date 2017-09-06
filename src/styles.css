@@ -3,8 +3,9 @@
 @import "assets/icon-font/style.css";
 body {
   margin: 2em auto;
-  min-width: 800px;
-  max-width: 800px;
+  min-width: 750px;
+  width: 750px;
+  max-width: 750px;
   background-color: #303030 !important;
 }
 /* everywhere else */
@@ -17,16 +18,13 @@ md-card md-card-title {
   text-transform: uppercase;
   font-family: "Roboto Slab", serif;
 }
-
 md-card {
   margin-bottom: 1em;
 }
-
 md-card.page-title {
   background-color: #aaa;
   padding: 12px;
 }
-
 md-card.page-title md-icon {
   position: absolute;
   font-size: 1.5em;

@@ -19,8 +19,6 @@ import { EmploymentsComponent }     from './employments/employments.component';
 import { EducationComponent }       from './education/education.component';
 import { ProjectsComponent }        from './projects/projects.component';
 import { VolunteeringComponent }    from './volunteering/volunteering.component';
-import { HobbiesComponent }         from './hobbies/hobbies.component';
-import { LinksComponent }           from './links/links.component';
 import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
 import { CvItemService }            from './cv-item/cv-item.service';
@@ -44,8 +42,6 @@ import { CvItemService }            from './cv-item/cv-item.service';
     EducationComponent,
     ProjectsComponent,
     VolunteeringComponent,
-    HobbiesComponent,
-    LinksComponent,
     AboutComponent,
     CvItemComponent,
   ],

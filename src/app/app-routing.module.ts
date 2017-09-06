@@ -7,8 +7,6 @@ import { EmploymentsComponent }   from './employments/employments.component';
 import { EducationComponent }     from './education/education.component';
 import { ProjectsComponent }      from './projects/projects.component';
 import { VolunteeringComponent }  from './volunteering/volunteering.component';
-import { HobbiesComponent }       from './hobbies/hobbies.component';
-import { LinksComponent }         from './links/links.component';
 import { AboutComponent }         from './about/about.component';
 
 const routes: Routes = [
@@ -19,8 +17,6 @@ const routes: Routes = [
   { path: 'education',      component: EducationComponent },
   { path: 'projects',       component: ProjectsComponent },
   { path: 'volunteering',   component: VolunteeringComponent },
-  { path: 'hobbies',        component: HobbiesComponent },
-  { path: 'links',          component: LinksComponent },
   { path: 'about',          component: AboutComponent },
   { path: '**',             redirectTo: 'home' },
 ];
