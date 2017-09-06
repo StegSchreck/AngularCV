@@ -12,6 +12,6 @@ export class AppComponent {
     { location:'/education',     label:'Education',         icon:'school' },
     { location:'/projects',      label:'Projects',          icon:'assignment' },
     { location:'/volunteering',  label:'Volunteering',      icon:'favorite' },
-    { location:'/about',         label:'About',             icon:'info' },
+    // { location:'/about',         label:'About',             icon:'info' },
   ]
 }
