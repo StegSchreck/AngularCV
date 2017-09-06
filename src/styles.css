@@ -17,3 +17,19 @@ md-card md-card-title {
   text-transform: uppercase;
   font-family: "Roboto Slab", serif;
 }
+
+md-card {
+  margin-bottom: 1em;
+}
+
+md-card.page-title {
+  background-color: #aaa;
+  padding: 12px;
+}
+
+md-card.page-title md-icon {
+  position: absolute;
+  font-size: 1.5em;
+  top: 8px;
+  right: 18px;
+}

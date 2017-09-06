@@ -22,6 +22,16 @@ export const CVITEMS: CvItem[] = [
     link: "",
     thumbnail: "",
   },
+  {
+    id: 2,
+    title: "MBU Merchandising und Sportreisen GmbH & Co. KG",
+    subtitle: "Salesman",
+    begin: "2017-09-06",
+    end: "2017-09-06",
+    description: "selling stuff ",
+    link: "",
+    thumbnail: "",
+  },
 ];
 
 export const EDUCATION: CvItem[] = [

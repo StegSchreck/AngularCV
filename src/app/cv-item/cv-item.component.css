@@ -9,10 +9,12 @@ md-card-content {
 }
 md-card-content {
   padding-left: 8px;
-  display: none;
 }
 md-card-subtitle {
   font-size: 1.2em;
+}
+md-card-title {
+  padding-right: 9em;
 }
 img.cv-thumbnail {
   position: absolute;
@@ -45,12 +47,19 @@ img.cv-thumbnail {
 
 md-card.opened md-card-content,
 md-card.opened md-card-actions {
-  display: block;
+  /*display: block;*/
+  position: static;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s linear;
 }
 
 md-card.closed md-card-content,
 md-card.closed md-card-actions {
-  display: none;
+  /*display: none;*/
+  position:absolute;
+  opacity: 0;
+  visibility: hidden;
 }
 
 md-card.opened md-card-actions {

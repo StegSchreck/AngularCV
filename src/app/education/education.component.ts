@@ -10,10 +10,12 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class EducationComponent implements OnInit {
   cvItems: CvItem[];
+  title = "Education";
 
   constructor(
     private cvItemService: CvItemService
-  ) { }
+  ) {
+  }
 
   getEducationItems(): void {
     this.cvItemService
@@ -23,7 +25,6 @@ export class EducationComponent implements OnInit {
 
   ngOnInit() {
     this.getEducationItems();
-  }nit() {
   }
 
 }

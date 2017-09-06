@@ -10,6 +10,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class EmploymentsComponent implements OnInit {
   cvItems: CvItem[];
+  title = "Employment";
 
   constructor(
     private cvItemService: CvItemService
