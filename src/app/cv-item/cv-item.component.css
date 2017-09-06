@@ -1,0 +1,30 @@
+md-card.cv-card {
+  margin-bottom: 1em;
+  min-height: 100px;
+}
+md-card.cv-card md-card-header,
+md-card.cv-card md-card-actions,
+md-card.cv-card md-card-content {
+  margin-left: 142px;
+}
+md-card.cv-card md-card-content {
+  padding-left: 8px;
+}
+md-card.cv-card md-card-subtitle {
+  font-size: 1.2em;
+}
+md-card.cv-card img.cv-thumbnail {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  width: 100px;
+  margin-bottom: 24px;
+  margin-right: 24px;
+}
+md-card .vertical-divider {
+  position: absolute;
+  border-left: 2px solid #303030;
+  top: 24px;
+  left: 148px;
+  bottom: 24px;
+}

@@ -23,6 +23,7 @@ import { HobbiesComponent }         from './hobbies/hobbies.component';
 import { LinksComponent }           from './links/links.component';
 import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
+import { CvItemService }            from './cv-item/cv-item.service';
 
 @NgModule({
   imports: [
@@ -49,6 +50,7 @@ import { CvItemComponent }          from './cv-item/cv-item.component';
     CvItemComponent,
   ],
   providers: [
+    CvItemService
   ],
   bootstrap: [ AppComponent ]
 })

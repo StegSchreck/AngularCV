@@ -11,7 +11,9 @@ body {
 * {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
-h1, h2, .header-title {
+h1, h2, .header-title,
+md-card md-card-title {
+  font-size: 1.4em !important;
+  text-transform: uppercase;
   font-family: "Roboto Slab", serif;
-  font-size: 1.4em;
 }
