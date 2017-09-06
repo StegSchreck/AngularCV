@@ -6,7 +6,7 @@
      routerLinkActive #rla="routerLinkActive"
      [active]="rla.isActive">
     <md-icon>{{link.icon}}</md-icon>
-    &nbsp;<span>{{link.label}}</span>
+    <span>{{link.label | uppercase}}</span>
   </a>
 </nav>
 <section class="mat-typography">

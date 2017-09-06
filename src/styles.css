@@ -3,17 +3,13 @@
 body {
   margin: 2em;
   min-width: 900px;
-  width: 900px;
   background-color: #303030 !important;
-}
-nav {
-  background-color: #fff;
-  margin-bottom: 20px;
-}
-nav a.hover {
-  text-decoration: none;
 }
 /* everywhere else */
 * {
   font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+h1, h2, .header-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4em;
 }
