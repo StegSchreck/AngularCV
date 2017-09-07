@@ -7,11 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   navLinks = [
-    { location:'/general',       label:'General',           icon:'account_circle' },
-    { location:'/employments',   label:'Employments',       icon:'work' },
-    { location:'/education',     label:'Education',         icon:'school' },
-    { location:'/projects',      label:'Projects',          icon:'assignment' },
-    { location:'/volunteering',  label:'Volunteering',      icon:'favorite' },
+    { location:'/overview',       label:'Overview',         icon:'account_circle' },
+    { location:'/experience',     label:'Experience',       icon:'work' },
+    { location:'/education',      label:'Education',        icon:'school' },
+    { location:'/projects',       label:'Projects',         icon:'assignment' },
+    { location:'/volunteering',   label:'Volunteering',     icon:'favorite' },
+    { location:'/contact',        label:'Contact',          icon:'email' },
     // { location:'/about',         label:'About',             icon:'info' },
   ]
 }

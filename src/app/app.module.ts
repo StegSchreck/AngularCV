@@ -21,6 +21,7 @@ import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
 import { CvItemService }            from './cv-item/cv-item.service';
 import { FooterComponent }          from './footer/footer.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
@@ -43,6 +44,7 @@ import { FooterComponent }          from './footer/footer.component';
     AboutComponent,
     CvItemComponent,
     FooterComponent,
+    ContactComponent,
   ],
   providers: [
     CvItemService
