@@ -41,4 +41,6 @@ yarn-error.log
 # System Files
 .DS_Store
 Thumbs.db
-/src/assets/img/item-thumbnails/*.*
+
+
+#/src/assets/img/item-thumbnails/*.*
