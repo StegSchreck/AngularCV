@@ -1,3 +1,7 @@
-<p>
-  projects works!
-</p>
+<md-card class="page-title">
+  <md-card-title>
+    <md-icon>assignment</md-icon>
+    {{title}}
+  </md-card-title>
+</md-card>
+<app-cv-item *ngFor="let cvItem of cvItems" [cvItem]="cvItem"></app-cv-item>

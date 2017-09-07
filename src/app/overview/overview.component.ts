@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-general',
-  templateUrl: './general.component.html',
-  styleUrls: ['./general.component.css']
+  selector: 'app-overview',
+  templateUrl: './overview.component.html',
+  styleUrls: ['./overview.component.css']
 })
-export class GeneralComponent implements OnInit {
-  title = "General Informations";
+export class OverviewComponent implements OnInit {
+  title = "Overview";
 
   constructor() { }
 

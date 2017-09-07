@@ -4,13 +4,13 @@ import { CvItem } from "../cv-item/cv-item";
 import { CvItemService } from "../cv-item/cv-item.service";
 
 @Component({
-  selector: 'app-employments',
-  templateUrl: './employments.component.html',
-  styleUrls: ['./employments.component.css']
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.css']
 })
-export class EmploymentsComponent implements OnInit {
+export class ExperienceComponent implements OnInit {
   cvItems: CvItem[];
-  title = "Employments";
+  title = "Experience";
 
   constructor(
     private cvItemService: CvItemService

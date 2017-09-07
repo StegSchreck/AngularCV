@@ -23,12 +23,14 @@ nav md-icon {
   visibility: hidden;
 }
 nav a:hover md-icon,
-nav a:active md-icon,
-nav a[ng-reflect-active="true"] md-icon {
+nav a:active md-icon
+/*nav a[ng-reflect-active="true"] md-icon */
+{
   visibility: visible;
 }
 nav a:hover span,
-nav a:active span,
-nav a[ng-reflect-active="true"] span {
+nav a:active span
+/*nav a[ng-reflect-active="true"] span */
+{
   visibility: hidden;
 }

@@ -24,12 +24,13 @@ md-card {
   margin-bottom: 1em;
 }
 md-card.page-title {
-  background-color: #aaa;
+  background-color: #444;
+  color: white;
   padding: 12px 24px;
 }
 md-card.page-title md-icon {
   position: absolute;
   font-size: 1.4em;
   top: 8px;
-  right: 18px;
+  right: 24px;
 }
