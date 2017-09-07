@@ -1,13 +1,15 @@
 <md-card class="cv-card closed" *ngIf="cvItem">
-  <!--<img class="cv-thumbnail" src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">-->
-  <img class="cv-thumbnail" src="http://placehold.it/100x100/DC143C/FFFFFF">
+  <img class="cv-thumbnail" src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
+  <!--<img class="cv-thumbnail" src="http://placehold.it/100x100/DC143C/FFFFFF">-->
   <span class="vertical-divider"></span>
   <md-card-header>
-    <span class="timespan" *ngIf="(cvItem.begin !== undefined && cvItem.begin !== '') or ">
-      <span class="timespan-begin">{{cvItem.begin}}</span>
-      &mdash;
+    <span class="timespan">
+      <span class="timespan-begin" *ngIf="cvItem.begin !== undefined && cvItem.begin !== ''">
+        {{cvItem.begin}}
+        <md-icon>arrow_forward</md-icon>
+      </span>
       <span class="timespan-end" *ngIf="cvItem.end !== undefined && cvItem.end !== ''">{{cvItem.end}}</span>
-      <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">now</span>
+      <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">now <md-icon>access_time</md-icon></span>
     </span>
     <md-card-title>{{cvItem.title}}</md-card-title>
     <md-card-subtitle>{{cvItem.subtitle}}</md-card-subtitle>
@@ -21,7 +23,10 @@
     </md-chip-list>
   </md-card-content>
 
-  <button md-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)">
+  <button md-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
+          *ngIf="(cvItem.description !== undefined && cvItem.description !== '')
+           || (cvItem.tags !== undefined && cvItem.tags !== [])
+           || cvItem.link !== undefined && cvItem.link !== ''">
     <md-icon aria-label="toggle details"></md-icon>
   </button>
   <md-card-actions>

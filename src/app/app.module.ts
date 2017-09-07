@@ -8,14 +8,12 @@ import { MaterialModule }           from './material/material.module';
 import { AppRoutingModule }         from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
-import { InMemoryWebApiModule }     from 'angular-in-memory-web-api';
-import { InMemoryDataService }      from './cv-item/in-memory-data.service';
 
 import { AppComponent }             from './app.component';
 import { HeaderComponent }          from './header/header.component';
 import { HomeComponent }            from './home/home.component';
-import { GeneralComponent }         from './general/general.component';
-import { EmploymentsComponent }     from './employments/employments.component';
+import { OverviewComponent }        from './overview/overview.component';
+import { ExperienceComponent }      from './experience/experience.component';
 import { EducationComponent }       from './education/education.component';
 import { ProjectsComponent }        from './projects/projects.component';
 import { VolunteeringComponent }    from './volunteering/volunteering.component';
@@ -28,7 +26,6 @@ import { FooterComponent }          from './footer/footer.component';
   imports: [
     BrowserModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService),
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -38,8 +35,8 @@ import { FooterComponent }          from './footer/footer.component';
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    GeneralComponent,
-    EmploymentsComponent,
+    OverviewComponent,
+    ExperienceComponent,
     EducationComponent,
     ProjectsComponent,
     VolunteeringComponent,

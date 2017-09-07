@@ -16,14 +16,14 @@ export class EmploymentsComponent implements OnInit {
     private cvItemService: CvItemService
   ) { }
 
-  getCvItems(): void {
+  getItems(): void {
     this.cvItemService
       .getCvItems()
       .then(cvItems => this.cvItems = cvItems);
   }
 
   ngOnInit() {
-    this.getCvItems();
+    this.getItems();
   }
 
 }
