@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
   getItems(): void {
     this.cvItemService
       .getProjectItems()
-      .then(cvItems => this.cvItems = cvItems);
+      .then(items => this.cvItems = items);
   }
 
   ngOnInit() {

@@ -11,6 +11,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 export class EducationComponent implements OnInit {
   educationItems: CvItem[];
   certificationItems: CvItem[];
+  languageItems;
   title = "Education and Certificates";
 
   constructor(
@@ -21,10 +22,13 @@ export class EducationComponent implements OnInit {
   getItems(): void {
     this.cvItemService
       .getEducationItems()
-      .then(cvItems => this.educationItems = cvItems);
+      .then(items => this.educationItems = items);
     this.cvItemService
       .getCertificationItems()
-      .then(cvItems => this.certificationItems = cvItems);
+      .then(items => this.certificationItems = items);
+    this.cvItemService
+      .getLanguageItems()
+      .then(items => this.languageItems = items);
   }
 
   ngOnInit() {

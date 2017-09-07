@@ -1,5 +1,4 @@
 export class CvItem {
-  id: number;
   title: string;
   subtitle: string;
   begin?: string;

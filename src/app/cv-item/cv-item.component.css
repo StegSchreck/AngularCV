@@ -84,5 +84,5 @@ md-card.closed .toggle-details md-icon:before {
   font-size: 1.5em;
 }
 md-chip {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em !important;
 }

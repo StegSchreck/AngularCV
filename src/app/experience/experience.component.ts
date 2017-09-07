@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit {
   getItems(): void {
     this.cvItemService
       .getCvItems()
-      .then(cvItems => this.cvItems = cvItems);
+      .then(items => this.cvItems = items);
   }
 
   ngOnInit() {

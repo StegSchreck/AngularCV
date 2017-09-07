@@ -19,7 +19,7 @@ export class VolunteeringComponent implements OnInit {
   getItems(): void {
     this.cvItemService
       .getVolunteerItems()
-      .then(cvItems => this.cvItems = cvItems);
+      .then(items => this.cvItems = items);
   }
 
 

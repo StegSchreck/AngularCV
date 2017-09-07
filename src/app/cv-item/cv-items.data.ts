@@ -2,29 +2,26 @@ import { CvItem } from './cv-item';
 
 export const CVITEMS: CvItem[] = [
   {
-    id: 15,
     title: "Mister Spex GmbH",
     subtitle: "Professional Software Engineer",
     begin: "2017-02-01",
     end: "",
     description: "Maintaining an operating the platform running our e-commerce shop. Automating processes and enabling the development teams to work.",
-    tags: ["Java", "Intershop", "Python", "Ansible", "Git", "KanBan", "PyCharm", "Apache", "AWS", "Docker", "Jira", "Bamboo", "Confluence"],
+    tags: ["Java", "Intershop", "Python", "Ansible", "Git", "KanBan", "PyCharm", "Apache", "AWS", "Docker", "Jira", "Bamboo", "Confluence", "bash", "Oracle SQL"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
   },
   {
-    id: 14,
     title: "Mister Spex GmbH",
     subtitle: "Junior Software Engineer",
     begin: "2015-06-01",
     end: "2017-01-31",
     description: "Implementing features for the e-Commerce platform Intershop in order to customize it. Developing a seperated API as microservice for internal purposes in a DevOps way.",
-    tags: ["Java", "Intershop", "eclipse", "Scrum", "Git", "SVN", "Scala", "Testrail", "trac", "Jira", "Bamboo", "Confluence", "AWS", "TDD"],
+    tags: ["Java", "Intershop", "eclipse", "Scrum", "Git", "SVN", "Scala", "Testrail", "trac", "Jira", "Bamboo", "Confluence", "AWS", "TDD", "JavaScript", "Oracle SQL"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
   },
   {
-    id: 13,
     title: "Mister Spex GmbH",
     subtitle: "Working student Product Management / Quality Assurance",
     begin: "2012-10-01",
@@ -35,7 +32,6 @@ export const CVITEMS: CvItem[] = [
     thumbnail: "msx-logo.png",
   },
   {
-    id: 12,
     title: "Müllers Fanshop",
     subtitle: "Merchandising salesman at O2World Berlin",
     begin: "2010-08",
@@ -45,7 +41,6 @@ export const CVITEMS: CvItem[] = [
     thumbnail: "muellers_fanshop_logo_001.jpg",
   },
   {
-    id: 11,
     title: "MBU Merchandising und Sportreisen GmbH & Co. KG",
     subtitle: "Merchandising salesman at O2World Berlin",
     begin: "2008-09",
@@ -58,7 +53,6 @@ export const CVITEMS: CvItem[] = [
 
 export const CERTIFICATES: CvItem[] = [
   {
-    id: 23,
     title: "Intershop Development",
     subtitle: "Intershop Communications AG",
     begin: "",
@@ -68,7 +62,6 @@ export const CERTIFICATES: CvItem[] = [
     thumbnail: "intershop.svg",
   },
   {
-    id: 22,
     title: "Git version control basics",
     subtitle: "Mister Spex GmbH",
     begin: "",
@@ -77,7 +70,6 @@ export const CERTIFICATES: CvItem[] = [
     thumbnail: "Git-Logo-2Color.png",
   },
   {
-    id: 21,
     title: "ITIL v3 Foundation Certificate",
     subtitle: "TÜV SÜD Akademie",
     begin: "",
@@ -89,7 +81,6 @@ export const CERTIFICATES: CvItem[] = [
 
 export const EDUCATION: CvItem[] = [
   {
-    id: 23,
     title: "Technische Universität Berlin",
     subtitle: "Master of Science | Computer Science",
     begin: "2011-10",
@@ -100,7 +91,6 @@ export const EDUCATION: CvItem[] = [
     thumbnail: "TU-Berlin-Logo.png",
   },
   {
-    id: 22,
     title: "Technische Universität Berlin",
     subtitle: "Bachelor of Science | Computer Science",
     begin: "2008-10",
@@ -112,9 +102,15 @@ export const EDUCATION: CvItem[] = [
   },
 ];
 
+export const LANGUAGES = [
+  { title: "German", level: "100" },
+  { title: "English", level: "90" },
+  { title: "Italian", level: "75" },
+  { title: "French", level: "40" },
+];
+
 export const PROJECTS: CvItem[] = [
   {
-    id: 33,
     title: "RatS",
     subtitle: "Script for transfering personal movie ratings from one site to another",
     begin: "2017-02",
@@ -126,7 +122,6 @@ export const PROJECTS: CvItem[] = [
     thumbnail: "RatS.png",
   },
   {
-    id: 32,
     title: "Recoding Aviation Hackathon",
     subtitle: "Hackathon for improving the passenger journey for flights",
     begin: "",
@@ -139,7 +134,6 @@ export const PROJECTS: CvItem[] = [
     thumbnail: "re-coding-avation-ba.png",
   },
   {
-    id: 31,
     title: "OFM Helper",
     subtitle: "Support for analysis of data in football management browser game 'OFM'",
     begin: "2016-05",
@@ -156,7 +150,6 @@ export const PROJECTS: CvItem[] = [
 
 export const VOLUNTEERING: CvItem[] = [
   {
-    id: 37,
     title: "DFB cup finals & international matches",
     subtitle: "Admission, visitor services, VIP support, stand-by man, special tasks",
     begin: "2007",
@@ -166,7 +159,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "DFB-Logo.jpg",
   },
   {
-    id: 37,
     title: "ISTAF & ISTAF Indoor",
     subtitle: "Team lead",
     begin: "2007",
@@ -176,7 +168,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "ISTAF.png",
   },
   {
-    id: 36,
     title: "UEFA Champions League Finals 2015 Berlin",
     subtitle: "Team lead",
     begin: "",
@@ -186,7 +177,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "UEFA_Champions_League-logo.png",
   },
   {
-    id: 35,
     title: "CEV Champions league Final Four 2015 Berlin",
     subtitle: "Team lead",
     begin: "",
@@ -196,7 +186,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "CEV_Champions_League_logo.png",
   },
   {
-    id: 34,
     title: "Ruder-Bundesliga",
     subtitle: "Time measurement",
     begin: "2009",
@@ -206,7 +195,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "Logo-Bundesliga_quer.jpg",
   },
   {
-    id: 34,
     title: "ULEB Euroleague Final Four 2009 Berlin",
     subtitle: "Team delegate",
     begin: "",
@@ -216,7 +204,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "ULEB_FinalFour_2009.png",
   },
   {
-    id: 33,
     title: "Deutsche Ruderjugend im Deutschen Ruderverband",
     subtitle: "Youth trainer and youth leader",
     begin: "2007",
@@ -226,7 +213,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "DRJ_Logo.jpg",
   },
   {
-    id: 33,
     title: "FISA World Rowing Junior Championships 2014 Hamburg",
     subtitle: "IT network setup",
     begin: "",
@@ -236,7 +222,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "FISA_JWM_2014.png",
   },
   {
-    id: 32,
     title: "Hertha BSC",
     subtitle: "Visitor services, special tasks, team lead",
     begin: "2008",
@@ -246,7 +231,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "Hertha_BSC_Logo.svg",
   },
   {
-    id: 32,
     title: "IAAF World Championships 2009 Berlin",
     subtitle: "Anti-Doping-Chaperone",
     begin: "",
@@ -256,7 +240,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "IAAF_2009_in_Berlin.png",
   },
   {
-    id: 31,
     title: "FIFA World Cup 2006 Germany",
     subtitle: "Visitor service",
     begin: "",
