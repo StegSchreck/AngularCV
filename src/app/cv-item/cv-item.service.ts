@@ -4,7 +4,7 @@ import { Headers, Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 
 import { CvItem } from "./cv-item";
-import { CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES } from './cv-items.data';
+import { CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT } from './cv-items.data';
 
 @Injectable()
 export class CvItemService {
@@ -34,6 +34,10 @@ export class CvItemService {
 
   getLanguageItems() {
     return Promise.resolve(LANGUAGES);
+  }
+
+  getContactItems() {
+    return Promise.resolve(CONTACT);
   }
 
   private handleError(error: any): Promise<any> {

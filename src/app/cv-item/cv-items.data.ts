@@ -249,3 +249,20 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "fifa_world_cup_2006.gif",
   },
 ];
+
+export const CONTACT = {
+  city: "Berlin, Germany",
+  phone: "",
+  mail: "sebastian@schreck.berlin",
+  skype: "", // just the account name
+  linkedin: "https://www.linkedin.com/in/sebastian-schreck-050739131/",
+  xing: "https://www.xing.com/profile/Sebastian_Schreck2?sc_o=mxb_p",
+  github: "https://github.com/StegSchreck",
+  stackoverflow: "https://stackoverflow.com/users/story/6538600",
+  twitter: "", // full url
+  facebook: "",
+  googleplus: "",
+  other: [
+    // { title: "another web page", link: "http://some.url" }, // example
+  ],
+};

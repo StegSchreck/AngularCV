@@ -18,14 +18,14 @@
     <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''">
       {{cvItem.description}}
     </p>
-    <md-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags !== []">
+    <md-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0">
       <md-chip *ngFor="let tag of cvItem.tags">{{tag}}</md-chip>
     </md-chip-list>
   </md-card-content>
 
   <button md-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
           *ngIf="(cvItem.description !== undefined && cvItem.description !== '')
-           || (cvItem.tags !== undefined && cvItem.tags !== [])
+           || (cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0)
            || cvItem.link !== undefined && cvItem.link !== ''">
     <md-icon aria-label="toggle details"></md-icon>
   </button>
