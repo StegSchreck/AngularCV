@@ -48,18 +48,23 @@ img.cv-thumbnail {
 md-card.opened md-card-content,
 md-card.opened md-card-actions {
   /*display: block;*/
+  max-height: 500px;
   position: static;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear, max-height 0.25s ease-in;
+  overflow: hidden;
 }
 
 md-card.closed md-card-content,
 md-card.closed md-card-actions {
   /*display: none;*/
-  position:absolute;
+  max-height: 0;
+  position: static;
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s linear, max-height 0.15s ease-out;
+  overflow: hidden;
 }
 
 md-card.opened md-card-actions {

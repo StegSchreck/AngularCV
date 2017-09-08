@@ -11,7 +11,6 @@ import { AppRoutingModule }         from './app-routing.module';
 
 import { AppComponent }             from './app.component';
 import { HeaderComponent }          from './header/header.component';
-import { HomeComponent }            from './home/home.component';
 import { OverviewComponent }        from './overview/overview.component';
 import { ExperienceComponent }      from './experience/experience.component';
 import { EducationComponent }       from './education/education.component';
@@ -35,7 +34,6 @@ import { ContactComponent } from './contact/contact.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
     OverviewComponent,
     ExperienceComponent,
     EducationComponent,
