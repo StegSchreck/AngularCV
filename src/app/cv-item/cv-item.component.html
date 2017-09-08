@@ -1,6 +1,5 @@
 <md-card class="cv-card closed" *ngIf="cvItem">
   <img class="cv-thumbnail" src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
-  <!--<img class="cv-thumbnail" src="http://placehold.it/100x100/DC143C/FFFFFF">-->
   <span class="vertical-divider"></span>
   <md-card-header>
     <span class="timespan">
@@ -26,13 +25,18 @@
   <button md-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
           *ngIf="(cvItem.description !== undefined && cvItem.description !== '')
            || (cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0)
-           || cvItem.link !== undefined && cvItem.link !== ''">
+           || cvItem.link !== undefined && cvItem.link !== ''
+           || cvItem.attachment !== undefined && cvItem.attachment !== ''">
     <md-icon aria-label="toggle details"></md-icon>
   </button>
   <md-card-actions>
     <a md-button color="primary" href="{{cvItem.link}}" target="_blank" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
       <md-icon>link</md-icon>
       VIEW LINK
+    </a>
+    <a md-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
+      <md-icon>attachment</md-icon>
+      VIEW ATTACHED FILE
     </a>
   </md-card-actions>
 </md-card>

@@ -7,4 +7,5 @@ export class CvItem {
   tags?: [string];
   link?: string;
   thumbnail?: string;
+  attachment?: string;
 }

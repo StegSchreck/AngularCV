@@ -37,6 +37,7 @@ Here is what you will have to change in order to adapt this project for yourself
 * Replace `src/assets/img/avatar.jpg` with your profile picture (avatar)
 * Replace `src/assets/img/cover.jpg` with an image for your overview page, imagine it as a kind of book cover
 * Please delete all images in `src/assets/img/item-thumbnails` and add the ones you need (depending on what you configure in `src/app/cv-item/cv-items.data.ts`)
+* Please delete all files in `src/assets/attachments` and add the ones you need (depending on what you configure in `src/app/cv-item/cv-items.data.ts`)
 * Replace `src/favicon.ico`, it contains the icon your browser displays in the task bar
 
 ## AngularJS basics
