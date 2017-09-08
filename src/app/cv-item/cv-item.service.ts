@@ -1,16 +1,14 @@
 import { Injectable }    from '@angular/core';
-import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
 import { CvItem } from "./cv-item";
-import { CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT } from './cv-items.data';
+import { CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS } from './cv-items.data';
 
 @Injectable()
 export class CvItemService {
-  private cvItemsUrl = 'api/cvitems';  // URL to web api
 
-  constructor(private http: Http) { }
+  constructor() { }
 
   getCvItems(): Promise<CvItem[]> {
     return Promise.resolve(CVITEMS);
@@ -38,6 +36,10 @@ export class CvItemService {
 
   getContactItems() {
     return Promise.resolve(CONTACT);
+  }
+
+  getInterestItems() {
+    return Promise.resolve(INTERESTS);
   }
 
   private handleError(error: any): Promise<any> {
