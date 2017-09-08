@@ -18,7 +18,7 @@ You will adjust the `CNAME` of that domain later on.
 
 ### Step 1: Create AWS resources
 
-You need a free account for [Amazon Web Services (AWS)](https://aws.amazon.com/de/).
+You need a free account for [Amazon Web Services (AWS)](https://aws.amazon.com/).
 
 Please be aware, that the resources you are going to create in the upcoming guideline will cause some costs to your AWS account.
 
@@ -136,3 +136,7 @@ In order ro make this work, follow these steps:
 * repeat this for the HTTP Code `404: Not Found`
 
 Now, also the deeplinks to the sections (`/experience`, `/contact`, etc.) should work like you expect them to.
+
+### References
+* https://www.linkedin.com/pulse/create-angular-app-using-deploy-aws-suite-andr%C3%A9s-casta%C3%B1o
+* https://rynop.com/2017/04/20/howto-serve-angular2-app-from-s3-and-cloudfront-with-free-https/
