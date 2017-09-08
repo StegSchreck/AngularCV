@@ -14,5 +14,5 @@ export class AppComponent {
     { location:'/volunteering',   label:'Volunteering',     icon:'favorite' },
     { location:'/contact',        label:'Contact',          icon:'email' },
     // { location:'/about',         label:'About',             icon:'info' },
-  ]
+  ];
 }
