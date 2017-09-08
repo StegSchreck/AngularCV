@@ -8,13 +8,15 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class OverviewComponent implements OnInit {
   title = "Overview";
+  generalData;
   interests;
 
   constructor(
-    private cvItemService: CvItemService
+    private cvItemService: CvItemService,
   ) { }
 
   getItems(): void {
+    this.generalData = this.cvItemService.getGeneralData();
     this.cvItemService
       .getInterestItems()
       .then(items => this.interests = items);

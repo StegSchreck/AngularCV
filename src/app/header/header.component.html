@@ -1,7 +1,7 @@
 <md-toolbar color="primary" class="header">
   <span>
-    <a href="/" class="header-title">
-      {{title}}
+    <a href="/" class="header-title" *ngIf="generalData !== undefined && generalData.name !== undefined && generalData.name !== ''">
+      {{generalData.name}}
     </a>
   </span>
 </md-toolbar>

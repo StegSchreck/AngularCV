@@ -1,5 +1,5 @@
 import { NgModule }                 from '@angular/core';
-import { BrowserModule }            from '@angular/platform-browser';
+import { BrowserModule, Title }     from '@angular/platform-browser';
 import { FormsModule }              from '@angular/forms';
 import { HttpModule }               from '@angular/http';
 import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
@@ -45,8 +45,11 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent,
   ],
   providers: [
-    CvItemService
+    Title,
+    CvItemService,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [
+    AppComponent,
+  ]
 })
 export class AppModule { }

@@ -8,13 +8,14 @@
   <md-card-header>
     <div md-card-avatar class="overview-header-image"></div>
     <md-card-title>About me</md-card-title>
-    <md-card-subtitle>Software Engineer in Berlin</md-card-subtitle>
+    <md-card-subtitle *ngIf="generalData !== undefined && generalData.position !== undefined && generalData.position !== ''">
+      {{generalData.position}}
+    </md-card-subtitle>
   </md-card-header>
   <img md-card-image src="assets/img/cover.jpg" alt="">
-  <md-card-content>
+  <md-card-content *ngIf="generalData !== undefined && generalData.description !== undefined && generalData.description !== ''">
     <p>
-      This website shall give you an impression of me and encourage your interest in hiring me.
-      Please navigate through the site in order to find out more.
+      {{generalData.description}}
     </p>
   </md-card-content>
 </md-card>

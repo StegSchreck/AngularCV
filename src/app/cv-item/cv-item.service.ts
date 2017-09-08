@@ -3,12 +3,16 @@ import { Injectable }    from '@angular/core';
 import 'rxjs/add/operator/toPromise';
 
 import { CvItem } from "./cv-item";
-import { CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS } from './cv-items.data';
+import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS } from './cv-items.data';
 
 @Injectable()
 export class CvItemService {
 
   constructor() { }
+
+  getGeneralData() {
+    return GENERAL;
+  }
 
   getCvItems(): Promise<CvItem[]> {
     return Promise.resolve(CVITEMS);

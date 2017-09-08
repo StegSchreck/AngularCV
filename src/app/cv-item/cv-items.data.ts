@@ -1,5 +1,12 @@
 import { CvItem } from './cv-item';
 
+
+export const GENERAL = {
+  name: "Sebastian Schreck",
+  position: "Software Engineer",
+  description: "This website shall give you an impression of me and encourage your interest in hiring me. Please navigate through the site in order to find out more."
+};
+
 export const CVITEMS: CvItem[] = [
   {
     title: "Mister Spex GmbH",
