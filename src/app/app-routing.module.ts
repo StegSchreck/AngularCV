@@ -8,6 +8,7 @@ import { ProjectsComponent }      from './projects/projects.component';
 import { VolunteeringComponent }  from './volunteering/volunteering.component';
 import { AboutComponent }         from './about/about.component';
 import { ContactComponent }       from "./contact/contact.component";
+import {PdfComponent} from "./pdf/pdf.component";
 
 const routes: Routes = [
   { path: '',               redirectTo: '/overview', pathMatch: 'full' },

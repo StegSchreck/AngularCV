@@ -17,3 +17,10 @@ a {
   color: white;
   text-decoration: none;
 }
+
+app-pdf {
+  position: absolute;
+  right: 24px;
+  float: right;
+  color: black;
+}

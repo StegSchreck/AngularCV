@@ -20,7 +20,8 @@ import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
 import { CvItemService }            from './cv-item/cv-item.service';
 import { FooterComponent }          from './footer/footer.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent }         from './contact/contact.component';
+import { PdfComponent }             from './pdf/pdf.component';
 
 @NgModule({
   imports: [
@@ -43,6 +44,7 @@ import { ContactComponent } from './contact/contact.component';
     CvItemComponent,
     FooterComponent,
     ContactComponent,
+    PdfComponent,
   ],
   providers: [
     Title,

@@ -16,6 +16,7 @@ Furthermore, the following third-party fonts are included:
 * [Roboto](https://fonts.google.com/specimen/Roboto)
 * [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
 * [IcoMoon Free](https://icomoon.io/#preview-free)
+* [jsPDF](https://github.com/MrRio/jsPDF)
 
 The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.
 
@@ -34,6 +35,7 @@ Here is what you will have to change in order to adapt this project for yourself
   * You can use the current version as a template, but you will need to replace the data with your own
   * There are different use cases configured, so you can see different sets of data, which will be displayed differently in the rendered page
   * Some fields are required, for others there are checks in the frontend. Please try it yourself
+  * I recommend sorting the items by descending end-date, so the newest item will be shown on top
 * Replace `src/assets/img/avatar.jpg` with your profile picture (avatar)
 * Replace `src/assets/img/cover.jpg` with an image for your overview page, imagine it as a kind of book cover
 * Please delete all images in `src/assets/img/item-thumbnails` and add the ones you need (depending on what you configure in `src/app/cv-item/cv-items.data.ts`)
