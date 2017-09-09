@@ -9,7 +9,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  cvItems: CvItem[];
+  projectItems: CvItem[];
   title = "Projects";
 
   constructor(
@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
   getItems(): void {
     this.cvItemService
       .getProjectItems()
-      .then(items => this.cvItems = items);
+      .then(items => this.projectItems = items);
   }
 
   ngOnInit() {

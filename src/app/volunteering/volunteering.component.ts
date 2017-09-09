@@ -9,7 +9,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
   styleUrls: ['./volunteering.component.css']
 })
 export class VolunteeringComponent implements OnInit {
-  cvItems: CvItem[];
+  volunteerItems: CvItem[];
   title = "Voluntary Work";
 
   constructor(
@@ -19,7 +19,7 @@ export class VolunteeringComponent implements OnInit {
   getItems(): void {
     this.cvItemService
       .getVolunteerItems()
-      .then(items => this.cvItems = items);
+      .then(items => this.volunteerItems = items);
   }
 
 
