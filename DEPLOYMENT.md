@@ -71,7 +71,7 @@ This will create an automated pipeline, which will deploy any changes you do to 
 * Select "create a new build project" and name it, e.g. `AngularCVBuild`
 * For the environment image, we will use the default one (`Use an image managed by AWS CodeBuild`)
 * Select an Operating System - currently, the only available option is `Ubuntu`
-* Select `Node.js` as runtime (as we are building an AngularJS app) with version `aws/codebuild/nodejs:7.0.0`
+* Select `Node.js` as runtime (as we are building an Angular app) with version `aws/codebuild/nodejs:7.0.0`
 * For the build specification, we want to use the afore mentioned `buildspec.yml`
 * Create a service role for your account, e.g. `code-build-AngularCVBuild-service-role` (you can leave the generated value)
 * Click "Save build project" and then "Next step"
@@ -106,7 +106,7 @@ For the domain, you created previously, adjust the settings in order point it to
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CloudFront.png" width="435px">
 </p>
 
-You can configure a AWS CloudFront distribution in order to offer your AngularJS website with HTTPS.
+You can configure a AWS CloudFront distribution in order to offer your Angular website with HTTPS.
 During this, we will [create a free SSL certificate in AWS](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request.html). 
 The latter will only work, if you have access to the mails sent to one of the addresses used by AWS.
 Remember, that this is just a basic guide. 

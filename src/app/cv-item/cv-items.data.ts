@@ -148,7 +148,7 @@ export const PROJECTS: CvItem[] = [
     description: "I participated in this hackathon together with three collegues. " +
     "We develpoed an idea how the passenger can be relieved from stress and anxiety at an airport. " +
     "We called the idea 'Unwait the airport'. Our idea convinced the technical experts of the Munich Airport, which awarded us their partner prize.",
-    tags: ["AngularJS 2", "Material Design", "Git", "NodeJS", "ACI ACRIS Seamless Tavel API", "Express.js", "MongoDB", "twilio"],
+    tags: ["Angular 2", "Material Design", "Git", "NodeJS", "ACI ACRIS Seamless Tavel API", "Express.js", "MongoDB", "twilio"],
     link: "https://github.com/StegSchreck/RecodingAviation",
     thumbnail: "re-coding-avation-ba.png",
   },
