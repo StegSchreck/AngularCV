@@ -105,7 +105,7 @@ export const EDUCATION: CvItem[] = [
     begin: "2011-10",
     end: "2015-04",
     description: "",
-    tags: ["Scrum", "SVN", "Git", "Java", "Scala", "eclipse", "Lua"],
+    tags: ["Scrum", "SVN", "Git", "Java", "Scala", "eclipse", "Lua", "Maven"],
     link: "http://www.tu-berlin.de",
     thumbnail: "TU-Berlin-Logo.png",
   },
@@ -115,7 +115,7 @@ export const EDUCATION: CvItem[] = [
     begin: "2008-10",
     end: "2011-12",
     description: "",
-    tags: ["Scrum", "SVN", "Java", "C", "Assembler", "eclipse", "Opal"],
+    tags: ["Scrum", "SVN", "Java", "C", "Assembler", "eclipse", "Opal", "ant"],
     link: "http://www.tu-berlin.de",
     thumbnail: "TU-Berlin-Logo.png",
   },
@@ -163,6 +163,29 @@ export const PROJECTS: CvItem[] = [
     tags: ["Python", "Django", "Git", "Docker", "Selenium", "TDD"],
     link: "https://www.ofmhelper.de/",
     thumbnail: "OFM_Helper.png",
+  },
+  {
+    title: "GoOLAP.info",
+    subtitle: "Fact search engine",
+    begin: "2010",
+    end: "2011",
+    description: "GoOLAP is a fact search engine, which crawls the web and combines relevant data using natural language processing. " +
+    "I was part of the team which was responsible of the project management." +
+    "Later I did my bachelor thesis about the data persistence layer of the application.",
+    tags: ["Project Managemant", "Hadoop", "MySQL"],
+    link: "http://goolap.info/",
+    thumbnail: "TU_DIMA.png",
+  },
+  {
+    title: "Global Phenological Monitoring Programm (GPM)",
+    subtitle: "Web-application for the Humboldt University",
+    begin: "",
+    end: "2010",
+    description: "The GPM is a global program for monitoring specific plants and analysing their behavior in the context of weather data." +
+    "The web-application was created during a project course at the TU Berlin, which I took part at.",
+    tags: ["Java", "JSF", "JSP", "SVN", "Scrum", "Trac", "Spring", "ant"],
+    link: "http://gpm.hu-berlin.de/",
+    thumbnail: "Huberlin-logo.png",
   },
 ];
 
