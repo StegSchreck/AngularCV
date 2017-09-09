@@ -91,3 +91,7 @@ md-card.closed .toggle-details md-icon:before {
 md-chip {
   margin-bottom: 0.5em !important;
 }
+
+a[md-button] {
+  text-transform: uppercase;
+}
