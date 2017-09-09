@@ -4,6 +4,10 @@
 
 # AngularCV
 
+<p align="center">
+  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
+</p>
+
 ## Deployment to production
 
 After you cloned/forked this project and adjusted it to your needs (and configuring with you data), you might want to deploy it in order to make it available to anyone.
@@ -17,6 +21,10 @@ Please go to your favorite domain provider and request a new domain or sub-domai
 You will adjust the `CNAME` of that domain later on.
 
 ### Step 1: Create AWS resources
+
+<p align="center">
+  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CodePipeline.png" width="435px">
+</p>
 
 You need a free account for [Amazon Web Services (AWS)](https://aws.amazon.com/).
 
@@ -93,6 +101,11 @@ For the domain, you created previously, adjust the settings in order point it to
 * The propagation of the DNS settings might take some minutes
 
 ### Step 3: (optional) Use HTTPS with AWS CloudFront distributions and AWS Certificates
+
+<p align="center">
+  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CloudFront.png" width="435px">
+</p>
+
 You can configure a AWS CloudFront distribution in order to offer your AngularJS website with HTTPS.
 During this, we will [create a free SSL certificate in AWS](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request.html). 
 The latter will only work, if you have access to the mails sent to one of the addresses used by AWS.

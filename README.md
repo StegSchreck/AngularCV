@@ -6,7 +6,7 @@
 
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
-For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin).
+For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), for which this project was created initially.
 
 
 ## Third party stuff 
@@ -40,11 +40,17 @@ Here is what you will have to change in order to adapt this project for yourself
 * Please delete all files in `src/assets/attachments` and add the ones you need (depending on what you configure in `src/app/cv-item/cv-items.data.ts`)
 * Replace `src/favicon.ico`, it contains the icon your browser displays in the task bar
 
+In order to comply with the license of this project and the third-party elements in it, please leave the "About" section unchanged as well as the link to it in the footer.
+
 ## AngularJS basics
 
 See the [AngularJS basic guide](ANGULARJS.md) for the basics. For more information, visit the [AngularJS 4](https://angular.io/) website.
 
 ## Deployment to production
+
+<p align="center">
+  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
+</p>
 
 After you cloned/forked this project and adjusted it to your needs (and configuring with your data), you might want to deploy it in order to make it available to anyone.
 
