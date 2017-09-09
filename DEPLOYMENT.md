@@ -28,14 +28,14 @@ You will adjust the `CNAME` of that domain later on.
 
 You need a free account for [Amazon Web Services (AWS)](https://aws.amazon.com/).
 
-Please be aware, that the resources you are going to create in the upcoming guideline will cause some costs to your AWS account.
+:exclamation: Please be aware, that the resources you are going to create in the upcoming guideline will cause some costs to your AWS account.
 
 #### Step 1a: Create a S3 bucket
 The S3 bucket will host your app.
 
-* Open the S3 section and click on "Create"
-* Name the bucket like the url through which it will be accessed later, e.g. `cv.yourdomain.tld` 
-  * The subdomain `cv` is optional, of course
+* Open the [Amazon S3](https://s3.console.aws.amazon.com/s3/home) section and click on "Create"
+* Name the bucket like the url through which it will be accessed later, e.g. `yourdomain.tld` or `cv.yourdomain.tld`
+  * This depends on what you did in step 0 (see above)
 * Leave everything else to the prefilled values
 * Go to the properties of the S3 bucket you just created and select  "Static Website Hosting"
   * Both, the _index document_ and the _error document_ should be set to `index.html`
@@ -63,7 +63,7 @@ The S3 bucket will host your app.
 This will create an automated pipeline, which will deploy any changes you do to your repository. 
 
 * Update the `buildspec.yml` in the repository with the name ofm the S3 bucket you previously created
-* In AWS, go to the "CodePipeline" section
+* In AWS, go to the "[CodePipeline](https://eu-central-1.console.aws.amazon.com/codepipeline/home)" section
 * Click on "Create" and select a name for your pipeline, e.g. `AngularCVDeployPipeline`
 * Select the source "GitHub" and the branch you want to deploy (e.g. `master`)
   * You will have to allow AWS access to your GitHub now
@@ -76,8 +76,8 @@ This will create an automated pipeline, which will deploy any changes you do to 
 * Create a service role for your account, e.g. `code-build-AngularCVBuild-service-role` (you can leave the generated value)
 * Click "Save build project" and then "Next step"
 * Add the permissions to that role to allow CodeBuild to push the build artifacts to the S3 bucket:
-  * Open the "IAM" section in a new tab and edit the role, that you just created above (`code-build-AngularCVBuild-service-role`)
-  * For convenience, I am going to add full S3 access to that role but you should just allow access to that specific S3 bucket that you are using
+  * Open the "[IAM](https://console.aws.amazon.com/iam/home)" section in a new tab and edit the role, that you just created above (`code-build-AngularCVBuild-service-role`)
+  * For convenience, I am going to add full S3 access to that role, but you should just allow access to that specific S3 bucket that you are using
     * Go to Permissions and click "Attach Policy"
     * Add `AmazonS3FullAccess`
 * Now, we can continue with the CodePipeline
@@ -88,14 +88,14 @@ This will create an automated pipeline, which will deploy any changes you do to 
     
 * Finally, you will have to create a AWS Service Role
   * Click "Create" and name it e.g. `AWS-CodePipeline-Service-AngularCV`
-  * Leave the other default values
+  * Leave the default values for the other fields
 * In the next step you can review your settings
   * After creating the Pipeline, it will start to run automatically and your AngularCV app will be deployed to your S3 bucket
 
 ### Step 2: Adjust your domain settings
 For the domain, you created previously, adjust the settings in order point it to the S3 bucket
 * Go to the DNS settings at your domain provider
-  * You can also use AWS Route53 as DNS, which is easy to use, but that's a different story
+  * You can also use [AWS Route53](https://console.aws.amazon.com/route53/home) as DNS, which is easy to use, but that's a different story
 * Add a `CNAME` record for the (sub-)domain you want to point to the AngularCV app pointing to the S3 url
   * e.g. `http://cv.yourdomain.tld.s3-website.eu-central-1.amazonaws.com`
 * The propagation of the DNS settings might take some minutes
@@ -106,14 +106,14 @@ For the domain, you created previously, adjust the settings in order point it to
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CloudFront.png" width="435px">
 </p>
 
-You can configure a AWS CloudFront distribution in order to offer your Angular website with HTTPS.
+You can configure a [AWS CloudFront](https://console.aws.amazon.com/cloudfront/home) distribution in order to offer your Angular website with HTTPS.
 During this, we will [create a free SSL certificate in AWS](https://docs.aws.amazon.com/acm/latest/userguide/gs-acm-request.html). 
 The latter will only work, if you have access to the mails sent to one of the addresses used by AWS.
 Remember, that this is just a basic guide. 
 I recommend further reading for all AWS resources you are going to create in order to find the best suited configuration settings for your needs.
 
 #### Step 3a: Create a free SSL certificate in AWS
-* Go to the "AWS Certificate Manager" section in the region `US East (N. Virginia)` 
+* Go to the "[AWS Certificate Manager](https://console.aws.amazon.com/acm/home?region=us-east-1#/)" section in the region `US East (N. Virginia)` 
   * The certificate will only be suitable for CloudFront, if it lies in the US East region!
 * Click on "Get Started" or "Request a certificate" (depending if you already have one or not)
 * Enter the domain name(s) you need, e.g. `yourdomain.tld` and `cv.yourdomain.tld`
@@ -121,7 +121,7 @@ I recommend further reading for all AWS resources you are going to create in ord
 * Accept the request from the email you just received
 
 #### Step 3b: Create the CloudFront distribution
-* Go to the "CloudFront" section in AWS
+* Go to the "[CloudFront](https://console.aws.amazon.com/cloudfront/home)" section in AWS
 * Click on "Create Distribution" and select "Web" as distribution method
 * Select the S3 bucket you previously created as "Origin Domain Name" from the displayed suggestions
 * You can leave the generated "Origin ID"
@@ -140,7 +140,7 @@ I recommend further reading for all AWS resources you are going to create in ord
 If one of your visitors is e.g. on the "Contact" section of your AngularCV app and refreshes the page, he will get an error from CloudFront.
 This is caused by the fact, that the browser now tries to access the path `/contact`, which is not existing.
 In order ro make this work, follow these steps:
-* Select your distribution and go to the "Error Pages" tab
+* Select the CloudFront distribution you just created and go to the "Error Pages" tab
 * Click "Create Custom Error Response"
 * Select HTTP Code `403: Forbidden` in "HTTP Error Code"
 * "Customize Error Response": yes
