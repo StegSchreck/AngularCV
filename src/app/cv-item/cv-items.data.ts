@@ -4,7 +4,8 @@ import { CvItem } from './cv-item';
 export const GENERAL = {
   name: "Sebastian Schreck",
   position: "Software Engineer",
-  description: "This website shall give you an impression of me and encourage your interest in hiring me. Please navigate through the site in order to find out more."
+  description: "This website shall give you an impression of me and encourage your interest in hiring me. " +
+  "Please navigate through the site in order to find out more."
 };
 
 export const CVITEMS: CvItem[] = [
@@ -13,7 +14,8 @@ export const CVITEMS: CvItem[] = [
     subtitle: "Professional Software Engineer",
     begin: "2017-02-01",
     end: "",
-    description: "Maintaining an operating the platform running our e-commerce shop. Automating processes and enabling the development teams to work.",
+    description: "Maintaining an operating the platform running our e-commerce shop. " +
+    "Automating processes and enabling the development teams to work.",
     tags: ["Java", "Intershop", "Python", "Ansible", "Git", "KanBan", "PyCharm", "Apache", "AWS", "Docker", "Jira", "Bamboo", "Confluence", "bash", "Oracle SQL"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
@@ -23,7 +25,8 @@ export const CVITEMS: CvItem[] = [
     subtitle: "Junior Software Engineer",
     begin: "2015-06-01",
     end: "2017-01-31",
-    description: "Implementing features for the e-Commerce platform Intershop in order to customize it. Developing a seperated API as microservice for internal purposes in a DevOps way.",
+    description: "Implementing features for the e-Commerce platform Intershop in order to customize it. " +
+    "Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and feature configuration of prescription glasses.",
     tags: ["Java", "Intershop", "eclipse", "Scrum", "Git", "SVN", "Scala", "Testrail", "trac", "Jira", "Bamboo", "Confluence", "AWS", "TDD", "JavaScript", "Oracle SQL"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
@@ -33,7 +36,8 @@ export const CVITEMS: CvItem[] = [
     subtitle: "Working student Product Management / Quality Assurance",
     begin: "2012-10-01",
     end: "2015-05-31",
-    description: "Ensuring the quality and functionality of the web shop, ERP software and their interfaces. Planning and conduct releases.",
+    description: "Ensuring the quality and functionality of the web shop, ERP software and their interfaces. " +
+    "Planning and conduct releases.",
     tags: ["Selenium", "Scrum", "Quality Assurance", "Release Management", "Testrail", "SVN", "trac", "Microsoft Dynamics NAV"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
@@ -134,11 +138,22 @@ export const PROJECTS: CvItem[] = [
     subtitle: "Script for transfering personal movie ratings from one site to another",
     begin: "2017-02",
     end: "",
-    description: "This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) to another (e.g. Trakt)." +
-    "The script supports more than 10 sites and is constantly expanding.",
+    description: "This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) to another (e.g. Trakt). " +
+    "The script supports 10 sites currently and is constantly expanding.",
     tags: ["Python", "Git", "Docker", "Selenium", "JSON", "CSV"],
     link: "https://github.com/StegSchreck/RatS",
     thumbnail: "RatS.png",
+  },
+  {
+    title: "AngularCV",
+    subtitle: "A simple self-hosted online-CV",
+    begin: "2017-09",
+    end: "",
+    description: "This project was created for the purpose of having a basic online-CV, which anyone can host by themselves. " +
+    "This very website is the result of it.",
+    tags: ["Angular 4", "Material Design", "GitHub", "CSS", "TypeScript", "JetBrains WebStorm", "AWS", "jsPDF"],
+    link: "https://github.com/StegSchreck/AngularCV",
+    thumbnail: "../AngularCV.png",
   },
   {
     title: "Recoding Aviation Hackathon",
@@ -170,19 +185,20 @@ export const PROJECTS: CvItem[] = [
     begin: "2010",
     end: "2011",
     description: "GoOLAP is a fact search engine, which crawls the web and combines relevant data using natural language processing. " +
-    "I was part of the team which was responsible of the project management." +
+    "It is a research project at the DIMA department of TU Berlin. " +
+    "I was part of the team which was responsible of the project management. " +
     "Later I did my bachelor thesis about the data persistence layer of the application.",
-    tags: ["Project Managemant", "Hadoop", "MySQL"],
+    tags: ["Project Managemant", "Hadoop", "MySQL", "Mantis"],
     link: "http://goolap.info/",
-    thumbnail: "TU_DIMA.png",
+    thumbnail: "TU_DIMA_GoOLAP.png",
   },
   {
     title: "Global Phenological Monitoring Programm (GPM)",
     subtitle: "Web-application for the Humboldt University",
     begin: "",
     end: "2010",
-    description: "The GPM is a global program for monitoring specific plants and analysing their behavior in the context of weather data." +
-    "The web-application was created during a project course at the TU Berlin, which I took part at.",
+    description: "The GPM is a global program for monitoring specific plants and analysing their behavior in the context of weather data. " +
+    "The web-application was created during a project course at the TU Berlin, which I took part at. ",
     tags: ["Java", "JSF", "JSP", "SVN", "Scrum", "Trac", "Spring", "ant"],
     link: "http://gpm.hu-berlin.de/",
     thumbnail: "Huberlin-logo.png",
