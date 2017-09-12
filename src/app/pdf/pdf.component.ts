@@ -92,8 +92,15 @@ export class PdfComponent implements OnInit {
   }
 
   private addOverviewPageContent(doc){
-    this.addPageTitle(doc, "CV");
+    this.addGeneralDescription(doc);
+    this.verticalPosition += 20;
+    this.addContactData(doc);
+    this.addLanguages(doc);
+    this.verticalPosition += 10;
+    this.addInterests(doc);
+  }
 
+  private addGeneralDescription(doc) {
     doc.setFontSize(14);
     doc.setFontType('bold');
     doc.text("ABOUT ME", 20, this.verticalPosition);
@@ -102,8 +109,9 @@ export class PdfComponent implements OnInit {
     doc.setFontType('normal');
     let splittedDescription = doc.splitTextToSize(this.generalData.description, this.maximumHorizontalLength);
     doc.text(splittedDescription, 20, this.verticalPosition);
-    this.verticalPosition += 20;
+  }
 
+  private addContactData(doc) {
     this.addLine(doc, "CITY", this.contactItems.city);
     this.addLine(doc, "MAIL", this.contactItems.mail);
     this.addLine(doc, "PHONE", this.contactItems.phone);
@@ -113,7 +121,9 @@ export class PdfComponent implements OnInit {
     this.addLine(doc, "GITHUB", this.contactItems.github);
     this.addLine(doc, "STACKOVERFLOW", this.contactItems.stackoverflow);
     this.addLine(doc, "TWITTER", this.contactItems.twitter);
+  }
 
+  private addLanguages(doc) {
     if (this.languageItems !== undefined && this.languageItems !== [] && this.languageItems.length > 0) {
       this.verticalPosition += 10;
       doc.setFontSize(14);
@@ -122,18 +132,26 @@ export class PdfComponent implements OnInit {
       this.verticalPosition += 10;
       doc.setFontSize(12);
       doc.setFontType('normal');
-      let languages: string = "";
       for (let item of this.languageItems) {
-        if (languages !== "") { languages = languages + ", " }
-        languages = languages + item.title + "(" + item.level + "%)";
+        let bar_length:number = 168 * (item.level / 100);
+
+        doc.setDrawColor(0);
+        doc.setFillColor(68, 68, 68);
+        doc.rect(20, this.verticalPosition-4, bar_length, 5.5, 'F');
+        doc.setDrawColor(0);
+        doc.setFillColor(222, 222, 222);
+        doc.rect(bar_length+20, this.verticalPosition-4, 168-bar_length, 5.5, 'F');
+
+        doc.setTextColor(222);
+        doc.text(item.title, 25, this.verticalPosition);
+        doc.setTextColor(0);
+
+        this.verticalPosition += 7;
       }
-      let splittedLanguages = doc.splitTextToSize(languages, this.maximumHorizontalLength);
-      doc.text(splittedLanguages, 20, this.verticalPosition);
-      this.verticalPosition += 10;
     }
+  }
 
-    this.verticalPosition += 10;
-
+  private addInterests(doc) {
     if (this.interestItems !== undefined && this.interestItems !== [] && this.interestItems.length > 0) {
       doc.setFontSize(14);
       doc.setFontType('bold');
@@ -273,7 +291,7 @@ export class PdfComponent implements OnInit {
       }
       let splittedTags = doc.splitTextToSize(tags, this.maximumHorizontalLength - 10);
       doc.text(splittedTags, 30, this.verticalPosition);
-      this.verticalPosition += 3 * (splittedTags.length - 1);
+      this.verticalPosition += 3.5 * (splittedTags.length - 1);
     }
     doc.setFont('helvetica');
     doc.setTextColor(0, 0, 0);

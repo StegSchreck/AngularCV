@@ -126,9 +126,10 @@ export const EDUCATION: CvItem[] = [
 ];
 
 export const LANGUAGES = [
+  // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
   { title: "German", level: "100" },
   { title: "English", level: "90" },
-  { title: "Italian", level: "75" },
+  { title: "Italian", level: "80" },
   { title: "French", level: "40" },
 ];
 
@@ -140,7 +141,7 @@ export const PROJECTS: CvItem[] = [
     end: "",
     description: "This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) to another (e.g. Trakt). " +
     "The script supports 10 sites currently and is constantly expanding.",
-    tags: ["Python", "Git", "Docker", "Selenium", "JSON", "CSV"],
+    tags: ["Python", "Git", "Docker", "Selenium", "Beautifulsoup", "JSON", "CSV"],
     link: "https://github.com/StegSchreck/RatS",
     thumbnail: "RatS.png",
   },
@@ -151,7 +152,7 @@ export const PROJECTS: CvItem[] = [
     end: "",
     description: "This project was created for the purpose of having a basic online-CV, which anyone can host by themselves. " +
     "This very website is the result of it.",
-    tags: ["Angular 4", "Material Design", "GitHub", "CSS", "TypeScript", "JetBrains WebStorm", "AWS", "jsPDF"],
+    tags: ["Angular 4", "Material Design", "GitHub", "CSS", "TypeScript", "JetBrains WebStorm", "AWS", "jsPDF", "npm"],
     link: "https://github.com/StegSchreck/AngularCV",
     thumbnail: "../AngularCV.png",
   },
@@ -175,7 +176,7 @@ export const PROJECTS: CvItem[] = [
     description: "OFM is a browser game where you manage a football team. " +
     "The 'OFM Helper' helps the user to analyse the data which emerges from games, trainings, etc. " +
     "We formed a two-man team for developing this project.",
-    tags: ["Python", "Django", "Git", "Docker", "Selenium", "TDD"],
+    tags: ["Python", "Django", "Git", "Selenium", "Beautifulsoup", "TDD", "Docker"],
     link: "https://www.ofmhelper.de/",
     thumbnail: "OFM_Helper.png",
   },
