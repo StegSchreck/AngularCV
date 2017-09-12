@@ -1,14 +1,4 @@
 <app-header></app-header>
-<nav md-tab-nav-bar>
-  <a md-tab-link
-     *ngFor="let link of navLinks"
-     routerLink="{{link.location}}"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    <md-icon>{{link.icon}}</md-icon>
-    <span>{{link.label | uppercase}}</span>
-  </a>
-</nav>
 <section class="mat-typography">
   <router-outlet></router-outlet>
 </section>

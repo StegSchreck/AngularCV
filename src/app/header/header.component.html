@@ -1,8 +1,31 @@
 <md-toolbar color="primary" class="header">
-  <app-pdf></app-pdf>
-  <span>
-    <a href="/" class="header-title" *ngIf="generalData !== undefined && generalData.name !== undefined && generalData.name !== ''">
-      {{generalData.name}}
-    </a>
+  <app-pdf *ngIf="windowWidth >= 500"></app-pdf>
+  <span class="header-menu" *ngIf="windowWidth < 750">
+    <button md-icon-button [mdMenuTriggerFor]="menu">
+      <md-icon>menu</md-icon>
+    </button>
+    <md-menu #menu="mdMenu">
+      <a md-menu-item
+         *ngFor="let link of navLinks"
+         routerLink="{{link.location}}"
+         routerLinkActive #rla="routerLinkActive">
+        <md-icon>{{link.icon}}</md-icon>
+        <span>{{link.label | uppercase}}</span>
+      </a>
+    </md-menu>
   </span>
+  <a href="/" class="header-title" *ngIf="generalData !== undefined && generalData.name !== undefined && generalData.name !== ''">
+    {{generalData.name}}
+  </a>
 </md-toolbar>
+
+<nav md-tab-nav-bar *ngIf="windowWidth >= 750">
+  <a md-tab-link
+     *ngFor="let link of navLinks"
+     routerLink="{{link.location}}"
+     routerLinkActive #rla="routerLinkActive"
+     [active]="rla.isActive">
+    <md-icon>{{link.icon}}</md-icon>
+    <span>{{link.label | uppercase}}</span>
+  </a>
+</nav>

@@ -1,19 +1,22 @@
 md-toolbar.header {
   position: fixed;
   margin-top: 0;
-  min-width: 750px;
-  width: 750px;
+
+  /* to be synced with body style */
+  min-width: 300px;
+  /*width: 750px;*/
   max-width: 750px;
-  min-height: 64px;
+
+/*  min-height: 64px;
   height: 64px;
-  max-height: 64px;
+  max-height: 64px;*/
   top: 0;
   padding-left: 24px;
   font-size: 1em;
   z-index: 1000;
 }
 
-a {
+a.header-title {
   color: white;
   text-decoration: none;
 }
@@ -23,4 +26,59 @@ app-pdf {
   right: 24px;
   float: right;
   color: black;
+}
+
+.header-menu {
+  margin-right: 12px;
+}
+
+.header-menu button {
+  left:-12px;
+}
+.header-menu md-icon {
+  font-size: 2em;
+  color: #AAF;
+}
+.header-menu:hover md-icon {
+  font-size: 2em;
+  color: white;
+}
+
+
+/***** TAB NAVIGATION *****/
+nav {
+  position: fixed;
+  background-color: white;
+  margin-bottom: 24px;
+  top: 64px;
+  min-width: 750px;
+  width: 750px;
+  max-width: 750px;
+  z-index: 1000;
+}
+nav a.hover {
+  text-decoration: none;
+}
+nav a.mat-tab-link {
+  min-width: 75px;
+  text-decoration: none;
+}
+nav md-icon {
+  position: absolute;
+  margin-top: -0.1em;
+  margin-left: -0.1em;
+  font-size: 2em;
+  visibility: hidden;
+}
+nav a:hover md-icon,
+nav a:active md-icon
+  /*nav a[ng-reflect-active="true"] md-icon */
+{
+  visibility: visible;
+}
+nav a:hover span,
+nav a:active span
+  /*nav a[ng-reflect-active="true"] span */
+{
+  visibility: hidden;
 }

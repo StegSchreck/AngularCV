@@ -14,7 +14,7 @@ md-card-subtitle {
   font-size: 1.2em;
 }
 md-card-title {
-  padding-right: 9em;
+
 }
 img.cv-thumbnail {
   position: absolute;
@@ -77,17 +77,31 @@ md-card.opened .toggle-details md-icon:before {
 md-card.closed .toggle-details md-icon:before {
   content: 'expand_more';
 }
+
 .timespan {
-  position: absolute;
-  right: 24px;
+  padding-left: 150px;
+  position: relative;
+  top: -6px;
   color: #888;
 }
-
 .timespan md-icon {
   position: relative;
   top: 6px;
   font-size: 1.5em;
 }
+@media screen and (min-width: 750px) {
+  .timespan {
+    color: #888;
+    position: absolute;
+    right: 24px;
+    top: 18px;
+  }
+  md-card-title {
+    padding-right: 9em;
+    top: 24px;
+  }
+}
+
 md-chip {
   margin-bottom: 0.5em !important;
 }

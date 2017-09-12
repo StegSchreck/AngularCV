@@ -3,17 +3,30 @@
 @import "assets/icon-font/style.css";
 body {
   margin: 0 auto;
-  min-width: 750px;
-  width: 750px;
+  min-width: 500px;
+  /*width: 750px;*/
   max-width: 750px;
   background-color: #303030 !important;
-  padding-bottom: 88px;
-  padding-top: 136px;
+  padding-bottom: 80px;
+  padding-top: 80px;
 }
+@media screen and (min-width: 600px) {
+  body {
+    padding-bottom: 88px;
+    padding-top: 88px;
+  }
+}
+@media screen and (min-width: 750px) {
+  body {
+    padding-top: 136px;
+  }
+}
+
 /* everywhere else */
 * {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
 h1, h2, .header-title,
 md-card md-card-title {
   font-size: 1.4em !important;
@@ -36,7 +49,7 @@ md-card.page-title md-icon {
 }
 
 
-/* LOADING ANIMATION */
+/***** LOADING ANIMATION *****/
 div.loading-animation {
   background-color: #303030 !important;
   position: absolute;

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 import { CvItemService } from "../cv-item/cv-item.service";
 
 @Component({
@@ -8,6 +8,28 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class HeaderComponent implements OnInit {
   generalData;
+  navLinks = [
+    { location:'/overview',       label:'Overview',         icon:'account_circle' },
+    { location:'/experience',     label:'Experience',       icon:'work' },
+    { location:'/education',      label:'Education',        icon:'school' },
+    { location:'/projects',       label:'Projects',         icon:'assignment' },
+    { location:'/volunteering',   label:'Volunteering',     icon:'favorite' },
+    { location:'/contact',        label:'Contact',          icon:'email' },
+    // { location:'/about',         label:'About',             icon:'info' },
+  ];
+
+  windowWidth: number = window.innerWidth;
+
+  //initial values, The window object may still be undefined during this hook, let me know if that's the case and we'll figure out a better hook for the initial value
+  ngAfterViewInit() {
+    this.windowWidth = window.innerWidth;
+  }
+
+  //if screen size changes it'll update
+  @HostListener('window:resize', ['$event'])
+  resize(event) {
+    this.windowWidth = window.innerWidth;
+  }
 
   constructor(
     private cvItemService: CvItemService,

@@ -1,8 +1,7 @@
 <md-card class="cv-card closed" *ngIf="cvItem">
   <img class="cv-thumbnail" src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
   <span class="vertical-divider"></span>
-  <md-card-header>
-    <span class="timespan">
+  <span class="timespan">
       <span class="timespan-begin" *ngIf="cvItem.begin !== undefined && cvItem.begin !== ''">
         {{cvItem.begin}}
         <md-icon>arrow_forward</md-icon>
@@ -10,6 +9,7 @@
       <span class="timespan-end" *ngIf="cvItem.end !== undefined && cvItem.end !== ''">{{cvItem.end}}</span>
       <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">now <md-icon>access_time</md-icon></span>
     </span>
+  <md-card-header>
     <md-card-title>{{cvItem.title}}</md-card-title>
     <md-card-subtitle>{{cvItem.subtitle}}</md-card-subtitle>
   </md-card-header>
