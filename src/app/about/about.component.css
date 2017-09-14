@@ -10,5 +10,5 @@
   margin-right: 0.2em;
 }
 .text-card md-chip {
-  margin-bottom: 2em;
+  margin-bottom: 2em !important;;
 }

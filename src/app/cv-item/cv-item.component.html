@@ -1,5 +1,5 @@
 <md-card class="cv-card closed" *ngIf="cvItem">
-  <img class="cv-thumbnail" src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
+  <img class="cv-thumbnail" src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" width="100px" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
   <span class="vertical-divider"></span>
   <span class="timespan">
       <span class="timespan-begin" *ngIf="cvItem.begin !== undefined && cvItem.begin !== ''">

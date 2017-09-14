@@ -2,6 +2,11 @@ md-card {
   margin-bottom: 1em;
   min-height: 100px;
 }
+@media screen and (max-width: 600px) {
+  md-card {
+    min-height: 75px;
+  }
+}
 md-card-header,
 md-card-actions,
 md-card-content {
@@ -14,15 +19,24 @@ md-card-subtitle {
   font-size: 1.2em;
 }
 md-card-title {
-
+  padding-right: 9em;
+  top: 24px;
 }
 img.cv-thumbnail {
   position: absolute;
   left: 24px;
   top: 24px;
-  width: 100px;
+  width: auto;
+  max-width: 100px;
+  height: auto;
+  max-height: 100px;
   margin-bottom: 24px;
   margin-right: 24px;
+}
+@media screen and (max-width: 600px) {
+  img.cv-thumbnail {
+    margin-right: 12px;
+  }
 }
 .vertical-divider {
   position: absolute;
@@ -30,6 +44,11 @@ img.cv-thumbnail {
   top: 24px;
   left: 148px;
   bottom: 24px;
+}
+@media screen and (max-width: 600px) {
+  .vertical-divider {
+    left: 142px;
+  }
 }
 .toggle-details {
   position: absolute;
@@ -80,8 +99,9 @@ md-card.closed .toggle-details md-icon:before {
 
 .timespan {
   padding-left: 150px;
-  position: relative;
-  top: -6px;
+  position: absolute;
+  right: 24px;
+  top: 18px;
   color: #888;
 }
 .timespan md-icon {
@@ -89,16 +109,14 @@ md-card.closed .toggle-details md-icon:before {
   top: 6px;
   font-size: 1.5em;
 }
-@media screen and (min-width: 750px) {
+@media screen and (max-width: 600px) {
   .timespan {
-    color: #888;
-    position: absolute;
-    right: 24px;
-    top: 18px;
+    position: relative;
+    left: 0;
+    top: -6px;
   }
   md-card-title {
-    padding-right: 9em;
-    top: 24px;
+    padding-right: 0;
   }
 }
 

@@ -6,7 +6,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
   generalData;
   navLinks = [
     { location:'/overview',       label:'Overview',         icon:'account_circle' },
