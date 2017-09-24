@@ -1,0 +1,5 @@
+@media screen and (max-width: 400px) {
+  md-list {
+    margin-left: -12px;
+  }
+}

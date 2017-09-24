@@ -2,23 +2,34 @@ md-toolbar.header {
   position: fixed;
   margin-top: 0;
 
-  /* to be synced with body style */
-  min-width: 300px;
+  /* to be synced with body<->header<->footer style */
+  min-width: 250px;
   /*width: 750px;*/
   max-width: 750px;
 
 /*  min-height: 64px;
   height: 64px;
   max-height: 64px;*/
+
   top: 0;
   padding-left: 24px;
   font-size: 1em;
   z-index: 1000;
 }
+@media screen and (max-width: 400px) {
+  md-toolbar.header {
+    padding-left: 12px;
+  }
+}
 
 a.header-title {
   color: white;
   text-decoration: none;
+}
+@media screen and (max-width: 400px) {
+  a.header-title {
+    margin-left: -18px;
+  }
 }
 
 app-pdf {
@@ -33,7 +44,7 @@ app-pdf {
 }
 
 .header-menu button {
-  left:-12px;
+  left: -12px;
 }
 .header-menu md-icon {
   font-size: 2em;

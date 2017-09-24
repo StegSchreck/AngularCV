@@ -12,6 +12,13 @@ md-card-actions,
 md-card-content {
   margin-left: 142px;
 }
+@media screen and (max-width: 400px) {
+  md-card-header,
+  md-card-actions,
+  md-card-content {
+    margin-left: 0;
+  }
+}
 md-card-content {
   padding-left: 8px;
 }
@@ -19,10 +26,10 @@ md-card-subtitle {
   font-size: 1.2em;
 }
 md-card-title {
-  padding-right: 9em;
+  padding-right: 10em;
   top: 24px;
 }
-img.cv-thumbnail {
+.cv-thumbnail img {
   position: absolute;
   left: 24px;
   top: 24px;
@@ -34,8 +41,13 @@ img.cv-thumbnail {
   margin-right: 24px;
 }
 @media screen and (max-width: 600px) {
-  img.cv-thumbnail {
+  .cv-thumbnail img {
     margin-right: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cv-thumbnail {
+    display: none;
   }
 }
 .vertical-divider {
@@ -119,9 +131,10 @@ md-card.closed .toggle-details md-icon:before {
     padding-right: 0;
   }
 }
-
-md-chip {
-  margin-bottom: 0.5em !important;
+@media screen and (max-width: 400px) {
+  .timespan {
+    padding-left: 8px;
+  }
 }
 
 a[md-button] {

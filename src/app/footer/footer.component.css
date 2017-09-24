@@ -2,17 +2,29 @@ md-toolbar.footer {
   position: fixed;
   margin-bottom: 0;
 
-  /* to be synced with body style */
-  min-width: 300px;
+  /* to be synced with body<->header<->footer style */
+  min-width: 250px;
   /*width: 750px;*/
   max-width: 750px;
 
 /*  min-height: 64px;
   height: 64px;
   max-height: 64px;*/
+
   bottom: 0;
   padding-left: 24px;
   font-size: 1em;
+}
+@media screen and (max-width: 400px) {
+  md-toolbar.footer {
+    min-height: 48px;
+    height: 48px;
+    max-height: 48px;
+    font-size: 0.8em;
+  }
+  span.copyright {
+    margin-top: -6px;
+  }
 }
 md-toolbar.footer a {
   position: absolute;
@@ -21,6 +33,16 @@ md-toolbar.footer a {
 }
 md-toolbar.footer img {
   height: 36px;
+}
+@media screen and (max-width: 600px) {
+  md-toolbar.footer img {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  md-toolbar.footer img {
+    height: 24px;
+  }
 }
 a {
   color: white;

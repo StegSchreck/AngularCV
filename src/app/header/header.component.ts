@@ -20,12 +20,12 @@ export class HeaderComponent implements OnInit, AfterViewInit {
 
   windowWidth: number = window.innerWidth;
 
-  //initial values, The window object may still be undefined during this hook, let me know if that's the case and we'll figure out a better hook for the initial value
+  // initial values, the window object may still be undefined during this hook
   ngAfterViewInit() {
     this.windowWidth = window.innerWidth;
   }
 
-  //if screen size changes it'll update
+  // if screen size changes it'll update
   @HostListener('window:resize', ['$event'])
   resize(event) {
     this.windowWidth = window.innerWidth;
