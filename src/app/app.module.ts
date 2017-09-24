@@ -22,6 +22,7 @@ import { CvItemService }            from './cv-item/cv-item.service';
 import { FooterComponent }          from './footer/footer.component';
 import { ContactComponent }         from './contact/contact.component';
 import { PdfComponent }             from './pdf/pdf.component';
+import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.component';
 
 @NgModule({
   imports: [
@@ -45,6 +46,7 @@ import { PdfComponent }             from './pdf/pdf.component';
     FooterComponent,
     ContactComponent,
     PdfComponent,
+    CvDownloadCardComponent,
   ],
   providers: [
     Title,

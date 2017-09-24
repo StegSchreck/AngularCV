@@ -1,5 +1,5 @@
 <md-toolbar color="primary" class="header">
-  <app-pdf *ngIf="windowWidth >= 500"></app-pdf>
+  <app-pdf color="default" *ngIf="windowWidth >= 500"></app-pdf>
   <span class="header-menu" *ngIf="windowWidth < 750">
     <button md-icon-button [mdMenuTriggerFor]="menu">
       <md-icon>menu</md-icon>

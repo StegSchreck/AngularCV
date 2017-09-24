@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject } from '@angular/core';
+import { Component, OnInit, Inject, Input } from '@angular/core';
 import * as jsPDF from 'jspdf'
 
 import { CvItem } from "../cv-item/cv-item";
@@ -13,6 +13,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
   ]
 })
 export class PdfComponent implements OnInit {
+  @Input() color: string = "default";
   verticalPosition: number = 50; // starting point
   maximumHorizontalLength: number = 168;
   generalData;
