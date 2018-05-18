@@ -20,6 +20,8 @@ export class PdfComponent implements OnInit {
   interestItems;
   cvItems: CvItem[];
   educationItems: CvItem[];
+  publicationItems: CvItem[];
+  talkItems: CvItem[];
   certificationItems: CvItem[];
   languageItems;
   projectItems: CvItem[];
@@ -48,6 +50,12 @@ export class PdfComponent implements OnInit {
     this.cvItemService
       .getLanguageItems()
       .then(items => this.languageItems = items);
+    this.cvItemService
+      .getPublicationItems()
+      .then(items => this.publicationItems = items);
+    this.cvItemService
+      .getTalkItems()
+      .then(items => this.talkItems = items);
     this.cvItemService
       .getProjectItems()
       .then(items => this.projectItems = items);
@@ -78,6 +86,14 @@ export class PdfComponent implements OnInit {
     if (this.certificationItems !== undefined && this.certificationItems !== [] && this.certificationItems.length > 0) {
       this.switchPage(doc);
       this.addCertificatesPageContent(doc);
+    }
+    if (this.publicationItems !== undefined && this.publicationItems !== [] && this.publicationItems.length > 0) {
+      this.switchPage(doc);
+      this.addPublicationsPageContent(doc);
+    }
+    if (this.talkItems !== undefined && this.talkItems !== [] && this.talkItems.length > 0) {
+      this.switchPage(doc);
+      this.addTalksPageContent(doc);
     }
     if (this.projectItems !== undefined && this.projectItems !== [] && this.projectItems.length > 0) {
       this.switchPage(doc);
@@ -213,8 +229,18 @@ export class PdfComponent implements OnInit {
   }
 
   private addCertificatesPageContent(doc){
-    this.addPageTitle(doc, "certificates");
+    this.addPageTitle(doc, "Certificates");
     this.addCvItems(doc, this.certificationItems);
+  }
+
+  private addPublicationsPageContent(doc){
+    this.addPageTitle(doc, "Publications");
+    this.addCvItems(doc, this.publicationItems);
+  }
+
+  private addTalksPageContent(doc){
+    this.addPageTitle(doc, "Talks");
+    this.addCvItems(doc, this.talkItems);
   }
 
   private addPageTitle(doc, title:string) {
@@ -282,7 +308,7 @@ export class PdfComponent implements OnInit {
       doc.setTextColor(0, 0, 0);
       let splittedDescription = doc.splitTextToSize(item.description, this.maximumHorizontalLength - 10);
       doc.text(splittedDescription, 30, this.verticalPosition);
-      this.verticalPosition += 3 * (splittedDescription.length - 1);
+      this.verticalPosition += 4 * (splittedDescription.length - 1);
     }
 
     doc.setFontSize(10);
