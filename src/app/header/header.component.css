@@ -4,8 +4,8 @@ md-toolbar.header {
 
   /* to be synced with body<->header<->footer style */
   min-width: 250px;
-  /*width: 750px;*/
-  max-width: 750px;
+  /*width: 800px;*/
+  max-width: 800px;
 
 /*  min-height: 64px;
   height: 64px;
@@ -62,9 +62,9 @@ nav {
   background-color: white;
   margin-bottom: 24px;
   top: 64px;
-  min-width: 750px;
-  width: 750px;
-  max-width: 750px;
+  min-width: 800px;
+  width: 800px;
+  max-width: 800px;
   z-index: 1000;
 }
 nav a.hover {

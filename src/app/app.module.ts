@@ -14,6 +14,7 @@ import { HeaderComponent }          from './header/header.component';
 import { OverviewComponent }        from './overview/overview.component';
 import { ExperienceComponent }      from './experience/experience.component';
 import { EducationComponent }       from './education/education.component';
+import { PublicationsComponent }    from './publications/publications.component';
 import { ProjectsComponent }        from './projects/projects.component';
 import { VolunteeringComponent }    from './volunteering/volunteering.component';
 import { AboutComponent }           from './about/about.component';
@@ -39,6 +40,7 @@ import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.co
     OverviewComponent,
     ExperienceComponent,
     EducationComponent,
+    PublicationsComponent,
     ProjectsComponent,
     VolunteeringComponent,
     AboutComponent,

@@ -1,0 +1,14 @@
+<md-card class="page-title">
+  <md-card-title>
+    <md-icon>record_voice_over</md-icon>
+    talks
+  </md-card-title>
+</md-card>
+<app-cv-item *ngFor="let item of talkItems" [cvItem]="item"></app-cv-item>
+<md-card class="page-title">
+  <md-card-title>
+    <md-icon>subject</md-icon>
+    publications
+  </md-card-title>
+</md-card>
+<app-cv-item *ngFor="let item of publicationItems" [cvItem]="item"></app-cv-item>

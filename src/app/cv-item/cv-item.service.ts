@@ -3,7 +3,7 @@ import { Injectable }    from '@angular/core';
 import 'rxjs/add/operator/toPromise';
 
 import { CvItem } from "./cv-item";
-import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS } from './cv-items.data';
+import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS, PUBLICATIONS, TALKS } from './cv-items.data';
 
 @Injectable()
 export class CvItemService {
@@ -44,6 +44,14 @@ export class CvItemService {
 
   getInterestItems() {
     return Promise.resolve(INTERESTS);
+  }
+
+  getPublicationItems(): Promise<CvItem[]>  {
+    return Promise.resolve(PUBLICATIONS);
+  }
+
+  getTalkItems(): Promise<CvItem[]>  {
+    return Promise.resolve(TALKS);
   }
 
   private handleError(error: any): Promise<any> {

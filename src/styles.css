@@ -6,8 +6,8 @@ body {
 
   /* to be synced with body<->header<->footer style */
   min-width: 250px;
-  /*width: 750px;*/
-  max-width: 750px;
+  /*width: 800px;*/
+  max-width: 800px;
 
   background-color: #303030 !important;
   padding-bottom: 88px;
@@ -19,7 +19,7 @@ body {
     padding-top: 80px;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   body {
     padding-top: 136px;
   }
@@ -44,7 +44,7 @@ md-card md-card-title {
 md-card {
   margin-bottom: 1em;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   md-card {
     margin-left: 6px;
     margin-right: 6px;

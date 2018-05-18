@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     { location:'/overview',       label:'Overview',         icon:'account_circle' },
     { location:'/experience',     label:'Experience',       icon:'work' },
     { location:'/education',      label:'Education',        icon:'school' },
+    { location:'/publications',   label:'Publications',     icon:'record_voice_over' },
     { location:'/projects',       label:'Projects',         icon:'assignment' },
     { location:'/volunteering',   label:'Volunteering',     icon:'favorite' },
     { location:'/contact',        label:'Contact',          icon:'email' },
