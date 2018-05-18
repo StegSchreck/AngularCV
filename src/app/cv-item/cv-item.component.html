@@ -1,4 +1,4 @@
-<md-card class="cv-card closed" *ngIf="cvItem">
+<mat-card class="cv-card closed" *ngIf="cvItem">
   <span class="cv-thumbnail">
     <img src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" width="100px" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
     <span class="vertical-divider"></span>
@@ -6,39 +6,39 @@
   <span class="timespan">
     <span class="timespan-begin" *ngIf="cvItem.begin !== undefined && cvItem.begin !== ''">
       {{cvItem.begin}}
-      <md-icon>arrow_forward</md-icon>
+      <mat-icon>arrow_forward</mat-icon>
     </span>
     <span class="timespan-end" *ngIf="cvItem.end !== undefined && cvItem.end !== ''">{{cvItem.end}}</span>
-    <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">now <md-icon>access_time</md-icon></span>
+    <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">now <mat-icon>access_time</mat-icon></span>
   </span>
-  <md-card-header>
-    <md-card-title>{{cvItem.title}}</md-card-title>
-    <md-card-subtitle>{{cvItem.subtitle}}</md-card-subtitle>
-  </md-card-header>
-  <md-card-content>
+  <mat-card-header>
+    <mat-card-title>{{cvItem.title}}</mat-card-title>
+    <mat-card-subtitle>{{cvItem.subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
     <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''">
       {{cvItem.description}}
     </p>
-    <md-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0">
-      <md-chip *ngFor="let tag of cvItem.tags">{{tag}}</md-chip>
-    </md-chip-list>
-  </md-card-content>
+    <mat-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0">
+      <mat-chip *ngFor="let tag of cvItem.tags">{{tag}}</mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
 
-  <button md-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
+  <button mat-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
           *ngIf="(cvItem.description !== undefined && cvItem.description !== '')
            || (cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0)
            || cvItem.link !== undefined && cvItem.link !== ''
            || cvItem.attachment !== undefined && cvItem.attachment !== ''">
-    <md-icon aria-label="toggle details"></md-icon>
+    <mat-icon aria-label="toggle details"></mat-icon>
   </button>
-  <md-card-actions>
-    <a md-button color="primary" href="{{cvItem.link}}" target="_blank" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
-      <md-icon>link</md-icon>
+  <mat-card-actions>
+    <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
+      <mat-icon>link</mat-icon>
       VIEW LINK
     </a>
-    <a md-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
-      <md-icon>attachment</md-icon>
+    <a mat-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
+      <mat-icon>attachment</mat-icon>
       VIEW ATTACHED FILE
     </a>
-  </md-card-actions>
-</md-card>
+  </mat-card-actions>
+</mat-card>

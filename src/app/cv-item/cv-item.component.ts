@@ -1,4 +1,4 @@
-import 'rxjs/add/operator/switchMap';
+
 import { Component, Input } from '@angular/core';
 
 import { CvItem }           from './cv-item';
@@ -17,8 +17,8 @@ export class CvItemComponent {
   ngOnInit(): void { }
 
   toggleDetails(event) {
-    let card = event.target.closest('md-card');
-    if (card.classList .contains('opened')) {
+    let card = event.target.closest('mat-card');
+    if (card.classList.contains('opened')) {
       card.classList.add('closed');
       card.classList.remove('opened');
       // event.target.closest('.toggle-details md-icon').innerHTML = 'expand_more'

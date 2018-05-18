@@ -1,124 +1,124 @@
-<md-card class="page-title">
-  <md-card-title>
-    <md-icon>email</md-icon>
+<mat-card class="page-title">
+  <mat-card-title>
+    <mat-icon>email</mat-icon>
     {{title}}
-  </md-card-title>
-</md-card>
-<md-card class="text-card">
-  <md-card-title>General</md-card-title>
-  <md-card-content>
-    <md-list>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.city !== undefined && contactItems.city !== ''">
-        <md-icon md-list-icon>place</md-icon>
-        <h4 md-line>{{contactItems.city}}</h4>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.mail !== undefined && contactItems.mail !== ''">
-        <md-icon md-list-icon>email</md-icon>
-        <p md-line>
-          <a md-button color="default" href="mailto:{{contactItems.mail}}">{{contactItems.mail}}</a>
+  </mat-card-title>
+</mat-card>
+<mat-card class="text-card">
+  <mat-card-title>General</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.city !== undefined && contactItems.city !== ''">
+        <mat-icon mat-list-icon>place</mat-icon>
+        <h4 mat-line>{{contactItems.city}}</h4>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.mail !== undefined && contactItems.mail !== ''">
+        <mat-icon mat-list-icon>email</mat-icon>
+        <p mat-line>
+          <a mat-button color="default" href="mailto:{{contactItems.mail}}">{{contactItems.mail}}</a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.phone !== undefined && contactItems.phone !== ''">
-        <md-icon md-list-icon>phone</md-icon>
-        <h4 md-line>Phone</h4>
-        <p md-line>{{contactItems.phone}}</p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.skype !== undefined && contactItems.skype !== ''">
-        <i md-list-icon class="icon-skype"></i>
-        <h4 md-line>Skype</h4>
-        <p md-line>{{contactItems.skype}}</p>
-      </md-list-item>
-    </md-list>
-  </md-card-content>
-</md-card>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.phone !== undefined && contactItems.phone !== ''">
+        <mat-icon mat-list-icon>phone</mat-icon>
+        <h4 mat-line>Phone</h4>
+        <p mat-line>{{contactItems.phone}}</p>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.skype !== undefined && contactItems.skype !== ''">
+        <i mat-list-icon class="icon-skype"></i>
+        <h4 mat-line>Skype</h4>
+        <p mat-line>{{contactItems.skype}}</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
 <app-cv-download-card></app-cv-download-card>
-<md-card class="text-card">
-  <md-card-title>Other profiles on the web</md-card-title>
-  <md-card-content>
-    <md-list>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
-        <i md-list-icon class="icon-linkedin"></i>
-        <h4 md-line>LinkedIn</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.linkedin}}" target="_blank">
-            <md-icon>link</md-icon>
+<mat-card class="text-card">
+  <mat-card-title>Other profiles on the web</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
+        <i mat-list-icon class="icon-linkedin"></i>
+        <h4 mat-line>LinkedIn</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.linkedin}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
-        <i md-list-icon class="icon-xing"></i>
-        <h4 md-line>Xing</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.xing}}" target="_blank">
-            <md-icon>link</md-icon>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
+        <i mat-list-icon class="icon-xing"></i>
+        <h4 mat-line>Xing</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.xing}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
-        <i md-list-icon class="icon-github"></i>
-        <h4 md-line>GitHub</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.github}}" target="_blank">
-            <md-icon>link</md-icon>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
+        <i mat-list-icon class="icon-github"></i>
+        <h4 mat-line>GitHub</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.github}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
-        <i md-list-icon class="icon-stackoverflow"></i>
-        <h4 md-line>StackOverflow</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.stackoverflow}}" target="_blank">
-            <md-icon>link</md-icon>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
+        <i mat-list-icon class="icon-stackoverflow"></i>
+        <h4 mat-line>StackOverflow</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.stackoverflow}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
-        <i md-list-icon class="icon-facebook2"></i>
-        <h4 md-line>Facebook</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.facebook}}" target="_blank">
-            <md-icon>link</md-icon>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
+        <i mat-list-icon class="icon-facebook2"></i>
+        <h4 mat-line>Facebook</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.facebook}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.googleplus !== undefined && contactItems.googleplus !== ''">
-        <i md-list-icon class="icon-google-plus2"></i>
-        <h4 md-line>Google Plus</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.googleplus}}" target="_blank">
-            <md-icon>link</md-icon>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.googleplus !== undefined && contactItems.googleplus !== ''">
+        <i mat-list-icon class="icon-google-plus2"></i>
+        <h4 mat-line>Google Plus</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.googleplus}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
-      <md-list-item *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
-        <i md-list-icon class="icon-twitter"></i>
-        <h4 md-line>Twitter</h4>
-        <p md-line>
-          <a md-button color="primary" href="{{contactItems.twitter}}" target="_blank">
-            <md-icon>link</md-icon>
+      </mat-list-item>
+      <mat-list-item *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
+        <i mat-list-icon class="icon-twitter"></i>
+        <h4 mat-line>Twitter</h4>
+        <p mat-line>
+          <a mat-button color="primary" href="{{contactItems.twitter}}" target="_blank">
+            <mat-icon>link</mat-icon>
             OPEN PROFILE
           </a>
         </p>
-      </md-list-item>
+      </mat-list-item>
       <span *ngIf="contactItems !== undefined && contactItems.other !== undefined && contactItems.other !== [] && contactItems.other.length > 0">
-        <md-divider></md-divider>
-        <md-list-item *ngFor="let item of contactItems.other">
-          <md-icon md-list-icon>public</md-icon>
-          <h4 md-line>{{item.title}}</h4>
-          <p md-line>
-            <a md-button color="primary" href="{{item.link}}" target="_blank">
-              <md-icon>link</md-icon>
+        <mat-divider></mat-divider>
+        <mat-list-item *ngFor="let item of contactItems.other">
+          <mat-icon mat-list-icon>public</mat-icon>
+          <h4 mat-line>{{item.title}}</h4>
+          <p mat-line>
+            <a mat-button color="primary" href="{{item.link}}" target="_blank">
+              <mat-icon>link</mat-icon>
               OPEN PROFILE
             </a>
           </p>
-        </md-list-item>
+        </mat-list-item>
       </span>
-    </md-list>
-  </md-card-content>
-</md-card>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

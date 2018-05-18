@@ -1,4 +1,4 @@
-md-toolbar.footer {
+mat-toolbar.footer {
   position: fixed;
   margin-bottom: 0;
 
@@ -16,7 +16,7 @@ md-toolbar.footer {
   font-size: 1em;
 }
 @media screen and (max-width: 400px) {
-  md-toolbar.footer {
+  mat-toolbar.footer {
     min-height: 48px;
     height: 48px;
     max-height: 48px;
@@ -26,21 +26,21 @@ md-toolbar.footer {
     margin-top: -6px;
   }
 }
-md-toolbar.footer a {
+mat-toolbar.footer a {
   position: absolute;
   right: 24px;
   top: 12px;
 }
-md-toolbar.footer img {
+mat-toolbar.footer img {
   height: 36px;
 }
 @media screen and (max-width: 600px) {
-  md-toolbar.footer img {
+  mat-toolbar.footer img {
     height: 30px;
   }
 }
 @media screen and (max-width: 400px) {
-  md-toolbar.footer img {
+  mat-toolbar.footer img {
     height: 24px;
   }
 }

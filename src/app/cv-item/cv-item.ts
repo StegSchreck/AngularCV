@@ -4,7 +4,7 @@ export class CvItem {
   begin?: string;
   end?: string;
   description?: string;
-  tags?: [string];
+  tags?: string[];
   link?: string;
   thumbnail?: string;
   attachment?: string;

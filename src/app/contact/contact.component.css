@@ -1,5 +1,5 @@
 @media screen and (max-width: 400px) {
-  md-list {
+  mat-list {
     margin-left: -12px;
   }
 }

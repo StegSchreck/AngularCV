@@ -1,4 +1,4 @@
-md-toolbar.header {
+mat-toolbar.header {
   position: fixed;
   margin-top: 0;
 
@@ -17,7 +17,7 @@ md-toolbar.header {
   z-index: 1000;
 }
 @media screen and (max-width: 400px) {
-  md-toolbar.header {
+  mat-toolbar.header {
     padding-left: 12px;
   }
 }
@@ -46,11 +46,11 @@ app-pdf {
 .header-menu button {
   left: -12px;
 }
-.header-menu md-icon {
+.header-menu mat-icon {
   font-size: 2em;
   color: #AAF;
 }
-.header-menu:hover md-icon {
+.header-menu:hover mat-icon {
   font-size: 2em;
   color: white;
 }
@@ -74,16 +74,16 @@ nav a.mat-tab-link {
   min-width: 75px;
   text-decoration: none;
 }
-nav md-icon {
+nav mat-icon {
   position: absolute;
   margin-top: -0.1em;
   margin-left: -0.1em;
   font-size: 2em;
   visibility: hidden;
 }
-nav a:hover md-icon,
-nav a:active md-icon
-  /*nav a[ng-reflect-active="true"] md-icon */
+nav a:hover mat-icon,
+nav a:active mat-icon
+  /*nav a[ng-reflect-active="true"] mat-icon */
 {
   visibility: visible;
 }

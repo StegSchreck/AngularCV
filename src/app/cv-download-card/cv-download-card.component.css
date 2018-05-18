@@ -1,4 +1,4 @@
-md-card.cv-download app-pdf {
+mat-card.cv-download app-pdf {
   position: absolute;
   right: 24px;
   top: 12px;
@@ -6,20 +6,20 @@ md-card.cv-download app-pdf {
   color: black;
 }
 @media screen and (max-width: 600px) {
-  md-card.cv-download app-pdf {
+  mat-card.cv-download app-pdf {
     right: 12px;
   }
 }
 @media screen and (max-width: 400px) {
-  md-card.cv-download app-pdf {
+  mat-card.cv-download app-pdf {
     top: 9px;
   }
 }
-md-card.cv-download {
+mat-card.cv-download {
   padding-right: 90px;
 }
 @media screen and (max-width: 600px) {
-  md-card.cv-download {
+  mat-card.cv-download {
     padding-right: 66px !important;
   }
 }

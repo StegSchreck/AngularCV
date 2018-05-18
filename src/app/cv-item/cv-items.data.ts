@@ -16,7 +16,7 @@ export const CVITEMS: CvItem[] = [
     end: "",
     description: "Maintaining an operating the platform running our e-commerce shop. " +
     "Automating processes and enabling the development teams to work.",
-    tags: ["Java", "Intershop", "Python", "Ansible", "Git", "KanBan", "PyCharm", "Apache", "AWS", "Docker", "Jira", "Bamboo", "Confluence", "bash", "Oracle SQL"],
+    tags: ["Java", "Intershop", "Python", "Ansible", "Git", "KanBan", "PyCharm", "Apache HTTPD", "AWS", "Docker", "Jira", "Bamboo", "Confluence", "bash", "Kubernetes", "Oracle PL/SQL"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
   },
@@ -27,7 +27,7 @@ export const CVITEMS: CvItem[] = [
     end: "2017-01-31",
     description: "Implementing features for the e-Commerce platform Intershop in order to customize it. " +
     "Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and feature configuration of prescription glasses.",
-    tags: ["Java", "Intershop", "eclipse", "Scrum", "Git", "SVN", "Scala", "Testrail", "trac", "Jira", "Bamboo", "Confluence", "AWS", "TDD", "JavaScript", "Oracle SQL"],
+    tags: ["Java", "Intershop", "eclipse", "Scrum", "Git", "SVN", "Scala", "Testrail", "trac", "Jira", "Bamboo", "Confluence", "AWS", "TDD", "JavaScript", "Oracle PL/SQL"],
     link: "https://www.misterspex.com",
     thumbnail: "msx-logo.png",
   },
@@ -128,9 +128,9 @@ export const EDUCATION: CvItem[] = [
 export const LANGUAGES = [
   // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
   { title: "German", level: "100" },
-  { title: "English", level: "90" },
-  { title: "Italian", level: "80" },
-  { title: "French", level: "40" },
+  { title: "English", level: "80" },
+  { title: "Italian", level: "70" },
+  { title: "French", level: "30" },
 ];
 
 export const PROJECTS: CvItem[] = [

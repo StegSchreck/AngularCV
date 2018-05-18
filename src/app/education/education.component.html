@@ -1,33 +1,32 @@
-<md-card class="text-card" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
-  <md-card-title>languages</md-card-title>
-  <md-card-content>
-    <md-list>
-      <md-list-item *ngFor="let language of languageItems">
-        <md-icon md-list-icon>languages</md-icon>
-        <h4 md-line>{{language.title}}</h4>
-        <p md-line>
-          <md-progress-bar
-            class="example-margin"
+<mat-card class="text-card" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
+  <mat-card-title>languages</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let language of languageItems">
+        <mat-icon mat-list-icon>languages</mat-icon>
+        <h4 mat-line>{{language.title}}</h4>
+        <p mat-line>
+          <mat-progress-bar
             color="primary"
             mode="determinate"
             value="{{language.level}}">
-          </md-progress-bar>
+          </mat-progress-bar>
         </p>
-      </md-list-item>
-    </md-list>
-  </md-card-content>
-</md-card>
-<md-card class="page-title" *ngIf="certificationItems !== undefined && certificationItems !== [] && certificationItems.length > 0">
-  <md-card-title>
-    <md-icon>verified_user</md-icon>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
+<mat-card class="page-title" *ngIf="certificationItems !== undefined && certificationItems !== [] && certificationItems.length > 0">
+  <mat-card-title>
+    <mat-icon>verified_user</mat-icon>
     certificates
-  </md-card-title>
-</md-card>
+  </mat-card-title>
+</mat-card>
 <app-cv-item *ngFor="let item of certificationItems" [cvItem]="item"></app-cv-item>
-<md-card class="page-title" *ngIf="educationItems !== undefined && educationItems !== [] && educationItems.length > 0">
-  <md-card-title>
-    <md-icon>school</md-icon>
+<mat-card class="page-title" *ngIf="educationItems !== undefined && educationItems !== [] && educationItems.length > 0">
+  <mat-card-title>
+    <mat-icon>school</mat-icon>
     education
-  </md-card-title>
-</md-card>
+  </mat-card-title>
+</mat-card>
 <app-cv-item *ngFor="let item of educationItems" [cvItem]="item"></app-cv-item>

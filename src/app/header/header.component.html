@@ -1,31 +1,31 @@
-<md-toolbar color="primary" class="header">
+<mat-toolbar color="primary" class="header">
   <app-pdf color="default" *ngIf="windowWidth >= 500"></app-pdf>
   <span class="header-menu" *ngIf="windowWidth < 800">
-    <button md-icon-button [mdMenuTriggerFor]="menu">
-      <md-icon>menu</md-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
     </button>
-    <md-menu #menu="mdMenu">
-      <a md-menu-item
+    <mat-menu #menu="matMenu">
+      <a mat-menu-item
          *ngFor="let link of navLinks"
          routerLink="{{link.location}}"
          routerLinkActive #rla="routerLinkActive">
-        <md-icon>{{link.icon}}</md-icon>
+        <mat-icon>{{link.icon}}</mat-icon>
         <span>{{link.label | uppercase}}</span>
       </a>
-    </md-menu>
+    </mat-menu>
   </span>
   <a href="/" class="header-title" *ngIf="generalData !== undefined && generalData.name !== undefined && generalData.name !== ''">
     {{generalData.name}}
   </a>
-</md-toolbar>
+</mat-toolbar>
 
-<nav md-tab-nav-bar *ngIf="windowWidth >= 800">
-  <a md-tab-link
+<nav mat-tab-nav-bar *ngIf="windowWidth >= 800">
+  <a mat-tab-link
      *ngFor="let link of navLinks"
      routerLink="{{link.location}}"
      routerLinkActive #rla="routerLinkActive"
      [active]="rla.isActive">
-    <md-icon>{{link.icon}}</md-icon>
+    <mat-icon>{{link.icon}}</mat-icon>
     <span>{{link.label | uppercase}}</span>
   </a>
 </nav>

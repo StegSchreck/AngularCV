@@ -1,31 +1,31 @@
-md-card {
+mat-card {
   margin-bottom: 1em;
   min-height: 100px;
 }
 @media screen and (max-width: 600px) {
-  md-card {
+  mat-card {
     min-height: 75px;
   }
 }
-md-card-header,
-md-card-actions,
-md-card-content {
+mat-card-header,
+mat-card-actions,
+mat-card-content {
   margin-left: 142px;
 }
 @media screen and (max-width: 400px) {
-  md-card-header,
-  md-card-actions,
-  md-card-content {
+  mat-card-header,
+  mat-card-actions,
+  mat-card-content {
     margin-left: 0;
   }
 }
-md-card-content {
+mat-card-content {
   padding-left: 8px;
 }
-md-card-subtitle {
+mat-card-subtitle {
   font-size: 1.2em;
 }
-md-card-title {
+mat-card-title {
   padding-right: 10em;
   top: 24px;
 }
@@ -69,15 +69,15 @@ md-card-title {
   font-size: 1em;
   float:right;
 }
-.toggle-details md-icon {
+.toggle-details mat-icon {
   position: absolute;
   top: 0.2em;
   left: 0;
   font-size: 3em;
 }
 
-md-card.opened md-card-content,
-md-card.opened md-card-actions {
+mat-card.opened mat-card-content,
+mat-card.opened mat-card-actions {
   /*display: block;*/
   max-height: 500px;
   position: static;
@@ -87,8 +87,8 @@ md-card.opened md-card-actions {
   overflow: hidden;
 }
 
-md-card.closed md-card-content,
-md-card.closed md-card-actions {
+mat-card.closed mat-card-content,
+mat-card.closed mat-card-actions {
   /*display: none;*/
   max-height: 0;
   position: static;
@@ -98,14 +98,14 @@ md-card.closed md-card-actions {
   overflow: hidden;
 }
 
-md-card.opened md-card-actions {
+mat-card.opened mat-card-actions {
   margin-bottom: 0;
 }
 
-md-card.opened .toggle-details md-icon:before {
+mat-card.opened .toggle-details mat-icon:before {
   content: 'expand_less';
 }
-md-card.closed .toggle-details md-icon:before {
+mat-card.closed .toggle-details mat-icon:before {
   content: 'expand_more';
 }
 
@@ -116,7 +116,7 @@ md-card.closed .toggle-details md-icon:before {
   top: 18px;
   color: #888;
 }
-.timespan md-icon {
+.timespan mat-icon {
   position: relative;
   top: 6px;
   font-size: 1.5em;
@@ -127,7 +127,7 @@ md-card.closed .toggle-details md-icon:before {
     left: 0;
     top: -6px;
   }
-  md-card-title {
+  mat-card-title {
     padding-right: 0;
   }
 }
@@ -137,6 +137,6 @@ md-card.closed .toggle-details md-icon:before {
   }
 }
 
-a[md-button] {
+a[mat-button] {
   text-transform: uppercase;
 }

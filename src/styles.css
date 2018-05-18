@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, .header-title,
-md-card md-card-title {
+mat-card mat-card-title {
   font-size: 1.4em !important;
   text-transform: uppercase;
   font-family: "Roboto Slab", serif;
@@ -41,33 +41,33 @@ md-card md-card-title {
     font-size: 1.2em !important;
   }
 }
-md-card {
+mat-card {
   margin-bottom: 1em;
 }
 @media screen and (max-width: 800px) {
-  md-card {
+  mat-card {
     margin-left: 6px;
     margin-right: 6px;
   }
 }
 @media screen and (max-width: 400px) {
-  md-card {
+  mat-card {
     padding: 12px !important;
   }
 }
-md-card.page-title {
+mat-card.page-title {
   background-color: #444;
   color: white;
   padding: 12px 60px 12px 24px;
 }
-md-card.page-title md-icon {
+mat-card.page-title mat-icon {
   position: absolute;
   font-size: 1.4em;
   top: 8px;
   right: 24px;
 }
 
-md-chip {
+mat-chip {
   margin-bottom: 0.5em !important;
 }
 
