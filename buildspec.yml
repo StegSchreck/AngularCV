@@ -2,7 +2,6 @@ version: 0.1
 environment_variables:
     plaintext:
         S3_BUCKET: "cv.schreck.berlin"
-        BUILD_ENV: "prod"
 phases:
     install:
         commands:
@@ -12,7 +11,7 @@ phases:
     build:
         commands:
             - echo Build started on `date`
-            - ng build --env=${BUILD_ENV}
+            - ng build --prod --aot
     post_build:
          commands:
             - aws s3 cp dist s3://${S3_BUCKET} --recursive
