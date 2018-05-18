@@ -71,23 +71,31 @@ export class PdfComponent implements OnInit {
     this.addOverviewPageContent(doc);
     this.switchPage(doc);
     this.addExperiencePageContent(doc);
-    this.switchPage(doc);
-    this.addEducationPageContent(doc);
-    this.switchPage(doc);
-    this.addCertificatesPageContent(doc);
-    this.switchPage(doc);
-    this.addProjectsPageContent(doc);
-    this.switchPage(doc);
-    this.addVolunteeringPageContent(doc);
+    if (this.educationItems !== undefined && this.educationItems !== [] && this.educationItems.length > 0) {
+      this.switchPage(doc);
+      this.addEducationPageContent(doc);
+    }
+    if (this.certificationItems !== undefined && this.certificationItems !== [] && this.certificationItems.length > 0) {
+      this.switchPage(doc);
+      this.addCertificatesPageContent(doc);
+    }
+    if (this.projectItems !== undefined && this.projectItems !== [] && this.projectItems.length > 0) {
+      this.switchPage(doc);
+      this.addProjectsPageContent(doc);
+    }
+    if (this.volunteerItems !== undefined && this.volunteerItems !== [] && this.volunteerItems.length > 0) {
+      this.switchPage(doc);
+      this.addVolunteeringPageContent(doc);
+    }
 
-    this.addPageFooter(doc);
+    PdfComponent.addPageFooter(doc);
 
     // Save the PDF
     doc.save('AngularCV_' + this.generalData.name.replace(' ', '_') + '.pdf');
   }
 
   private switchPage(doc){
-    this.addPageFooter(doc);
+    PdfComponent.addPageFooter(doc);
     doc.addPage();
     this.addPageHeader(doc);
   }
@@ -317,7 +325,7 @@ export class PdfComponent implements OnInit {
     doc.setTextColor(0, 0, 0);
   }
 
-  private addPageFooter(doc){
+  private static addPageFooter(doc){
     doc.line(20, 280, 188, 280); // horizontal line
     doc.setFont('helvetica');
     doc.setFontType('normal');

@@ -1,4 +1,4 @@
-<md-card class="text-card">
+<md-card class="text-card" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
   <md-card-title>languages</md-card-title>
   <md-card-content>
     <md-list>
@@ -17,14 +17,14 @@
     </md-list>
   </md-card-content>
 </md-card>
-<md-card class="page-title">
+<md-card class="page-title" *ngIf="certificationItems !== undefined && certificationItems !== [] && certificationItems.length > 0">
   <md-card-title>
     <md-icon>verified_user</md-icon>
     certificates
   </md-card-title>
 </md-card>
 <app-cv-item *ngFor="let item of certificationItems" [cvItem]="item"></app-cv-item>
-<md-card class="page-title">
+<md-card class="page-title" *ngIf="educationItems !== undefined && educationItems !== [] && educationItems.length > 0">
   <md-card-title>
     <md-icon>school</md-icon>
     education
