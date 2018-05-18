@@ -11,7 +11,7 @@ For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), fo
 
 ## Third party stuff 
 
-It uses [Angular 4](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
+It uses [Angular](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
 Furthermore, the following third-party sources are included:
 * [Roboto](https://fonts.google.com/specimen/Roboto)
 * [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
@@ -46,7 +46,7 @@ In order to comply with the license of this project and the third-party elements
 
 ## Angular basics
 
-See the [Angular basic guide](ANGULAR.md) for the basics. For more information, visit the [Angular 4](https://angular.io/) website.
+See the [Angular basic guide](ANGULAR.md) for the basics. For more information, visit the [Angular](https://angular.io/) website.
 
 ## Deployment to production
 
