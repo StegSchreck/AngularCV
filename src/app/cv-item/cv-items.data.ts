@@ -356,10 +356,9 @@ export const TALKS: CvItem[] = [
     "continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on " +
     "your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from " +
     "inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the " +
-    "stability of the software as well as the systems it runs on. In this talk, we will focus on the organizational " +
+    "stability of the software as well as the systems it runs on. In this talk, we focus on the organizational " +
     "aspects of DevOps: How to measure and improve your team’s effectiveness by reducing silos and silo thinking and " +
-    "how to get your engineers to share responsibility - a basis for every successful DevOps transformation. Thomas " +
-    "and Sebastian will share some of the learnings made adopting DevOps at Mister Spex.",
+    "how to get your engineers to share responsibility - a basis for every successful DevOps transformation.",
     tags: ["DevOps", "Culture", "Collaboration"],
     link: "",
     thumbnail: "DevOpsCon_2018_Speaker.png",
@@ -373,10 +372,9 @@ export const TALKS: CvItem[] = [
     "continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on " +
     "your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from " +
     "inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the " +
-    "stability of the software as well as the systems it runs on. In this talk, we will focus on the organizational " +
+    "stability of the software as well as the systems it runs on. In this talk, we focus on the organizational " +
     "aspects of DevOps: How to measure and improve your team’s effectiveness by reducing silos and silo thinking and " +
-    "how to get your engineers to share responsibility - a basis for every successful DevOps transformation. Thomas " +
-    "and Sebastian will share some of the learnings made adopting DevOps at Mister Spex.",
+    "how to get your engineers to share responsibility - a basis for every successful DevOps transformation.",
     tags: ["DevOps", "Culture", "Collaboration"],
     link: "https://www.youtube.com/watch?v=KWw0H__mtxI",
     thumbnail: "code-talks-commerce.png",
