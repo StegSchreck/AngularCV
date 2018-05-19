@@ -1,7 +1,7 @@
 import { NgModule }                 from '@angular/core';
 import { BrowserModule, Title }     from '@angular/platform-browser';
 import { FormsModule }              from '@angular/forms';
-import { HttpModule }               from '@angular/http';
+import { HttpClientModule }         from '@angular/common/http';
 import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 import { MaterialModule }           from './material/material.module';
 
@@ -24,15 +24,16 @@ import { FooterComponent }          from './footer/footer.component';
 import { ContactComponent }         from './contact/contact.component';
 import { PdfComponent }             from './pdf/pdf.component';
 import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.component';
+import { PictureModalComponent }    from './picture-modal/picture-modal.component';
 
 @NgModule({
   imports: [
     BrowserModule,
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   declarations: [
     AppComponent,
@@ -49,6 +50,7 @@ import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.co
     ContactComponent,
     PdfComponent,
     CvDownloadCardComponent,
+    PictureModalComponent,
   ],
   providers: [
     Title,
@@ -56,6 +58,7 @@ import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.co
   ],
   bootstrap: [
     AppComponent,
-  ]
+  ],
+  entryComponents: [PictureModalComponent]
 })
 export class AppModule { }

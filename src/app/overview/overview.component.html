@@ -6,7 +6,7 @@
 </mat-card>
 <mat-card class="text-card">
   <mat-card-header>
-    <div mat-card-avatar class="overview-header-image"></div>
+    <div mat-card-avatar class="overview-header-image" (click)="showAvatar()"></div>
     <mat-card-title>About me</mat-card-title>
     <mat-card-subtitle *ngIf="generalData !== undefined && generalData.position !== undefined && generalData.position !== ''">
       {{generalData.position}}
