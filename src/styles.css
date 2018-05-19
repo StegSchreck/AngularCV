@@ -18,6 +18,9 @@ body {
     padding-bottom: 80px;
     padding-top: 80px;
   }
+  .mat-dialog-container {
+    padding: 16px !important;
+  }
 }
 @media screen and (min-width: 800px) {
   body {

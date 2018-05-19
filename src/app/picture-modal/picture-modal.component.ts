@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { CvItemService } from "../cv-item/cv-item.service";
+import {Component, Inject, OnInit} from '@angular/core';
+import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material";
 
 @Component({
   selector: 'app-picture-modal',
@@ -7,18 +7,17 @@ import { CvItemService } from "../cv-item/cv-item.service";
   styleUrls: ['./picture-modal.component.css']
 })
 export class PictureModalComponent implements OnInit {
-  generalData;
+  title;
+  imagePath;
 
   constructor(
-    private cvItemService: CvItemService,
-  ) { }
-
-  getItems(): void {
-    this.generalData = this.cvItemService.getGeneralData();
+    private dialogRef: MatDialogRef<PictureModalComponent>,
+    @Inject(MAT_DIALOG_DATA) data
+  ) {
+    this.imagePath = data.imagePath;
+    this.title = data.title;
   }
 
-  ngOnInit() {
-    this.getItems();
-  }
+  ngOnInit() { }
 
 }
