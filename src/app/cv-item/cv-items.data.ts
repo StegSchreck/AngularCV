@@ -318,7 +318,7 @@ export const CONTACT = {
   xing: "https://www.xing.com/profile/Sebastian_Schreck2",
   github: "https://github.com/StegSchreck",
   stackoverflow: "https://stackoverflow.com/users/story/6538600",
-  twitter: "", // full url
+  twitter: "https://twitter.com/StegSchreck", // full url
   facebook: "",
   googleplus: "",
   other: [
