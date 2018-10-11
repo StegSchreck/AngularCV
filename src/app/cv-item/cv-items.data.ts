@@ -206,7 +206,6 @@ export const PROJECTS: CvItem[] = [
   },
 ];
 
-
 export const VOLUNTEERING: CvItem[] = [
   {
     title: "DFB cup finals & international matches",
@@ -348,17 +347,27 @@ export const PUBLICATIONS: CvItem[] = [];
 
 export const TALKS: CvItem[] = [
   {
+    title: "Bringing a complex stack to the cloud, our journey and lessons learned",
+    subtitle: "45 min. @ AWS Startup Day Berlin 2018",
+    begin: "",
+    end: "2018-10-09",
+    description: "Mister Spex moved away from AWS to an on-premises infrastructure in 2015. This year we switched back to AWS. We will " +
+      "cover the story of these changes and why we did so. Come and hear our experiences and struggles to make your own migration smoother.",
+    tags: ["AWS", "cloud", "migration"],
+    thumbnail: "AWS_Startup_Day.png",
+  },
+  {
     title: "Tear down this wall! - Overcoming collaboration obstacles on your DevOps journey",
     subtitle: "60 min. @ DevOpsCon Berlin 2018",
     begin: "",
     end: "2018-05-29",
     description: "The discussion about DevOps is often focusing solely on the tooling aspect: automation, " +
-    "continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on " +
-    "your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from " +
-    "inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the " +
-    "stability of the software as well as the systems it runs on. We focus on the organizational " +
-    "aspects of DevOps: How to measure and improve your team’s effectiveness by reducing silos and silo thinking and " +
-    "how to get your engineers to share responsibility - a basis for every successful DevOps transformation.",
+      "continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on " +
+      "your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from " +
+      "inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the " +
+      "stability of the software as well as the systems it runs on. We focus on the organizational " +
+      "aspects of DevOps: How to measure and improve your team’s effectiveness by reducing silos and silo thinking and " +
+      "how to get your engineers to share responsibility - a basis for every successful DevOps transformation.",
     tags: ["DevOps", "culture", "collaboration", "communication", "microservices", "team structure"],
     link: "https://jaxenter.com/devops-interview-schreck-uebel-145573.html",
     thumbnail: "DevOpsCon_2018_Speaker.png",
