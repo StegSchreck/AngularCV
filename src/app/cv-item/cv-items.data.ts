@@ -244,6 +244,15 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: "CEV_Champions_League_logo.png",
   },
   {
+    title: "German indoor rowing series",
+    subtitle: "Technical event manager",
+    begin: "2010",
+    end: "2015",
+    description: "Technical setup and time measurements",
+    link: "https://www.concept2.de/indoor-rowers/indoor-regatten/dirm",
+    thumbnail: "dirs_logo.jpg",
+  },
+  {
     title: "Ruder-Bundesliga",
     subtitle: "Time measurement",
     begin: "2009",
