@@ -60,3 +60,5 @@ See my [AWS deployment guide](DEPLOYMENT_ON_AWS.md) for a possible way how to ac
 
 Alternatively, you can use [Uberspace](https://uberspace.de/), see the corresponding [Uberspace deployment guide](DEPLOYMENT_ON_UBERSPACE.md).
 
+As another option, you can use [Github Pages](https://pages.github.com/), see the corresponding [Github Pages 
+deployment guide](DEPLOYMENT_ON_GITHUB_PAGES.md).
