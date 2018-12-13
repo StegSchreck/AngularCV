@@ -3,19 +3,16 @@
 </p>
 
 # AngularCV
-
 <p align="center">
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
 </p>
 
 ## Deployment to production
-
-After you cloned/forked this project and adjusted it to your needs (and configuring with you data), you might want to deploy it in order to make it available to anyone.
+After you cloned/forked this project and adjusted it to your needs (and configuring with your data), you might want to deploy it in order to make it available to anyone.
 
 This is a little guide of how to deploy this Angular project to AWS using an AWS CodePipeline and a S3 Bucket. You still can deploy it in a different way. This is only a suggestion.
 
 ### Step 0: Create a domain
-
 You will most likely want to access the Angular app through a proper domain (e.g. `yourdomain.tld`) or sub-domain (e.g. `cv.yourdomain.tld`) instead of the S3 url (e.g. `http://yourbucketname.s3-website.eu-central-1.amazonaws.com/`).
 Please go to your favorite domain provider and request a new domain or sub-domain for this purpose.
 You will adjust the `CNAME` of that domain later on.
@@ -42,7 +39,7 @@ The S3 bucket will host your app.
 * Attach a policy for external access (otherwise nobody would see your website)
   * Go to permissions and click "Bucket Policy"
   * Paste the following policy into the policy editor
-  ```
+  ```json
   {
   	"Version": "2012-10-17",
   	"Statement": [
@@ -58,7 +55,6 @@ The S3 bucket will host your app.
   ```
   * Adjust the line `"Resource": "arn:aws:s3:::cv.yourdomain.tld/*"` with your domain
 
-  
 #### Step 1b: Configure automated deployment with AWS CodePipeline and AWS CodeBuild
 This will create an automated pipeline, which will deploy any changes you do to your repository. 
 
