@@ -5,7 +5,6 @@
 # AngularCV
 
 ## Deployment on Uberspace
-
 I am also using [Uberspace](https://uberspace.de/) for private purposes. This is a lightweight server where you can pay as you like. The recommendation is to pay about 5 - 10 € per month, minimum is 1 € per month. They have a good [wiki](https://wiki.uberspace.de/start) (but only in German so far) for most of the needs you might have.
 
 In order to deploy AngularCV to Uberspace, you will have to perform the following steps:

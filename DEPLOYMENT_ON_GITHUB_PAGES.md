@@ -4,7 +4,7 @@
 
 # AngularCV
 
-## Deployment to GitHub pages
+## Deployment to GitHub Pages
 Thanks to [mellab](https://github.com/mellab) for writing this documentation.
 
 After you cloned/forked this project and adjusted it to your needs (and configuring with your data), you might want to deploy it in order to make it available to anyone.
@@ -33,6 +33,6 @@ Don't forget the slash at the end or else it won't work.
 
 ### Step 3: Deploy the project with a build from `/dist` folder
 ```sh
-$ npx ngh
+npx ngh
 ```
 
