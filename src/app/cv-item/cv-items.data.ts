@@ -10,10 +10,20 @@ export const GENERAL = {
 
 export const CVITEMS: CvItem[] = [
   {
+    title: "Netlight Consulting GmbH",
+    subtitle: "IT Consultant",
+    begin: "2019-01-14",
+    end: "",
+    description: "",
+    tags: [],
+    link: "https://www.netlight.com",
+    thumbnail: "Netlight_Consulting_logo.svg",
+  },
+  {
     title: "Mister Spex GmbH",
     subtitle: "Professional Software Engineer",
     begin: "2017-02-01",
-    end: "",
+    end: "2018-12-31",
     description: "Maintaining an operating the platform running our e-commerce shop. " +
     "Automating processes and enabling the development teams to work.",
     tags: ["Java", "Intershop", "Python", "Ansible", "Git", "KanBan", "PyCharm", "Apache HTTPD", "AWS", "Docker", "Jira", "Bamboo", "Confluence", "bash", "Kubernetes", "Oracle PL/SQL"],
