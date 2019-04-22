@@ -12,7 +12,7 @@ export class EducationComponent implements OnInit {
   educationItems: CvItem[];
   certificationItems: CvItem[];
   languageItems;
-  title = "Education and Certificates";
+  title = "Educación y formaciones";
 
   constructor(
     private cvItemService: CvItemService

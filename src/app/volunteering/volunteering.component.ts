@@ -10,7 +10,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class VolunteeringComponent implements OnInit {
   volunteerItems: CvItem[];
-  title = "Voluntary Work and Causes";
+  title = "Voluntariado y causas";
 
   constructor(
     private cvItemService: CvItemService

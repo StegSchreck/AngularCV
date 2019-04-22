@@ -8,7 +8,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class ContactComponent implements OnInit {
   contactItems;
-  title = "Contact Informations";
+  title = "Información de contacto";
 
   constructor(
     private cvItemService: CvItemService

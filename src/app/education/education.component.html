@@ -1,5 +1,5 @@
 <mat-card class="text-card" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
-  <mat-card-title>languages</mat-card-title>
+  <mat-card-title>idiomas</mat-card-title>
   <mat-card-content>
     <mat-list>
       <mat-list-item *ngFor="let language of languageItems">
@@ -19,14 +19,14 @@
 <mat-card class="page-title" *ngIf="certificationItems !== undefined && certificationItems !== [] && certificationItems.length > 0">
   <mat-card-title>
     <mat-icon>verified_user</mat-icon>
-    certificates
+    certificados
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of certificationItems" [cvItem]="item"></app-cv-item>
 <mat-card class="page-title" *ngIf="educationItems !== undefined && educationItems !== [] && educationItems.length > 0">
   <mat-card-title>
     <mat-icon>school</mat-icon>
-    education
+    educación
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of educationItems" [cvItem]="item"></app-cv-item>

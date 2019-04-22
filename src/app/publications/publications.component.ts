@@ -11,7 +11,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 export class PublicationsComponent implements OnInit {
   publicationItems: CvItem[];
   talkItems: CvItem[];
-  title = "Talks and Publications";
+  title = "Charlas y publicaciones";
 
   constructor(
     private cvItemService: CvItemService

@@ -7,7 +7,7 @@
 <mat-card class="text-card">
   <mat-card-header>
     <div mat-card-avatar class="overview-header-image" (click)="showAvatar()"></div>
-    <mat-card-title>About me</mat-card-title>
+    <mat-card-title>Acerca de mi</mat-card-title>
     <mat-card-subtitle *ngIf="generalData !== undefined && generalData.position !== undefined && generalData.position !== ''">
       {{generalData.position}}
     </mat-card-subtitle>
@@ -20,7 +20,7 @@
   </mat-card-content>
 </mat-card>
 <mat-card class="text-card" *ngIf="interests !== undefined && interests !== [] && interests.length > 0">
-  <mat-card-title>Hobbies and Interests</mat-card-title>
+  <mat-card-title>Hobbies e Intereses</mat-card-title>
   <mat-card-content>
     <mat-list>
       <mat-list-item *ngFor="let item of interests">

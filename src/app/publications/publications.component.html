@@ -1,14 +1,14 @@
 <mat-card class="page-title" *ngIf="talkItems !== undefined && talkItems !== [] && talkItems.length > 0">
   <mat-card-title>
     <mat-icon>record_voice_over</mat-icon>
-    talks
+    Charlas
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of talkItems" [cvItem]="item"></app-cv-item>
 <mat-card class="page-title" *ngIf="publicationItems !== undefined && publicationItems !== [] && publicationItems.length > 0">
   <mat-card-title>
     <mat-icon>subject</mat-icon>
-    publications
+    Publicaciones
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of publicationItems" [cvItem]="item"></app-cv-item>

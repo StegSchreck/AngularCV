@@ -9,7 +9,7 @@ import { PictureModalComponent } from "../picture-modal/picture-modal.component"
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  title = "Overview";
+  title = "Inicio";
   generalData;
   interests;
 
