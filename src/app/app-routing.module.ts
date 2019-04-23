@@ -11,16 +11,16 @@ import { AboutComponent }         from './about/about.component';
 import { ContactComponent }       from "./contact/contact.component";
 
 const routes: Routes = [
-  { path: '',               redirectTo: '/overview', pathMatch: 'full' },
-  { path: 'overview',       component: OverviewComponent },
-  { path: 'experience',     component: ExperienceComponent },
-  { path: 'education',      component: EducationComponent },
-  { path: 'publications',   component: PublicationsComponent },
-  { path: 'projects',       component: ProjectsComponent },
-  { path: 'volunteering',   component: VolunteeringComponent },
-  { path: 'contact',        component: ContactComponent },
-  { path: 'about',          component: AboutComponent },
-  { path: '**',             redirectTo: 'overview' },
+  { path: '',               redirectTo: '/inicio', pathMatch: 'full' },
+  { path: 'inicio',   	    component: OverviewComponent },
+  { path: 'experiencia',    component: ExperienceComponent },
+  { path: 'educacion',      component: EducationComponent },
+  { path: 'publicaciones',  component: PublicationsComponent },
+  { path: 'proyectos',       component: ProjectsComponent },
+  { path: 'voluntariado',   component: VolunteeringComponent },
+  { path: 'contacto',        component: ContactComponent },
+  { path: 'acerca',          component: AboutComponent },
+  { path: '**',             redirectTo: 'inicio' },
 ];
 
 @NgModule({

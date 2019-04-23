@@ -9,13 +9,13 @@ import { CvItemService } from "../cv-item/cv-item.service";
 export class HeaderComponent implements OnInit, AfterViewInit {
   generalData;
   navLinks = [
-    { location:'/overview',       label:'Inicio',         icon:'account_circle' },
-    { location:'/experience',     label:'Experiencia',       icon:'work' },
-    { location:'/education',      label:'Educación',        icon:'school' },
-    { location:'/publications',   label:'Publicaciones',     icon:'record_voice_over' },
-    { location:'/projects',       label:'Proyectos',         icon:'assignment' },
-    { location:'/volunteering',   label:'Voluntariado',     icon:'favorite' },
-    { location:'/contact',        label:'Contacto',          icon:'email' },
+    { location:'/inicio',  	      label:'Inicio',         icon:'account_circle' },
+    { location:'/experiencia',    label:'Experiencia',       icon:'work' },
+    { location:'/educacion',      label:'Educación',        icon:'school' },
+    { location:'/publicaciones',  label:'Publicaciones',     icon:'record_voice_over' },
+    { location:'/proyectos',      label:'Proyectos',         icon:'assignment' },
+    { location:'/voluntariado',   label:'Voluntariado',     icon:'favorite' },
+    { location:'/contacto',       label:'Contacto',          icon:'email' },
     // { location:'/about',         label:'About',             icon:'info' },
   ];
 
