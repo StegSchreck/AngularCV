@@ -4,6 +4,9 @@
 
 # AngularCV
 
+Este fork es una traducción al castellano del proyecto <a href="https://github.com/StegSchreck/AngularCV/">AngularCV</a>, creado por Sebastian Schreck.
+
+
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
 For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), for which this project was created initially.
