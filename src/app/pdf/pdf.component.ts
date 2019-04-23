@@ -118,7 +118,7 @@ export class PdfComponent implements OnInit {
 
   private addOverviewPageContent(doc){
     this.addGeneralDescription(doc);
-    this.verticalPosition += 20;
+    this.verticalPosition += 25;
     this.addContactData(doc);
     this.addLanguages(doc);
     this.verticalPosition += 10;
@@ -198,7 +198,7 @@ export class PdfComponent implements OnInit {
     if (content !== undefined && content !== '') {
       doc.setFontSize(12);
       doc.setFontType('bold');
-      doc.text(title, 20, this.verticalPosition);
+      doc.text(title, 18, this.verticalPosition);
       doc.setFontSize(11);
       doc.setFontType('normal');
       doc.text(content, 80, this.verticalPosition);
@@ -272,21 +272,34 @@ export class PdfComponent implements OnInit {
   }
 
   private addCvItem(doc, item: CvItem){
-    doc.setFontSize(12);
-    doc.setFontType('bold');
-    doc.text(item.title, 30, this.verticalPosition);
+	  
+	if (item.title) {
+      this.verticalPosition += 5;
+      doc.setFontSize(12);
+      doc.setFontType('bold');
+      doc.setTextColor(0, 0, 0);
+      let splittedTitle = doc.splitTextToSize(item.title, this.maximumHorizontalLength - 10);
+      doc.text(splittedTitle, 30, this.verticalPosition);
+      this.verticalPosition += 4 * (splittedTitle.length - 1);
+    }  
+	  
+    // doc.setFontSize(11);
+    // doc.setFontType('bold');
+    // doc.text(item.title, 30, this.verticalPosition);
 
     doc.setDrawColor(0);
     doc.setFillColor(0, 0, 0);
     doc.circle(22, this.verticalPosition - 1, 2, 'F');
-    this.verticalPosition += 5;
-
-    doc.setFontSize(12);
-    doc.setFontType('normal');
-    doc.setTextColor(68, 68, 68);
-    doc.text(item.subtitle, 30, this.verticalPosition);
-    this.verticalPosition += 5;
-
+    if (item.subtitle) {
+      this.verticalPosition += 6;
+		doc.setFontSize(12);
+		doc.setFontType('normal');
+		doc.setTextColor(68, 68, 68);
+		let splittedSubtitle = doc.splitTextToSize(item.subtitle, this.maximumHorizontalLength - 10);
+		doc.text(splittedSubtitle, 30, this.verticalPosition);
+		this.verticalPosition += 4 * (splittedSubtitle.length - 1);
+	}
+	
     doc.setFontSize(10);
     doc.setFontType('normal');
     let end = item.end;
@@ -299,10 +312,10 @@ export class PdfComponent implements OnInit {
     } else {
       time = end;
     }
-    doc.text(time, 30, this.verticalPosition);
-
-    if (item.description !== undefined && item.description !== '') {
-      this.verticalPosition += 5;
+    doc.text(time, 30, this.verticalPosition+5);
+	this.verticalPosition += 4;
+    if (item.description) {
+     this.verticalPosition += 7; 
       doc.setFontSize(10);
       doc.setFontType('italic');
       doc.setTextColor(0, 0, 0);
@@ -316,7 +329,7 @@ export class PdfComponent implements OnInit {
     doc.setFont('courier');
     doc.setTextColor(68, 68, 68);
     if (item.tags !== undefined && item.tags.length > 0) {
-      this.verticalPosition += 7;
+      this.verticalPosition += 9;
       let tags: string = "";
       for (let tag of item.tags) {
         if (tags !== "") {
@@ -350,7 +363,7 @@ export class PdfComponent implements OnInit {
     this.verticalPosition = 50;
     doc.setTextColor(0, 0, 0);
   }
-
+  
   private static addPageFooter(doc){
     doc.line(20, 280, 188, 280); // horizontal line
     doc.setFont('helvetica');
