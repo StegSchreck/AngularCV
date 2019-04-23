@@ -1,0 +1,1 @@
+Coloque aquí las imágenes enlazadas mediante la propiedad 'thumbnail'.
