@@ -356,7 +356,6 @@ export class PdfComponent implements OnInit {
     this.verticalPosition = 50;
     doc.setTextColor(0, 0, 0);
   }
-  
   private static addPageFooter(doc){
     doc.line(20, 280, 188, 280); // horizontal line
     doc.setFont('helvetica');
