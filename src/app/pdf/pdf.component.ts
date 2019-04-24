@@ -305,7 +305,7 @@ export class PdfComponent implements OnInit {
     } else {
       time = end;
     }
-    doc.text(time, 30, this.verticalPosition+5);
+    doc.text(time, 30, this.verticalPosition + 5);
     this.verticalPosition += 4;
     if (item.description) {
      this.verticalPosition += 7;
