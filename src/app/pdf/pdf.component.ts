@@ -280,12 +280,7 @@ export class PdfComponent implements OnInit {
       let splittedTitle = doc.splitTextToSize(item.title, this.maximumHorizontalLength - 10);
       doc.text(splittedTitle, 30, this.verticalPosition);
       this.verticalPosition += 4 * (splittedTitle.length - 1);
-    }  
-	  
-    // doc.setFontSize(11);
-    // doc.setFontType('bold');
-    // doc.text(item.title, 30, this.verticalPosition);
-
+    }
     doc.setDrawColor(0);
     doc.setFillColor(0, 0, 0);
     doc.circle(22, this.verticalPosition - 1, 2, 'F');
@@ -297,7 +292,7 @@ export class PdfComponent implements OnInit {
       let splittedSubtitle = doc.splitTextToSize(item.subtitle, this.maximumHorizontalLength - 10);
       doc.text(splittedSubtitle, 30, this.verticalPosition);
       this.verticalPosition += 4 * (splittedSubtitle.length - 1);
-	  }
+    }
     doc.setFontSize(10);
     doc.setFontType('normal');
     let end = item.end;
@@ -311,7 +306,7 @@ export class PdfComponent implements OnInit {
       time = end;
     }
     doc.text(time, 30, this.verticalPosition+5);
-	  this.verticalPosition += 4;
+    this.verticalPosition += 4;
     if (item.description) {
      this.verticalPosition += 7;
       doc.setFontSize(10);
