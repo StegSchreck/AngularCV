@@ -272,8 +272,7 @@ export class PdfComponent implements OnInit {
   }
 
   private addCvItem(doc, item: CvItem){
-	  
-	if (item.title) {
+    if (item.title) {
       this.verticalPosition += 5;
       doc.setFontSize(12);
       doc.setFontType('bold');
@@ -292,14 +291,13 @@ export class PdfComponent implements OnInit {
     doc.circle(22, this.verticalPosition - 1, 2, 'F');
     if (item.subtitle) {
       this.verticalPosition += 6;
-		doc.setFontSize(12);
-		doc.setFontType('normal');
-		doc.setTextColor(68, 68, 68);
-		let splittedSubtitle = doc.splitTextToSize(item.subtitle, this.maximumHorizontalLength - 10);
-		doc.text(splittedSubtitle, 30, this.verticalPosition);
-		this.verticalPosition += 4 * (splittedSubtitle.length - 1);
-	}
-	
+      doc.setFontSize(12);
+      doc.setFontType('normal');
+      doc.setTextColor(68, 68, 68);
+      let splittedSubtitle = doc.splitTextToSize(item.subtitle, this.maximumHorizontalLength - 10);
+      doc.text(splittedSubtitle, 30, this.verticalPosition);
+      this.verticalPosition += 4 * (splittedSubtitle.length - 1);
+	  }
     doc.setFontSize(10);
     doc.setFontType('normal');
     let end = item.end;
@@ -313,9 +311,9 @@ export class PdfComponent implements OnInit {
       time = end;
     }
     doc.text(time, 30, this.verticalPosition+5);
-	this.verticalPosition += 4;
+	  this.verticalPosition += 4;
     if (item.description) {
-     this.verticalPosition += 7; 
+     this.verticalPosition += 7;
       doc.setFontSize(10);
       doc.setFontType('italic');
       doc.setTextColor(0, 0, 0);
