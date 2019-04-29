@@ -14,7 +14,10 @@ export const CVITEMS: CvItem[] = [
     subtitle: "IT Consultant",
     begin: "2019-01-14",
     end: "",
-    description: "",
+    description: "Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, " +
+      "create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team " +
+      "players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices " +
+      "in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen and Zurich. We are rapidly expanding on the European market.",
     tags: [],
     link: "https://www.netlight.com",
     thumbnail: "Netlight_Consulting_logo.svg",
@@ -372,7 +375,20 @@ export const INTERESTS = [
   },
 ];
 
-export const PUBLICATIONS: CvItem[] = [];
+export const PUBLICATIONS: CvItem[] = [
+  {
+    title: "Tear down this wall! - Overcoming collaboration obstacles on your DevOps journey",
+    subtitle: "Article published on Medium / MakeItNew.io",
+    begin: "",
+    end: "2019-04-17",
+    description: "A summary of our Talk 'Tear Down This Wall!' given at Code.Talks Commerce Special 2018 in Berlin " +
+      "and DevOpsCon 2018 in Berlin about how we enable more collaboration in our IT teams at Mister Spex.",
+    tags: ["DevOps", "culture", "collaboration", "communication", "microservices"],
+    link: "https://makeitnew.io/tear-down-this-wall-c2211141fdb5",
+    thumbnail: "Medium_MakeItNew.png",
+    attachment: "tear-down-this-wall.pdf",
+  },
+];
 
 export const TALKS: CvItem[] = [
   {
