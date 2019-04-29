@@ -1,11 +1,13 @@
 <mat-card class="page-title" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
-  <mat-card-title>languages</mat-card-title>
-  </mat-card>
+  <mat-card-title>
+    <mat-icon>languages</mat-icon>
+    languages
+  </mat-card-title>
+</mat-card>
 <mat-card class="text-card" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
   <mat-card-content>
     <mat-list>
       <mat-list-item *ngFor="let language of languageItems">
-        <mat-icon mat-list-icon>languages</mat-icon>
         <h4 mat-line>{{language.title}}</h4>
         <p mat-line>
           <mat-progress-bar
