@@ -411,7 +411,7 @@ export const TALKS: CvItem[] = [
       "your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from " +
       "inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the " +
       "stability of the software as well as the systems it runs on. We focus on the organizational " +
-      "aspects of DevOps: How to measure and improve your team’s effectiveness by reducing silos and silo thinking and " +
+      "aspects of DevOps: How to measure and improve your team's effectiveness by reducing silos and silo thinking and " +
       "how to get your engineers to share responsibility - a basis for every successful DevOps transformation.",
     tags: ["DevOps", "culture", "collaboration", "communication", "microservices", "team structure"],
     link: "https://jaxenter.com/devops-interview-schreck-uebel-145573.html",
@@ -427,7 +427,7 @@ export const TALKS: CvItem[] = [
     "your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from " +
     "inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the " +
     "stability of the software as well as the systems it runs on. We focus on the organizational " +
-    "aspects of DevOps: How to measure and improve your team’s effectiveness by reducing silos and silo thinking and " +
+    "aspects of DevOps: How to measure and improve your team's effectiveness by reducing silos and silo thinking and " +
     "how to get your engineers to share responsibility - a basis for every successful DevOps transformation.",
     tags: ["DevOps", "culture", "collaboration", "communication", "microservices"],
     link: "https://www.youtube.com/watch?v=KWw0H__mtxI",
