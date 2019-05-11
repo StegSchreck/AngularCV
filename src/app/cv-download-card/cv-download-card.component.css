@@ -16,6 +16,7 @@ mat-card.cv-download app-pdf {
   }
 }
 mat-card.cv-download {
+  min-height: 30px;
   padding-right: 90px;
 }
 @media screen and (max-width: 600px) {
