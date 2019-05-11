@@ -37,9 +37,7 @@ export class PdfComponent implements OnInit {
   ) { }
 
   getFeatureToggles(): void {
-    this.featureToggleService
-      .getFeatureToggles()
-      .then(items => this.featureToggles = items);
+    this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
   getItems(): void {
@@ -82,7 +80,7 @@ export class PdfComponent implements OnInit {
   }
 
   download() {
-    if (this.featureToggles !== undefined && this.featureToggles.downloadable_pdf === false) {
+    if (this.featureToggles.downloadable_pdf === false) {
       return;
     }
 

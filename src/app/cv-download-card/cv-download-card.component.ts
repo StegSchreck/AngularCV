@@ -15,9 +15,7 @@ export class CvDownloadCardComponent implements OnInit {
   ) { }
 
   getFeatureToggles(): void {
-    this.featureToggleService
-      .getFeatureToggles()
-      .then(items => this.featureToggles = items);
+    this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
   ngOnInit() {

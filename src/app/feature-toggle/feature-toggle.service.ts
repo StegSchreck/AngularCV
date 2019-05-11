@@ -8,7 +8,7 @@ export class FeatureToggleService {
   constructor() { }
 
   getFeatureToggles() {
-    return Promise.resolve(FEATURE_TOGGLES);
+    return FEATURE_TOGGLES;
   }
 
   private handleError(error: any): Promise<any> {
