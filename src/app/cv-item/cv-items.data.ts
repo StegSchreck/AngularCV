@@ -355,7 +355,6 @@ export const CONTACT = {
   stackoverflow: 'https://stackoverflow.com/users/story/6538600',
   twitter: 'https://twitter.com/StegSchreck', // full url
   facebook: '',
-  googleplus: '',
   other: [
     // { title: "another web page", link: "http://some.url" }, // example
   ],

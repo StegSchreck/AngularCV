@@ -86,16 +86,6 @@
           </a>
         </p>
       </mat-list-item>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.googleplus !== undefined && contactItems.googleplus !== ''">
-        <i mat-list-icon class="icon-google-plus2"></i>
-        <h4 mat-line>Google Plus</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.googleplus}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            OPEN PROFILE
-          </a>
-        </p>
-      </mat-list-item>
       <mat-list-item *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
         <i mat-list-icon class="icon-twitter"></i>
         <h4 mat-line>Twitter</h4>
