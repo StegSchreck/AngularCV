@@ -12,20 +12,30 @@ mat-card-actions,
 mat-card-content {
   margin-left: 142px;
 }
+@media screen and (max-width: 600px) {
+  mat-card-header,
+  mat-card-actions,
+  mat-card-content {
+    margin-left: 134px;
+  }
+}
 @media screen and (max-width: 400px) {
   mat-card-header,
   mat-card-actions,
   mat-card-content {
-    margin-left: 0;
+    margin-left: -8px;
+    margin-right: -8px;
   }
 }
 mat-card-content {
-  padding-left: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 mat-card-subtitle {
   font-size: 1.2em;
 }
 mat-card-title {
+  margin-top: 6px;
   padding-right: 10em;
   top: 24px;
 }
@@ -125,7 +135,7 @@ mat-card.closed .toggle-details mat-icon:before {
   .timespan {
     position: relative;
     left: 0;
-    top: -6px;
+    top: -2px;
   }
   mat-card-title {
     padding-right: 0;

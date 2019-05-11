@@ -73,7 +73,12 @@ mat-card.page-title mat-icon {
 }
 
 mat-chip {
+  font-size: 0.8em !important;
   margin-bottom: 0.5em !important;
+}
+
+mat-dialog-container.mat-dialog-container {
+  padding: 16px;
 }
 
 
