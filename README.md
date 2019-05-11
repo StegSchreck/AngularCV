@@ -9,7 +9,7 @@ This project serves the purpose of having a simple, self-hosted online-CV outsid
 For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), for which this project was created initially.
 
 
-## Third party stuff 
+## Third Party Stuff
 
 It uses [Angular](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
 Furthermore, the following third-party sources are included:
@@ -20,6 +20,7 @@ Furthermore, the following third-party sources are included:
 
 The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.
 
+
 ## Configuration
 
 The CV items for the experience, education, projects and volunteering sections are configured in a JSON format in `/src/app/cv-item/cv-item.data.ts`.
@@ -27,11 +28,11 @@ Please notice the division of the education section, which is applied here. This
 
 In the end, this is just an example of how it can be done. Feel free to take it as a template and adjust everything to your needs.
 
-### Set your own data
+### Set Your Own Data
 
 Here is what you will have to change in order to adapt this project for yourself.
 
-* `src/app/cv-item/cv-items.data.ts` contains all the configurable data for the page
+* `src/app/cv-item/cv-items.data.ts` contains all the configurable content data for the page
   * You can use the current version as a template, but you will need to replace the data with your own
   * There are different use cases configured, so you can see different sets of data, which will be displayed differently in the rendered page
   * Some fields are required, for others there are checks in the frontend. Please try it yourself
@@ -44,11 +45,19 @@ Here is what you will have to change in order to adapt this project for yourself
 
 In order to comply with the license of this project and the third-party elements in it, please leave the "About" section unchanged as well as the link to it in the footer.
 
-## Angular basics
+### Feature Toggles
+
+AngularCV offers some feature toggles (a.k.a. feature switches) to adjust the experience of the website. However, some features are part of the basic functionality and should not be deactivated and thus do not have a feature toggle, e.g. the work experience tab.
+The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.ts`. Currently, these feature toggles are implemented:
+* `downloadable_pdf`: whether to offer a PDF version of the data (download button will be placed in the header and on the contact page)
+
+
+## Angular Basics
 
 See the [Angular basic guide](ANGULAR.md) for the basics. For more information, visit the [Angular](https://angular.io/) website.
 
-## Deployment to production
+
+## Deployment to Production
 
 <p align="center">
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">

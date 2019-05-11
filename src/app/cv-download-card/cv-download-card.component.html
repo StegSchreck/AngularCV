@@ -1,4 +1,4 @@
-<mat-card class="text-card cv-download">
+<mat-card class="text-card cv-download" *ngIf="featureToggles !== undefined && featureToggles.downloadable_pdf === true">
   <app-pdf color="primary"></app-pdf>
   <mat-card-title>
     Download this CV as a PDF file

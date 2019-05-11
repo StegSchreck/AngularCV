@@ -20,6 +20,7 @@ import { VolunteeringComponent }    from './volunteering/volunteering.component'
 import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
 import { CvItemService }            from './cv-item/cv-item.service';
+import { FeatureToggleService }     from './feature-toggle/feature-toggle.service';
 import { FooterComponent }          from './footer/footer.component';
 import { ContactComponent }         from './contact/contact.component';
 import { PdfComponent }             from './pdf/pdf.component';
@@ -55,6 +56,7 @@ import { PictureModalComponent }    from './picture-modal/picture-modal.componen
   providers: [
     Title,
     CvItemService,
+    FeatureToggleService,
   ],
   bootstrap: [
     AppComponent,

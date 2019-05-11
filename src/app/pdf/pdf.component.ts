@@ -1,6 +1,7 @@
 import { Component, OnInit, Inject, Input } from '@angular/core';
 import * as jsPDF from 'jspdf';
 
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { CvItem } from '../cv-item/cv-item';
 import { CvItemService } from '../cv-item/cv-item.service';
 
@@ -16,6 +17,7 @@ export class PdfComponent implements OnInit {
   @Input() color = 'default';
   verticalPosition = 50; // starting point
   maximumHorizontalLength = 168;
+  featureToggles;
   generalData;
   interestItems;
   cvItems: CvItem[];
@@ -30,8 +32,15 @@ export class PdfComponent implements OnInit {
 
   constructor(
     @Inject('Window') private window: Window,
+    private featureToggleService: FeatureToggleService,
     private cvItemService: CvItemService,
   ) { }
+
+  getFeatureToggles(): void {
+    this.featureToggleService
+      .getFeatureToggles()
+      .then(items => this.featureToggles = items);
+  }
 
   getItems(): void {
     this.generalData = this.cvItemService.getGeneralData();
@@ -68,10 +77,15 @@ export class PdfComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getFeatureToggles();
     this.getItems();
   }
 
   download() {
+    if (this.featureToggles !== undefined && this.featureToggles.downloadable_pdf === false) {
+      return;
+    }
+
     const doc = new jsPDF();
 
     this.addPageHeader(doc);
