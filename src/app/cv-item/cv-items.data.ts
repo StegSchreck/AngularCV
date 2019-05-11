@@ -356,7 +356,7 @@ export const CONTACT = {
   twitter: 'https://twitter.com/StegSchreck', // full url
   facebook: '',
   other: [
-    // { title: "another web page", link: "http://some.url" }, // example
+    { title: 'Medium', link: 'https://medium.com/@stegschreck' },
   ],
 };
 
