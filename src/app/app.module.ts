@@ -1,3 +1,4 @@
+/* tslint:disable:import-spacing */
 import { NgModule }                 from '@angular/core';
 import { BrowserModule, Title }     from '@angular/platform-browser';
 import { FormsModule }              from '@angular/forms';
@@ -20,12 +21,13 @@ import { VolunteeringComponent }    from './volunteering/volunteering.component'
 import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
 import { CvItemService }            from './cv-item/cv-item.service';
-import { FeatureToggleService }     from './feature-toggle/feature-toggle.service';
 import { FooterComponent }          from './footer/footer.component';
 import { ContactComponent }         from './contact/contact.component';
 import { PdfComponent }             from './pdf/pdf.component';
 import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.component';
 import { PictureModalComponent }    from './picture-modal/picture-modal.component';
+import { FeatureToggleService }     from './feature-toggle/feature-toggle.service';
+import { LocalizationService }      from './l10n/l10n.service';
 
 @NgModule({
   imports: [
@@ -57,6 +59,7 @@ import { PictureModalComponent }    from './picture-modal/picture-modal.componen
     Title,
     CvItemService,
     FeatureToggleService,
+    LocalizationService,
   ],
   bootstrap: [
     AppComponent,

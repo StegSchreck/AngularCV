@@ -1,7 +1,10 @@
+mat-card {
+  padding: 24px;
+}
 .text-card img {
   float: right;
   margin-left: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 400px) {
   .text-card img {

@@ -27,7 +27,7 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2017-02-01',
     end: '2018-12-31',
-    description: 'Maintaining an operating the platform running our e-commerce shop. ' +
+    description: 'Maintaining and operating the platform running our e-commerce shop. ' +
       'Automating processes and enabling the development teams to work.',
     tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo',
       'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
@@ -166,7 +166,7 @@ export const PROJECTS: CvItem[] = [
     begin: '2017-02',
     end: '',
     description: 'This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) to ' +
-      'another (e.g. Trakt). The script supports 10 sites currently and is constantly expanding.',
+      'another (e.g. Trakt). The script supports 13 sites currently and is constantly expanding.',
     tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV'],
     link: 'https://github.com/StegSchreck/RatS',
     thumbnail: 'RatS.png',

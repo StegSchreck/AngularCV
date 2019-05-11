@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LocalizationService } from '../l10n/l10n.service';
 import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
@@ -8,12 +9,18 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  l10n;
   contactItems;
   title = 'Contact Informations';
 
   constructor(
+    private localizationService: LocalizationService,
     private cvItemService: CvItemService
   ) { }
+
+  getLocalization(): void {
+    this.l10n = this.localizationService.getDefault();
+  }
 
   getItems(): void {
     this.cvItemService
@@ -22,6 +29,7 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getLocalization();
     this.getItems();
   }
 

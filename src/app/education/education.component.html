@@ -1,7 +1,7 @@
 <mat-card class="page-title" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
   <mat-card-title>
     <mat-icon>languages</mat-icon>
-    languages
+    {{l10n.education.title_languages}}
   </mat-card-title>
 </mat-card>
 <mat-card class="text-card" *ngIf="languageItems !== undefined && languageItems !== [] && languageItems.length > 0">
@@ -23,14 +23,14 @@
 <mat-card class="page-title" *ngIf="certificationItems !== undefined && certificationItems !== [] && certificationItems.length > 0">
   <mat-card-title>
     <mat-icon>verified_user</mat-icon>
-    certificates
+    {{l10n.education.title_certificates}}
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of certificationItems" [cvItem]="item"></app-cv-item>
 <mat-card class="page-title" *ngIf="educationItems !== undefined && educationItems !== [] && educationItems.length > 0">
   <mat-card-title>
     <mat-icon>school</mat-icon>
-    education
+    {{l10n.education.title_education}}
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of educationItems" [cvItem]="item"></app-cv-item>

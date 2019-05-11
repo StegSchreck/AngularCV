@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
 
+import { LocalizationService } from '../l10n/l10n.service';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { CvItemService } from '../cv-item/cv-item.service';
 
@@ -9,6 +10,7 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
+  l10n;
   featureToggles;
   generalData;
   navLinks = [];
@@ -27,9 +29,14 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   constructor(
+    private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
     private cvItemService: CvItemService,
   ) { }
+
+  getLocalization(): void {
+    this.l10n = this.localizationService.getDefault();
+  }
 
   getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
@@ -40,23 +47,24 @@ export class HeaderComponent implements OnInit, AfterViewInit {
   }
 
   populateNavLinks(): void {
-    this.navLinks.push({ location: '/overview',       label: 'Overview',         icon: 'account_circle' });
-    this.navLinks.push({ location: '/experience',     label: 'Experience',       icon: 'work' });
-    this.navLinks.push({ location: '/education',      label: 'Education',        icon: 'school' });
+    this.navLinks.push({   location: '/overview',       label: this.l10n.header.menu_overiew,          icon: 'account_circle' });
+    this.navLinks.push({   location: '/experience',     label: this.l10n.header.menu_experience,       icon: 'work' });
+    this.navLinks.push({   location: '/education',      label: this.l10n.header.menu_education,        icon: 'school' });
     if (this.featureToggles.tab_publications === true) {
-      this.navLinks.push({ location: '/publications',   label: 'Publications',     icon: 'record_voice_over' });
+      this.navLinks.push({ location: '/publications',   label: this.l10n.header.menu_publications,     icon: 'record_voice_over' });
     }
     if (this.featureToggles.tab_projects === true) {
-      this.navLinks.push({ location: '/projects',       label: 'Projects',         icon: 'assignment' });
+      this.navLinks.push({ location: '/projects',       label: this.l10n.header.menu_projects,         icon: 'assignment' });
     }
     if (this.featureToggles.tab_volunteering === true) {
-      this.navLinks.push({ location: '/volunteering',   label: 'Volunteering',     icon: 'favorite' });
+      this.navLinks.push({ location: '/volunteering',   label: this.l10n.header.menu_volunteering,     icon: 'favorite' });
     }
-    this.navLinks.push({ location: '/contact',        label: 'Contact',          icon: 'email' });
-    // { location:'/about',         label:'About',             icon:'info' },
+    this.navLinks.push({   location: '/contact',        label: this.l10n.header.menu_contact,          icon: 'email' });
+    // { location:'/about',         label: this.l10n.header.menu_about,             icon:'info' },
   }
 
   ngOnInit() {
+    this.getLocalization();
     this.getFeatureToggles();
     this.getItems();
     this.populateNavLinks();

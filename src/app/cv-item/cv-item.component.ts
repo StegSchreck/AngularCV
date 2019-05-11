@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from './cv-item';
 
 @Component({
@@ -9,11 +10,20 @@ import { CvItem } from './cv-item';
 })
 
 export class CvItemComponent {
+  l10n;
   @Input() cvItem: CvItem;
 
-  constructor() { }
+  constructor(
+    private localizationService: LocalizationService,
+  ) { }
 
-  ngOnInit(): void { }
+  getLocalization(): void {
+    this.l10n = this.localizationService.getDefault();
+  }
+
+  ngOnInit(): void {
+    this.getLocalization();
+  }
 
   toggleDetails(event) {
     const card = event.target.closest('mat-card');

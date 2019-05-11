@@ -9,7 +9,7 @@
       <mat-icon>arrow_forward</mat-icon>
     </span>
     <span class="timespan-end" *ngIf="cvItem.end !== undefined && cvItem.end !== ''">{{cvItem.end}}</span>
-    <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">now <mat-icon>access_time</mat-icon></span>
+    <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">{{l10n.cv_item.now}} <mat-icon>access_time</mat-icon></span>
   </span>
   <mat-card-header>
     <mat-card-title>{{cvItem.title}}</mat-card-title>
@@ -34,11 +34,11 @@
   <mat-card-actions>
     <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
       <mat-icon>link</mat-icon>
-      VIEW LINK
+      {{l10n.cv_item.button_view_link}}
     </a>
     <a mat-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
       <mat-icon>attachment</mat-icon>
-      VIEW ATTACHED FILE
+      {{l10n.cv_item.button_view_attachment}}
     </a>
   </mat-card-actions>
 </mat-card>

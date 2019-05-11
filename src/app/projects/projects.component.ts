@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from '../cv-item/cv-item';
 import { CvItemService } from '../cv-item/cv-item.service';
 
@@ -9,12 +10,17 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+  l10n;
   projectItems: CvItem[];
-  title = 'Projects';
 
   constructor(
+    private localizationService: LocalizationService,
     private cvItemService: CvItemService
   ) { }
+
+  getLocalization(): void {
+    this.l10n = this.localizationService.getDefault();
+  }
 
   getItems(): void {
     this.cvItemService
@@ -23,6 +29,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getLocalization();
     this.getItems();
   }
 

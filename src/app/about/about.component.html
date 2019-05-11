@@ -1,12 +1,10 @@
 <mat-card class="text-card">
   <img src="assets/img/AngularCV.png" width="150px" alt="AngularCV Logo"/>
-  <mat-card-title>About this page</mat-card-title>
-  <mat-card-subtitle>AngularCV: a simple self-hosted online-CV</mat-card-subtitle>
+  <mat-card-title>{{l10n.about.title}}</mat-card-title>
+  <mat-card-subtitle>{{l10n.about.subtitle}}</mat-card-subtitle>
   <mat-card-content>
     <p>
-      This website was created as a GitHub project for the purpose of having a basic online-CV, which anyone can host by themselves.
-      The main target audience are software developers though.
-      To build this, basically the following technologies are used:
+      {{l10n.about.content}}
     </p>
     <mat-chip-list selectable="false">
       <mat-chip>Angular</mat-chip>
@@ -17,7 +15,8 @@
       <mat-chip>JetBrains WebStorm</mat-chip>
       <mat-chip>AWS</mat-chip>
     </mat-chip-list>
-    <p>Additionally, the following third party sources are included:</p>
+    <br>
+    <p>{{l10n.about.additional}}</p>
     <mat-chip-list selectable="false">
       <mat-chip>IcoMoon icon font</mat-chip>
       <mat-chip>Roboto font</mat-chip>
@@ -28,7 +27,7 @@
   <mat-card-actions>
     <a mat-button color="primary" href="https://github.com/StegSchreck/AngularCV" target="_blank">
       <i class="icon-github"></i>
-      VIEW PROJECT ON GITHUB
+      {{l10n.about.link_to_github}}
     </a>
   </mat-card-actions>
 </mat-card>

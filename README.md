@@ -53,6 +53,11 @@ The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.
 * `tab_publications`: whether to shot the "publications" tab
 * `tab_projects`: whether to shot the "projects" tab
 * `tab_volunteering`: whether to shot the "volunteering" tab
+* `default_language`: which language to use for the navigation menu entries, page titles, etc.
+
+### Localization
+
+By switching the default language feature toggle (see above), you can define which language to choose for navigation menu entries, page titles, etc. You will still need to adapt your data in `src/app/cv-item/cv-items.data.ts` to adapt the same language.
 
 
 ## Angular Basics

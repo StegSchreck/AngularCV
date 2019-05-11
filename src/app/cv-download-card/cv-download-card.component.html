@@ -1,6 +1,6 @@
 <mat-card class="text-card cv-download" *ngIf="featureToggles.downloadable_pdf === true">
   <app-pdf color="primary"></app-pdf>
   <mat-card-title>
-    Download this CV as a PDF file
+    {{l10n.cv_download_card.title}}
   </mat-card-title>
 </mat-card>
