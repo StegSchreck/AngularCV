@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from "../cv-item/cv-item";
-import { CvItemService } from "../cv-item/cv-item.service";
+import { CvItem } from '../cv-item/cv-item';
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-experience',
@@ -10,7 +10,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class ExperienceComponent implements OnInit {
   experienceItems: CvItem[];
-  title = "Professional Experience";
+  title = 'Professional Experience';
 
   constructor(
     private cvItemService: CvItemService

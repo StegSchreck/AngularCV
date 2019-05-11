@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
-import { CvItemService } from "../cv-item/cv-item.service";
+
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-header',
@@ -9,13 +10,13 @@ import { CvItemService } from "../cv-item/cv-item.service";
 export class HeaderComponent implements OnInit, AfterViewInit {
   generalData;
   navLinks = [
-    { location:'/overview',       label:'Overview',         icon:'account_circle' },
-    { location:'/experience',     label:'Experience',       icon:'work' },
-    { location:'/education',      label:'Education',        icon:'school' },
-    { location:'/publications',   label:'Publications',     icon:'record_voice_over' },
-    { location:'/projects',       label:'Projects',         icon:'assignment' },
-    { location:'/volunteering',   label:'Volunteering',     icon:'favorite' },
-    { location:'/contact',        label:'Contact',          icon:'email' },
+    { location: '/overview',       label: 'Overview',         icon: 'account_circle' },
+    { location: '/experience',     label: 'Experience',       icon: 'work' },
+    { location: '/education',      label: 'Education',        icon: 'school' },
+    { location: '/publications',   label: 'Publications',     icon: 'record_voice_over' },
+    { location: '/projects',       label: 'Projects',         icon: 'assignment' },
+    { location: '/volunteering',   label: 'Volunteering',     icon: 'favorite' },
+    { location: '/contact',        label: 'Contact',          icon: 'email' },
     // { location:'/about',         label:'About',             icon:'info' },
   ];
 

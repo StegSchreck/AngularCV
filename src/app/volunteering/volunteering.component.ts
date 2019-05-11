@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from "../cv-item/cv-item";
-import { CvItemService } from "../cv-item/cv-item.service";
+import { CvItem } from '../cv-item/cv-item';
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-volunteering',
@@ -10,7 +10,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class VolunteeringComponent implements OnInit {
   volunteerItems: CvItem[];
-  title = "Voluntary Work and Causes";
+  title = 'Voluntary Work and Causes';
 
   constructor(
     private cvItemService: CvItemService

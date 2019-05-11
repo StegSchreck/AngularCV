@@ -1,7 +1,6 @@
-
 import { Component, Input } from '@angular/core';
 
-import { CvItem }           from './cv-item';
+import { CvItem } from './cv-item';
 
 @Component({
   selector: 'app-cv-item',
@@ -17,7 +16,7 @@ export class CvItemComponent {
   ngOnInit(): void { }
 
   toggleDetails(event) {
-    let card = event.target.closest('mat-card');
+    const card = event.target.closest('mat-card');
     if (card.classList.contains('opened')) {
       card.classList.add('closed');
       card.classList.remove('opened');

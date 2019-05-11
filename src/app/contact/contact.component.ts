@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CvItemService } from "../cv-item/cv-item.service";
+
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class ContactComponent implements OnInit {
   contactItems;
-  title = "Contact Informations";
+  title = 'Contact Informations';
 
   constructor(
     private cvItemService: CvItemService

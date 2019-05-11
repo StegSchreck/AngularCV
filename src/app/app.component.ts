@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { Title } from "@angular/platform-browser";
-import { CvItemService } from "./cv-item/cv-item.service";
+import { Title } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
+
+import { CvItemService } from './cv-item/cv-item.service';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ export class AppComponent {
     private router: Router
   ) {
     this.getItems();
-    this.setTitle(this.generalData.name + " | " + this.generalData.position);
+    this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
 
     router.events
       // .filter(event => event instanceof NavigationEnd)
@@ -27,7 +28,7 @@ export class AppComponent {
   }
 
   getItems(): void {
-    this.generalData = this.cvItemService.getGeneralData()
+    this.generalData = this.cvItemService.getGeneralData();
   }
 
   public setTitle( newTitle: string) {

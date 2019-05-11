@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogConfig } from "@angular/material";
-import { CvItemService } from "../cv-item/cv-item.service";
-import { PictureModalComponent } from "../picture-modal/picture-modal.component";
+import { MatDialog, MatDialogConfig } from '@angular/material';
+import { CvItemService } from '../cv-item/cv-item.service';
+import { PictureModalComponent } from '../picture-modal/picture-modal.component';
 
 @Component({
   selector: 'app-overview',
@@ -9,7 +9,7 @@ import { PictureModalComponent } from "../picture-modal/picture-modal.component"
   styleUrls: ['./overview.component.css']
 })
 export class OverviewComponent implements OnInit {
-  title = "Overview";
+  title = 'Overview';
   generalData;
   interests;
 
@@ -21,7 +21,7 @@ export class OverviewComponent implements OnInit {
   showAvatar() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.data = {
-      imagePath: "assets/img/avatar.jpg",
+      imagePath: 'assets/img/avatar.jpg',
       title: this.generalData.name,
     };
     this.dialog.open(PictureModalComponent, dialogConfig);

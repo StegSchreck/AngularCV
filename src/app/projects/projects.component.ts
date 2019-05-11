@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from "../cv-item/cv-item";
-import { CvItemService } from "../cv-item/cv-item.service";
+import { CvItem } from '../cv-item/cv-item';
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +10,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 })
 export class ProjectsComponent implements OnInit {
   projectItems: CvItem[];
-  title = "Projects";
+  title = 'Projects';
 
   constructor(
     private cvItemService: CvItemService

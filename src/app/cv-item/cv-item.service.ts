@@ -1,8 +1,6 @@
-import { Injectable }    from '@angular/core';
+import { Injectable } from '@angular/core';
 
-
-
-import { CvItem } from "./cv-item";
+import { CvItem } from './cv-item';
 import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS, PUBLICATIONS, TALKS } from './cv-items.data';
 
 @Injectable()

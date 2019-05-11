@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from "../cv-item/cv-item";
-import { CvItemService } from "../cv-item/cv-item.service";
+import { CvItem } from '../cv-item/cv-item';
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-education',
@@ -12,7 +12,7 @@ export class EducationComponent implements OnInit {
   educationItems: CvItem[];
   certificationItems: CvItem[];
   languageItems;
-  title = "Education and Certificates";
+  title = 'Education and Certificates';
 
   constructor(
     private cvItemService: CvItemService

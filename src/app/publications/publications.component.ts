@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CvItem } from "../cv-item/cv-item";
-import { CvItemService } from "../cv-item/cv-item.service";
+import { CvItem } from '../cv-item/cv-item';
+import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
   selector: 'app-publications',
@@ -11,7 +11,7 @@ import { CvItemService } from "../cv-item/cv-item.service";
 export class PublicationsComponent implements OnInit {
   publicationItems: CvItem[];
   talkItems: CvItem[];
-  title = "Talks and Publications";
+  title = 'Talks and Publications';
 
   constructor(
     private cvItemService: CvItemService
