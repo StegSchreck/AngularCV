@@ -16,7 +16,7 @@ mat-card-content {
   mat-card-header,
   mat-card-actions,
   mat-card-content {
-    margin-left: 134px;
+    margin-left: 122px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -52,7 +52,10 @@ mat-card-title {
 }
 @media screen and (max-width: 600px) {
   .cv-thumbnail img {
-    margin-right: 12px;
+    margin-right: 16px;
+    left: 16px;
+    top: 16px;
+    margin-bottom: 16px;
   }
 }
 @media screen and (max-width: 400px) {
@@ -63,13 +66,15 @@ mat-card-title {
 .vertical-divider {
   position: absolute;
   border-left: 2px solid #888;
-  top: 24px;
+  top: 20px;
   left: 148px;
-  bottom: 24px;
+  bottom: 20px;
 }
 @media screen and (max-width: 600px) {
   .vertical-divider {
-    left: 142px;
+    left: 132px;
+    bottom: 16px;
+    top: 16px;
   }
 }
 .toggle-details {
@@ -134,7 +139,7 @@ mat-card.closed .toggle-details mat-icon:before {
 @media screen and (max-width: 600px) {
   .timespan {
     position: relative;
-    left: 0;
+    left: -12px;
     top: -2px;
   }
   mat-card-title {
@@ -143,7 +148,7 @@ mat-card.closed .toggle-details mat-icon:before {
 }
 @media screen and (max-width: 400px) {
   .timespan {
-    padding-left: 8px;
+    padding-left: 20px;
   }
 }
 
