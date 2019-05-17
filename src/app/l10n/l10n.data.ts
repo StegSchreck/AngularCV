@@ -1,6 +1,7 @@
 /* tslint:disable:max-line-length */
 export const L10N = {
   'EN': {
+    language_name: 'English',
     about: {
       title: 'About this website',
       subtitle: 'A simple self-hosted online-CV',
@@ -69,6 +70,7 @@ export const L10N = {
     },
   },
   'DE': {
+    language_name: 'Deutsch',
     about: {
       title: 'Über diese Webseite',
       subtitle: 'Ein einfacher selbst-gehosteter Online-Lebenslauf',
@@ -137,6 +139,7 @@ export const L10N = {
     },
   },
   'ES': { // Thanks to Pelayo García (https://github.com/oyale)
+    language_name: 'Español',
     about: {
       title: 'Sobre esta página web',
       subtitle: 'Un CV simple y autohospedado',

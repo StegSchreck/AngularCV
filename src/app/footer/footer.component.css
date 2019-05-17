@@ -23,7 +23,7 @@ mat-toolbar.footer {
     font-size: 0.8em;
   }
   span.copyright {
-    margin-top: -6px;
+    margin-top: -4px;
   }
 }
 mat-toolbar.footer a {
@@ -47,4 +47,13 @@ mat-toolbar.footer img {
 a {
   color: white;
   text-decoration: none;
+}
+.copyright {
+  text-align: center;
+  margin: auto;
+}
+app-l10n {
+  position: absolute;
+  float: left;
+  color: black;
 }

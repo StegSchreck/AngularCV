@@ -28,6 +28,7 @@ import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.co
 import { PictureModalComponent }    from './picture-modal/picture-modal.component';
 import { FeatureToggleService }     from './feature-toggle/feature-toggle.service';
 import { LocalizationService }      from './l10n/l10n.service';
+import { LocalizationComponent }    from './l10n/l10n.component';
 
 @NgModule({
   imports: [
@@ -54,6 +55,7 @@ import { LocalizationService }      from './l10n/l10n.service';
     PdfComponent,
     CvDownloadCardComponent,
     PictureModalComponent,
+    LocalizationComponent,
   ],
   providers: [
     Title,
