@@ -3,5 +3,6 @@ export const FEATURE_TOGGLES = {
   tab_publications: true,
   tab_projects: true,
   tab_volunteering: true,
-  default_language: 'EN', // please make sure your language is supported in ../l10n/l10n.data.ts
+  contact_show_about_section: true,
+  default_language: 'EN', // please make sure your language is added to ../l10n/l10n.data.ts
 };

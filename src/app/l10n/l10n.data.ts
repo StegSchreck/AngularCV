@@ -2,8 +2,8 @@
 export const L10N = {
   'EN': {
     about: {
-      title: 'About this page',
-      subtitle: 'AngularCV: a simple self-hosted online-CV',
+      title: 'About this website',
+      subtitle: 'A simple self-hosted online-CV',
       content: 'This website was created as a GitHub project for the purpose of having a basic online-CV, ' +
         'which anyone can host by themselves. The main target audience are software developers though. ' +
         'To build this, basically the following technologies are used:',
@@ -70,8 +70,8 @@ export const L10N = {
   },
   'DE': {
     about: {
-      title: 'Über diese Seite',
-      subtitle: 'AngularCV: ein einfacher selbst-gehosteter Online-Lebenslauf',
+      title: 'Über diese Webseite',
+      subtitle: 'Ein einfacher selbst-gehosteter Online-Lebenslauf',
       content: 'Diese Webseite wurd als GitHub-Projekt erschaffen, mit dem Ziel einen einfach Online-Lebenslauf zu erstellen' +
         'welcher Jeder für sich selbst hosten kann. Die Haupt-Zielgruppe sind Software-Entwickler. ' +
         'Für die Erstellung dieses Projekts wurden folgende Technologien benutzt:',
@@ -138,8 +138,8 @@ export const L10N = {
   },
   'ES': { // Thanks to Pelayo García (https://github.com/oyale)
     about: {
-      title: 'Sobre esta página',
-      subtitle: 'AngularCV: Un CV simple y autohospedado',
+      title: 'Sobre esta página web',
+      subtitle: 'Un CV simple y autohospedado',
       content: 'Esta página web ha sido creada como un proyecto de GitHub con el propósito de tener un CV en línea que pudiera ser ' +
         'alojado por cualquiera en su servidor. Aun así, el público principal a quien está dirigido es a los desarrolladores de software. ' +
         'Para construirlo, se han utilizado básicamente las siguientes tecnologías:',

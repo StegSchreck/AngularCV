@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
@@ -10,16 +11,22 @@ import { CvItemService } from '../cv-item/cv-item.service';
 })
 export class ContactComponent implements OnInit {
   l10n;
+  featureToggles;
   contactItems;
   title = 'Contact Informations';
 
   constructor(
     private localizationService: LocalizationService,
+    private featureToggleService: FeatureToggleService,
     private cvItemService: CvItemService
   ) { }
 
   getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
+  }
+
+  getFeatureToggles(): void {
+    this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
   getItems(): void {
@@ -30,6 +37,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     this.getLocalization();
+    this.getFeatureToggles();
     this.getItems();
   }
 
