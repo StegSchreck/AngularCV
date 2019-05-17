@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { CvItem } from './cv-item';
+// tslint:disable-next-line:max-line-length
 import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS, PUBLICATIONS, TALKS } from './cv-items.data';
 
 @Injectable()

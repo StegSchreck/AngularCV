@@ -53,6 +53,9 @@ The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.
 * `tab_publications`: whether to shot the "publications" tab
 * `tab_projects`: whether to shot the "projects" tab
 * `tab_volunteering`: whether to shot the "volunteering" tab
+* `contact_show_about_section`: whether to show the "about this website" section on the contact page
+* `contact_email_link`: whether to link the email address on the contact page with `mailto:`
+* `contact_email_remove_at_sign`: whether to replace the `@` sign when displaying the email address on the contact page (in order to make it harder to scrape for a crawler)
 * `default_language`: which language to use for the navigation menu entries, page titles, etc.
 * `localization`: whether to offer the visitor of the website to switch the localization language
 

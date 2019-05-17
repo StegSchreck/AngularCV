@@ -15,7 +15,8 @@
       <mat-list-item *ngIf="contactItems !== undefined && contactItems.mail !== undefined && contactItems.mail !== ''">
         <mat-icon mat-list-icon>email</mat-icon>
         <p mat-line>
-          <a mat-button color="default" href="mailto:{{contactItems.mail}}">{{contactItems.mail}}</a>
+          <a mat-button color="default" href="mailto:{{contactItems.mail}}" *ngIf="featureToggles.contact_email_link">{{featureToggles.contact_email_remove_at_sign ? contactItems.mail.replace('@',' \'at\' ') : contactItems.mail}}</a>
+          <span *ngIf="!featureToggles.contact_email_link">{{featureToggles.contact_email_remove_at_sign ? contactItems.mail.replace('@',' \'at\' ') : contactItems.mail}}</span>
         </p>
       </mat-list-item>
       <mat-list-item *ngIf="contactItems !== undefined && contactItems.phone !== undefined && contactItems.phone !== ''">
