@@ -13,7 +13,7 @@ export const L10N = {
     contact: {
       title: 'Contact Informations',
       general: 'General',
-      other_profiles: 'Other Profiles on the Web',
+      profiles: 'Other Profiles on the Web',
       phone: 'Phone',
       button_open_profile: 'OPEN PROFILE'
     },
@@ -81,7 +81,7 @@ export const L10N = {
     contact: {
       title: 'Kontaktinformationen',
       general: 'Allgemein',
-      other_profiles: 'Andere Profile im Internet',
+      profiles: 'Andere Profile im Internet',
       phone: 'Telefon',
       button_open_profile: 'PROFIL ÖFFNEN'
     },
@@ -149,7 +149,7 @@ export const L10N = {
     contact: {
       title: 'Información de contacto',
       general: 'General',
-      other_profiles: 'Otros perfiles en la web',
+      profiles: 'Otros perfiles en la web',
       phone: 'Teléfono',
       button_open_profile: 'VER PERFIL'
     },

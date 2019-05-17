@@ -33,82 +33,44 @@
 </mat-card>
 <app-cv-download-card></app-cv-download-card>
 <mat-card class="text-card">
-  <mat-card-title>{{l10n.contact.other_profiles}}</mat-card-title>
-  <mat-card-content>
-    <mat-list>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
-        <i mat-list-icon class="icon-linkedin"></i>
-        <h4 mat-line>LinkedIn</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.linkedin}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            {{l10n.contact.button_open_profile}}
-          </a>
-        </p>
-      </mat-list-item>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
-        <i mat-list-icon class="icon-xing"></i>
-        <h4 mat-line>Xing</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.xing}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            {{l10n.contact.button_open_profile}}
-          </a>
-        </p>
-      </mat-list-item>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
-        <i mat-list-icon class="icon-github"></i>
-        <h4 mat-line>GitHub</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.github}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            {{l10n.contact.button_open_profile}}
-          </a>
-        </p>
-      </mat-list-item>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
-        <i mat-list-icon class="icon-stackoverflow"></i>
-        <h4 mat-line>StackOverflow</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.stackoverflow}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            {{l10n.contact.button_open_profile}}
-          </a>
-        </p>
-      </mat-list-item>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
-        <i mat-list-icon class="icon-facebook2"></i>
-        <h4 mat-line>Facebook</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.facebook}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            {{l10n.contact.button_open_profile}}
-          </a>
-        </p>
-      </mat-list-item>
-      <mat-list-item *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
-        <i mat-list-icon class="icon-twitter"></i>
-        <h4 mat-line>Twitter</h4>
-        <p mat-line>
-          <a mat-button color="primary" href="{{contactItems.twitter}}" target="_blank">
-            <mat-icon>link</mat-icon>
-            {{l10n.contact.button_open_profile}}
-          </a>
-        </p>
-      </mat-list-item>
-      <span *ngIf="contactItems !== undefined && contactItems.other !== undefined && contactItems.other !== [] && contactItems.other.length > 0">
-        <mat-divider></mat-divider>
-        <mat-list-item *ngFor="let item of contactItems.other">
-          <mat-icon mat-list-icon>public</mat-icon>
-          <h4 mat-line>{{item.title}}</h4>
-          <p mat-line>
-            <a mat-button color="primary" href="{{item.link}}" target="_blank">
-              <mat-icon>link</mat-icon>
-              {{l10n.contact.button_open_profile}}
-            </a>
-          </p>
-        </mat-list-item>
-      </span>
-    </mat-list>
+  <mat-card-title>{{l10n.contact.profiles}}</mat-card-title>
+  <mat-card-content class="web-profiles">
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.linkedin}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
+      <i mat-list-icon class="icon-linkedin"></i>
+      LinkedIn
+    </a>
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.xing}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
+      <i mat-list-icon class="icon-xing"></i>
+      Xing
+    </a>
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.github}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
+      <i mat-list-icon class="icon-github"></i>
+      GitHub
+    </a>
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.stackoverflow}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
+      <i mat-list-icon class="icon-stackoverflow"></i>
+      StackOverflow
+    </a>
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.facebook}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
+      <i mat-list-icon class="icon-facebook2"></i>
+      Facebook
+    </a>
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.twitter}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
+      <i mat-list-icon class="icon-twitter"></i>
+      Twitter
+    </a>
+    <a mat-button color="primary" class="profile-link" href="{{contactItems.instagram}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.instagram !== undefined && contactItems.instagram !== ''">
+      <i mat-list-icon class="icon-instagram"></i>
+      Instagram
+    </a>
+    <span class="other-links" *ngIf="contactItems !== undefined && contactItems.other !== undefined && contactItems.other !== [] && contactItems.other.length > 0">
+      <br><br>
+      <mat-divider [inset]="true"></mat-divider>
+      <br>
+      <a mat-button color="primary" class="profile-link" href="{{item.link}}" target="_blank" *ngFor="let item of contactItems.other">
+        <mat-icon>link</mat-icon>
+        {{item.title}}
+      </a>
+    </span>
   </mat-card-content>
 </mat-card>

@@ -1,5 +1,6 @@
-@media screen and (max-width: 400px) {
-  mat-list {
-    margin-left: -12px;
-  }
+.web-profiles {
+  margin-top: 25px;
+}
+a.profile-link {
+  font-size: 1.2em;
 }

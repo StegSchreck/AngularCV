@@ -349,12 +349,13 @@ export const CONTACT = {
   phone: '',
   mail: 'sebastian@schreck.berlin',
   skype: '', // just the account name
-  linkedin: 'https://www.linkedin.com/in/sebastian-schreck-050739131/',
-  xing: 'https://www.xing.com/profile/Sebastian_Schreck2',
-  github: 'https://github.com/StegSchreck',
-  stackoverflow: 'https://stackoverflow.com/users/story/6538600',
+  linkedin: 'https://www.linkedin.com/in/sebastian-schreck-050739131/', // full url
+  xing: 'https://www.xing.com/profile/Sebastian_Schreck2', // full url
+  github: 'https://github.com/StegSchreck', // full url
+  stackoverflow: 'https://stackoverflow.com/users/story/6538600', // full url
   twitter: 'https://twitter.com/StegSchreck', // full url
-  facebook: '',
+  facebook: '', // full url
+  instagram: '', // full url
   other: [
     { title: 'Medium', link: 'https://medium.com/@stegschreck' },
   ],
