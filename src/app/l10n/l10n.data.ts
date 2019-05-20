@@ -8,7 +8,7 @@ export const L10N = {
       content: 'This website was created as a GitHub project for the purpose of having a basic online-CV, ' +
         'which anyone can host by themselves. The main target audience are software developers though. ' +
         'To build this, basically the following technologies are used:',
-      additional: 'Additionally, the following third party sources are included:',
+      additional: 'Additionally, the following third-party sources are included:',
       link_to_github: 'VIEW PROJECT ON GITHUB',
     },
     contact: {
@@ -54,7 +54,7 @@ export const L10N = {
       label_city: 'city',
       label_email: 'mail',
       continuing_next_page: 'Continuing on the next page...',
-      continued_from_last_page: '... continued from last page.',
+      continued_from_last_page: '... continued from the previous page.',
       info_generation: 'This CV was generated from a self-hosted online-CV using the AngularCV project.',
       info_headhunter: 'If you received this from a headhunter, he just might have downloaded it from my webpage and sent to you without my consent.',
     },
@@ -136,6 +136,75 @@ export const L10N = {
     },
     volunteering: {
       title: 'Soziales Engagement',
+    },
+  },
+  'IT': {
+    language_name: 'Italiano',
+    about: {
+      title: 'A proposito di questo sito',
+      subtitle: 'Un semplice CV online self-hosted',
+      content: 'Questo sito Web è stato creato come progetto GitHub per avere un CV online elementare, ' +
+        'che chiunque può coltivare da solo. Il gruppo destinatario principale sono però gli sviluppatori di software. ' +
+        'Per costruire questo sito, vengono utilizzate le tecnologie seguenti:',
+      additional: 'Inoltre, le seguenti origine di terze sono incluse:',
+      link_to_github: 'APRI PROGETTO SU GITHUB',
+    },
+    contact: {
+      title: 'Informazioni di contatto',
+      general: 'Generale',
+      profiles: 'Altri profili sul Web',
+      phone: 'Telefono',
+      button_open_profile: 'APRI PROFILO'
+    },
+    cv_download_card: {
+      title: 'Scarica curriculum vitae come PDF',
+    },
+    cv_item: {
+      button_view_link: 'APRI LINK',
+      button_view_attachment: 'APRI FILE ALLEGATO',
+      now: 'adesso',
+    },
+    education: {
+      title_languages: 'Lingue',
+      title_certificates: 'Certificati',
+      title_education: 'Educazione',
+    },
+    experience: {
+      title: 'Esperienza professionale',
+    },
+    header: {
+      menu_overiew: 'Home',
+      menu_experience: 'Esperienza',
+      menu_education: 'Educazione',
+      menu_publications: 'Pubblicazioni',
+      menu_projects: 'Progetti',
+      menu_volunteering: 'Volontariati',
+      menu_contact: 'Contatti',
+      menu_about: 'Annotazioni',
+    },
+    overview: {
+      title: 'Home',
+      subtitle_aboutme: 'Chi sono',
+      subtitle_interests: 'Hobby ed interessi',
+    },
+    pdf: {
+      button_tooltip: 'Scarica curriculum vitae come PDF',
+      label_city: 'città',
+      label_email: 'e-mail',
+      continuing_next_page: 'Proseguendo nella pagina successiva...',
+      continued_from_last_page: '... continua dall\'ultima pagina.',
+      info_generation: 'Questo CV è stato generato da un CV online self-hosted utilizzando il progetto AngularCV.',
+      info_headhunter: 'Se hai ricevuto questo da un cacciatore di teste, potrebbe averlo scaricato dalla mia pagina web e inviato a te senza il mio consenso.',
+    },
+    projects: {
+      title: 'Progetti',
+    },
+    publications: {
+      title_talks: 'Letture',
+      title_publications: 'Pubblicazioni',
+    },
+    volunteering: {
+      title: 'Lavori volontari',
     },
   },
   'ES': { // Thanks to Pelayo García (https://github.com/oyale)
