@@ -276,4 +276,71 @@ export const L10N = {
       title: 'Voluntariado y causas',
     },
   },
+  'JP': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
+    language_name: '日本人',
+    about: {
+      title: 'このサイトについて',
+      subtitle: '簡単な自己ホスト型オンライン履歴書',
+      content: 'このウェブサイトは基本的なオンライン履歴書を持つことを目的としてGitHubプロジェクトとして作成されました。 ただし、主な対象読者はソフトウェア開発者です。 基本的に、これを構築するために以下のテクニックが使用されます。',
+      additional: 'さらに、次のサードパーティソースが含まれています。',
+      link_to_github: 'GITHUBでプロジェクトを見る',
+    },
+    contact: {
+      title: '連絡先情報',
+      general: '全面的な',
+      profiles: 'インターネット上の他のプロファイル',
+      phone: '電話',
+      button_open_profile: 'オープンプロファイル'
+    },
+    cv_download_card: {
+      title: 'この履歴書をPDFファイルとしてダウンロードする',
+    },
+    cv_item: {
+      button_view_link: 'リンクを見る',
+      button_view_attachment: '添付ファイルを表示',
+      now: '今',
+    },
+    education: {
+      title_languages: '言語',
+      title_certificates: '証明書',
+      title_education: '教育',
+    },
+    experience: {
+      title: 'プロとしての経験',
+    },
+    header: {
+      menu_overiew: 'ホームページ',
+      menu_experience: '経験',
+      menu_education: '教育',
+      menu_publications: '出版物',
+      menu_projects: 'プロジェクト',
+      menu_volunteering: 'ボランティア',
+      menu_contact: '連絡先情報',
+      menu_about: 'このサイトについて',
+    },
+    overview: {
+      title: 'ホームページ',
+      subtitle_aboutme: '私について',
+      subtitle_interests: '趣味や興味',
+    },
+    pdf: {
+      button_tooltip: 'この履歴書をPDFファイルとしてダウンロードする',
+      label_city: '都市',
+      label_email: 'Eメール',
+      continuing_next_page: '次のページに続く...',
+      continued_from_last_page: '... 前のページから続く.',
+      info_generation: 'この履歴書は、AngularCVプロジェクトを使用して自己ホスト型のオンライン履歴書から生成されました。',
+      info_headhunter: 'あなたがヘッドハンターからこれを受け取ったなら、彼は私のウェブページからそれをダウンロードして私の同意なしにあなたに送ったかもしれません。',
+    },
+    projects: {
+      title: 'プロジェクト',
+    },
+    publications: {
+      title_talks: 'カンファレンストーク',
+      title_publications: '出版物',
+    },
+    volunteering: {
+      title: '自主的な仕事とその原因',
+    },
+  },
 };
