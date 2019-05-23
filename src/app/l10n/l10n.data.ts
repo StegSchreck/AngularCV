@@ -349,8 +349,8 @@ export const L10N = {
       title: 'Sobre aquesta pàgina web',
       subtitle: 'Un CV online i autoallotjat',
       content: 'Aquesta pàgina web ha estat creada com un projecte de GitHub amb el propòsit de tenir un CV en línia que pogués ser ' +
-        'allotjat per qualsevol en el seu servidor. Així i tot, el públic principal a qui està dirigit és als desenvolupadors de programari. ' +
-        'Per a construir-ho, s\'han utilitzat bàsicament les següents tecnologies:',
+        'allotjat per qualsevol en el seu servidor. Així i tot, el públic principal a qui està dirigit és als desenvolupadors de ' +
+        'programari. Per a construir-ho, s\'han utilitzat bàsicament les següents tecnologies:',
       additional: 'A més, també s\'han inclòs les següents fonts de tercers:',
       link_to_github: 'VER PROYECTO A GITHUB',
     },
@@ -411,5 +411,5 @@ export const L10N = {
     volunteering: {
       title: 'Voluntariat i causes',
     },
-},
+  },
 };
