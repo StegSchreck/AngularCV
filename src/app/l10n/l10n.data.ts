@@ -351,14 +351,14 @@ export const L10N = {
       content: 'Aquesta pàgina web ha estat creada com un projecte de GitHub amb el propòsit de tenir un CV en línia que pogués ser ' +
         'allotjat per qualsevol en el seu servidor. Així i tot, el públic principal a qui està dirigit és als desenvolupadors de programari. ' +
         'Per a construir-ho, s\'han utilitzat bàsicament les següents tecnologies:',
-	  additional: 'A més, també s\'han inclòs les següents fonts de tercers:',
+      additional: 'A més, també s\'han inclòs les següents fonts de tercers:',
       link_to_github: 'VER PROYECTO A GITHUB',
     },
     contact: {
-	  title: 'Informació de contacte',
-	  general: 'General',
-	  profiles: 'Altres perfils a la web',
-	  phone: 'Telèfon',
+      title: 'Informació de contacte',
+      general: 'General',
+      profiles: 'Altres perfils a la web',
+      phone: 'Telèfon',
       button_open_profile: 'VEURE PERFIL'
     },
     cv_download_card: {
