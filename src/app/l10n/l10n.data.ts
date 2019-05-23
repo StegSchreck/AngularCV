@@ -348,68 +348,68 @@ export const L10N = {
     about: {
       title: 'Sobre aquesta pàgina web',
       subtitle: 'Un CV online i autoallotjat',
-      content: ' Aquesta pàgina web ha estat creada com un projecte de GitHub amb el propòsit de tenir un CV en línia que pogués ser ' +
-				'allotjat per qualsevol en el seu servidor. Així i tot, el públic principal a qui està dirigit és als desenvolupadors de programari. ' +
-				'Per a construir-ho, s\'han utilitzat bàsicament les següents tecnologies:',
+      content: 'Aquesta pàgina web ha estat creada com un projecte de GitHub amb el propòsit de tenir un CV en línia que pogués ser ' +
+        'allotjat per qualsevol en el seu servidor. Així i tot, el públic principal a qui està dirigit és als desenvolupadors de programari. ' +
+        'Per a construir-ho, s\'han utilitzat bàsicament les següents tecnologies:',
 	  additional: 'A més, també s\'han inclòs les següents fonts de tercers:',
       link_to_github: 'VER PROYECTO A GITHUB',
     },
     contact: {
-		title: 'Informació de contacte',
-		general: 'General',
-		profiles: 'Altres perfils a la web',
-		phone: 'Telèfon',
-		button_open_profile: 'VEURE PERFIL'
-	},
-	cv_download_card: {
-		title: 'Descàrrega aquest CV en PDF',
-	},
-	cv_item: {
-		button_view_link: 'VEURE ENLLAÇ',
-		button_view_attachment: 'VEURE FITXER ADJUNT',
-		now: 'ara',
-	},
-	education: {
-		title_languages: 'idiomes',
-		title_certificates: 'certificats',
-		title_education: 'educació',
-	},
-	experience: {
-		title: 'Experiència Professional',
-	},
-	header: {
-		menu_overiew: 'Inici',
-		menu_experience: 'Experiència',
-		menu_education: 'Educació',
-		menu_publications: 'Publicacions',
-		menu_projects: 'Projectes',
-		menu_volunteering: 'Voluntariat',
-		menu_contact: 'Contacte',
-		menu_about: 'About',
-	},
-	overview: {
-		title: 'Inici',
-		subtitle_aboutme: 'Sobre mi',
-		subtitle_interests: 'Hobbys i Interessos',
-	},
-	pdf: {
-		button_tooltip: 'Descarrega CV en PDF',
-		label_city: 'CIUTAT',
-		label_email: 'E-mail',
-		continuing_next_page: 'Continua en la següent pàgina...',
-		continued_from_last_page: '... ve de la pàgina anterior.',
-		info_generation: 'Aquest CV ha estat generat des d\'un CV online en el meu servidor, usant el projecte AngularCV.',
-		info_headhunter: 'Si ha rebut això d\'una empresa de col·locació, pot ser que simplement ho hagi descarregat i enviat sense el meu consentiment.',
-	},
-	projects: {
-		title: 'Projectes',
-	},
-	publications: {
-		title_talks: 'Xerrades',
-		title_publications: 'Publicacions',
-	},
-	volunteering: {
-		title: 'Voluntariat i causes',
-	},
-},  
+	  title: 'Informació de contacte',
+	  general: 'General',
+	  profiles: 'Altres perfils a la web',
+	  phone: 'Telèfon',
+      button_open_profile: 'VEURE PERFIL'
+    },
+    cv_download_card: {
+      title: 'Descàrrega aquest CV en PDF',
+    },
+    cv_item: {
+      button_view_link: 'VEURE ENLLAÇ',
+      button_view_attachment: 'VEURE FITXER ADJUNT',
+      now: 'ara',
+    },
+    education: {
+      title_languages: 'idiomes',
+      title_certificates: 'certificats',
+      title_education: 'educació',
+    },
+    experience: {
+      title: 'Experiència Professional',
+    },
+    header: {
+      menu_overiew: 'Inici',
+      menu_experience: 'Experiència',
+      menu_education: 'Educació',
+      menu_publications: 'Publicacions',
+      menu_projects: 'Projectes',
+      menu_volunteering: 'Voluntariat',
+      menu_contact: 'Contacte',
+      menu_about: 'About',
+    },
+    overview: {
+      title: 'Inici',
+      subtitle_aboutme: 'Sobre mi',
+      subtitle_interests: 'Hobbys i Interessos',
+    },
+    pdf: {
+      button_tooltip: 'Descarrega CV en PDF',
+      label_city: 'CIUTAT',
+      label_email: 'E-mail',
+      continuing_next_page: 'Continua en la següent pàgina...',
+      continued_from_last_page: '... ve de la pàgina anterior.',
+      info_generation: 'Aquest CV ha estat generat des d\'un CV online en el meu servidor, usant el projecte AngularCV.',
+      info_headhunter: 'Si ha rebut això d\'una empresa de col·locació, pot ser que simplement ho hagi descarregat i enviat sense el meu consentiment.',
+    },
+    projects: {
+      title: 'Projectes',
+    },
+    publications: {
+      title_talks: 'Xerrades',
+      title_publications: 'Publicacions',
+    },
+    volunteering: {
+      title: 'Voluntariat i causes',
+    },
+},
 };
