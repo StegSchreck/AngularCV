@@ -7,8 +7,9 @@
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
 </p>
 
+After you forked this project and adjusted it to your needs (configured with your data), you might want to deploy it in order to make it available to everyone.
+
 ## Deployment to production
-After you cloned/forked this project and adjusted it to your needs (and configuring with your data), you might want to deploy it in order to make it available to anyone.
 
 This is a little guide of how to deploy this Angular project to AWS using an AWS CodePipeline and a S3 Bucket. You still can deploy it in a different way. This is only a suggestion.
 
@@ -18,7 +19,6 @@ Please go to your favorite domain provider and request a new domain or sub-domai
 You will adjust the `CNAME` of that domain later on.
 
 ### Step 1: Create AWS resources
-
 <p align="center">
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CodePipeline.png" width="435px">
 </p>
@@ -97,7 +97,6 @@ For the domain, you created previously, adjust the settings in order point it to
 * The propagation of the DNS settings might take some minutes
 
 ### Step 3: (optional) Use HTTPS with AWS CloudFront distributions and AWS Certificates
-
 <p align="center">
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CloudFront.png" width="435px">
 </p>

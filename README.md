@@ -3,14 +3,12 @@
 </p>
 
 # AngularCV
-
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
 For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), for which this project was created initially.
 
 
 ## Third Party Stuff
-
 It uses [Angular](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
 Furthermore, the following third-party sources are included:
 * [Roboto](https://fonts.google.com/specimen/Roboto)
@@ -22,14 +20,12 @@ The images in the `/src/assets/img/item-thumbnails` directory in this repository
 
 
 ## Configuration
-
 The CV items for the experience, education, projects and volunteering sections are configured in a JSON format in `/src/app/cv-item/cv-item.data.ts`.
 Please notice the division of the education section, which is applied here. This enables you to re-arrange the the sections to your likings.
 
 In the end, this is just an example of how it can be done. Feel free to take it as a template and adjust everything to your needs.
 
 ### Set Your Own Data
-
 Here is what you will have to change in order to adapt this project for yourself.
 
 * `src/app/cv-item/cv-items.data.ts` contains all the configurable content data for the page
@@ -46,7 +42,6 @@ Here is what you will have to change in order to adapt this project for yourself
 In order to comply with the license of this project and the third-party elements in it, please leave the "About" section unchanged as well as the link to it in the footer.
 
 ### Feature Toggles
-
 AngularCV offers some feature toggles (a.k.a. feature switches) to adjust the experience of the website. However, some features are part of the basic functionality and should not be deactivated and thus do not have a feature toggle, e.g. the work experience tab.
 The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.ts`. Currently, these feature toggles are implemented:
 * `downloadable_pdf`: whether to offer a PDF version of the data (download button will be placed in the header and on the contact page)
@@ -60,22 +55,19 @@ The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.
 * `localization`: whether to offer the visitor of the website to switch the localization language
 
 ### Localization
-
 By switching the `default_language` feature toggle (see above), you can define which language to choose for navigation menu entries, page titles, etc. You can also let the user switch the language by activating the `localization` feature toggle. You will still need to adapt your data in `src/app/cv-item/cv-items.data.ts` to adapt the same language.
 
 
 ## Angular Basics
-
 See the [Angular basic guide](ANGULAR.md) for the basics. For more information, visit the [Angular](https://angular.io/) website.
 
 
 ## Deployment to Production
-
 <p align="center">
   <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
 </p>
 
-After you cloned/forked this project and adjusted it to your needs (and configuring with your data), you might want to deploy it in order to make it available to anyone.
+After you cloned/forked this project and adjusted it to your needs (configured with your data), you might want to deploy it in order to make it available to anyone.
 
 See my [AWS deployment guide](DEPLOYMENT_ON_AWS.md) for a possible way how to achieve this with [Amazon Web Services (AWS)](https://aws.amazon.com/).
 

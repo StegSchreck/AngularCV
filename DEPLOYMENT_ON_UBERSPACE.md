@@ -3,9 +3,10 @@
 </p>
 
 # AngularCV
+After you forked this project and adjusted it to your needs (configured with your data), you might want to deploy it in order to make it available to everyone.
 
 ## Deployment on Uberspace
-I am also using [Uberspace](https://uberspace.de/) for private purposes. This is a lightweight server where you can pay as you like. The recommendation is to pay about 5 - 10 € per month, minimum is 1 € per month. They have a good [wiki](https://wiki.uberspace.de/start) (but only in German so far) for most of the needs you might have.
+I am using [Uberspace](https://uberspace.de/) for private purposes. This is a lightweight server where you can pay as you like. The recommendation is to pay about 5 - 10 € per month, minimum is 1 € per month. They have a good [wiki](https://wiki.uberspace.de/start) (but only in German so far) for most of the needs you might have.
 
 In order to deploy AngularCV to Uberspace, you will have to perform the following steps:
 
@@ -32,11 +33,17 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
       * Add the following lines to `~/bin/deploy_cv.sh`, e.g. by `vim ~/bin/deploy_cv.sh`:
         ```sh
         #!/bin/bash
+        
+        source ~/.bash_profile
   
-        cd ~/AngularCV
-        git pull
-        source source ~/.bash_profile
+        pushd ~/AngularCV
+        
+        git co -- .   # ignore local changes
+        git pull      # get the new stuff
+        npm install   # install changes made to package.json
         ng build -prod --output-path=~/html/  # build the app for production environment and copy the result to the web root directory
+        
+        popd
         ```
       
       * Make the script executable via `chmod +x ~/bin/deploy_cv.s` and add the following line to the crontab
@@ -47,7 +54,7 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
     
     * see more here about website hosting at the [Uberspace wiki](https://wiki.uberspace.de/start:web)
       
-1. In order to make the direct links and browser page refresh work add this content to the new file `~/html/.htaccess/`:
+1. In order to make the direct links and browser page refresh work add this content to the new file `~/html/.htaccess`:
     ```
         RewriteEngine on
         RewriteCond %{REQUEST_FILENAME} -s [OR]
@@ -56,4 +63,8 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
         RewriteRule ^.*$ - [NC,L]
     
         RewriteRule ^(.*) /index.html [NC,L]
+    ```
+    If you chose to automate the deployment (see step before), you should save a copy of this file somewhere (e.g. at `~/.htaccess-for-AngularCV`) and add this line at the end of `~/bin/deploy_cv.sh`:
+    ```sh
+    cp ~/.htaccess-for-AngularCV ~/html/.htaccess
     ```
