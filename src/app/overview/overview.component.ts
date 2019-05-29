@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogConfig } from '@angular/material';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 import { LocalizationService } from '../l10n/l10n.service';
 import { CvItemService } from '../cv-item/cv-item.service';
