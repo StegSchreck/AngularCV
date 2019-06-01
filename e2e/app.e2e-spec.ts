@@ -9,6 +9,11 @@ describe('angular-cv App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getPageTitle()).toEqual('Sebastian Schreck | Software Engineer');
+  });
+
+  it('should display welcome message', () => {
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('Sebastian Schreck'.toUpperCase());
   });
 });
