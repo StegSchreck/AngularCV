@@ -1,5 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../material/material.module';
+import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { CvItemService } from '../cv-item/cv-item.service';
+
+import { CvItemComponent } from '../cv-item/cv-item.component';
+
 import { VolunteeringComponent } from './volunteering.component';
 
 describe('VolunteeringComponent', () => {
@@ -8,7 +15,9 @@ describe('VolunteeringComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ VolunteeringComponent ]
+      imports: [ MaterialModule ],
+      declarations: [ VolunteeringComponent, CvItemComponent ],
+      providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));

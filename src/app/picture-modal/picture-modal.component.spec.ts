@@ -1,4 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
+
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { MaterialModule } from '../material/material.module';
 
 import { PictureModalComponent } from './picture-modal.component';
 
@@ -8,9 +12,18 @@ describe('PictureModalComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PictureModalComponent ]
-    })
-    .compileComponents();
+      imports: [ MaterialModule ],
+      declarations: [ PictureModalComponent ],
+      providers: [{ provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: {} }]
+    });
+
+    TestBed.overrideModule(BrowserDynamicTestingModule, {
+      set: {
+        entryComponents: [PictureModalComponent]
+      }
+    });
+
+    TestBed.compileComponents();
   }));
 
   beforeEach(() => {

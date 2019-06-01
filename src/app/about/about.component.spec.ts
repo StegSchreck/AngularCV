@@ -1,5 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../material/material.module';
+import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+
 import { AboutComponent } from './about.component';
 
 describe('AboutComponent', () => {
@@ -8,7 +12,9 @@ describe('AboutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutComponent ]
+      imports: [ MaterialModule ],
+      declarations: [ AboutComponent ],
+      providers: [ FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));

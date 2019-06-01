@@ -1,5 +1,14 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../material/material.module';
+import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { CvItemService } from '../cv-item/cv-item.service';
+
+import { CvDownloadCardComponent } from '../cv-download-card/cv-download-card.component';
+import { AboutComponent } from '../about/about.component';
+import { PdfComponent } from '../pdf/pdf.component';
+
 import { ContactComponent } from './contact.component';
 
 describe('ContactComponent', () => {
@@ -8,7 +17,9 @@ describe('ContactComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
+      imports: [ MaterialModule ],
+      declarations: [ AboutComponent, ContactComponent, CvDownloadCardComponent, PdfComponent ],
+      providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));

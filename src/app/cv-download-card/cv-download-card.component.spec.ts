@@ -1,5 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../material/material.module';
+import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+
+import { PdfComponent } from '../pdf/pdf.component';
+
 import { CvDownloadCardComponent } from './cv-download-card.component';
 
 describe('CvDownloadCardComponent', () => {
@@ -8,7 +14,9 @@ describe('CvDownloadCardComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CvDownloadCardComponent ]
+      imports: [ MaterialModule ],
+      declarations: [ CvDownloadCardComponent, PdfComponent ],
+      providers: [ FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));

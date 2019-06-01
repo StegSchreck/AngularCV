@@ -66,6 +66,8 @@ import { LocalizationComponent }    from './l10n/l10n.component';
   bootstrap: [
     AppComponent,
   ],
-  entryComponents: [PictureModalComponent]
+  entryComponents: [
+    PictureModalComponent
+  ]
 })
 export class AppModule { }

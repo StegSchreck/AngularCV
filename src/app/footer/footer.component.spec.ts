@@ -1,5 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../material/material.module';
+import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+
+import { LocalizationComponent } from '../l10n/l10n.component';
+
 import { FooterComponent } from './footer.component';
 
 describe('FooterComponent', () => {
@@ -8,7 +14,9 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      imports: [ MaterialModule ],
+      declarations: [ FooterComponent, LocalizationComponent ],
+      providers: [ FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));

@@ -1,5 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { MaterialModule } from '../material/material.module';
+import { LocalizationService } from '../l10n/l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { CvItemService } from '../cv-item/cv-item.service';
+
 import { PdfComponent } from './pdf.component';
 
 describe('PdfComponent', () => {
@@ -8,7 +13,9 @@ describe('PdfComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PdfComponent ]
+      imports: [ MaterialModule ],
+      declarations: [ PdfComponent ],
+      providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));
