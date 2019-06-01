@@ -3,6 +3,10 @@
 </p>
 
 # AngularCV
+[![Build Status](https://travis-ci.org/StegSchreck/AngularDV.svg?branch=master)](https://travis-ci.org/StegSchreck/AngularDV)
+[![Maintainability by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/maintainability)](https://codeclimate.com/github/StegSchreck/AngularDV/maintainability)
+[![Test Coverage by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/test_coverage)](https://codeclimate.com/github/StegSchreck/AngularDV/test_coverage)
+
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
 For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), for which this project was created initially.

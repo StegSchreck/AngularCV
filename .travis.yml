@@ -1,0 +1,27 @@
+language: node_js
+node_js:
+  - "11"
+
+addons:
+  chrome: stable
+
+before_script:
+  - npm install -g @angular/cli
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+
+script:
+  - ng lint
+  - ng test -watch false -browsers ChromeHeadless --code-coverage
+    ./tmp/cc-test-reporter format-coverage -t lcov -o tmp/codeclimate.frontend.json coverage/lcov.info
+  - ng e2e
+  - ng build --prod
+
+after_script:
+  - ./cc-test-reporter upload-coverage -i tmp/codeclimate.frontend.json
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change

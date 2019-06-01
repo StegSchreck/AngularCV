@@ -1,0 +1,22 @@
+---
+engines:
+  duplication:
+    enabled: false
+    config:
+      languages:
+        - javascript
+  eslint:
+    enabled: true
+    checks:
+      complexity:
+        enabled: false
+      comma-dangle:
+        enabled: false
+      global-require:
+        enabled: false
+  fixme:
+    enabled: true
+ratings:
+  paths:
+    - "**.js"
+exclude_paths: [ 'dist', 'test' ]
