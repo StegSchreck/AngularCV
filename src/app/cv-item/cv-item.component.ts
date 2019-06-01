@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from './cv-item';
@@ -9,7 +9,7 @@ import { CvItem } from './cv-item';
   styleUrls: ['./cv-item.component.css']
 })
 
-export class CvItemComponent {
+export class CvItemComponent implements OnInit {
   l10n;
   @Input() cvItem: CvItem;
 
