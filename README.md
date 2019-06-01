@@ -3,9 +3,9 @@
 </p>
 
 # AngularCV
-[![Build Status](https://travis-ci.org/StegSchreck/AngularDV.svg?branch=master)](https://travis-ci.org/StegSchreck/AngularDV)
-[![Maintainability by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/maintainability)](https://codeclimate.com/github/StegSchreck/AngularDV/maintainability)
-[![Test Coverage by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/test_coverage)](https://codeclimate.com/github/StegSchreck/AngularDV/test_coverage)
+[![Build Status](https://travis-ci.org/StegSchreck/AngularCV.svg?branch=master)](https://travis-ci.org/StegSchreck/AngularCV)
+[![Maintainability by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/maintainability)](https://codeclimate.com/github/StegSchreck/AngularCV/maintainability)
+[![Test Coverage by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/test_coverage)](https://codeclimate.com/github/StegSchreck/AngularCV/test_coverage)
 
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
