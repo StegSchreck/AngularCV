@@ -14,8 +14,8 @@ before_script:
 script:
   - ng lint
   - ng test -watch false -browsers ChromeHeadless --code-coverage
-    ./tmp/cc-test-reporter format-coverage -t lcov -o tmp/codeclimate.frontend.json coverage/lcov.info
-  - ng e2e
+    ./cc-test-reporter format-coverage -t lcov -o tmp/codeclimate.frontend.json coverage/lcov.info
+  - ng e2e -browsers ChromeHeadless
   - ng build --prod
 
 after_script:
