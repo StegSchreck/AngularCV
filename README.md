@@ -20,6 +20,7 @@ Furthermore, the following third-party sources are included:
 * [Roboto](https://fonts.google.com/specimen/Roboto)
 * [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
 * [IcoMoon Free](https://icomoon.io/#preview-free)
+* [SimpleIcons](https://simpleicons.org/)
 * [jsPDF](https://github.com/MrRio/jsPDF)
 
 The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.
