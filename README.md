@@ -7,6 +7,7 @@
 [![Maintainability by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/maintainability)](https://codeclimate.com/github/StegSchreck/AngularCV/maintainability)
 [![Test Coverage by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/test_coverage)](https://codeclimate.com/github/StegSchreck/AngularCV/test_coverage)
 [![License](https://img.shields.io/github/license/StegSchreck/AngularCV.svg)](https://github.com/StegSchreck/AngularCV/blob/master/LICENSE)
+[![Latest Release](https://img.shields.io/github/release/StegSchreck/AngularCV.svg?logo=github)](https://github.com/StegSchreck/AngularCV/releases)
 
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
