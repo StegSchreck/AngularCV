@@ -14,9 +14,7 @@
   </mat-card-header>
   <img mat-card-image src="assets/img/cover.jpg" alt="">
   <mat-card-content *ngIf="generalData !== undefined && generalData.description !== undefined && generalData.description !== ''">
-    <p>
-      {{generalData.description}}
-    </p>
+    <p class="preformatted capitalize">{{generalData.description}}</p>
   </mat-card-content>
 </mat-card>
 <mat-card class="text-card" *ngIf="interests !== undefined && interests !== [] && interests.length > 0">

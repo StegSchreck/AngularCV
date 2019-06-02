@@ -1,12 +1,16 @@
 import { CvItem } from './cv-item';
 
-
+// tslint:disable:max-line-length
 export const GENERAL = {
   name: 'Sebastian Schreck',
   position: 'Software Engineer',
-  description: 'This website shall give you an impression of me and encourage your interest in hiring me. ' +
-    'Please navigate through the site in order to find out more.'
+  description: `I started my career in IT as a QA Engineer during my studies of Computer Science at TU Berlin. After completing my master's thesis, I became a professional software engineer at Mister Spex doing backend as well as frontend development. Unhappy with the segregation between Operations and Development teams, I decided to transfer into Ops full time to get more insights. Having seen both sides of the wall of confusion, I became a strong advocate for DevOps principles and shared responsibility. I talked at code.talks and DevOpsCon about the topics DevOps, collaboration, feedback culture, and responsibilities.
+
+I am looking for new opportunities which include modern, progressive technologies in a collaborative working environment. Learning new things and trying out new stuff are part of my motivation. New roles are of my interest if I can accompany the software end to end - from planning, implementation, deployment towards monitoring. Amplified feedback loops and a culture of continuous learning and experimentation define a proper working environment for me. Job offers outside of Berlin are not interesting to me.
+
+This website is designed to be a simple, self-hosted online-CV, based on Angular. To find out more about the project, please click on the AngularCV logo in the bottom right corner.`
 };
+// tslint:enable:max-line-length
 
 export const CVITEMS: CvItem[] = [
   {

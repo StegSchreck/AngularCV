@@ -81,6 +81,24 @@ mat-dialog-container.mat-dialog-container {
   padding: 16px;
 }
 
+p.preformatted {
+  white-space: pre-wrap;
+}
+
+p.capitalize {
+  position: relative;
+}
+p.capitalize:first-letter {
+  font-size: 3.5em;
+  text-transform: uppercase;
+  float: left;
+  line-height: 1em;
+  margin-right: 0.3em;
+  margin-left: 0.1em;
+  font-family: "Roboto Slab", serif;
+  color: #666;
+}
+
 
 /***** LOADING ANIMATION *****/
 div.loading-animation {
