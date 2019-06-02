@@ -100,6 +100,7 @@ export class PdfComponent implements OnInit {
 
   generatePdfDocument(pdf) {
     pdf.page = 1;
+    pdf.setCreationDate(new Date());
     pdf.setProperties({
       title: 'AngularCV - ' + this.generalData.name + ' - ' + this.generalData.position,
       subject: 'AngularCV',

@@ -34,6 +34,9 @@ describe('PdfComponent', () => {
   it('should generate the PDF', () => {
     const pdf = component.generatePdfDocument(new jsPDF());
     expect(pdf).toBeDefined();
-    expect(pdf.page).toBeGreaterThan(0);
+    expect(pdf.internal.getNumberOfPages()).toBeGreaterThan(0);
+    expect(pdf.getCreationDate('jsDate').getFullYear()).toEqual(new Date().getFullYear());
+    expect(pdf.getCreationDate('jsDate').getMonth()).toEqual(new Date().getMonth());
+    expect(pdf.getCreationDate('jsDate').getDate()).toEqual(new Date().getDate());
   });
 });
