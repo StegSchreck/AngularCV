@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import * as jsPDF from 'jspdf';
 
 import { MaterialModule } from '../material/material.module';
 import { LocalizationService } from '../l10n/l10n.service';
@@ -28,5 +29,11 @@ describe('PdfComponent', () => {
 
   it('should be created', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should generate the PDF', () => {
+    const pdf = component.generatePdfDocument(new jsPDF());
+    expect(pdf).toBeDefined();
+    expect(pdf.page).toBeGreaterThan(0);
   });
 });

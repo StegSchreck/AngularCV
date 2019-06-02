@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { MaterialModule } from '../material/material.module';
 import { LocalizationService } from '../l10n/l10n.service';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { CvItemService } from '../cv-item/cv-item.service';
 
 import { PdfComponent } from '../pdf/pdf.component';
 
@@ -16,7 +17,7 @@ describe('CvDownloadCardComponent', () => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule ],
       declarations: [ CvDownloadCardComponent, PdfComponent ],
-      providers: [ FeatureToggleService, LocalizationService ],
+      providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();
   }));
