@@ -357,7 +357,7 @@ export const CONTACT = {
   facebook: '', // full url
   instagram: '', // full url
   other: [
-    { title: 'Medium', link: 'https://medium.com/@stegschreck' },
+    { title: 'Medium', icon: 'icon-medium', link: 'https://medium.com/@stegschreck' },
   ],
 };
 
