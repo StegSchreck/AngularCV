@@ -1,7 +1,8 @@
-version: 0.1
-environment_variables:
-  plaintext:
-    S3_BUCKET: "cv.schreck.berlin"
+version: 0.2
+env:
+  variables:
+    plaintext:
+      S3_BUCKET: "cv.schreck.berlin"
 phases:
   install:
     runtime-versions:
