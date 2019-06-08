@@ -1,23 +1,27 @@
 version: 0.1
 environment_variables:
-    plaintext:
-        S3_BUCKET: "cv.schreck.berlin"
+  plaintext:
+    S3_BUCKET: "cv.schreck.berlin"
 phases:
-    install:
-        commands:
-            - echo Installing source NPM dependencies...
-            - npm install
-            - npm install -g @angular/cli
-    build:
-        commands:
-            - echo Build started on `date`
-            - ng build --prod --aot
-    post_build:
-         commands:
-            - aws s3 cp dist s3://${S3_BUCKET} --recursive
-            - echo Build completed on `date`
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Installing source NPM dependencies...
+      - npm install
+      - npm install -g @angular/cli
+  build:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo Build started on `date`
+      - ng build --prod --aot
+  post_build:
+     commands:
+      - aws s3 cp dist s3://${S3_BUCKET} --recursive
+      - echo Build completed on `date`
 artifacts:
-    files:
-        - '**/*'
-    base-directory: 'dist*'
-    discard-paths: yes
+  files:
+      - '**/*'
+  base-directory: 'dist*'
+  discard-paths: yes

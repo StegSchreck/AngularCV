@@ -67,7 +67,7 @@ This will create an automated pipeline, which will deploy any changes you do to 
 * Select "create a new build project" and name it, e.g. `AngularCVBuild`
 * For the environment image, we will use the default one (`Use an image managed by AWS CodeBuild`)
 * Select an Operating System - currently, the only available option is `Ubuntu`
-* Select `Node.js` as runtime (as we are building an Angular app) with version `aws/codebuild/nodejs:7.0.0`
+* Select `Node.js` as runtime (as we are building an Angular app) with version `aws/codebuild/nodejs:10.0.0`
 * For the build specification, we want to use the afore mentioned `buildspec.yml`
 * Create a service role for your account, e.g. `code-build-AngularCVBuild-service-role` (you can leave the generated value)
 * Click "Save build project" and then "Next step"
