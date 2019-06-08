@@ -10,9 +10,6 @@ phases:
       - echo Installing source NPM dependencies...
       - npm install
       - npm install -g @angular/cli
-  build:
-    commands:
-      - echo Build started on `date`
       - ng build --prod --aot
   post_build:
      commands:
