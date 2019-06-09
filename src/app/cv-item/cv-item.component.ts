@@ -38,7 +38,6 @@ export class CvItemComponent implements OnInit, AfterViewInit {
   }
 
   calculateCvItemHeight(): void {
-    console.log(this.cvItem);
     if (this.cvItem !== undefined && this.cvItem.thumbnail !== undefined && this.cvItem.thumbnail !== '') {
       const img = new Image();
       img.onload = () => {
