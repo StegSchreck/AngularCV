@@ -26,7 +26,7 @@ Explain the problem and include additional details to help maintainers reproduce
 * **Explain which behavior you expected to see instead and why.**
 * **Include screenshots or animated GIFs** which show you following the described steps and clearly demonstrate the problem. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
 * **If the problem wasn't triggered by a specific action**, describe what you were doing before the problem happened.
-* **Specify which version of Atom you're using.** 
+* **Specify which version of AngularCV you're using.** 
 * **Specify the name and version of the OS you're using.**
 
 ## Suggesting Enhancements
@@ -38,7 +38,7 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/StegSc
 * **Describe the current behavior** and **explain which behavior you expected to see instead** and why.
 * **Include screenshots and animated GIFs** which help you demonstrate the steps or point out the part of Atom which the suggestion is related to. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux.
 * **Explain why this enhancement would be useful** to most users.
-* **Specify which version of Atom you're using.** 
+* **Specify which version of AngularCV you're using.** 
 * **Specify the name and version of the OS you're using.**
 
 ## Submitting Changes
@@ -59,5 +59,5 @@ Always write a clear log message for your commits. One-line messages are fine fo
 ### Coding Conventions
 The project contains a linting configuration at `tslint.json`. In order to check if your proposed changes are compliant with that configuration, you can run `npm run lint`.
 
-Please make sure that you adapt the existing tests if necesary or write new ones. The unit tests can be executed locally by running `npm run test`.
+Please make sure that you adapt the existing tests if necessary or write new ones. The unit tests can be executed locally by running `npm run test`.
 The end-to-end tests can be executed by running `npm run e2e`. If you are running a server locally (with `npm run start`), you might need to adapt the port. In this case your would need to run the command using the Angular CLI directly: `ng e2e --port 4201`.
