@@ -37,6 +37,26 @@ export class EducationComponent implements OnInit {
       .then(items => this.languageItems = items);
   }
 
+  getLanguageLevelDescription(level: number): String {
+    // 100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
+    if (level >= 100) {
+      return this.l10n.education.language_native;
+    }
+    if (level >= 80) {
+      return this.l10n.education.language_fluent;
+    }
+    if (level >= 60) {
+      return this.l10n.education.language_advanced;
+    }
+    if (level >= 40) {
+      return this.l10n.education.language_intermediate;
+    }
+    if (level >= 20) {
+      return this.l10n.education.language_elementary;
+    }
+    return this.l10n.education.language_beginner;
+  }
+
   ngOnInit() {
     this.getLocalization();
     this.getItems();
