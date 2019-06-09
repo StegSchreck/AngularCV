@@ -5,6 +5,7 @@ import { LocalizationService } from '../l10n/l10n.service';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 
 import { CvItemComponent } from './cv-item.component';
+import { CvItemDirective } from './cv-item.directive';
 
 describe('CvItemComponent', () => {
   let component: CvItemComponent;
@@ -13,7 +14,7 @@ describe('CvItemComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule ],
-      declarations: [ CvItemComponent ],
+      declarations: [ CvItemComponent, CvItemDirective ],
       providers: [ FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

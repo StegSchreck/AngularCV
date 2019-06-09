@@ -20,6 +20,7 @@ import { ProjectsComponent }        from './projects/projects.component';
 import { VolunteeringComponent }    from './volunteering/volunteering.component';
 import { AboutComponent }           from './about/about.component';
 import { CvItemComponent }          from './cv-item/cv-item.component';
+import { CvItemDirective }          from './cv-item/cv-item.directive';
 import { CvItemService }            from './cv-item/cv-item.service';
 import { FooterComponent }          from './footer/footer.component';
 import { ContactComponent }         from './contact/contact.component';
@@ -56,6 +57,7 @@ import { LocalizationComponent }    from './l10n/l10n.component';
     CvDownloadCardComponent,
     PictureModalComponent,
     LocalizationComponent,
+    CvItemDirective,
   ],
   providers: [
     Title,

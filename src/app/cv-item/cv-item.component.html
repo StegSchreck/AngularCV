@@ -1,4 +1,4 @@
-<mat-card class="cv-card closed" *ngIf="cvItem">
+<mat-card class="cv-card closed" appCvItem *ngIf="cvItem">
   <span class="cv-thumbnail">
     <img src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" width="100px" alt="" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
     <span class="vertical-divider"></span>
