@@ -385,6 +385,26 @@ export const INTERESTS = [
 
 export const PUBLICATIONS: CvItem[] = [
   {
+    title: 'The Speaker at the End of the Universe',
+    subtitle: 'Article published on Medium',
+    begin: '',
+    end: '2019-05-27',
+    description: 'How to Give a Talk at a Tech Conference',
+    tags: ['conference', 'speaker', 'public speaking'],
+    link: 'https://medium.com/@stegschreck/the-speaker-at-the-end-of-the-universe-6fb8565587b6',
+    thumbnail: 'medium.png',
+  },
+  {
+    title: 'The Hitchhiker’s Guide to a Tech Conference',
+    subtitle: 'Article published on Medium',
+    begin: '',
+    end: '2019-05-20',
+    description: 'A little How-To for Engineers how to visit a Tech Conference',
+    tags: ['conference', 'visitor', 'attendee'],
+    link: 'https://medium.com/@stegschreck/the-hitchhikers-guide-to-a-tech-conference-983c29b1e9ef',
+    thumbnail: 'medium.png',
+  },
+  {
     title: 'Tear down this wall! - Overcoming collaboration obstacles on your DevOps journey',
     subtitle: 'Article published on Medium / MakeItNew.io',
     begin: '',
@@ -400,7 +420,7 @@ export const PUBLICATIONS: CvItem[] = [
 
 export const TALKS: CvItem[] = [
   {
-    title: 'Bringing a complex stack to the cloud, our journey and lessons learned',
+    title: 'Bringing a complex stack to the cloud - Our journey and lessons learned',
     subtitle: '45 min. @ AWS Startup Day Berlin 2018',
     begin: '',
     end: '2018-10-09',
