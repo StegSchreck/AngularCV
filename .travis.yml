@@ -8,6 +8,7 @@ before_script:
 - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
 - chmod +x ./cc-test-reporter
 - "./cc-test-reporter before-build"
+- npm install -g codacy-coverage
 script:
 - ng lint
 - ng test --watch false --browsers ChromeHeadless --code-coverage
@@ -15,6 +16,7 @@ script:
 after_script:
 - "./cc-test-reporter format-coverage -t lcov -o tmp/codeclimate.frontend.json coverage/lcov.info"
 - "./cc-test-reporter upload-coverage -i tmp/codeclimate.frontend.json"
+- codacy-coverage < coverage/lcov.info
 notifications:
   email:
     on_failure: change
