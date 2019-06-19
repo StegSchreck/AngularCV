@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV.png" width="300px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV.png" width="300px">
 </p>
 
 # AngularCV

@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV.png" width="300px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV.png" width="300px">
 </p>
 
 # AngularCV
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV_Deployment.png" width="450px">
 </p>
 
 After you forked this project and adjusted it to your needs (configured with your data), you might want to deploy it in order to make it available to everyone.
@@ -20,7 +20,7 @@ You will adjust the `CNAME` of that domain later on.
 
 ### Step 1: Create AWS resources
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CodePipeline.png" width="435px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV_AWS_CodePipeline.png" width="435px">
 </p>
 
 You need a free account for [Amazon Web Services (AWS)](https://aws.amazon.com/).
@@ -98,7 +98,7 @@ For the domain, you created previously, adjust the settings in order point it to
 
 ### Step 3: (optional) Use HTTPS with AWS CloudFront distributions and AWS Certificates
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_AWS_CloudFront.png" width="435px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV_AWS_CloudFront.png" width="435px">
 </p>
 
 You can configure a [AWS CloudFront](https://console.aws.amazon.com/cloudfront/home) distribution in order to offer your Angular website with HTTPS.

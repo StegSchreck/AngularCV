@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV.png" width="300px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV.png" width="300px">
 </p>
 
 # AngularCV
@@ -72,7 +72,7 @@ See the [Angular basic guide](ANGULAR.md) for the basics. For more information, 
 
 ## Deployment to Production
 <p align="center">
-  <img src="https://github.com/StegSchreck/AngularCV/blob/master/src/assets/img/AngularCV_Deployment.png" width="450px">
+  <img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/AngularCV_Deployment.png" width="450px">
 </p>
 
 After you cloned/forked this project and adjusted it to your needs (configured with your data), you might want to deploy it in order to make it available to anyone.
@@ -83,3 +83,12 @@ Alternatively, you can use [Uberspace](https://uberspace.de/), see the correspon
 
 As another option, you can use [Github Pages](https://pages.github.com/), see the corresponding [Github Pages 
 deployment guide](DEPLOYMENT_ON_GITHUB_PAGES.md).
+
+
+## Acknowledgments
+
+This project uses a free license for PyCharm by benefiting from [JetBrains](https://www.jetbrains.com/?from=AngularCV)' open source community support program.
+
+<p align="center">
+  <a href="https://www.jetbrains.com/?from=AngularCV" alt="JetBrains" target="_blank"><img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/item-thumbnails/jetbrains.png" width="100px"></a>
+</p>
