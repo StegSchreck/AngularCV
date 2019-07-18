@@ -1,7 +1,9 @@
 {
   "name": "angular-cv",
   "version": "0.0.0",
-  "license": "GNU AGPL v3",
+  "description": "A simple, self-hosted online-CV.",
+  "license": "AGPL-3.0-or-later",
+  "author": "Sebastian Schreck",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
