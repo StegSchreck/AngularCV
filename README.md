@@ -12,7 +12,7 @@
 
 This project serves the purpose of having a simple, self-hosted online-CV outside of LinkedIn, Xing, etc.
 
-For a live demo, you can visit [cv.schreck.berlin](http://cv.schreck.berlin), for which this project was created initially.
+For a live demo, you can visit [cv.schreck.berlin](https://cv.schreck.berlin), for which this project was created initially.
 
 
 ## Third Party Stuff
