@@ -13,7 +13,6 @@ This project serves the purpose of having a simple, self-hosted online-CV outsid
 
 For a live demo, you can visit [cv.schreck.berlin](https://cv.schreck.berlin), for which this project was created initially.
 
-
 ## Third Party Stuff
 It uses [Angular](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
 Furthermore, the following third-party sources are included:
@@ -24,7 +23,6 @@ Furthermore, the following third-party sources are included:
 * [jsPDF](https://github.com/MrRio/jsPDF)
 
 The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.
-
 
 ## Configuration
 The CV items for the experience, education, projects and volunteering sections are configured in a JSON format in `/src/app/cv-item/cv-item.data.ts`.
@@ -64,10 +62,8 @@ The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.
 ### Localization
 By switching the `default_language` feature toggle (see above), you can define which language to choose for navigation menu entries, page titles, etc. You can also let the user switch the language by activating the `localization` feature toggle. You will still need to adjust your data in `src/app/cv-item/cv-items.data.ts` to adapt the same language.
 
-
 ## Angular Basics
 See the [Angular basic guide](ANGULAR.md) for the basics. For more information, visit the [Angular](https://angular.io/) website.
-
 
 ## Deployment to Production
 <p align="center">
@@ -83,9 +79,7 @@ Alternatively, you can use [Uberspace](https://uberspace.de/), see the correspon
 As another option, you can use [Github Pages](https://pages.github.com/), see the corresponding [Github Pages 
 deployment guide](DEPLOYMENT_ON_GITHUB_PAGES.md).
 
-
 ## Acknowledgments
-
 This project uses a free license for PyCharm by benefiting from [JetBrains](https://www.jetbrains.com/?from=AngularCV)' open source community support program.
 
 <p align="center">
