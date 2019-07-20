@@ -10,15 +10,15 @@ import { LocalizationService } from './l10n.service';
 })
 export class LocalizationComponent implements OnInit {
   @Input() color = 'default';
-  l10n_languages = [];
-  featureToggles;
+  private l10n_languages = [];
+  private featureToggles;
 
   constructor(
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     const all = this.localizationService.getAll();
     for (const language_id in all) {
       if (all.hasOwnProperty(language_id)) {
@@ -27,7 +27,7 @@ export class LocalizationComponent implements OnInit {
     }
   }
 
-  getFeatureToggles(): void {
+  private getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
@@ -36,7 +36,7 @@ export class LocalizationComponent implements OnInit {
     this.getFeatureToggles();
   }
 
-  changeLocalization(language: string) {
+  private changeLocalization(language: string) {
     let current_language = this.featureToggles.default_language;
     try {
       current_language = JSON.parse(localStorage.getItem('l10n')).language;

@@ -9,19 +9,19 @@ import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
   styleUrls: ['./cv-download-card.component.css'],
 })
 export class CvDownloadCardComponent implements OnInit {
-  l10n;
-  featureToggles;
+  private l10n;
+  private featureToggles;
 
   constructor(
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getFeatureToggles(): void {
+  private getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 

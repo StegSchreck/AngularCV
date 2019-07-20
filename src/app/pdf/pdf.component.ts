@@ -15,11 +15,11 @@ import { CvItemService } from '../cv-item/cv-item.service';
   ],
 })
 export class PdfComponent implements OnInit {
-  l10n;
-  featureToggles;
-  @Input() color = 'default';
-  verticalPosition = 50; // starting point
-  maximumHorizontalLength = 168;
+  private l10n;
+  private featureToggles;
+  @Input() private color = 'default';
+  private verticalPosition = 50; // starting point
+  private maximumHorizontalLength = 168;
   generalData;
   interestItems;
   cvItems: CvItem[];
@@ -39,15 +39,15 @@ export class PdfComponent implements OnInit {
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getFeatureToggles(): void {
+  private getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.generalData = this.cvItemService.getGeneralData();
     this.cvItemService
       .getInterestItems()
@@ -87,7 +87,7 @@ export class PdfComponent implements OnInit {
     this.getItems();
   }
 
-  download() {
+  public download() {
     if (this.featureToggles.downloadable_pdf === false) {
       return;
     }

@@ -8,13 +8,13 @@ import { LocalizationService } from '../l10n/l10n.service';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  l10n;
+  private l10n;
 
   constructor(
     private localizationService: LocalizationService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 

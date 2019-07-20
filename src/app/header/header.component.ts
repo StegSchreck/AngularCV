@@ -10,12 +10,12 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-  l10n;
-  featureToggles;
-  generalData;
-  navLinks = [];
+  private l10n;
+  private featureToggles;
+  private generalData;
+  private navLinks = [];
 
-  windowWidth: number = window.innerWidth;
+  private windowWidth: number = window.innerWidth;
 
   // initial values, the window object may still be undefined during this hook
   ngAfterViewInit() {
@@ -34,19 +34,19 @@ export class HeaderComponent implements OnInit, AfterViewInit {
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getFeatureToggles(): void {
+  private getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.generalData = this.cvItemService.getGeneralData();
   }
 
-  populateNavLinks(): void {
+  private populateNavLinks(): void {
     this.navLinks.push({   location: '/overview',       label: this.l10n.header.menu_overiew,          icon: 'account_circle' });
     this.navLinks.push({   location: '/experience',     label: this.l10n.header.menu_experience,       icon: 'work' });
     this.navLinks.push({   location: '/education',      label: this.l10n.header.menu_education,        icon: 'school' });

@@ -6,9 +6,8 @@ import { Component, HostListener, OnInit, AfterViewInit } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit, AfterViewInit {
-  public currentYear: Number = new Date().getFullYear();
-
-  windowWidth: number = window.innerWidth;
+  private currentYear: Number = new Date().getFullYear();
+  private windowWidth: number = window.innerWidth;
 
   // initial values, the window object may still be undefined during this hook
   ngAfterViewInit() {

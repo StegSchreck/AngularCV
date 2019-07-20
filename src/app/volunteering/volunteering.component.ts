@@ -10,19 +10,19 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./volunteering.component.css'],
 })
 export class VolunteeringComponent implements OnInit {
-  l10n;
-  volunteerItems: CvItem[];
+  private l10n;
+  private volunteerItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.cvItemService
       .getVolunteerItems()
       .then(items => this.volunteerItems = items);

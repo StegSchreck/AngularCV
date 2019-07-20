@@ -10,19 +10,19 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
-  l10n;
-  experienceItems: CvItem[];
+  private l10n;
+  private experienceItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.cvItemService
       .getCvItems()
       .then(items => this.experienceItems = items);

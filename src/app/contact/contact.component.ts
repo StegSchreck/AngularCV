@@ -10,10 +10,9 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  l10n;
-  featureToggles;
-  contactItems;
-  title = 'Contact Informations';
+  private l10n;
+  private featureToggles;
+  private contactItems;
 
   constructor(
     private localizationService: LocalizationService,
@@ -21,15 +20,15 @@ export class ContactComponent implements OnInit {
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getFeatureToggles(): void {
+  private getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.cvItemService
       .getContactItems()
       .then(items => this.contactItems = items);

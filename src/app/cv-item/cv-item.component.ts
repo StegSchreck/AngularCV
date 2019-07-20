@@ -11,7 +11,7 @@ import { CvItem } from './cv-item';
 })
 
 export class CvItemComponent implements OnInit, AfterViewInit {
-  l10n;
+  private l10n;
   @Input() cvItem: CvItem;
   @ViewChild(CvItemDirective, {static: false}) cvThumbnail: CvItemDirective;
 
@@ -19,7 +19,7 @@ export class CvItemComponent implements OnInit, AfterViewInit {
     private localizationService: LocalizationService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
@@ -31,13 +31,13 @@ export class CvItemComponent implements OnInit, AfterViewInit {
     this.calculateCvItemHeight();
   }
 
-  setComponentMinHeight(height) {
+  private setComponentMinHeight(height) {
     if (this.cvThumbnail) {
       this.cvThumbnail.elementRef.nativeElement.style.minHeight = `${height}px`;
     }
   }
 
-  calculateCvItemHeight(): void {
+  private calculateCvItemHeight(): void {
     if (this.cvItem !== undefined && this.cvItem.thumbnail !== undefined && this.cvItem.thumbnail !== '') {
       const img = new Image();
       img.onload = () => {
@@ -51,7 +51,7 @@ export class CvItemComponent implements OnInit, AfterViewInit {
     }
   }
 
-  toggleDetails(event) {
+  private toggleDetails(event) {
     const card = event.target.closest('mat-card');
     if (card.classList.contains('opened')) {
       card.classList.add('closed');

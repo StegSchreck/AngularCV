@@ -10,20 +10,20 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./publications.component.css'],
 })
 export class PublicationsComponent implements OnInit {
-  l10n;
-  publicationItems: CvItem[];
-  talkItems: CvItem[];
+  private l10n;
+  private publicationItems: CvItem[];
+  private talkItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.cvItemService
       .getPublicationItems()
       .then(items => this.publicationItems = items);

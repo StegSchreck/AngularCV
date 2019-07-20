@@ -10,19 +10,19 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
-  l10n;
-  projectItems: CvItem[];
+  private l10n;
+  private projectItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.cvItemService
       .getProjectItems()
       .then(items => this.projectItems = items);

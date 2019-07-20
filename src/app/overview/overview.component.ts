@@ -11,9 +11,9 @@ import { PictureModalComponent } from '../picture-modal/picture-modal.component'
   styleUrls: ['./overview.component.css'],
 })
 export class OverviewComponent implements OnInit {
-  l10n;
-  generalData;
-  interests;
+  private l10n;
+  private generalData;
+  private interests;
 
   constructor(
     private localizationService: LocalizationService,
@@ -21,11 +21,11 @@ export class OverviewComponent implements OnInit {
     private dialog: MatDialog,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  showAvatar() {
+  private showAvatar() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.data = {
       imagePath: 'assets/img/avatar.jpg',
@@ -34,7 +34,7 @@ export class OverviewComponent implements OnInit {
     this.dialog.open(PictureModalComponent, dialogConfig);
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.generalData = this.cvItemService.getGeneralData();
     this.cvItemService
       .getInterestItems()

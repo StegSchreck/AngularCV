@@ -10,22 +10,21 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./education.component.css'],
 })
 export class EducationComponent implements OnInit {
-  l10n;
-  educationItems: CvItem[];
-  certificationItems: CvItem[];
-  languageItems;
-  title = 'Education and Certificates';
+  private l10n;
+  private educationItems: CvItem[];
+  private certificationItems: CvItem[];
+  private languageItems;
 
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
   ) { }
 
-  getLocalization(): void {
+  private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.cvItemService
       .getEducationItems()
       .then(items => this.educationItems = items);
@@ -37,7 +36,7 @@ export class EducationComponent implements OnInit {
       .then(items => this.languageItems = items);
   }
 
-  getLanguageLevelDescription(level: number): String {
+  public getLanguageLevelDescription(level: number): String {
     // 100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
     if (level >= 100) {
       return this.l10n.education.language_native;

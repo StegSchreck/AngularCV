@@ -10,7 +10,7 @@ import { CvItemService } from './cv-item/cv-item.service';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  generalData;
+  private generalData;
 
   public constructor(
     private cvItemService: CvItemService,
@@ -27,11 +27,11 @@ export class AppComponent {
       });
   }
 
-  getItems(): void {
+  private getItems(): void {
     this.generalData = this.cvItemService.getGeneralData();
   }
 
-  public setTitle( newTitle: string) {
+  public setTitle(newTitle: string) {
     this.titleService.setTitle( newTitle );
   }
 }
