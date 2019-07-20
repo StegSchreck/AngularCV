@@ -10,10 +10,10 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./education.component.css'],
 })
 export class EducationComponent implements OnInit {
-  private l10n;
-  private educationItems: CvItem[];
-  private certificationItems: CvItem[];
-  private languageItems;
+  public l10n;
+  public educationItems: CvItem[];
+  public certificationItems: CvItem[];
+  public languageItems;
 
   constructor(
     private localizationService: LocalizationService,

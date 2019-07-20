@@ -11,9 +11,9 @@ import { CvItem } from './cv-item';
 })
 
 export class CvItemComponent implements OnInit, AfterViewInit {
-  private l10n;
-  @Input() cvItem: CvItem;
-  @ViewChild(CvItemDirective, {static: false}) cvThumbnail: CvItemDirective;
+  public l10n;
+  @Input() public cvItem: CvItem;
+  @ViewChild(CvItemDirective, {static: false}) public cvThumbnail: CvItemDirective;
 
   constructor(
     private localizationService: LocalizationService,

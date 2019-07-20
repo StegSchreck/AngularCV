@@ -10,12 +10,12 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
-  private l10n;
-  private featureToggles;
-  private generalData;
-  private navLinks = [];
+  public l10n;
+  public featureToggles;
+  public generalData;
+  public navLinks = [];
 
-  private windowWidth: number = window.innerWidth;
+  public windowWidth: number = window.innerWidth;
 
   // initial values, the window object may still be undefined during this hook
   ngAfterViewInit() {

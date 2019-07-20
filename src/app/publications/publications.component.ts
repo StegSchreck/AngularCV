@@ -10,9 +10,9 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./publications.component.css'],
 })
 export class PublicationsComponent implements OnInit {
-  private l10n;
-  private publicationItems: CvItem[];
-  private talkItems: CvItem[];
+  public l10n;
+  public publicationItems: CvItem[];
+  public talkItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,

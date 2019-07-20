@@ -10,9 +10,9 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
-  private l10n;
-  private featureToggles;
-  private contactItems;
+  public l10n;
+  public featureToggles;
+  public contactItems;
 
   constructor(
     private localizationService: LocalizationService,

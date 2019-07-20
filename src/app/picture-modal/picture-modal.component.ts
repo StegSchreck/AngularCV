@@ -7,8 +7,8 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./picture-modal.component.css'],
 })
 export class PictureModalComponent implements OnInit {
-  private title;
-  private imagePath;
+  public title;
+  public imagePath;
 
   constructor(
     private dialogRef: MatDialogRef<PictureModalComponent>,

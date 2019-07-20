@@ -8,7 +8,7 @@ import { LocalizationService } from '../l10n/l10n.service';
   styleUrls: ['./about.component.css'],
 })
 export class AboutComponent implements OnInit {
-  private l10n;
+  public l10n;
 
   constructor(
     private localizationService: LocalizationService,

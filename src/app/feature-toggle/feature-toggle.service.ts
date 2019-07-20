@@ -7,7 +7,7 @@ export class FeatureToggleService {
 
   constructor() { }
 
-  getFeatureToggles() {
+  public getFeatureToggles() {
     return FEATURE_TOGGLES;
   }
 

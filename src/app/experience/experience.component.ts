@@ -10,8 +10,8 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./experience.component.css'],
 })
 export class ExperienceComponent implements OnInit {
-  private l10n;
-  private experienceItems: CvItem[];
+  public l10n;
+  public experienceItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,

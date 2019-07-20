@@ -10,8 +10,8 @@ import { CvItemService } from '../cv-item/cv-item.service';
   styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
-  private l10n;
-  private projectItems: CvItem[];
+  public l10n;
+  public projectItems: CvItem[];
 
   constructor(
     private localizationService: LocalizationService,

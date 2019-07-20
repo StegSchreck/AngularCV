@@ -15,22 +15,22 @@ import { CvItemService } from '../cv-item/cv-item.service';
   ],
 })
 export class PdfComponent implements OnInit {
-  private l10n;
-  private featureToggles;
-  @Input() private color = 'default';
-  private verticalPosition = 50; // starting point
-  private maximumHorizontalLength = 168;
-  generalData;
-  interestItems;
-  cvItems: CvItem[];
-  educationItems: CvItem[];
-  publicationItems: CvItem[];
-  talkItems: CvItem[];
-  certificationItems: CvItem[];
-  languageItems;
-  projectItems: CvItem[];
-  volunteerItems: CvItem[];
-  contactItems;
+  public l10n;
+  public featureToggles;
+  @Input() public color = 'default';
+  public verticalPosition = 50; // starting point
+  public maximumHorizontalLength = 168;
+  public generalData;
+  public interestItems;
+  public cvItems: CvItem[];
+  public educationItems: CvItem[];
+  public publicationItems: CvItem[];
+  public talkItems: CvItem[];
+  public certificationItems: CvItem[];
+  public languageItems;
+  public projectItems: CvItem[];
+  public volunteerItems: CvItem[];
+  public contactItems;
 
   constructor(
     @Inject('Window') private window: Window,

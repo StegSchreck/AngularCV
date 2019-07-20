@@ -5,7 +5,7 @@ import { L10N } from './l10n.data';
 
 @Injectable()
 export class LocalizationService {
-  featureToggles;
+  private featureToggles;
 
   constructor(
     private featureToggleService: FeatureToggleService,
@@ -13,22 +13,22 @@ export class LocalizationService {
     this.getFeatureToggles();
   }
 
-  getFeatureToggles(): void {
+  protected getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
   }
 
-  getAll() {
+  public getAll() {
     return L10N;
   }
 
-  get(locale: string) {
+  public get(locale: string) {
     if (L10N.hasOwnProperty(locale)) {
       return L10N[locale]; // TODO merge with EN as default values
     }
     return this.getDefault();
   }
 
-  getDefault() {
+  public getDefault() {
     let language = this.featureToggles.default_language;
     try {
       language = JSON.parse(localStorage.getItem('l10n')).language;
