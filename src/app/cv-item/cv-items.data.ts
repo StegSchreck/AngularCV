@@ -182,9 +182,19 @@ export const PROJECTS: CvItem[] = [
     end: '',
     description: 'This project was created for the purpose of having a basic online-CV, which anyone can host by themselves. ' +
       'This very website is the result of it.',
-    tags: ['Angular 4', 'Material Design', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
+    tags: ['Angular', 'Material Design', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
     thumbnail: '../AngularCV.png',
+  },
+  {
+    title: 'UberPage',
+    subtitle: 'A simple self-hosted website as overview on different self-defined links',
+    begin: '2019-07',
+    end: '',
+    description: 'This project aims to offer a simple overview website for different links.',
+    tags: ['React', 'Javascript', 'GitHub', 'CSS', 'JetBrains WebStorm', 'AWS', 'npm'],
+    link: 'https://github.com/StegSchreck/uberpage',
+    thumbnail: 'UberPage_kompakt.png',
   },
   {
     title: 'Recoding Aviation Hackathon',
