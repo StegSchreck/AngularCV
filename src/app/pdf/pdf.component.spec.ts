@@ -224,7 +224,7 @@ describe('PdfComponent', () => {
     component.generalData = {
       name: 'Sebastian Schreck',
       position: 'Software Engineer',
-      description: 'This is just a test description.'
+      description: 'This is just a test description.',
     };
     const pdf = component.generatePdfDocument(new jsPDF());
     expect(pdf.internal.getNumberOfPages()).toEqual(1);

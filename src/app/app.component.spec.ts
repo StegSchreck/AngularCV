@@ -26,13 +26,13 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ AppRoutingModule, MaterialModule ],
+      imports: [ AppRoutingModule, MaterialModule, ],
       declarations: [
         AppComponent, AboutComponent, ExperienceComponent, EducationComponent, FooterComponent, HeaderComponent, OverviewComponent,
         PublicationsComponent, ProjectsComponent, VolunteeringComponent, ContactComponent, PdfComponent, CvItemComponent,
-        LocalizationComponent, CvDownloadCardComponent
+        LocalizationComponent, CvDownloadCardComponent,
       ],
-      providers: [ CvItemService, FeatureToggleService, LocalizationService ],
+      providers: [ CvItemService, FeatureToggleService, LocalizationService, ],
     }).compileComponents();
   }));
 

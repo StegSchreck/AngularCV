@@ -14,12 +14,12 @@ describe('PictureModalComponent', () => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule ],
       declarations: [ PictureModalComponent ],
-      providers: [{ provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: {} }]
+      providers: [ { provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: {} }, ],
     });
 
     TestBed.overrideModule(BrowserDynamicTestingModule, {
       set: {
-        entryComponents: [PictureModalComponent]
+        entryComponents: [ PictureModalComponent ],
       }
     });
 

@@ -4,18 +4,14 @@ mat-toolbar.header {
 
   /* to be synced with body<->header<->footer style */
   min-width: 250px;
-  /*width: 800px;*/
   max-width: 800px;
-
-/*  min-height: 64px;
-  height: 64px;
-  max-height: 64px;*/
 
   top: 0;
   padding-left: 24px;
   font-size: 1em;
   z-index: 1000;
 }
+
 @media screen and (max-width: 400px) {
   mat-toolbar.header {
     padding-left: 12px;
@@ -26,6 +22,7 @@ a.header-title {
   color: white;
   text-decoration: none;
 }
+
 @media screen and (max-width: 400px) {
   a.header-title {
     margin-left: -18px;
@@ -46,15 +43,16 @@ app-pdf {
 .header-menu button {
   left: -12px;
 }
+
 .header-menu mat-icon {
   font-size: 2em;
   color: #AAF;
 }
+
 .header-menu:hover mat-icon {
   font-size: 2em;
   color: white;
 }
-
 
 /***** TAB NAVIGATION *****/
 nav {
@@ -67,13 +65,16 @@ nav {
   max-width: 800px;
   z-index: 1000;
 }
+
 nav a.hover {
   text-decoration: none;
 }
+
 nav a.mat-tab-link {
   min-width: 75px;
   text-decoration: none;
 }
+
 nav mat-icon {
   position: absolute;
   margin-top: -0.1em;
@@ -81,12 +82,14 @@ nav mat-icon {
   font-size: 2em;
   visibility: hidden;
 }
+
 nav a:hover mat-icon,
 nav a:active mat-icon
   /*nav a[ng-reflect-active="true"] mat-icon */
 {
   visibility: visible;
 }
+
 nav a:hover span,
 nav a:active span
   /*nav a[ng-reflect-active="true"] span */

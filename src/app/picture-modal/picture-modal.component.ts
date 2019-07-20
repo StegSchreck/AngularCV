@@ -4,7 +4,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-picture-modal',
   templateUrl: './picture-modal.component.html',
-  styleUrls: ['./picture-modal.component.css']
+  styleUrls: ['./picture-modal.component.css'],
 })
 export class PictureModalComponent implements OnInit {
   title;
@@ -12,7 +12,7 @@ export class PictureModalComponent implements OnInit {
 
   constructor(
     private dialogRef: MatDialogRef<PictureModalComponent>,
-    @Inject(MAT_DIALOG_DATA) data
+    @Inject(MAT_DIALOG_DATA) data,
   ) {
     this.imagePath = data.imagePath;
     this.title = data.title;

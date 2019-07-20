@@ -24,7 +24,7 @@ A clear and concise description of what you expected to happen.
 - NPM version: <!-- `npm --version` -->
 
 ## Stacktrace
-```
+```sh
 <!--
 Error and stacktrace produced in the console, if applicable.
 -->

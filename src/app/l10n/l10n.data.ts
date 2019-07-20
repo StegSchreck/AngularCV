@@ -1,4 +1,4 @@
-/* tslint:disable:max-line-length */
+/* tslint:disable:max-line-length camelcase */
 export const L10N = {
   'EN': {
     language_name: 'English',
@@ -16,7 +16,7 @@ export const L10N = {
       general: 'General',
       profiles: 'Other Profiles on the Web',
       phone: 'Phone',
-      button_open_profile: 'OPEN PROFILE'
+      button_open_profile: 'OPEN PROFILE',
     },
     cv_download_card: {
       title: 'Download this CV as a PDF file',
@@ -91,7 +91,7 @@ export const L10N = {
       general: 'Allgemein',
       profiles: 'Andere Profile im Internet',
       phone: 'Telefon',
-      button_open_profile: 'PROFIL ÖFFNEN'
+      button_open_profile: 'PROFIL ÖFFNEN',
     },
     cv_download_card: {
       title: 'Diesen Lebenslauf als PDF herunterladen',
@@ -166,7 +166,7 @@ export const L10N = {
       general: 'Generale',
       profiles: 'Altri profili sul Web',
       phone: 'Telefono',
-      button_open_profile: 'APRI PROFILO'
+      button_open_profile: 'APRI PROFILO',
     },
     cv_download_card: {
       title: 'Scarica curriculum vitae come PDF',
@@ -241,7 +241,7 @@ export const L10N = {
       general: 'General',
       profiles: 'Otros perfiles en la web',
       phone: 'Teléfono',
-      button_open_profile: 'VER PERFIL'
+      button_open_profile: 'VER PERFIL',
     },
     cv_download_card: {
       title: 'Descarga este CV en PDF',
@@ -314,7 +314,7 @@ export const L10N = {
       general: '全面的な',
       profiles: 'インターネット上の他のプロファイル',
       phone: '電話',
-      button_open_profile: 'オープンプロファイル'
+      button_open_profile: 'オープンプロファイル',
     },
     cv_download_card: {
       title: 'この履歴書をPDFファイルとしてダウンロードする',
@@ -389,7 +389,7 @@ export const L10N = {
       general: 'General',
       profiles: 'Altres perfils a la web',
       phone: 'Telèfon',
-      button_open_profile: 'VEURE PERFIL'
+      button_open_profile: 'VEURE PERFIL',
     },
     cv_download_card: {
       title: 'Descàrrega aquest CV en PDF',

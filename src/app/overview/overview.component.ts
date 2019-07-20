@@ -8,7 +8,7 @@ import { PictureModalComponent } from '../picture-modal/picture-modal.component'
 @Component({
   selector: 'app-overview',
   templateUrl: './overview.component.html',
-  styleUrls: ['./overview.component.css']
+  styleUrls: ['./overview.component.css'],
 })
 export class OverviewComponent implements OnInit {
   l10n;

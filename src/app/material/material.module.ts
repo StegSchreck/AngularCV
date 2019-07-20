@@ -44,6 +44,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatToolbarModule,
     MatTooltipModule,
   ],
-  declarations: []
+  declarations: [],
 })
 export class MaterialModule { }

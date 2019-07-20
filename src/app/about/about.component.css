@@ -3,6 +3,7 @@
   margin-left: 15px;
   margin-bottom: 0;
 }
+
 @media screen and (max-width: 400px) {
   .text-card img {
     float: none;
@@ -10,6 +11,7 @@
     margin-bottom: 12px;
   }
 }
+
 .text-card i {
   position: relative;
   font-size: 1.4em;

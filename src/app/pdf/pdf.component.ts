@@ -11,8 +11,8 @@ import { CvItemService } from '../cv-item/cv-item.service';
   templateUrl: './pdf.component.html',
   styleUrls: ['./pdf.component.css'],
   providers: [
-    { provide: 'Window', useValue: window }
-  ]
+    { provide: 'Window', useValue: window, },
+  ],
 })
 export class PdfComponent implements OnInit {
   l10n;

@@ -8,7 +8,7 @@ export const GENERAL = {
 
 I am looking for new opportunities which include modern, progressive technologies in a collaborative working environment. Learning new things and trying out new stuff are part of my motivation. New roles are of my interest if I can accompany the software end to end - from planning, implementation, deployment towards monitoring. Amplified feedback loops and a culture of continuous learning and experimentation define a proper working environment for me. Job offers outside of Berlin are not interesting to me.
 
-This website is designed to be a simple, self-hosted online-CV, based on Angular. To find out more about the project, please click on the AngularCV logo in the bottom right corner.`
+This website is designed to be a simple, self-hosted online-CV, based on Angular. To find out more about the project, please click on the AngularCV logo in the bottom right corner.`,
 };
 // tslint:enable:max-line-length
 
@@ -169,8 +169,8 @@ export const PROJECTS: CvItem[] = [
     subtitle: 'Script for transfering personal movie ratings from one site to another',
     begin: '2017-02',
     end: '',
-    description: 'This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) to ' +
-      'another (e.g. Trakt). The script supports 13 sites currently and is constantly expanding.',
+    description: 'This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) ' +
+      'to another (e.g. Trakt). The script supports 13 sites currently and is constantly expanding.',
     tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV'],
     link: 'https://github.com/StegSchreck/RatS',
     thumbnail: 'RatS.png',
@@ -379,17 +379,17 @@ export const INTERESTS = [
   {
     title: 'Rowing',
     subtitle: '2000 — 2013',
-    icon: 'rowing'
+    icon: 'rowing',
   },
   {
     title: 'Photography',
     subtitle: 'Pentax K3 DSLR',
-    icon: 'camera_alt'
+    icon: 'camera_alt',
   },
   {
     title: 'Volunteering in sports',
     subtitle: '2005 — 2016',
-    icon: 'favorite'
+    icon: 'favorite',
   },
 ];
 

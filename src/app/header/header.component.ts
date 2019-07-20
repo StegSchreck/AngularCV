@@ -7,7 +7,7 @@ import { CvItemService } from '../cv-item/cv-item.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit, AfterViewInit {
   l10n;

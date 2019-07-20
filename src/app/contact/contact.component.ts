@@ -7,7 +7,7 @@ import { CvItemService } from '../cv-item/cv-item.service';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css']
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
   l10n;
@@ -18,7 +18,7 @@ export class ContactComponent implements OnInit {
   constructor(
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
-    private cvItemService: CvItemService
+    private cvItemService: CvItemService,
   ) { }
 
   getLocalization(): void {

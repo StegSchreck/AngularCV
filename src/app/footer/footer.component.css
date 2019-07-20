@@ -15,6 +15,7 @@ mat-toolbar.footer {
   padding-left: 24px;
   font-size: 1em;
 }
+
 @media screen and (max-width: 400px) {
   mat-toolbar.footer {
     min-height: 48px;
@@ -22,36 +23,44 @@ mat-toolbar.footer {
     max-height: 48px;
     font-size: 0.8em;
   }
+
   span.copyright {
     margin-top: -4px;
   }
 }
+
 mat-toolbar.footer a {
   position: absolute;
   right: 24px;
   top: 12px;
 }
+
 mat-toolbar.footer img {
   height: 36px;
 }
+
 @media screen and (max-width: 600px) {
   mat-toolbar.footer img {
     height: 30px;
   }
 }
+
 @media screen and (max-width: 400px) {
   mat-toolbar.footer img {
     height: 24px;
   }
 }
+
 a {
   color: white;
   text-decoration: none;
 }
+
 .copyright {
   text-align: center;
   margin: auto;
 }
+
 app-l10n {
   position: absolute;
   float: left;

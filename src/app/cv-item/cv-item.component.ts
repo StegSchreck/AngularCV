@@ -7,7 +7,7 @@ import { CvItem } from './cv-item';
 @Component({
   selector: 'app-cv-item',
   templateUrl: './cv-item.component.html',
-  styleUrls: ['./cv-item.component.css']
+  styleUrls: ['./cv-item.component.css'],
 })
 
 export class CvItemComponent implements OnInit, AfterViewInit {

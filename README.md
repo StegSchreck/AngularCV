@@ -4,9 +4,8 @@
 
 # AngularCV
 [![Build Status](https://travis-ci.org/StegSchreck/AngularCV.svg?branch=master)](https://travis-ci.org/StegSchreck/AngularCV)
-[![Maintainability by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/maintainability)](https://codeclimate.com/github/StegSchreck/AngularCV/maintainability)
-[![Test Coverage by CodeClimate](https://api.codeclimate.com/v1/badges/024f5abf08c39ce6b497/test_coverage)](https://codeclimate.com/github/StegSchreck/AngularCV/test_coverage)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dcb96592805143aa8cc1de99b1e9f836)](https://www.codacy.com/app/StegSchreck/AngularCV?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=StegSchreck/AngularCV&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/dcb96592805143aa8cc1de99b1e9f836)](https://www.codacy.com/app/StegSchreck/AngularCV?utm_source=github.com&utm_medium=referral&utm_content=StegSchreck/AngularCV&utm_campaign=Badge_Coverage)
 [![License](https://img.shields.io/github/license/StegSchreck/AngularCV.svg)](https://github.com/StegSchreck/AngularCV/blob/master/LICENSE)
 [![Latest Release](https://img.shields.io/github/release/StegSchreck/AngularCV.svg?logo=github)](https://github.com/StegSchreck/AngularCV/releases)
 

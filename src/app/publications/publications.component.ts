@@ -7,7 +7,7 @@ import { CvItemService } from '../cv-item/cv-item.service';
 @Component({
   selector: 'app-publications',
   templateUrl: './publications.component.html',
-  styleUrls: ['./publications.component.css']
+  styleUrls: ['./publications.component.css'],
 })
 export class PublicationsComponent implements OnInit {
   l10n;
@@ -16,7 +16,7 @@ export class PublicationsComponent implements OnInit {
 
   constructor(
     private localizationService: LocalizationService,
-    private cvItemService: CvItemService
+    private cvItemService: CvItemService,
   ) { }
 
   getLocalization(): void {

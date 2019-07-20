@@ -2,16 +2,19 @@ mat-card {
   margin-bottom: 1em;
   min-height: 100px;
 }
+
 @media screen and (max-width: 600px) {
   mat-card {
     min-height: 75px;
   }
 }
+
 mat-card-header,
 mat-card-actions,
 mat-card-content {
   margin-left: 142px;
 }
+
 @media screen and (max-width: 600px) {
   mat-card-header,
   mat-card-actions,
@@ -19,6 +22,7 @@ mat-card-content {
     margin-left: 122px;
   }
 }
+
 @media screen and (max-width: 400px) {
   mat-card-header,
   mat-card-actions,
@@ -27,18 +31,22 @@ mat-card-content {
     margin-right: -8px;
   }
 }
+
 mat-card-content {
   padding-left: 16px;
   padding-right: 16px;
 }
+
 mat-card-subtitle {
   font-size: 1.2em;
 }
+
 mat-card-title {
   margin-top: 6px;
   padding-right: 10em;
   top: 24px;
 }
+
 .cv-thumbnail img {
   position: absolute;
   left: 24px;
@@ -49,6 +57,7 @@ mat-card-title {
   margin-bottom: 24px;
   margin-right: 24px;
 }
+
 @media screen and (max-width: 600px) {
   .cv-thumbnail img {
     margin-right: 16px;
@@ -57,11 +66,13 @@ mat-card-title {
     margin-bottom: 16px;
   }
 }
+
 @media screen and (max-width: 400px) {
   .cv-thumbnail {
     display: none;
   }
 }
+
 .vertical-divider {
   position: absolute;
   border-left: 2px solid #888;
@@ -69,6 +80,7 @@ mat-card-title {
   left: 148px;
   bottom: 20px;
 }
+
 @media screen and (max-width: 600px) {
   .vertical-divider {
     left: 132px;
@@ -76,6 +88,7 @@ mat-card-title {
     top: 16px;
   }
 }
+
 .toggle-details {
   position: absolute;
   right: 24px;
@@ -83,6 +96,7 @@ mat-card-title {
   font-size: 1em;
   float:right;
 }
+
 .toggle-details mat-icon {
   position: absolute;
   top: 0.2em;
@@ -92,7 +106,6 @@ mat-card-title {
 
 mat-card.opened mat-card-content,
 mat-card.opened mat-card-actions {
-  /*display: block;*/
   max-height: 500px;
   position: static;
   visibility: visible;
@@ -103,7 +116,6 @@ mat-card.opened mat-card-actions {
 
 mat-card.closed mat-card-content,
 mat-card.closed mat-card-actions {
-  /*display: none;*/
   max-height: 0;
   position: static;
   opacity: 0;
@@ -119,6 +131,7 @@ mat-card.opened mat-card-actions {
 mat-card.opened .toggle-details mat-icon:before {
   content: 'expand_less';
 }
+
 mat-card.closed .toggle-details mat-icon:before {
   content: 'expand_more';
 }
@@ -130,21 +143,25 @@ mat-card.closed .toggle-details mat-icon:before {
   top: 18px;
   color: #888;
 }
+
 .timespan mat-icon {
   position: relative;
   top: 6px;
   font-size: 1.5em;
 }
+
 @media screen and (max-width: 600px) {
   .timespan {
     position: relative;
     left: -12px;
     top: -2px;
   }
+
   mat-card-title {
     padding-right: 0;
   }
 }
+
 @media screen and (max-width: 400px) {
   .timespan {
     padding-left: 20px;

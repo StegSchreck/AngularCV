@@ -7,7 +7,7 @@ import { CvItemService } from '../cv-item/cv-item.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent implements OnInit {
   l10n;
@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor(
     private localizationService: LocalizationService,
-    private cvItemService: CvItemService
+    private cvItemService: CvItemService,
   ) { }
 
   getLocalization(): void {

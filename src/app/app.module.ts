@@ -69,7 +69,7 @@ import { LocalizationComponent }    from './l10n/l10n.component';
     AppComponent,
   ],
   entryComponents: [
-    PictureModalComponent
-  ]
+    PictureModalComponent,
+  ],
 })
 export class AppModule { }

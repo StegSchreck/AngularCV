@@ -6,7 +6,7 @@ import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 @Component({
   selector: 'app-cv-download-card',
   templateUrl: './cv-download-card.component.html',
-  styleUrls: ['./cv-download-card.component.css']
+  styleUrls: ['./cv-download-card.component.css'],
 })
 export class CvDownloadCardComponent implements OnInit {
   l10n;

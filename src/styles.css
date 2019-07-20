@@ -3,6 +3,7 @@
 @import "assets/icomoon/style.css";
 @import "assets/roboto-font/style.css";
 @import "assets/material-icons/style.css";
+
 body {
   margin: 0 auto;
 
@@ -15,15 +16,18 @@ body {
   padding-bottom: 88px;
   padding-top: 88px;
 }
+
 @media screen and (max-width: 600px) {
   body {
     padding-bottom: 80px;
     padding-top: 80px;
   }
+
   .mat-dialog-container {
     padding: 16px !important;
   }
 }
+
 @media screen and (min-width: 800px) {
   body {
     padding-top: 136px;
@@ -41,30 +45,36 @@ mat-card mat-card-title {
   text-transform: uppercase;
   font-family: "Roboto Slab", serif;
 }
+
 @media screen and (max-width: 600px) {
   .header-title {
     font-size: 1.2em !important;
   }
 }
+
 mat-card {
   margin-bottom: 1em;
 }
+
 @media screen and (max-width: 800px) {
   mat-card {
     margin-left: 6px;
     margin-right: 6px;
   }
 }
+
 @media screen and (max-width: 400px) {
   mat-card {
     padding: 12px !important;
   }
 }
+
 mat-card.page-title {
   background-color: #444;
   color: white;
   padding: 12px 60px 12px 24px;
 }
+
 mat-card.page-title mat-icon {
   position: absolute;
   font-size: 1.4em;
@@ -88,6 +98,7 @@ p.preformatted {
 p.capitalize {
   position: relative;
 }
+
 p.capitalize:first-letter {
   font-size: 3.5em;
   text-transform: uppercase;
@@ -98,7 +109,6 @@ p.capitalize:first-letter {
   font-family: "Roboto Slab", serif;
   color: #666;
 }
-
 
 /***** LOADING ANIMATION *****/
 div.loading-animation {
@@ -112,6 +122,7 @@ div.loading-animation {
   justify-content: center;
   align-items: center;
 }
+
 .sk-cube-grid {
   width: 40px;
   height: 40px;
@@ -126,6 +137,7 @@ div.loading-animation {
   -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
   animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
+
 .sk-cube-grid .sk-cube1 {
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s; }

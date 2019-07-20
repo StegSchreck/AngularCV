@@ -15,7 +15,7 @@ export class AppComponent {
   public constructor(
     private cvItemService: CvItemService,
     private titleService: Title,
-    private router: Router
+    private router: Router,
   ) {
     this.getItems();
     this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
