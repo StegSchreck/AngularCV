@@ -184,7 +184,7 @@ export const PROJECTS: CvItem[] = [
       'This very website is the result of it.',
     tags: ['Angular', 'Material Design', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
-    thumbnail: '../AngularCV.png',
+    thumbnail: '../AngularCV.svg',
   },
   {
     title: 'UberPage',

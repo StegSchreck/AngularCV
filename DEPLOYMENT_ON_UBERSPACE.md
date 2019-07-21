@@ -42,7 +42,7 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
         
         popd
         ```
-      * Make the script executable via `chmod +x ~/bin/deploy_cv.s` and add the following line to the crontab
+      * Make the script executable via `chmod +x ~/bin/deploy_cv.sh` and add the following line to the crontab
         ```sh
         # Deploy AngularCV
         @daily ~/bin/deploy_cv.sh
