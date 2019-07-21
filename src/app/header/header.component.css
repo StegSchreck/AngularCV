@@ -71,8 +71,18 @@ nav a.hover {
 }
 
 nav a.mat-tab-link {
+  padding: 0 12px;
+  margin: auto;
   min-width: 75px;
   text-decoration: none;
+}
+
+nav a.mat-tab-link:first-child {
+  margin-left: 0;
+}
+
+nav a.mat-tab-link:last-child {
+  margin-right: 0;
 }
 
 nav mat-icon {
@@ -84,15 +94,11 @@ nav mat-icon {
 }
 
 nav a:hover mat-icon,
-nav a:active mat-icon
-  /*nav a[ng-reflect-active="true"] mat-icon */
-{
+nav a:active mat-icon {
   visibility: visible;
 }
 
 nav a:hover span,
-nav a:active span
-  /*nav a[ng-reflect-active="true"] span */
-{
+nav a:active span {
   visibility: hidden;
 }
