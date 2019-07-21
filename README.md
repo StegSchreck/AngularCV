@@ -13,17 +13,6 @@ This project serves the purpose of having a simple, self-hosted online-CV outsid
 
 For a live demo, you can visit [cv.schreck.berlin](https://cv.schreck.berlin), for which this project was created initially.
 
-## Third Party Stuff
-It uses [Angular](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
-Furthermore, the following third-party sources are included:
-* [Roboto](https://fonts.google.com/specimen/Roboto)
-* [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
-* [IcoMoon Free](https://icomoon.io/#preview-free)
-* [SimpleIcons](https://simpleicons.org/)
-* [jsPDF](https://github.com/MrRio/jsPDF)
-
-The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.
-
 ## Configuration
 The CV items for the experience, education, projects and volunteering sections are configured in a JSON format in `/src/app/cv-item/cv-item.data.ts`.
 Please notice the division of the education section, which is applied here. This enables you to re-arrange the the sections to your likings.
@@ -80,8 +69,19 @@ As another option, you can use [Github Pages](https://pages.github.com/), see th
 deployment guide](DEPLOYMENT_ON_GITHUB_PAGES.md).
 
 ## Acknowledgments
-This project uses a free license for PyCharm by benefiting from [JetBrains](https://www.jetbrains.com/?from=AngularCV)' open source community support program.
+This project uses a free license for WebStorm by benefiting from [JetBrains](https://www.jetbrains.com/?from=AngularCV)' open source community support program.
 
 <p align="center">
   <a href="https://www.jetbrains.com/?from=AngularCV" alt="JetBrains" target="_blank"><img src="https://raw.githubusercontent.com/StegSchreck/AngularCV/master/src/assets/img/item-thumbnails/jetbrains.png" width="100px"></a>
 </p>
+
+### Third Party Stuff
+This project uses [Angular](https://angular.io/) and the [Material Design components for Angular](https://material.angular.io/).
+Furthermore, the following third-party sources are included:
+* [Roboto](https://fonts.google.com/specimen/Roboto)
+* [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
+* [IcoMoon Free](https://icomoon.io/#preview-free)
+* [SimpleIcons](https://simpleicons.org/)
+* [jsPDF](https://github.com/MrRio/jsPDF)
+
+The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.
