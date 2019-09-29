@@ -303,15 +303,6 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'Logo-Bundesliga_quer.jpg',
   },
   {
-    title: 'ULEB Euroleague Final Four 2009 Berlin',
-    subtitle: 'Team delegate',
-    begin: '',
-    end: '2009',
-    description: 'Team delegate of a basketeball team from Siena, Italy',
-    link: 'http://www.euroleague.net/',
-    thumbnail: 'ULEB_FinalFour_2009.png',
-  },
-  {
     title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
     subtitle: 'Youth trainer and youth leader',
     begin: '2007',
@@ -346,6 +337,15 @@ export const VOLUNTEERING: CvItem[] = [
     description: '',
     link: 'https://www.iaaf.org/',
     thumbnail: 'IAAF_2009_in_Berlin.png',
+  },
+  {
+    title: 'ULEB Euroleague Final Four 2009 Berlin',
+    subtitle: 'Team delegate',
+    begin: '',
+    end: '2009',
+    description: 'Team delegate of a basketeball team from Siena, Italy',
+    link: 'http://www.euroleague.net/',
+    thumbnail: 'ULEB_FinalFour_2009.png',
   },
   {
     title: 'FIFA World Cup 2006 Germany',
@@ -395,6 +395,16 @@ export const INTERESTS = [
 
 export const PUBLICATIONS: CvItem[] = [
   {
+    title: 'How to Touch the Cloud',
+    subtitle: 'Article published on Medium / MakeItNew.io',
+    begin: '',
+    end: '2019-10-03',
+    description: 'Different Possibilities on How to Interact with AWS',
+    tags: ['AWS', 'Python', 'Ansible', 'Terraform', 'S3', 'CloudFormation', 'SDK', 'CLI'],
+    link: 'https://makeitnew.io/how-to-touch-the-cloud-d08bcf14debe',
+    thumbnail: 'Medium_MakeItNew.png',
+  },
+  {
     title: 'The Speaker at the End of the Universe',
     subtitle: 'Article published on Medium',
     begin: '',
@@ -415,7 +425,7 @@ export const PUBLICATIONS: CvItem[] = [
     thumbnail: 'medium.png',
   },
   {
-    title: 'Tear down this wall! - Overcoming collaboration obstacles on your DevOps journey',
+    title: 'Tear Down This Wall! - Overcoming Collaboration Obstacles on Your DevOps Journey',
     subtitle: 'Article published on Medium / MakeItNew.io',
     begin: '',
     end: '2019-04-17',
