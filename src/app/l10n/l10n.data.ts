@@ -300,79 +300,6 @@ export const L10N = {
       title: 'Voluntariado y causas',
     },
   },
-  'JP': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
-    language_name: '日本人',
-    about: {
-      title: 'このサイトについて',
-      subtitle: '簡単な自己ホスト型オンライン履歴書',
-      content: 'このウェブサイトは基本的なオンライン履歴書を持つことを目的としてGitHubプロジェクトとして作成されました。 ただし、主な対象読者はソフトウェア開発者です。 基本的に、これを構築するために以下のテクニックが使用されます。',
-      additional: 'さらに、次のサードパーティソースが含まれています。',
-      link_to_github: 'GITHUBでプロジェクトを見る',
-    },
-    contact: {
-      title: '連絡先情報',
-      general: '全面的な',
-      profiles: 'インターネット上の他のプロファイル',
-      phone: '電話',
-      button_open_profile: 'オープンプロファイル',
-    },
-    cv_download_card: {
-      title: 'この履歴書をPDFファイルとしてダウンロードする',
-    },
-    cv_item: {
-      button_view_link: 'リンクを見る',
-      button_view_attachment: '添付ファイルを表示',
-      now: '今',
-    },
-    education: {
-      title_languages: '言語',
-      title_certificates: '証明書',
-      title_education: '教育',
-      language_native: '母国語',
-      language_fluent: '流暢なスピーカー',
-      language_advanced: '進んだ',
-      language_intermediate: '中級',
-      language_elementary: '小学校',
-      language_beginner: '初心者',
-    },
-    experience: {
-      title: 'プロとしての経験',
-    },
-    header: {
-      menu_overiew: 'ホームページ',
-      menu_experience: '経験',
-      menu_education: '教育',
-      menu_publications: '出版物',
-      menu_projects: 'プロジェクト',
-      menu_volunteering: 'ボランティア',
-      menu_contact: '連絡先情報',
-      menu_about: 'このサイトについて',
-    },
-    overview: {
-      title: 'ホームページ',
-      subtitle_aboutme: '私について',
-      subtitle_interests: '趣味や興味',
-    },
-    pdf: {
-      button_tooltip: 'この履歴書をPDFファイルとしてダウンロードする',
-      label_city: '都市',
-      label_email: 'Eメール',
-      continuing_next_page: '次のページに続く...',
-      continued_from_last_page: '... 前のページから続く.',
-      info_generation: 'この履歴書は、AngularCVプロジェクトを使用して自己ホスト型のオンライン履歴書から生成されました。',
-      info_headhunter: 'あなたがヘッドハンターからこれを受け取ったなら、彼は私のウェブページからそれをダウンロードして私の同意なしにあなたに送ったかもしれません。',
-    },
-    projects: {
-      title: 'プロジェクト',
-    },
-    publications: {
-      title_talks: 'カンファレンストーク',
-      title_publications: '出版物',
-    },
-    volunteering: {
-      title: '自主的な仕事とその原因',
-    },
-  },
   'CA': { // Thanks to Pelayo García (https://github.com/oyale)
     language_name: 'Catalá',
     about: {
@@ -446,6 +373,153 @@ export const L10N = {
     },
     volunteering: {
       title: 'Voluntariat i causes',
+    },
+  },
+  'JP': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
+    language_name: '日本人',
+    about: {
+      title: 'このサイトについて',
+      subtitle: '簡単な自己ホスト型オンライン履歴書',
+      content: 'このウェブサイトは基本的なオンライン履歴書を持つことを目的としてGitHubプロジェクトとして作成されました。 ただし、主な対象読者はソフトウェア開発者です。 基本的に、これを構築するために以下のテクニックが使用されます。',
+      additional: 'さらに、次のサードパーティソースが含まれています。',
+      link_to_github: 'GITHUBでプロジェクトを見る',
+    },
+    contact: {
+      title: '連絡先情報',
+      general: '全面的な',
+      profiles: 'インターネット上の他のプロファイル',
+      phone: '電話',
+      button_open_profile: 'オープンプロファイル',
+    },
+    cv_download_card: {
+      title: 'この履歴書をPDFファイルとしてダウンロードする',
+    },
+    cv_item: {
+      button_view_link: 'リンクを見る',
+      button_view_attachment: '添付ファイルを表示',
+      now: '今',
+    },
+    education: {
+      title_languages: '言語',
+      title_certificates: '証明書',
+      title_education: '教育',
+      language_native: '母国語',
+      language_fluent: '流暢なスピーカー',
+      language_advanced: '進んだ',
+      language_intermediate: '中級',
+      language_elementary: '小学校',
+      language_beginner: '初心者',
+    },
+    experience: {
+      title: 'プロとしての経験',
+    },
+    header: {
+      menu_overiew: 'ホームページ',
+      menu_experience: '経験',
+      menu_education: '教育',
+      menu_publications: '出版物',
+      menu_projects: 'プロジェクト',
+      menu_volunteering: 'ボランティア',
+      menu_contact: '連絡先情報',
+      menu_about: 'このサイトについて',
+    },
+    overview: {
+      title: 'ホームページ',
+      subtitle_aboutme: '私について',
+      subtitle_interests: '趣味や興味',
+    },
+    pdf: {
+      button_tooltip: 'この履歴書をPDFファイルとしてダウンロードする',
+      label_city: '都市',
+      label_email: 'Eメール',
+      continuing_next_page: '次のページに続く...',
+      continued_from_last_page: '... 前のページから続く.',
+      info_generation: 'この履歴書は、AngularCVプロジェクトを使用して自己ホスト型のオンライン履歴書から生成されました。',
+      info_headhunter: 'あなたがヘッドハンターからこれを受け取ったなら、彼は私のウェブページからそれをダウンロードして私の同意なしにあなたに送ったかもしれません。',
+    },
+    projects: {
+      title: 'プロジェクト',
+    },
+    publications: {
+      title_talks: 'カンファレンストーク',
+      title_publications: '出版物',
+    },
+    volunteering: {
+      title: '自主的な仕事とその原因',
+    },
+  },
+  'KO': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
+    language_name: '한국어',
+    about: {
+      title: '이 웹 사이트에 대하여',
+      subtitle: '간단한 자체 호스팅 온라인 이력서',
+      content: '이 웹 사이트는 누구나 온라인으로 호스팅 할 수있는 기본 온라인 이력서를 가지기 위해 GitHub 프로젝트로 만들어졌습니다. ' +
+        '주요 대상은 소프트웨어 개발자입니다. 이를 구축하기 위해 기본적으로 다음 기술이 사용됩니다.',
+      additional: '또한 다음과 같은 타사 소스가 포함됩니다.',
+      link_to_github: 'GITHUB에서 프로젝트보기',
+    },
+    contact: {
+      title: '연락 정보',
+      general: '일반적으로',
+      profiles: '인터넷의 다른 프로필',
+      phone: '전화',
+      button_open_profile: '프로필 열기',
+    },
+    cv_download_card: {
+      title: '이 이력서를 PDF로 다운로드',
+    },
+    cv_item: {
+      button_view_link: '링크보기',
+      button_view_attachment: '첨부 파일보기',
+      now: '지금',
+    },
+    education: {
+      title_languages: '언어',
+      title_certificates: '증명서',
+      title_education: '교육',
+      language_native: '원어민',
+      language_fluent: '유창한',
+      language_advanced: '많은',
+      language_intermediate: '중급',
+      language_elementary: '기본',
+      language_beginner: '초심자',
+    },
+    experience: {
+      title: '전문적 경험',
+    },
+    header: {
+      menu_overiew: '개요',
+      menu_experience: '경험',
+      menu_education: '교육',
+      menu_publications: '간행물',
+      menu_projects: '프로젝트',
+      menu_volunteering: '자원',
+      menu_contact: '연락처 데이터',
+      menu_about: '이것에 관해서',
+    },
+    overview: {
+      title: '개요',
+      subtitle_aboutme: '나에 대해서',
+      subtitle_interests: '취미와 관심사',
+    },
+    pdf: {
+      button_tooltip: '이 이력서를 PDF로 다운로드',
+      label_city: '시티',
+      label_email: '이메일',
+      continuing_next_page: '다음 페이지에 계속...',
+      continued_from_last_page: '... 이전 페이지에서 계속.',
+      info_generation: '이 커리큘럼 이력서는 AngularCV 프로젝트를 사용하여 자체 호스팅 온라인 이력서에서 생성되었습니다.',
+      info_headhunter: '헤드 헌터로부터이 정보를받은 경우 내 웹 페이지에서 다운로드하여 동의하지 않고 보낸 것입니다.',
+    },
+    projects: {
+      title: '프로젝트',
+    },
+    publications: {
+      title_talks: '회담',
+      title_publications: '간행물',
+    },
+    volunteering: {
+      title: '자발적인 일과 원인',
     },
   },
 };
