@@ -522,4 +522,79 @@ export const L10N = {
       title: '자발적인 일과 원인',
     },
   },
+  'ZH': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
+    language_name: '中文',
+    about: {
+      title: '关于本网站',
+      subtitle: '一个简单的自托管在线简历',
+      content: '该网站是作为GitHub项目创建的，目的是拥有一个基本的在线简历，任何人都可以自己托管。' +
+        '不过，主要目标受众是软件开发人员。' +
+        '为此，基本上使用以下技术：',
+      additional: '此外，包括以下第三方来源：',
+      link_to_github: '在GITHUB上查看项目',
+    },
+    contact: {
+      title: '联系信息',
+      general: '通常',
+      profiles: '网络上的其他个人资料',
+      phone: '电话',
+      button_open_profile: '打开个人资料',
+    },
+    cv_download_card: {
+      title: '将此简历下载为PDF文件',
+    },
+    cv_item: {
+      button_view_link: '查看链接',
+      button_view_attachment: '查看附件',
+      now: '现在',
+    },
+    education: {
+      title_languages: '语言能力',
+      title_certificates: '证明书',
+      title_education: '教育',
+      language_native: '母语人士',
+      language_fluent: '流利',
+      language_advanced: '先进',
+      language_intermediate: '中间',
+      language_elementary: '初步',
+      language_beginner: '初学者',
+    },
+    experience: {
+      title: '专业经验',
+    },
+    header: {
+      menu_overiew: '总览',
+      menu_experience: '专业经验',
+      menu_education: '教育',
+      menu_publications: '刊物',
+      menu_projects: '专案',
+      menu_volunteering: '义工',
+      menu_contact: '联系信息',
+      menu_about: '对这个',
+    },
+    overview: {
+      title: '总览',
+      subtitle_aboutme: '关于我',
+      subtitle_interests: '爱好和兴趣',
+    },
+    pdf: {
+      button_tooltip: '将此简历下载为PDF文件',
+      label_city: '市',
+      label_email: '电子邮件',
+      continuing_next_page: '接下页...',
+      continued_from_last_page: '... 从上一页继续。',
+      info_generation: '该简历是使用AngularCV项目从自托管的在线简历生成的。',
+      info_headhunter: '如果您是从猎头那里收到的，则他可能只是从我的网页上下载了它，并且未经我的同意将其发送给您。',
+    },
+    projects: {
+      title: '专案',
+    },
+    publications: {
+      title_talks: '会谈',
+      title_publications: '刊物',
+    },
+    volunteering: {
+      title: '志愿工作及原因',
+    },
+  },
 };
