@@ -375,6 +375,81 @@ export const L10N = {
       title: 'Voluntariat i causes',
     },
   },
+  'SV': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
+    language_name: 'Svenska',
+    about: {
+      title: 'Om den här webbplatsen',
+      subtitle: 'En enkel självhostad online-CV',
+      content: 'Denna webbplats skapades som ett GitHub-projekt i syfte att ha en grundläggande online-CV, som vem som helst kan vara värd för. ' +
+        'Huvudmålgruppen är dock mjukvaruutvecklare. ' +
+        'För att bygga detta används i princip följande tekniker:',
+      additional: 'Följande tredjepartskällor ingår dessutom:',
+      link_to_github: 'VISA PROJEKTET PÅ GITHUB',
+    },
+    contact: {
+      title: 'Kontaktinformation',
+      general: 'Allmänhet',
+      profiles: 'Andra profiler på Internet',
+      phone: 'Phone',
+      button_open_profile: 'ÖPPEN PROFIL',
+    },
+    cv_download_card: {
+      title: 'Ladda ner detta CV som en PDF-fil',
+    },
+    cv_item: {
+      button_view_link: 'VISA LINK',
+      button_view_attachment: 'VISA FÖRTAGET FIL',
+      now: 'nu',
+    },
+    education: {
+      title_languages: 'Språk',
+      title_certificates: 'Certifikat',
+      title_education: 'Utbildning',
+      language_native: 'modersmålstalare',
+      language_fluent: 'flytande högtalare',
+      language_advanced: 'avancerad',
+      language_intermediate: 'mellanliggande',
+      language_elementary: 'elementärt',
+      language_beginner: 'nybörjare',
+    },
+    experience: {
+      title: 'Professionell erfarenhet',
+    },
+    header: {
+      menu_overiew: 'Översikt',
+      menu_experience: 'Erfarenhet',
+      menu_education: 'Utbildning',
+      menu_publications: 'Publikationer',
+      menu_projects: 'Projekt',
+      menu_volunteering: 'Volontär',
+      menu_contact: 'Kontakt',
+      menu_about: 'Handla om',
+    },
+    overview: {
+      title: 'Översikt',
+      subtitle_aboutme: 'Om mig',
+      subtitle_interests: 'Hobbys och intressen',
+    },
+    pdf: {
+      button_tooltip: 'Ladda ner CV som PDF',
+      label_city: 'stad',
+      label_email: 'e-post',
+      continuing_next_page: 'Fortsätter på nästa sida...',
+      continued_from_last_page: '... fortsatte från föregående sida.',
+      info_generation: 'Detta CV genererades från en självhostad online-CV med AngularCV-projektet.',
+      info_headhunter: 'Om du fick detta från en headhunter, kan han kanske ha laddat ner den från min webbsida och skickat till dig utan mitt samtycke.',
+    },
+    projects: {
+      title: 'Projekt',
+    },
+    publications: {
+      title_talks: 'Talks',
+      title_publications: 'Publikationer',
+    },
+    volunteering: {
+      title: 'Frivilligt arbete och orsaker',
+    },
+  },
   'JP': { // This was translated by Google. If you are a native-speaker and know how to improve it, I would appreciate seeing your pull request.
     language_name: '日本人',
     about: {
