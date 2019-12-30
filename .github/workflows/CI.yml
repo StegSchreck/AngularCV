@@ -21,9 +21,9 @@ jobs:
       run: |
         npm install -g npm@latest @angular/cli
         npm ci
-        npm run lint
-        npm run test --watch false --browsers FirefoxHeadless
-        npm run build --prod
+        ng lint
+        ng test --watch false --browsers ChromeHeadless
+        ng build --prod
       env:
         CI: true
 
