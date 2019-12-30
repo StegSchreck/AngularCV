@@ -22,7 +22,7 @@ jobs:
         npm install -g npm@latest @angular/cli
         npm ci
         npm run lint
-        npm run test --watch false --browsers ChromeHeadless
+        npm run test --watch false
         npm run build --prod
       env:
         CI: true
