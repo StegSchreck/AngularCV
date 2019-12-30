@@ -16,10 +16,10 @@ notifications:
   email:
     on_failure: change
     on_success: change
-deploy:
-  provider: releases
-  api_key:
-    secure: WA3/qjG5caymo+8Mk6gpKG7ErgQVsOBA0w7vmV9mdED7f+L7af521BDfui1EmuI5iYfJipFIV+MvTAfM/5las6oiaYlPEjw48crlcmlJc7pLZ9gSBk3TpPiFFMqO+kplhT+oFZhVAwqxL8w1lxqo19Dj2euXg2muAz0Uha4xagOMw4k+tXyGQty1PGFWiwEPVcDc1YN1ubz/wH3o8ptYWuEW3B0XDiSuOsuJXEYaHIGNKc75ck4PQf6FsIlD2IJdrTr9AOAhS5yIXjoqR4jTQhtCxne1PpJQRHZWzdG6zHuJevFEdW48jAiBEVxGyTLXpVnNuMlyVMI/kWF2IMLR7tvg5uP7zBuPy3SL8eaBtu57gqxaJpCxSkQ7u6cm8HfVFk5qKkF8ScZPBGw4TBCfjLg6C1tN2b4iV4z+lpJCgrs97J7Hqmfu0fWSIKM3ug4JublD3deusSIyP2pyLrClVD10Yan+dBGDGgwWec0VRzHKYxYYUa4F+PzZKj/pL4FVLO1Uym4LMW8KsxgojrpcoD5+/jcO0jpKZ1zjDNpqgMejo0ilXrq0M4yTZxWdRiieu+Ro+WsCoC1pQTQEgoOvPbrW2JZrIP2Ua+8iqra0OAIkV/MD2SRzKendHXN0SEBAARmanmvxnnjEC7DQToLjfOUZIpj2nN4LwhBcg3VoXnA=
-  on:
-    repo: StegSchreck/AngularCV
-    tags: true
+#deploy:
+#  provider: releases
+#  api_key:
+#    secure: WA3/qjG5caymo+8Mk6gpKG7ErgQVsOBA0w7vmV9mdED7f+L7af521BDfui1EmuI5iYfJipFIV+MvTAfM/5las6oiaYlPEjw48crlcmlJc7pLZ9gSBk3TpPiFFMqO+kplhT+oFZhVAwqxL8w1lxqo19Dj2euXg2muAz0Uha4xagOMw4k+tXyGQty1PGFWiwEPVcDc1YN1ubz/wH3o8ptYWuEW3B0XDiSuOsuJXEYaHIGNKc75ck4PQf6FsIlD2IJdrTr9AOAhS5yIXjoqR4jTQhtCxne1PpJQRHZWzdG6zHuJevFEdW48jAiBEVxGyTLXpVnNuMlyVMI/kWF2IMLR7tvg5uP7zBuPy3SL8eaBtu57gqxaJpCxSkQ7u6cm8HfVFk5qKkF8ScZPBGw4TBCfjLg6C1tN2b4iV4z+lpJCgrs97J7Hqmfu0fWSIKM3ug4JublD3deusSIyP2pyLrClVD10Yan+dBGDGgwWec0VRzHKYxYYUa4F+PzZKj/pL4FVLO1Uym4LMW8KsxgojrpcoD5+/jcO0jpKZ1zjDNpqgMejo0ilXrq0M4yTZxWdRiieu+Ro+WsCoC1pQTQEgoOvPbrW2JZrIP2Ua+8iqra0OAIkV/MD2SRzKendHXN0SEBAARmanmvxnnjEC7DQToLjfOUZIpj2nN4LwhBcg3VoXnA=
+#  on:
+#    repo: StegSchreck/AngularCV
+#    tags: true
