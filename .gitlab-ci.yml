@@ -5,7 +5,7 @@ cache:
     - node_modules/
 
 before_script:
-  - npm install -g @angular/cli chrome
+  - npm install -g @angular/cli
   - npm ci
 
 lint:
