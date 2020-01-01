@@ -22,7 +22,7 @@ lint:
 test:
   stage: test
   script:
-    - ng test --watch false --browsers ChromeHeadless
+    - ng test --watch false --browsers Chrome_no_sandbox
 
 build:
   stage: build
