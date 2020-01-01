@@ -16,7 +16,7 @@ lint:
 test:
   stage: test
   script:
-    - ng test --watch false --browsers ChromeHeadless
+    - ng test --watch false --browsers PhantomJS
 
 ### UNCOMMENT THE FOLLOWING SECTION TO DEPLOY THE MASTER TO YOUR GITLAB USER PAGE ###
 #
