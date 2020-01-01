@@ -32,7 +32,7 @@ build:
     paths:
       - dist/
   only:
-    - tags
+    - master
 
 ### UNCOMMENT THE FOLLOWING SECTION TO DEPLOY THE MASTER TO YOUR GITLAB USER PAGE ###
 ### and change the build job to run on master *or* change the deployment to run on tags only ###
