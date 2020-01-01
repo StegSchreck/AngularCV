@@ -16,6 +16,8 @@ notifications:
   email:
     on_failure: change
     on_success: change
+
+# REPLACED BY GITHUB ACTION WORKFLOW
 #deploy:
 #  provider: releases
 #  api_key:

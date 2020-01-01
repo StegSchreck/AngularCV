@@ -1,0 +1,33 @@
+image: node:13.3.0  # change to match your node version
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install -g @angular/cli
+  - npm install
+
+lint:
+  stage: test
+  script:
+    - ng lint
+
+test:
+  stage: test
+  script:
+    - ng test --watch false --browsers ChromeHeadless
+
+### UNCOMMENT THE FOLLOWING SECTION TO DEPLOY THE MASTER TO YOUR GITLAB USER PAGE ###
+#
+#pages:
+#  stage: deploy
+#  script:
+#    - ng build --prod
+#    - rm -rf ../public
+#    - mv build ../public
+#  artifacts:
+#    paths:
+#      - public # GitLab pages serve from a 'public' directory
+#  only:
+#    - master # run on master branch

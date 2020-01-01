@@ -46,3 +46,41 @@ jobs:
         body: commits[0][message]
         draft: false
         prerelease: false
+
+### UNCOMMENT THE FOLLOWING SECTION TO DEPLOY THE MASTER TO YOUR GITHUB USER PAGE ###
+#
+#  deploy:
+#    needs: build
+#    runs-on: ubuntu-latest
+#
+#    steps:
+#      - name: Checkout code
+#        uses: actions/checkout@v1
+#      - name: Use Node.js 13.x
+#        uses: actions/setup-node@v1
+#        with:
+#          node-version: 13.x
+#      - name: Build
+#        run: |
+#          npm install -g npm@latest @angular/cli
+#          npm ci
+#          ng build --prod
+#        env:
+#          CI: true
+#      - name: GitHub Pages Deploy
+#        uses: crazy-max/ghaction-github-pages@v1.2.5
+#        if: success() && github.ref == 'refs/heads/master'
+#        with:
+#          # GitHub repository where assets will be deployed (default current)
+#          repo: StegSchreck/stegschreck.github.io
+#          # Git branch where assets will be deployed
+#          target_branch: master
+#          # Create incremental commit instead of doing push force
+#          keep_history: true
+#          # Build directory to deploy
+#          build_dir: build
+#          # Write the given domain name to the CNAME file
+#          #fqdn: stegschreck.github.io
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}

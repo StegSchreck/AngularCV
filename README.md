@@ -65,8 +65,9 @@ See my [AWS deployment guide](DEPLOYMENT_ON_AWS.md) for a possible way how to ac
 
 Alternatively, you can use [Uberspace](https://uberspace.de/), see the corresponding [Uberspace deployment guide](DEPLOYMENT_ON_UBERSPACE.md).
 
-As another option, you can use [Github Pages](https://pages.github.com/), see the corresponding [Github Pages 
-deployment guide](DEPLOYMENT_ON_GITHUB_PAGES.md).
+As another option, you can use [GitHub Pages](https://pages.github.com/), see the corresponding [GitHub Pages deployment guide](DEPLOYMENT_ON_GITHUB_PAGES.md).
+
+Similar, you can also use [GitLab Pages](https://pages.github.com/). For this, see the corresponding [GitLab Pages deployment guide](DEPLOYMENT_ON_GITLAB_PAGES.md).
 
 ## Acknowledgments
 This project uses a free license for WebStorm by benefiting from [JetBrains](https://www.jetbrains.com/?from=AngularCV)' open source community support program.
