@@ -64,7 +64,7 @@ jobs:
 #        run: |
 #          npm install -g npm@latest @angular/cli
 #          npm ci
-#          ng build --prod
+#          ng build --prod --aot
 #        env:
 #          CI: true
 #      - name: GitHub Pages Deploy
@@ -78,7 +78,7 @@ jobs:
 #          # Create incremental commit instead of doing push force
 #          keep_history: true
 #          # Build directory to deploy
-#          build_dir: build
+#          build_dir: dist
 #          # Write the given domain name to the CNAME file
 #          #fqdn: stegschreck.github.io
 #        env:
