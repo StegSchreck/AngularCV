@@ -13,7 +13,7 @@ import { CvItem } from './cv-item';
 export class CvItemComponent implements OnInit, AfterViewInit {
   public l10n;
   @Input() public cvItem: CvItem;
-  @ViewChild(CvItemDirective, {static: false}) public cvThumbnail: CvItemDirective;
+  @ViewChild(CvItemDirective) public cvThumbnail: CvItemDirective;
 
   constructor(
     private localizationService: LocalizationService,
