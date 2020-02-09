@@ -19,10 +19,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
       run: |
-        npm install -g npm@latest @angular/cli
+        npm install -g npm@latest @angular/cli codacy-coverage
         npm ci
         ng lint
-        ng test --watch false --browsers ChromeHeadless
+        ng test --watch false --browsers ChromeHeadless --code-coverage
+        codacy-coverage < coverage/lcov.info
         ng build --prod
       env:
         CI: true
