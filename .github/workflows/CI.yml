@@ -27,6 +27,7 @@ jobs:
         ng build --prod
       env:
         CI: true
+        CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
 
   release:
     needs: build
