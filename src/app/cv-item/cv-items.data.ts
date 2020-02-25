@@ -161,6 +161,7 @@ export const LANGUAGES = [
   { title: 'English', level: '80' },
   { title: 'Italian', level: '70' },
   { title: 'French', level: '30' },
+  { title: 'Swedish', level: '15' },
 ];
 
 export const PROJECTS: CvItem[] = [
