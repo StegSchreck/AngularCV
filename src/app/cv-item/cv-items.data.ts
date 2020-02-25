@@ -210,6 +210,18 @@ export const PROJECTS: CvItem[] = [
     thumbnail: 're-coding-avation-ba.png',
   },
   {
+    title: 'IS24 Price Per Area',
+    subtitle: 'Chrome extension to display the price per m² on ImmoScout',
+    begin: '2020-02',
+    end: '',
+    description: 'Show price per m² on the search result pages, the shortlist page, and the expose pages of ImmobilienScout24. ' +
+      'The extension also allows a colored highlighting with customizable thresholds.' +
+      'Not affiliated with ImmobilienScout24.',
+    tags: ['Javascript', 'CSS', 'Material', 'Chrome'],
+    link: 'https://github.com/StegSchreck/is24-price-per-area',
+    thumbnail: 'is24-price-per-area.svg',
+  },
+  {
     title: 'OFM Helper',
     subtitle: 'Support for analysis of data in football management browser game \'OFM\'',
     begin: '2016-05',
