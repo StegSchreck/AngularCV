@@ -453,6 +453,15 @@ export const PUBLICATIONS: CvItem[] = [
 
 export const TALKS: CvItem[] = [
   {
+    title: 'How to Touch the Cloud',
+    subtitle: '45 min. @ AWS User Group MeetUp Berlin 2020',
+    begin: '',
+    end: '2020-03-03',
+    description: 'Different Possibilities on How to Interact with AWS.',
+    tags: ['AWS', 'Python', 'Ansible', 'Terraform', 'S3', 'CloudFormation', 'SDK', 'CLI'],
+    thumbnail: 'AWS_MeetUp_Berlin.png',
+  },
+  {
     title: 'Bringing a complex stack to the cloud - Our journey and lessons learned',
     subtitle: '45 min. @ AWS Startup Day Berlin 2018',
     begin: '',
