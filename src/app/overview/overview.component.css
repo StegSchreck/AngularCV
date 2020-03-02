@@ -1,4 +1,5 @@
 .overview-header-image {
   background-image: url('../../assets/img/avatar.jpg');
   background-size: cover;
+  background-position: center;
 }
