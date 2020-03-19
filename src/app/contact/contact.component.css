@@ -5,3 +5,7 @@
 a.profile-link {
   font-size: 1.2em;
 }
+
+.link-icon:before {
+  color: unset;
+}

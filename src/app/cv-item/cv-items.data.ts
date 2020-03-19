@@ -15,14 +15,29 @@ This website is designed to be a simple, self-hosted online-CV, based on Angular
 export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
-    subtitle: 'IT Consultant',
-    begin: '2019-01-14',
+    subtitle: 'Senior Consultant',
+    begin: '2020-01-01',
     end: '',
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
       'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
       'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
       'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen and Zurich. We are rapidly expanding on the European market.',
-    tags: [],
+    tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
+      'Confluence', 'Jenkins', 'BitBucket', 'bash'],
+    link: 'https://www.netlight.com',
+    thumbnail: 'Netlight_Consulting_logo.svg',
+  },
+  {
+    title: 'Netlight Consulting GmbH',
+    subtitle: 'Consultant',
+    begin: '2019-01-14',
+    end: '2019-12-31',
+    description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
+      'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
+      'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
+      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen and Zurich. We are rapidly expanding on the European market.',
+    tags: ['Java', 'SpringBoot', 'Kafka', 'MongoDB', 'Git', 'KanBan', 'Scrum', 'IntelliJ', 'AWS', 'Docker', 'Ansible', 'Jira', 'Bamboo',
+      'Confluence', 'TeamCity', 'Jenkins', 'bash', 'Kubernetes'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight_Consulting_logo.svg',
   },
@@ -32,7 +47,8 @@ export const CVITEMS: CvItem[] = [
     begin: '2017-02-01',
     end: '2018-12-31',
     description: 'Maintaining and operating the platform running our e-commerce shop. ' +
-      'Automating processes and enabling the development teams to work.',
+      'Automating processes and enabling the development teams to work. ' +
+      'Planned and executed the migration of several services to the cloud, including the main webshop application.',
     tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo',
       'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
     link: 'https://www.misterspex.com',
@@ -157,11 +173,11 @@ export const EDUCATION: CvItem[] = [
 
 export const LANGUAGES = [
   // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
-  { title: 'German', level: '100' },
+  { title: 'German | Deutsch', level: '100' },
   { title: 'English', level: '80' },
-  { title: 'Italian', level: '70' },
-  { title: 'French', level: '30' },
-  { title: 'Swedish', level: '15' },
+  { title: 'Italian | Italiano', level: '70' },
+  { title: 'French | Français', level: '30' },
+  { title: 'Swedish | Svenska', level: '15' },
 ];
 
 export const PROJECTS: CvItem[] = [
@@ -198,6 +214,18 @@ export const PROJECTS: CvItem[] = [
     thumbnail: 'UberPage_kompakt.png',
   },
   {
+    title: 'IS24 Price Per Area',
+    subtitle: 'Chrome extension to display the price per m² on ImmoScout',
+    begin: '2020-02',
+    end: '',
+    description: 'Show price per m² on the search result pages, the shortlist page, and the expose pages of ImmobilienScout24. ' +
+      'The extension also allows a colored highlighting with customizable thresholds.' +
+      'Not affiliated with ImmobilienScout24.',
+    tags: ['Javascript', 'CSS', 'Material', 'Chrome'],
+    link: 'https://github.com/StegSchreck/is24-price-per-area',
+    thumbnail: 'is24-price-per-area.svg',
+  },
+  {
     title: 'Recoding Aviation Hackathon',
     subtitle: 'Hackathon for improving the passenger journey for flights',
     begin: '',
@@ -209,18 +237,6 @@ export const PROJECTS: CvItem[] = [
     tags: ['Angular 2', 'Material Design', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
     link: 'https://github.com/StegSchreck/RecodingAviation',
     thumbnail: 're-coding-avation-ba.png',
-  },
-  {
-    title: 'IS24 Price Per Area',
-    subtitle: 'Chrome extension to display the price per m² on ImmoScout',
-    begin: '2020-02',
-    end: '',
-    description: 'Show price per m² on the search result pages, the shortlist page, and the expose pages of ImmobilienScout24. ' +
-      'The extension also allows a colored highlighting with customizable thresholds.' +
-      'Not affiliated with ImmobilienScout24.',
-    tags: ['Javascript', 'CSS', 'Material', 'Chrome'],
-    link: 'https://github.com/StegSchreck/is24-price-per-area',
-    thumbnail: 'is24-price-per-area.svg',
   },
   {
     title: 'OFM Helper',
@@ -385,6 +401,8 @@ export const CONTACT = {
   instagram: '', // full url
   other: [
     { title: 'Medium', icon: 'icon-medium', link: 'https://medium.com/@stegschreck' },
+    { title: 'GitHub Page', icon: 'icon-github', link: 'https://stegschreck.github.io' },
+    { title: 'GitLab Page', icon: 'icon-gitlab', link: 'https://stegschreck.gitlab.io' },
   ],
 };
 
