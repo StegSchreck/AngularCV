@@ -62,7 +62,7 @@ export const CVITEMS: CvItem[] = [
     description: 'Implementing features for the e-Commerce platform Intershop in order to customize it. ' +
       'Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and ' +
       'feature configuration of prescription glasses.',
-    tags: ['Java', 'Intershop', 'eclipse', 'Scrum', 'Git', 'SVN', 'Scala', 'Testrail', 'trac', 'Jira', 'Bamboo', 'Confluence', 'AWS', 'TDD',
+    tags: ['Java', 'Intershop', 'eclipse', 'Scrum', 'Git', 'Subversion', 'Scala', 'Testrail', 'trac', 'Jira', 'Bamboo', 'Confluence', 'AWS', 'TDD',
       'JavaScript', 'Oracle PL/SQL'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
@@ -74,7 +74,7 @@ export const CVITEMS: CvItem[] = [
     end: '2015-05-31',
     description: 'Ensuring the quality and functionality of the web shop, ERP software and their interfaces. ' +
       'Planning and conduct releases.',
-    tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'SVN', 'trac', 'Microsoft Dynamics NAV'],
+    tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
   },
@@ -155,7 +155,7 @@ export const EDUCATION: CvItem[] = [
     begin: '2011-10',
     end: '2015-04',
     description: '',
-    tags: ['Scrum', 'SVN', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
+    tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'http://www.tu-berlin.de',
     thumbnail: 'TU-Berlin-Logo.png',
   },
@@ -165,7 +165,7 @@ export const EDUCATION: CvItem[] = [
     begin: '2008-10',
     end: '2011-12',
     description: '',
-    tags: ['Scrum', 'SVN', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
+    tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'http://www.tu-berlin.de',
     thumbnail: 'TU-Berlin-Logo.png',
   },
@@ -199,7 +199,7 @@ export const PROJECTS: CvItem[] = [
     end: '',
     description: 'This project was created for the purpose of having a basic online-CV, which anyone can host by themselves. ' +
       'This very website is the result of it.',
-    tags: ['Angular', 'Material Design', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
+    tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
     thumbnail: '../AngularCV.svg',
   },
@@ -221,7 +221,7 @@ export const PROJECTS: CvItem[] = [
     description: 'Show price per m² on the search result pages, the shortlist page, and the expose pages of ImmobilienScout24. ' +
       'The extension also allows a colored highlighting with customizable thresholds.' +
       'Not affiliated with ImmobilienScout24.',
-    tags: ['Javascript', 'CSS', 'Material', 'Chrome'],
+    tags: ['Javascript', 'CSS', 'MaterialDesign', 'Chrome'],
     link: 'https://github.com/StegSchreck/is24-price-per-area',
     thumbnail: 'is24-price-per-area.svg',
   },
@@ -234,7 +234,7 @@ export const PROJECTS: CvItem[] = [
       'We develpoed an idea how the passenger can be relieved from stress and anxiety at an airport. ' +
       'We called the idea \'Unwait the airport\'. Our idea convinced the technical experts of the Munich Airport, ' +
       'which awarded us their partner prize.',
-    tags: ['Angular 2', 'Material Design', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
+    tags: ['Angular 2', 'MaterialDesign', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
     link: 'https://github.com/StegSchreck/RecodingAviation',
     thumbnail: 're-coding-avation-ba.png',
   },
@@ -270,7 +270,7 @@ export const PROJECTS: CvItem[] = [
     end: '2010',
     description: 'The GPM is a global program for monitoring specific plants and analysing their behavior in the context of ' +
       'weather data. The web-application was created during a project course at the TU Berlin, which I took part at.',
-    tags: ['Java', 'JSF', 'JSP', 'SVN', 'Scrum', 'Trac', 'Spring', 'ant'],
+    tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
     thumbnail: 'Huberlin-logo.png',
   },

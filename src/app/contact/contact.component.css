@@ -6,6 +6,11 @@ a.profile-link {
   font-size: 1.2em;
 }
 
+.link-icon {
+  position: relative;
+  top: -0.1em;
+  margin-right: 0.2em;
+}
 .link-icon:before {
   color: unset;
 }

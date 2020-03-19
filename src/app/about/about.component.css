@@ -12,7 +12,7 @@
   }
 }
 
-.text-card i {
+.text-card i.button-icon {
   position: relative;
   font-size: 1.4em;
   top: -0.1em;
@@ -23,4 +23,13 @@
   margin-bottom: 0;
   padding-bottom: 0;
   margin-left: 0;
+}
+
+.tag-icon {
+  margin-left: -5px;
+  font-size: 1.5em;
+  padding-right: 5px;
+}
+.tag-icon:before {
+  color: unset;
 }

@@ -13,18 +13,42 @@
       {{l10n.about.content}}
     </p>
     <mat-chip-list selectable="false">
-      <mat-chip>Angular</mat-chip>
-      <mat-chip>Material Design</mat-chip>
-      <mat-chip>GitHub</mat-chip>
-      <mat-chip>CSS</mat-chip>
-      <mat-chip>TypeScript</mat-chip>
-      <mat-chip>JetBrains WebStorm</mat-chip>
-      <mat-chip>AWS</mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-angular"></i>
+        Angular
+      </mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-materialdesign"></i>
+        Material Design
+      </mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-github"></i>
+        GitHub
+      </mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-css3"></i>
+        CSS
+      </mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-typescript"></i>
+        TypeScript
+      </mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-jetbrains"></i>
+        JetBrains WebStorm
+      </mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-aws"></i>
+        AWS
+      </mat-chip>
     </mat-chip-list>
     <br>
     <p>{{l10n.about.additional}}</p>
     <mat-chip-list selectable="false">
-      <mat-chip>IcoMoon icon font</mat-chip>
+      <mat-chip>
+        <i mat-list-icon class="tag-icon icon-icomoon"></i>
+        IcoMoon icon font
+      </mat-chip>
       <mat-chip>Simple Icons</mat-chip>
       <mat-chip>Roboto font</mat-chip>
       <mat-chip>Roboto Slab font</mat-chip>
@@ -33,7 +57,7 @@
   </mat-card-content>
   <mat-card-actions>
     <a mat-button color="primary" href="https://github.com/StegSchreck/AngularCV" target="_blank">
-      <i class="icon-github"></i>
+      <i class="button-icon icon-github"></i>
       {{l10n.about.link_to_github}}
     </a>
   </mat-card-actions>

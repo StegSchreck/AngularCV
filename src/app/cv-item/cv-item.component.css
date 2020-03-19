@@ -171,3 +171,12 @@ mat-card.closed .toggle-details mat-icon:before {
 a[mat-button] {
   text-transform: uppercase;
 }
+
+.tag-icon {
+  margin-left: -5px;
+  font-size: 1.5em;
+  padding-right: 5px;
+}
+.tag-icon:before {
+  color: unset;
+}
