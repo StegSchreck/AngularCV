@@ -17,7 +17,9 @@ export class CvItemComponent implements OnInit, AfterViewInit {
 
   constructor(
     private localizationService: LocalizationService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();

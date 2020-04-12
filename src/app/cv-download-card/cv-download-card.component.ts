@@ -15,7 +15,9 @@ export class CvDownloadCardComponent implements OnInit {
   constructor(
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();

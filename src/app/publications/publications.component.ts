@@ -17,7 +17,9 @@ export class PublicationsComponent implements OnInit {
   constructor(
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();

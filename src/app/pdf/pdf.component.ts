@@ -37,7 +37,9 @@ export class PdfComponent implements OnInit {
     private localizationService: LocalizationService,
     private featureToggleService: FeatureToggleService,
     private cvItemService: CvItemService,
-  ) { }
+  ) {
+    this.localizationService.languageChanged.subscribe(() => { this.getLocalization(); });
+  }
 
   private getLocalization(): void {
     this.l10n = this.localizationService.getDefault();
