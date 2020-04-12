@@ -420,6 +420,10 @@ export const INTERESTS = [
     icon: 'code',
   },
   {
+    title: 'Reading',
+    icon: 'icon-book',
+  },
+  {
     title: 'Rowing',
     icon: 'rowing',
   },

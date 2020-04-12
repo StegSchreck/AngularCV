@@ -69,8 +69,8 @@
       <mat-divider [inset]="true"></mat-divider>
       <br>
       <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{item.link}}" target="_blank" *ngFor="let item of contactItems.other">
-        <i mat-list-icon class="link-icon {{item.icon}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.startsWith('icon-')"></i>
-        <mat-icon *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.startsWith('icon-')">{{item.icon}}</mat-icon>
+        <i mat-list-icon class="link-icon {{item.icon | lowercase}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.startsWith('icon-')"></i>
+        <mat-icon *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.startsWith('icon-')">{{item.icon | lowercase}}</mat-icon>
         <mat-icon *ngIf="item.icon === undefined && item.icon === ''">link</mat-icon>
         {{item.title}}
       </a>

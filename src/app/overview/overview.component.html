@@ -22,7 +22,8 @@
   <mat-card-content>
     <mat-chip-list selectable="false">
       <mat-chip *ngFor="let item of interests">
-        <mat-icon mat-list-icon class="tag-icon">{{item.icon | lowercase}}</mat-icon>
+        <i class="tag-icon {{item.icon | lowercase}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.startsWith('icon-')"></i>
+        <mat-icon class="tag-icon" *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.startsWith('icon-')">{{item.icon | lowercase}}</mat-icon>
         {{item.title}}
       </mat-chip>
     </mat-chip-list>
