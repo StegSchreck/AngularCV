@@ -408,18 +408,27 @@ export const CONTACT = {
 
 export const INTERESTS = [
   {
+    title: 'Cycling',
+    icon: 'directions_bike',
+  },
+  {
+    title: 'GeoCaching',
+    icon: 'not_listed_location',
+  },
+  {
+    title: 'Open Source Software',
+    icon: 'code',
+  },
+  {
     title: 'Rowing',
-    subtitle: '2000 — 2013',
     icon: 'rowing',
   },
   {
     title: 'Photography',
-    subtitle: 'Pentax K3 DSLR',
     icon: 'camera_alt',
   },
   {
     title: 'Volunteering in sports',
-    subtitle: '2005 — 2016',
     icon: 'favorite',
   },
 ];

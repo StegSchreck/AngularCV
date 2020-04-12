@@ -20,13 +20,12 @@
 <mat-card class="text-card" *ngIf="interests !== undefined && interests !== [] && interests.length > 0">
   <mat-card-title>{{l10n.overview.subtitle_interests}}</mat-card-title>
   <mat-card-content>
-    <mat-list>
-      <mat-list-item *ngFor="let item of interests">
-        <mat-icon mat-list-icon>{{item.icon}}</mat-icon>
-        <h4 mat-line>{{item.title}}</h4>
-        <p mat-line>{{item.subtitle}}</p>
-      </mat-list-item>
-    </mat-list>
+    <mat-chip-list selectable="false">
+      <mat-chip *ngFor="let item of interests">
+        <mat-icon mat-list-icon class="tag-icon">{{item.icon | lowercase}}</mat-icon>
+        {{item.title}}
+      </mat-chip>
+    </mat-chip-list>
   </mat-card-content>
 </mat-card>
 <app-cv-download-card></app-cv-download-card>

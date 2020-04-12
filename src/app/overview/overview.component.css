@@ -3,3 +3,11 @@
   background-size: cover;
   background-position: center;
 }
+
+.tag-icon {
+  margin-left: -5px;
+  padding-right: 5px;
+}
+.tag-icon:before {
+  color: unset;
+}
