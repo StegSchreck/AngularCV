@@ -1,56 +1,56 @@
 import { Injectable } from '@angular/core';
 
 import { CvItem } from './cv-item';
-// tslint:disable-next-line:max-line-length
-import { GENERAL, CVITEMS, CERTIFICATES, EDUCATION, PROJECTS, VOLUNTEERING, LANGUAGES, CONTACT, INTERESTS, PUBLICATIONS, TALKS } from './cv-items.data';
+import { DATA } from './data/cv-items.data';
 
 @Injectable()
 export class CvItemService {
 
-  constructor() { }
+  constructor(
+  ) { }
 
   getGeneralData() {
-    return GENERAL;
+    return DATA.EN.GENERAL;
   }
 
   getCvItems(): Promise<CvItem[]> {
-    return Promise.resolve(CVITEMS);
+    return Promise.resolve(DATA.EN.CVITEMS);
   }
 
   getEducationItems(): Promise<CvItem[]> {
-    return Promise.resolve(EDUCATION);
+    return Promise.resolve(DATA.EN.EDUCATION);
   }
 
   getCertificationItems(): Promise<CvItem[]> {
-    return Promise.resolve(CERTIFICATES);
+    return Promise.resolve(DATA.EN.CERTIFICATES);
   }
 
   getProjectItems(): Promise<CvItem[]> {
-    return Promise.resolve(PROJECTS);
+    return Promise.resolve(DATA.EN.PROJECTS);
   }
 
   getVolunteerItems(): Promise<CvItem[]> {
-    return Promise.resolve(VOLUNTEERING);
+    return Promise.resolve(DATA.EN.VOLUNTEERING);
   }
 
   getLanguageItems() {
-    return Promise.resolve(LANGUAGES);
+    return Promise.resolve(DATA.EN.LANGUAGES);
   }
 
   getContactItems() {
-    return Promise.resolve(CONTACT);
+    return Promise.resolve(DATA.EN.CONTACT);
   }
 
   getInterestItems() {
-    return Promise.resolve(INTERESTS);
+    return Promise.resolve(DATA.EN.INTERESTS);
   }
 
   getPublicationItems(): Promise<CvItem[]>  {
-    return Promise.resolve(PUBLICATIONS);
+    return Promise.resolve(DATA.EN.PUBLICATIONS);
   }
 
   getTalkItems(): Promise<CvItem[]>  {
-    return Promise.resolve(TALKS);
+    return Promise.resolve(DATA.EN.TALKS);
   }
 
   private handleError(error: any): Promise<any> {

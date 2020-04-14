@@ -1,4 +1,4 @@
-import { CvItem } from './cv-item';
+import { CvItem } from '../cv-item';
 
 // tslint:disable:max-line-length
 export const GENERAL = {
