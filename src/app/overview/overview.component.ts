@@ -20,7 +20,10 @@ export class OverviewComponent implements OnInit {
     private cvItemService: CvItemService,
     private dialog: MatDialog,
   ) {
-    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
+    this.localizationService.languageChanged.subscribe((data) => {
+      this.l10n = data;
+      this.getItems();
+    });
   }
 
   private getLocalization(): void {

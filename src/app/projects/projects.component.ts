@@ -17,7 +17,10 @@ export class ProjectsComponent implements OnInit {
     private localizationService: LocalizationService,
     private cvItemService: CvItemService,
   ) {
-    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
+    this.localizationService.languageChanged.subscribe((data) => {
+      this.l10n = data;
+      this.getItems();
+    });
   }
 
   private getLocalization(): void {
