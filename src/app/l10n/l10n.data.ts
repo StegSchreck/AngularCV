@@ -80,8 +80,8 @@ export const L10N = {
     about: {
       title: 'Über diese Webseite',
       subtitle: 'Ein einfacher selbst-gehosteter Online-Lebenslauf',
-      content: 'Diese Webseite wurd als GitHub-Projekt erschaffen, mit dem Ziel einen einfach Online-Lebenslauf zu erstellen' +
-        'welcher Jeder für sich selbst hosten kann. Die Haupt-Zielgruppe sind Software-Entwickler. ' +
+      content: 'Diese Webseite wurd als GitHub-Projekt erschaffen, mit dem Ziel einen einfach Online-Lebenslauf zu erstellen ' +
+        'welchen Jeder für sich selbst hosten kann. Die Haupt-Zielgruppe sind Software-Entwickler. ' +
         'Für die Erstellung dieses Projekts wurden folgende Technologien benutzt:',
       additional: 'Darüber hinaus wurden folgende Drittanbieter-Quellen genutzt:',
       link_to_github: 'PROJEKT AUF GITHUB ANZEIGEN',
