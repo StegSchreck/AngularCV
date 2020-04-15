@@ -14,8 +14,8 @@ This project serves the purpose of having a simple, self-hosted online-CV outsid
 For a live demo, you can visit [cv.schreck.berlin](https://cv.schreck.berlin), for which this project was created initially.
 
 ## Configuration
-The CV items for the experience, education, projects and volunteering sections are configured in a JSON format in `/src/app/cv-item/data/cv-items.data.*.ts`.
-Please notice the division of the education section, which is applied here. This enables you to re-arrange the the sections to your likings.
+The data for the experience, education, publications, projects, volunteering, and contact sections are configured in a JSON format in `/src/app/cv-item/data/cv-items.data.*.ts`.
+Please notice the division of the education and publications section, which is applied here. This enables you to re-arrange the the sections to your likings.
 
 In the end, this is just an example of how it can be done. Feel free to take it as a template and adjust everything to your needs.
 
@@ -49,7 +49,16 @@ The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.
 * `localization`: whether to offer the visitor of the website to switch the localization language
 
 ### Localization
-By switching the `default_language` feature toggle (see above), you can define which language to choose for navigation menu entries, page titles, etc. You can also let the user switch the language by activating the `localization` feature toggle. You will still need to adjust your data in `src/app/cv-item/data/cv-items.data.*.ts` to adapt the same language.
+By switching the `default_language` feature toggle (see above), you can define which language to choose for navigation menu entries, page titles, etc. You can also let the user switch the language by activating the `localization` feature toggle. You will still need to adjust your data in `src/app/cv-item/data/cv-items.data.*.ts` to adapt the same language, where `*` is a placeholder for the language you defined as default language before. 
+
+#### Add data for another language
+To add additional languages you need to perform three steps. If you would like to add support for Italian for example it would be this:
+* Create a new file in `src/app/cv-item/data/` with the name `cv-items.data.it.ts` (`it` in the filename stands for Italian)
+  * the easiest way would be to copy an existing file, e.g. `cv-items.data.en.ts` (containing the English version)
+  * translate all the items in the file for the new language
+  * you could also choose to show different items or in a different order - but this is not recommended 
+* Adjust `src/app/cv-item/data/cv-items.data.ts` to let the application know about the new language you added
+* In `src/app/l10n/l10n.data.ts`, copy one if the existing sections (e.g. `EN` for English) to a new section `IT` and translate all texts (not the keys!). For Italian this is actually already done.
 
 ## Angular Basics
 See the [Angular basic guide](ANGULAR.md) for the basics. For more information, visit the [Angular](https://angular.io/) website.
