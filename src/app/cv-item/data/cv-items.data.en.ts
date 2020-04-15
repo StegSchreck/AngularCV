@@ -16,54 +16,30 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
     subtitle: 'Senior Consultant',
-    begin: '2020-01-01',
+    begin: '2019-01-14',
     end: '',
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
       'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
       'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
       'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen, Zurich, and Frankfurt. We are rapidly expanding on the European market.',
     tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
-      'Confluence', 'Jenkins', 'BitBucket', 'bash'],
-    link: 'https://www.netlight.com',
-    thumbnail: 'Netlight_Consulting_logo.svg',
-  },
-  {
-    title: 'Netlight Consulting GmbH',
-    subtitle: 'Consultant',
-    begin: '2019-01-14',
-    end: '2019-12-31',
-    description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
-      'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
-      'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
-      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen, Zurich, and Frankfurt. We are rapidly expanding on the European market.',
-    tags: ['Java', 'SpringBoot', 'Kafka', 'MongoDB', 'Git', 'KanBan', 'Scrum', 'IntelliJ', 'AWS', 'Docker', 'Ansible', 'Jira', 'Bamboo',
-      'Confluence', 'TeamCity', 'Jenkins', 'bash', 'Kubernetes'],
+      'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight_Consulting_logo.svg',
   },
   {
     title: 'Mister Spex GmbH',
     subtitle: 'Professional Software Engineer',
-    begin: '2017-02-01',
-    end: '2018-12-31',
-    description: 'Maintaining and operating the platform running the e-commerce shop. ' +
-      'Automating processes and enabling the development teams to work. ' +
-      'Planned and executed the migration of several services to the cloud, including the main webshop application.',
-    tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo',
-      'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
-    link: 'https://www.misterspex.com',
-    thumbnail: 'msx-logo.png',
-  },
-  {
-    title: 'Mister Spex GmbH',
-    subtitle: 'Junior Software Engineer',
     begin: '2015-06-01',
-    end: '2017-01-31',
+    end: '2018-12-31',
     description: 'Implementing features for the e-Commerce platform Intershop in order to customize it. ' +
       'Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and ' +
-      'feature configuration of prescription glasses.',
-    tags: ['Java', 'Intershop', 'eclipse', 'Scrum', 'Git', 'Subversion', 'Scala', 'Testrail', 'trac', 'Jira', 'Bamboo', 'Confluence', 'AWS', 'TDD',
-      'JavaScript', 'Oracle PL/SQL'],
+      'feature configuration of prescription glasses. Later switched to the operations team. ' +
+      'Maintaining and operating the platform running the e-commerce shop. ' +
+      'Automating processes and enabling the development teams to work. ' +
+      'Planned and executed the migration of several services to the cloud, including the main webshop application.',
+    tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo', 'TDD',
+      'JavaScript', 'eclipse', 'Scrum', 'Subversion', 'Scala', 'Testrail', 'trac', 'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
   },
