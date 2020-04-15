@@ -17,7 +17,10 @@ export class VolunteeringComponent implements OnInit {
     private localizationService: LocalizationService,
     private cvItemService: CvItemService
   ) {
-    this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
+    this.localizationService.languageChanged.subscribe((data) => {
+      this.l10n = data;
+      this.getItems();
+    });
   }
 
   private getLocalization(): void {
@@ -29,7 +32,6 @@ export class VolunteeringComponent implements OnInit {
       .getVolunteerItems()
       .then(items => this.volunteerItems = items);
   }
-
 
   ngOnInit() {
     this.getLocalization();

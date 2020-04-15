@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { L10N } from './l10n.data';
-import {Subject} from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable()
 export class LocalizationService {
@@ -27,9 +27,9 @@ export class LocalizationService {
     return L10N;
   }
 
-  public get(locale: string) {
-    if (L10N.hasOwnProperty(locale)) {
-      return L10N[locale]; // TODO merge with EN as default values
+  public get(language: string) {
+    if (L10N.hasOwnProperty(language)) {
+      return L10N[language]; // TODO merge with EN as default values
     }
     return this.getDefault();
   }
@@ -41,4 +41,5 @@ export class LocalizationService {
     } catch (err) { }
     return L10N[language];
   }
+
 }

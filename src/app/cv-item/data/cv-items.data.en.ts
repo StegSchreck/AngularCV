@@ -1,12 +1,12 @@
-import { CvItem } from './cv-item';
+import { CvItem } from '../cv-item';
 
 // tslint:disable:max-line-length
 export const GENERAL = {
   name: 'Sebastian Schreck',
   position: 'Software Engineer',
-  description: `I started my career in IT as a QA Engineer during my studies of Computer Science at TU Berlin. After completing my master's thesis, I became a professional software engineer at Mister Spex doing backend as well as frontend development. Unhappy with the segregation between Operations and Development teams, I decided to transfer into Ops full time to get more insights. Having seen both sides of the wall of confusion, I became a strong advocate for DevOps principles and shared responsibility. I talked at code.talks and DevOpsCon about the topics DevOps, collaboration, feedback culture, and responsibilities.
+  description: `Sebastian started his career in IT as a QA Engineer during his studies of Computer Science at TU Berlin. After completing his master's thesis, Sebastian became a professional software engineer at Mister Spex doing backend as well as frontend development. Unhappy with the segregation between Operations and Development teams, he decided to transfer into Ops full time to get more insights. Having seen both sides of the wall of confusion, Sebastian became a strong advocate for DevOps principles and shared responsibility. He talked at code.talks and DevOpsCon about the topics DevOps, collaboration, feedback culture, and responsibilities.
 
-I am looking for new opportunities which include modern, progressive technologies in a collaborative working environment. Learning new things and trying out new stuff are part of my motivation. New roles are of my interest if I can accompany the software end to end - from planning, implementation, deployment towards monitoring. Amplified feedback loops and a culture of continuous learning and experimentation define a proper working environment for me. Job offers outside of Berlin are not interesting to me.
+Sebastian am looking for new opportunities which include modern, progressive technologies in a collaborative working environment. Learning new things and trying out new stuff are part of his motivation. New roles are of interest if he can accompany the software end to end - from planning, implementation, deployment towards monitoring. Amplified feedback loops and a culture of continuous learning and experimentation define a proper working environment for him. Job offers outside of Berlin are not relevant to him.
 
 This website is designed to be a simple, self-hosted online-CV, based on Angular. To find out more about the project, please click on the AngularCV logo in the bottom right corner.`,
 };
@@ -21,7 +21,7 @@ export const CVITEMS: CvItem[] = [
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
       'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
       'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
-      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen and Zurich. We are rapidly expanding on the European market.',
+      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen, Zurich, and Frankfurt. We are rapidly expanding on the European market.',
     tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
       'Confluence', 'Jenkins', 'BitBucket', 'bash'],
     link: 'https://www.netlight.com',
@@ -35,7 +35,7 @@ export const CVITEMS: CvItem[] = [
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
       'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
       'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
-      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen and Zurich. We are rapidly expanding on the European market.',
+      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen, Zurich, and Frankfurt. We are rapidly expanding on the European market.',
     tags: ['Java', 'SpringBoot', 'Kafka', 'MongoDB', 'Git', 'KanBan', 'Scrum', 'IntelliJ', 'AWS', 'Docker', 'Ansible', 'Jira', 'Bamboo',
       'Confluence', 'TeamCity', 'Jenkins', 'bash', 'Kubernetes'],
     link: 'https://www.netlight.com',
@@ -46,7 +46,7 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2017-02-01',
     end: '2018-12-31',
-    description: 'Maintaining and operating the platform running our e-commerce shop. ' +
+    description: 'Maintaining and operating the platform running the e-commerce shop. ' +
       'Automating processes and enabling the development teams to work. ' +
       'Planned and executed the migration of several services to the cloud, including the main webshop application.',
     tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo',
@@ -220,7 +220,7 @@ export const PROJECTS: CvItem[] = [
     end: '',
     description: 'Show price per m² on the search result pages, the shortlist page, and the expose pages of ImmobilienScout24. ' +
       'The extension also allows a colored highlighting with customizable thresholds.' +
-      'Not affiliated with ImmobilienScout24.',
+      'Not affiliated with ImmobilienScout24 GmbH.',
     tags: ['Javascript', 'CSS', 'MaterialDesign', 'Chrome'],
     link: 'https://github.com/StegSchreck/is24-price-per-area',
     thumbnail: 'is24-price-per-area.svg',
@@ -230,10 +230,10 @@ export const PROJECTS: CvItem[] = [
     subtitle: 'Hackathon for improving the passenger journey for flights',
     begin: '',
     end: '2017-06',
-    description: 'I participated in this hackathon together with three collegues. ' +
-      'We develpoed an idea how the passenger can be relieved from stress and anxiety at an airport. ' +
-      'We called the idea \'Unwait the airport\'. Our idea convinced the technical experts of the Munich Airport, ' +
-      'which awarded us their partner prize.',
+    description: 'Sebastian participated in this hackathon together with three collegues. ' +
+      'They develpoed an idea how the passenger can be relieved from stress and anxiety at an airport. ' +
+      'The idea was named \'Unwait the airport\'. The resulting idea convinced the technical experts of the Munich Airport, ' +
+      'which awarded their partner prize.',
     tags: ['Angular 2', 'MaterialDesign', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
     link: 'https://github.com/StegSchreck/RecodingAviation',
     thumbnail: 're-coding-avation-ba.png',
@@ -244,7 +244,7 @@ export const PROJECTS: CvItem[] = [
     begin: '2016-05',
     end: '2017-05',
     description: 'OFM is a browser game where you manage a football team. ' +
-      'The \'OFM Helper\' helps the user to analyse the data which emerges from games, trainings, etc. ' +
+      'The \'OFM Helper\' helps the user to analyse the data which emerges from matches, trainings, etc. ' +
       'We formed a two-man team for developing this project.',
     tags: ['Python', 'Django', 'Git', 'Selenium', 'Beautifulsoup', 'TDD', 'Docker'],
     link: 'https://www.ofmhelper.de/',
@@ -257,8 +257,8 @@ export const PROJECTS: CvItem[] = [
     end: '2011',
     description: 'GoOLAP is a fact search engine, which crawls the web and combines relevant data using natural language processing. ' +
       'It is a research project at the DIMA department of TU Berlin. ' +
-      'I was part of the team which was responsible of the project management. ' +
-      'Later I did my bachelor thesis about the data persistence layer of the application.',
+      'Sebastian was part of the team which was responsible of the project management. ' +
+      'Later he wrote his bachelor thesis about the data persistence layer of the application.',
     tags: ['Project Managemant', 'Hadoop', 'MySQL', 'Mantis'],
     link: 'http://goolap.info/',
     thumbnail: 'TU_DIMA_GoOLAP.png',
@@ -269,7 +269,7 @@ export const PROJECTS: CvItem[] = [
     begin: '',
     end: '2010',
     description: 'The GPM is a global program for monitoring specific plants and analysing their behavior in the context of ' +
-      'weather data. The web-application was created during a project course at the TU Berlin, which I took part at.',
+      'weather data. The web-application was created during a project course at the TU Berlin, which Sebastian took part at.',
     tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
     thumbnail: 'Huberlin-logo.png',
@@ -305,7 +305,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'UEFA_Champions_League-logo.png',
   },
   {
-    title: 'CEV Champions league Final Four 2015 Berlin',
+    title: 'CEV Champions League Final Four 2015 Berlin',
     subtitle: 'Team lead',
     begin: '',
     end: '2015',
@@ -327,7 +327,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Time measurement',
     begin: '2009',
     end: '2015',
-    description: 'Technical setup and time measurements',
+    description: 'Technical setup and time measurements for rowing Bundesliga.',
     link: 'https://www.ruder-bundesliga.de',
     thumbnail: 'Logo-Bundesliga_quer.jpg',
   },
@@ -336,7 +336,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Youth trainer and youth leader',
     begin: '2007',
     end: '2014',
-    description: 'Taking care of young rowers in training camps, recreational rowing tours, camp for visiting the Olympic Games 2012.',
+    description: 'Taking care of young rowers in training camps, recreational rowing tours, camp for visiting the Olympic Games.',
     link: 'https://www.ruderjugend.org',
     thumbnail: 'DRJ_Logo.jpg',
   },
@@ -372,7 +372,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Team delegate',
     begin: '',
     end: '2009',
-    description: 'Team delegate of a basketeball team from Siena, Italy',
+    description: 'Team delegate of a basketeball team of Montepaschi Siena, Italy',
     link: 'http://www.euroleague.net/',
     thumbnail: 'ULEB_FinalFour_2009.png',
   },
@@ -383,7 +383,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2006',
     description: 'Guiding visitors of the olympic stadium in Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'fifa_world_cup_2006.gif',
+    thumbnail: 'fifa_world_cup_2006.jpg',
   },
 ];
 
@@ -497,9 +497,7 @@ export const TALKS: CvItem[] = [
     subtitle: '45 min. @ AWS Startup Day Berlin 2018',
     begin: '',
     end: '2018-10-09',
-    description: 'Mister Spex moved away from AWS to an on-premises infrastructure in 2015. ' +
-      'This year we switched back to AWS. We will cover the story of these changes and why we did so. ' +
-      'Come and hear our experiences and struggles to make your own migration smoother.',
+    description: 'Mister Spex moved away from AWS to an on-premises infrastructure in 2015. In 2018 they switched back to AWS. This talk covers the story of these changes and the lessons learned.',
     tags: ['AWS', 'cloud', 'migration'],
     thumbnail: 'AWS_Startup_Day.png',
   },
@@ -512,7 +510,7 @@ export const TALKS: CvItem[] = [
       'continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on ' +
       'your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from ' +
       'inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the ' +
-      'stability of the software as well as the systems it runs on. We focus on the organizational ' +
+      'stability of the software as well as the systems it runs on. This talk focuses on the organizational ' +
       'aspects of DevOps: How to measure and improve your team\'s effectiveness by reducing silos and silo thinking and ' +
       'how to get your engineers to share responsibility - a basis for every successful DevOps transformation.',
     tags: ['DevOps', 'culture', 'collaboration', 'communication', 'microservices', 'team structure'],
