@@ -1,20 +1,37 @@
 import { CvItem } from '../cv-item';
 
-
+// tslint:disable:max-line-length
 export const GENERAL = {
   name: 'Sebastian Schreck',
   position: 'Software Entwickler',
-  description: 'Diese Webseite soll einen Überblick über mich geben und Interesse erwecken mich einzustellen.'
+  description: `Sebastian begann seine IT-Karriere als QA Werkstudent während seines Informatik-Studiums an der TU Berlin. Nach dem Abschluss der Masterarbeit wurde er ein festangestellter Vollzeit-Softwareentwickler bei Mister Spex. Dort nahm er sowohl Backend- als auch Frontend-Aufgaben wahr. Durch Unzufriedenheit bezüglich der Auftrennung von Entwicklung und Betrieb trieb es ihn zu einem Wechsel auf die Betriebsseite um dort mehr Einblicke zu gewinnen. Nachdem er beide Seiten kennengelernt hatte, wurde Sebastian zu einem starken Verfechter von DevOps Prinzipien und geteilter Verantwortung. Hierzu hielt Sebastian Vorträge auf der code.talks und DevOpsCon über die Themen DevOps, Kollaboration, Feedback-Kultur und Verantwortlichkeiten.
+
+Sebastian ist auf der Suche nach neuen Herausforderungen welche moderne, fortschrittliche Technologien beinhalten und ein kollaboratives Arbeitsumfeld. Sich neues Wissen anzueignen und neue Technologien auszuprobieren sind Teil seiner Motivation. Neue Stellen sind für Sebastian interessant, falls diese es ermöglichen die Software über den gesamten Weg zu begleiten: von der Planung über die Implementierung bis hin zum Deployment und Monitoring. Verstärkte Feedback-Zyklen und eine Kultur des stetigen Lernens und Experimentierens definieren eine ordentliche Arbeitsumgebung für ihn. Angebote für Stellen außerhalb Berlins sind für Sebastian nicht relevant.
+
+Diese Internetseite wurde als einfacher, selbst-gehosteter online-Lebenslauf konzipiert. Um mehr hierüber zu erfahren, bitte auf das AngularCV logo in der unteren, rechten Ecke klicken.`,
 };
+// tslint:enable:max-line-length
 
 export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
-    subtitle: 'IT Consultant',
-    begin: '2019-01-14',
+    subtitle: 'Senior Consultant',
+    begin: '2020-01-01',
     end: '',
-    description: 'Netlight ist eine IT-Beratungsfirma.',
-    tags: [],
+    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
+    tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
+      'Confluence', 'Jenkins', 'BitBucket', 'bash'],
+    link: 'https://www.netlight.com',
+    thumbnail: 'Netlight_Consulting_logo.svg',
+  },
+  {
+    title: 'Netlight Consulting GmbH',
+    subtitle: 'Consultant',
+    begin: '2019-01-14',
+    end: '2019-12-31',
+    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
+    tags: ['Java', 'SpringBoot', 'Kafka', 'MongoDB', 'Git', 'KanBan', 'Scrum', 'IntelliJ', 'AWS', 'Docker', 'Ansible', 'Jira', 'Bamboo',
+      'Confluence', 'TeamCity', 'Jenkins', 'bash', 'Kubernetes'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight_Consulting_logo.svg',
   },
@@ -23,8 +40,7 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2017-02-01',
     end: '2018-12-31',
-    description: 'Wartung und Weiterentwicklung der Webshop-Infrastruktur. ' +
-      'Automatisierung von Prozessen und Erleichterung der Arbeit der Softwareentwcklungsteams.',
+    description: 'Instandhaltung und Betrieb der IT-Plattform auf welcher der E-Commerce-Shop läuft. Automatisierung von Prozessen and Unterstützung der Entwicklungsteams in ihrer Arbeit. Planung und Durchführung der Migrations mehrerer Anwendungen hin zur Cloud, darunter der Haupt-Webshop.',
     tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo',
       'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
     link: 'https://www.misterspex.com',
@@ -35,42 +51,37 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Junior Software Engineer',
     begin: '2015-06-01',
     end: '2017-01-31',
-    description: 'Featureentwicklung für den Internetshop, basierend aud der E-Commerce-Platform Intershop.' +
-      'Entwicklung einer eigenständigen API als Microservice, welche für die Bestimmung der Preise sowie ' +
-      'möglichen Eigenschaften für die Brillengläser der Kunden verantwortlich ist.',
-    tags: ['Java', 'Intershop', 'eclipse', 'Scrum', 'Git', 'SVN', 'Scala', 'Testrail', 'trac', 'Jira', 'Bamboo', 'Confluence', 'AWS', 'TDD',
+    description: 'Implementierung von Features auf der E-Commerce Plattform Intershop. Entwicklung einer separierted API als Microservice nach DevOps Prinzipien welche die Preise und Kombinationsmöglichkeiten der Brillengläser berechnet.',
+    tags: ['Java', 'Intershop', 'eclipse', 'Scrum', 'Git', 'Subversion', 'Scala', 'Testrail', 'trac', 'Jira', 'Bamboo', 'Confluence', 'AWS', 'TDD',
       'JavaScript', 'Oracle PL/SQL'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
   },
   {
     title: 'Mister Spex GmbH',
-    subtitle: 'Werkstudent Produktmanagement / Qualitätssicherung',
+    subtitle: 'Working student Product Management / Quality Assurance',
     begin: '2012-10-01',
     end: '2015-05-31',
-    description: 'Qualitätssicherung der Funktionalität des Webshops, der ERP-Software, sowie deren Schnittstellen. ' +
-      'Release-Planung und -Durchführung',
-    tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'SVN', 'trac', 'Microsoft Dynamics NAV'],
+    description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. Planung und Durchführung von Releases.',
+    tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
   },
   {
     title: 'Müllers Fanshop',
-    subtitle: 'Merchandising Verkäufer in der O2World Berlin',
+    subtitle: 'Merchande-Verkäufer in der O2World Berlin',
     begin: '2010-08',
     end: '2012-09',
-    description: 'Verkauf von Merchandising-Artikeln bei Sportereignissen und Konzerten. ' +
-      'Bereichsverantwortung über einen einzelnen Verkaufsstand.',
+    description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
     link: '',
     thumbnail: 'muellers_fanshop_logo_001.jpg',
   },
   {
     title: 'MBU Merchandising und Sportreisen GmbH & Co. KG',
-    subtitle: 'Merchandising Verkäufer in der O2World Berlin',
+    subtitle: 'Merchande-Verkäufer in der O2World Berlin',
     begin: '2008-09',
     end: '2010-07',
-    description: 'Verkauf von Merchandising-Artikeln bei Sportereignissen und Konzerten. ' +
-      'Bereichsverantwortung über einen einzelnen Verkaufsstand.',
+    description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
     link: '',
     thumbnail: 'mbu.png',
   },
@@ -88,7 +99,7 @@ export const CERTIFICATES: CvItem[] = [
     attachment: 'AWS_Certified_Cloud_Practitioner_certificate.pdf',
   },
   {
-    title: 'Intershop Development',
+    title: 'Intershop Entwicklung',
     subtitle: 'Intershop Communications AG',
     begin: '',
     end: '2015-04',
@@ -133,7 +144,7 @@ export const EDUCATION: CvItem[] = [
     begin: '2011-10',
     end: '2015-04',
     description: '',
-    tags: ['Scrum', 'SVN', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
+    tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'http://www.tu-berlin.de',
     thumbnail: 'TU-Berlin-Logo.png',
   },
@@ -143,7 +154,7 @@ export const EDUCATION: CvItem[] = [
     begin: '2008-10',
     end: '2011-12',
     description: '',
-    tags: ['Scrum', 'SVN', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
+    tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'http://www.tu-berlin.de',
     thumbnail: 'TU-Berlin-Logo.png',
   },
@@ -152,80 +163,91 @@ export const EDUCATION: CvItem[] = [
 export const LANGUAGES = [
   // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
   { title: 'Deutsch', level: '100' },
-  { title: 'Englisch', level: '80' },
-  { title: 'Italienisch', level: '70' },
-  { title: 'Französisch', level: '30' },
+  { title: 'Englisch | English', level: '80' },
+  { title: 'Italienisch | Italiano', level: '70' },
+  { title: 'Französisch | Français', level: '30' },
+  { title: 'Schwedisch | Svenska', level: '15' },
 ];
 
 export const PROJECTS: CvItem[] = [
   {
     title: 'RatS',
-    subtitle: 'Script für den Transfer von persönlichen Filmbewertungen zwischen verschiedenen Portalen',
+    subtitle: 'Programm für den Transfer von Filmbewertungen von einem Internetportal zu einem anderen',
     begin: '2017-02',
     end: '',
-    description: 'Dieses Python-basiertes Projekt bietet eine Möglichkeit die persönliche Bewertung von Filmen von einer Plattform ' +
-      '(z.B. IMDB) zu einer anderen (z.B. Trakt) zu transferieren. ' +
-      'Das Projekt unterstützt zur Zeit 13 Plattformen und wird konstant erweitert.',
+    description: 'Dieses Python-Projekt bietet eine einfache Möglichkeit zur Übertragung der persönlichen Filmbewertungen von einer Seite (z.B. IMDB) zu einer anderen (z.B. Trakt). Aktuell unterstützt das Projekt 14 Seiten und wird kontinuierlich erweitert.',
     tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV'],
     link: 'https://github.com/StegSchreck/RatS',
     thumbnail: 'RatS.png',
   },
   {
     title: 'AngularCV',
-    subtitle: 'Ein einfacher, selbst-gehosteter Online-Lebenslauf',
+    subtitle: 'Ein einfacher selbst-gehosteter Online-Lebenslauf',
     begin: '2017-09',
     end: '',
-    description: 'Dieses Projekt bietet eine einfache Möglichkeit für ein selbst-gehosteten Lebenslauf. ' +
-      'Diese Webseite ist das Resultat dieses Projekts.',
-    tags: ['Angular 4', 'Material Design', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
+    description: 'Dieses Projekt wurde erstellt um einen simplen Online-Lebenslauf erstellen zu können, welchen jeder selbst hosten kann. Dieser Internetauftritt ist das Ergebnis davon.',
+    tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
-    thumbnail: '../AngularCV.png',
+    thumbnail: '../AngularCV.svg',
+  },
+  {
+    title: 'UberPage',
+    subtitle: 'Eine simple Internetseite zur Darstellung von verschiedenen Links.',
+    begin: '2019-07',
+    end: '',
+    description: 'Dieses React-basierte Projekt bietet einen einfachen Weg verschiedene Links auf einer simplen Übersichtsseite darzustellen.',
+    tags: ['React', 'Javascript', 'GitHub', 'CSS', 'JetBrains WebStorm', 'AWS', 'npm'],
+    link: 'https://github.com/StegSchreck/uberpage',
+    thumbnail: 'UberPage_kompakt.png',
+  },
+  {
+    title: 'IS24 Price Per Area',
+    subtitle: 'Chrome Erweiterung für die Anzeige des Quadratmeterpreises auf ImmoScout',
+    begin: '2020-02',
+    end: '',
+    description: 'Anzeige des Quadratmeterpreises für Wohnungen auf der Suchergebnisliste, dem Merkzettel und der Expose-Seite von ImmobilienScout24. Die Erweiterung bietet darüber hinaus die Möglichkeit die Quadratmeterpreise farblich hervorzuheben, basierend auf anpassbaren Grenzwerten.' +
+      'Dieses Projekt steht in keiner Verbindung zur ImmobilienScout24 GmbH.',
+    tags: ['Javascript', 'CSS', 'MaterialDesign', 'Chrome'],
+    link: 'https://github.com/StegSchreck/is24-price-per-area',
+    thumbnail: 'is24-price-per-area.svg',
   },
   {
     title: 'Recoding Aviation Hackathon',
-    subtitle: 'Hackathon für die Verbesserung des Erlebnisses für Flugreisende',
+    subtitle: 'Hackathon zur Verbesserung des Reiseerlebnisses bei Flugreisen.',
     begin: '',
     end: '2017-06',
-    description: 'Ich nahm mit drei Kollegen an diesem Hackathon teil. ' +
-      'Wir entwickelten eine Idee zur Stress-Reduzierung der Flugreisenden. Wir tauften die Idee \'Unwait the airport\'. ' +
-      'Diese Idee überzeugte die teschnischen Experten vom Münchener Flughafen und wir erhielten deren Partner-Preis.',
-    tags: ['Angular 2', 'Material Design', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
+    description: 'Sebastian nahm zusammen mit drei Kollegen an diesem Hackathon teil. Dabei haben sie eine Idee entwickelt, welche selten reisende Personen vom Stress and Hektik am Flughafen zu befreien. Die Lösung wurde \'Unwait the airport\' getauft. Das Ergebnis hat die technischen Experten des Münchener Flughafens überzeugt, welche der Idee deren Partnerpreis verliehen.',
+    tags: ['Angular 2', 'MaterialDesign', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
     link: 'https://github.com/StegSchreck/RecodingAviation',
     thumbnail: 're-coding-avation-ba.png',
   },
   {
     title: 'OFM Helper',
-    subtitle: 'Unterstützung bei der Analyse der Daten beim Browserspiel \'OFM\'',
+    subtitle: 'Unterstützung bei der Analyse der Daten aus dem Browserspiel \'OFM\'',
     begin: '2016-05',
     end: '2017-05',
-    description: 'Der Online-Fußball-Manager ist ein Browserspiel, in dem man sein eigenes Fußballteam aufbaut und verwaltet.' +
-      'Der \'OFM Helper\' hilft dem Spieler die dabei anfallenden Daten zu analysieren. ' +
-      'Für dieses Projekt habe ich mit einem anderen Entwickler zusammengearbeitet.',
+    description: 'OFM ist ein Browserspiel bei dem man den Manager eines Fußballteams spielt. Der \'OFM Helper\' hilft dem Nutzer die Daten aus den Fußballspielen, Trainingseinheiten usw. zu analysieren.',
     tags: ['Python', 'Django', 'Git', 'Selenium', 'Beautifulsoup', 'TDD', 'Docker'],
     link: 'https://www.ofmhelper.de/',
     thumbnail: 'OFM_Helper.png',
   },
   {
     title: 'GoOLAP.info',
-    subtitle: 'Forschungsprojekt - Fakten-Suchmaschine',
+    subtitle: 'Faktensuchmasche',
     begin: '2010',
     end: '2011',
-    description: 'GoOLAP ist eine Fakten-Suchmschine, welche das Internet durchsucht und relevante Daten mittels Analyse der ' +
-      'menschlichen Sprache heraussiebt. Dies ist ein laufendes Forschungsprojet am Lehrstuhl DIMA der TU Berlin.' +
-      'Ich war zunächst Teil des Projektsteuerungsteams. ' +
-      'Später schrieb ich meine Bachelorarbeit über die Persistenzschicht dieses Projekts',
+    description: 'GoOLAP ist eine Faktensuchmasche welche Internetseiten analysiert und relevante Daten miteinander kombiniert. Es wird als Forschungsprojekt am DIMA Lehrstuhl der TU Berlin entwickelt. Sebastian war Teil des Projektmanagement-Teams. Später schrieb er seine Bachelorarbeit zum Datenpersistierungskonzept des Projekts.',
     tags: ['Project Managemant', 'Hadoop', 'MySQL', 'Mantis'],
     link: 'http://goolap.info/',
     thumbnail: 'TU_DIMA_GoOLAP.png',
   },
   {
     title: 'Global Phenological Monitoring Programm (GPM)',
-    subtitle: 'Web-Applikation für die Humboldt-Universität',
+    subtitle: 'Webanwendung für die Humboldt Universität',
     begin: '',
     end: '2010',
-    description: 'GPM ist ein globales Projekt zu Beobachtung von bestimmten Pflanzen, um deren Verhalten mit Klimadaten in ' +
-      'Zusammenhang zu bringen. Die Web-Applikation wurde in einem Projekt-Kurs an der TU Berlin entwickelt, an dem ich teilnahm.',
-    tags: ['Java', 'JSF', 'JSP', 'SVN', 'Scrum', 'Trac', 'Spring', 'ant'],
+    description: 'GPM ist ein globales Programm zur Beobachtung von bestimmtem Pflanzensorten und Analyse ihres Verhaltens im Kontext von meterologischen Daten. Während eines Projektkurses an der TU Berlin wurde hierfür eine Webanwendung entwickelt.',
+    tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
     thumbnail: 'Huberlin-logo.png',
   },
@@ -234,10 +256,10 @@ export const PROJECTS: CvItem[] = [
 export const VOLUNTEERING: CvItem[] = [
   {
     title: 'DFB-Pokalfinals & Länderspiele',
-    subtitle: 'Einlass, Besucherservice, VIP-Betreuung, Springer, Sonderaufgaben',
+    subtitle: 'Volunteer',
     begin: '2007',
     end: '2016',
-    description: 'Einlass, Besucherservice, VIP-Betreuung, Springer, Sonderaufgaben',
+    description: 'Einlass, Besuerservice, VIP Support, Springer, Sonderaufgaben',
     link: 'http://www.dfb.de',
     thumbnail: 'DFB-Logo.jpg',
   },
@@ -246,12 +268,12 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Teamleiter',
     begin: '2007',
     end: '2016',
-    description: 'Technischer Aufbau, Besucherservice, Ordnungsdienst, Abbau',
+    description: 'Technischer Aufbau, Besucherservice, Ordnungsdienst, Sonderaufgaben, Abbau',
     link: 'https://www.istaf.de',
     thumbnail: 'ISTAF.png',
   },
   {
-    title: 'UEFA Champions League Finale 2015 Berlin',
+    title: 'UEFA Champions League Finals 2015 Berlin',
     subtitle: 'Teamleiter',
     begin: '',
     end: '2015',
@@ -260,17 +282,17 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'UEFA_Champions_League-logo.png',
   },
   {
-    title: 'CEV Champions league Final Four 2015 Berlin',
+    title: 'CEV Champions League Final Four 2015 Berlin',
     subtitle: 'Teamleiter',
     begin: '',
     end: '2015',
-    description: 'Teamleiter Backstage-Sicherheit',
+    description: 'Leiter Backstage-Sicherheit',
     link: 'http://www.cev.lu/',
     thumbnail: 'CEV_Champions_League_logo.png',
   },
   {
     title: 'Deutsche Indoor-Ruder-Serie',
-    subtitle: 'Technischer Leiter',
+    subtitle: 'Technischer Eventmanager',
     begin: '2010',
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
@@ -279,7 +301,7 @@ export const VOLUNTEERING: CvItem[] = [
   },
   {
     title: 'Ruder-Bundesliga',
-    subtitle: 'Zeitmessung',
+    subtitle: 'Time measurement',
     begin: '2009',
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
@@ -287,26 +309,17 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'Logo-Bundesliga_quer.jpg',
   },
   {
-    title: 'ULEB Euroleague Final Four 2009 Berlin',
-    subtitle: 'Team-Betreuer',
-    begin: '',
-    end: '2009',
-    description: 'Team-Betreuer einer Basketball-Mannschaft aus Siena, Italien.',
-    link: 'http://www.euroleague.net/',
-    thumbnail: 'ULEB_FinalFour_2009.png',
-  },
-  {
     title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
-    subtitle: 'Jugendtrainer und -betreuer',
+    subtitle: 'Jugendbetreuer',
     begin: '2007',
     end: '2014',
-    description: 'Betreuung von Trainingslagern, Jugend-Wanderfahrten, Olympisches Jugendlager zu den Olympischen Spielen in London 2012.',
+    description: 'Betreuung von Kindern und Jugendlichen in Trainingslagern, Wanderfahrten, Jugendlager zu den Olympischen Spielen',
     link: 'https://www.ruderjugend.org',
     thumbnail: 'DRJ_Logo.jpg',
   },
   {
-    title: 'FISA Junioren-Weltmisterschaft Rudern 2014 Hamburg',
-    subtitle: 'IT-Netzwerk',
+    title: 'FISA Juniorenweltmeisterschaft 2014 Hamburg',
+    subtitle: 'IT-Netzwerktechnik',
     begin: '',
     end: '2014',
     description: '',
@@ -318,7 +331,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Besucherservice, Sonderaufgaben, Teamleiter',
     begin: '2008',
     end: '2011',
-    description: 'Besucher beim Zurechtfinden im Berliner Olympiastadion unterstützen. Zuletzt als Teamleiter.',
+    description: 'Betreuung von Gästen bei Heimspielen im Olympiastadion Berlin, zuletzt als Teamleiter.',
     link: 'http://www.hertha.de/',
     thumbnail: 'Hertha_BSC_Logo.svg',
   },
@@ -327,63 +340,97 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Anti-Doping-Chaperone',
     begin: '',
     end: '2009',
-    description: 'Begleitung der Athleten vom Wettkampf zur Anti-Doping-Kontrolle.',
+    description: '',
     link: 'https://www.iaaf.org/',
     thumbnail: 'IAAF_2009_in_Berlin.png',
   },
   {
+    title: 'ULEB Euroleague Final Four 2009 Berlin',
+    subtitle: 'Teambegleiter',
+    begin: '',
+    end: '2009',
+    description: 'Teambegleiter für die Basketball-Mannschaft von Montepaschi Siena (Italien)',
+    link: 'http://www.euroleague.net/',
+    thumbnail: 'ULEB_FinalFour_2009.png',
+  },
+  {
     title: 'FIFA Fußball-Weltmeisterschaft 2006 Deutschland',
-    subtitle: 'Visitor service',
+    subtitle: 'Besucherservice',
     begin: '',
     end: '2006',
-    description: 'Besucher beim Zurechtfinden im Berliner Olympiastadion unterstützen.',
+    description: 'Besucherservice für Besucher der WM-Spiele im Olympiastadion Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'fifa_world_cup_2006.gif',
+    thumbnail: 'FIFA_World_Cup_2006_Germany.png',
   },
 ];
 
 export const CONTACT = {
-  city: 'Berlin, Deutschland',
+  city: 'Berlin, Germany',
   phone: '',
   mail: 'sebastian@schreck.berlin',
   skype: '', // just the account name
-  linkedin: 'https://www.linkedin.com/in/sebastian-schreck-050739131/',
-  xing: 'https://www.xing.com/profile/Sebastian_Schreck2',
-  github: 'https://github.com/StegSchreck',
-  stackoverflow: 'https://stackoverflow.com/users/story/6538600',
+  linkedin: 'https://www.linkedin.com/in/sebastian-schreck-050739131/', // full url
+  xing: 'https://www.xing.com/profile/Sebastian_Schreck2', // full url
+  github: 'https://github.com/StegSchreck', // full url
+  stackoverflow: 'https://stackoverflow.com/users/story/6538600', // full url
   twitter: 'https://twitter.com/StegSchreck', // full url
-  facebook: '',
+  facebook: '', // full url
   instagram: '', // full url
   other: [
     { title: 'Medium', icon: 'icon-medium', link: 'https://medium.com/@stegschreck' },
+    { title: 'GitHub Page', icon: 'icon-github', link: 'https://stegschreck.github.io' },
+    { title: 'GitLab Page', icon: 'icon-gitlab', link: 'https://stegschreck.gitlab.io' },
   ],
 };
 
 export const INTERESTS = [
   {
+    title: 'Fahrrad',
+    icon: 'directions_bike',
+  },
+  {
+    title: 'GeoCaching',
+    icon: 'not_listed_location',
+  },
+  {
+    title: 'Open Source Software',
+    icon: 'code',
+  },
+  {
+    title: 'Lesen',
+    icon: 'icon-book',
+  },
+  {
     title: 'Rudern',
-    subtitle: '2000 — 2013',
-    icon: 'rowing'
+    icon: 'rowing',
   },
   {
     title: 'Fotografie',
-    subtitle: 'Pentax K3 DSLR',
-    icon: 'camera_alt'
+    icon: 'camera_alt',
   },
   {
     title: 'Ehrenamt im Sport',
-    subtitle: '2005 — 2016',
-    icon: 'favorite'
+    icon: 'favorite',
   },
 ];
 
 export const PUBLICATIONS: CvItem[] = [
   {
+    title: 'How to Touch the Cloud',
+    subtitle: 'Artikel veröffentlicht auf Medium / MakeItNew.io',
+    begin: '',
+    end: '2019-10-03',
+    description: 'Über die verschiedenen Wege mit AWS zu kommunizieren.',
+    tags: ['AWS', 'Python', 'Ansible', 'Terraform', 'S3', 'CloudFormation', 'SDK', 'CLI'],
+    link: 'https://makeitnew.io/how-to-touch-the-cloud-d08bcf14debe',
+    thumbnail: 'Medium_MakeItNew.png',
+  },
+  {
     title: 'The Speaker at the End of the Universe',
     subtitle: 'Artikel veröffentlicht auf Medium',
     begin: '',
     end: '2019-05-27',
-    description: 'Wie man sich als Vortragender auf einer Konferenz verhält',
+    description: 'Wie man einen Vortrag auf einer Konferenz hält',
     tags: ['conference', 'speaker', 'public speaking'],
     link: 'https://medium.com/@stegschreck/the-speaker-at-the-end-of-the-universe-6fb8565587b6',
     thumbnail: 'medium.png',
@@ -393,18 +440,17 @@ export const PUBLICATIONS: CvItem[] = [
     subtitle: 'Artikel veröffentlicht auf Medium',
     begin: '',
     end: '2019-05-20',
-    description: 'Empfehlungen für den ersten Besuch auf einer Konferenz',
+    description: 'Eine kleine Hilfestellung was beim Besuch einer Tech-Konferenz beachten sollte',
     tags: ['conference', 'visitor', 'attendee'],
     link: 'https://medium.com/@stegschreck/the-hitchhikers-guide-to-a-tech-conference-983c29b1e9ef',
     thumbnail: 'medium.png',
   },
   {
-    title: 'Tear down this wall! - Overcoming collaboration obstacles on your DevOps journey',
-    subtitle: 'Article published on Medium / MakeItNew.io',
+    title: 'Tear Down This Wall! - Overcoming Collaboration Obstacles on Your DevOps Journey',
+    subtitle: 'Artikel veröffentlicht auf Medium / MakeItNew.io',
     begin: '',
     end: '2019-04-17',
-    description: 'A summary of our Talk \'Tear Down This Wall!\' given at Code.Talks Commerce Special 2018 in Berlin ' +
-      'and DevOpsCon 2018 in Berlin about how we enable more collaboration in our IT teams at Mister Spex.',
+    description: 'Eine Zusammenfassung des Konferenzvortrags \'Tear Down This Wall!\', gehalten auf der code.talks Commerce Special 2018 in Berlin und der DevOpsCon 2018 in Berlin. Über die Wege wie Mister Spex mehr Kollaboration bei seinen IT-Teams ermöglicht.',
     tags: ['DevOps', 'culture', 'collaboration', 'communication', 'microservices'],
     link: 'https://makeitnew.io/tear-down-this-wall-c2211141fdb5',
     thumbnail: 'Medium_MakeItNew.png',
@@ -413,12 +459,21 @@ export const PUBLICATIONS: CvItem[] = [
 ];
 
 export const TALKS: CvItem[] = [
+  // {
+  //   title: 'How to Touch the Cloud',
+  //   subtitle: '45 min. @ AWS User Group MeetUp Berlin 2020',
+  //   begin: '',
+  //   end: '2020-03-03',
+  //   description: 'Über die verschiedenen Wege mit AWS zu kommunizieren.',
+  //   tags: ['AWS', 'Python', 'Ansible', 'Terraform', 'S3', 'CloudFormation', 'SDK', 'CLI'],
+  //   thumbnail: 'AWS_MeetUp_Berlin.png',
+  // },
   {
-    title: 'Bringing a complex stack to the cloud, our journey and lessons learned',
+    title: 'Bringing a complex stack to the cloud - Our journey and lessons learned',
     subtitle: '45 min. @ AWS Startup Day Berlin 2018',
     begin: '',
     end: '2018-10-09',
-    description: 'Mister Spex moved away from AWS to an on-premises infrastructure in 2015. ' +
+    description: 'Mister Spex ist in 2015 von der Cloud zu einer on-premise Infrastruktur migriert. In 2018 wurde wieder zurück in die Cloud migriert. Dieser Vortrag auf der AWS Veranstaltung erzählt die Geschichte sowie welche Erfahrungen und Probleme dabei enstanden.' +
       'This year we switched back to AWS. We will cover the story of these changes and why we did so. ' +
       'Come and hear our experiences and struggles to make your own migration smoother.',
     tags: ['AWS', 'cloud', 'migration'],
@@ -429,13 +484,7 @@ export const TALKS: CvItem[] = [
     subtitle: '60 min. @ DevOpsCon Berlin 2018',
     begin: '',
     end: '2018-05-29',
-    description: 'The discussion about DevOps is often focusing solely on the tooling aspect: automation, ' +
-      'continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on ' +
-      'your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from ' +
-      'inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the ' +
-      'stability of the software as well as the systems it runs on. We focus on the organizational ' +
-      'aspects of DevOps: How to measure and improve your team\'s effectiveness by reducing silos and silo thinking and ' +
-      'how to get your engineers to share responsibility - a basis for every successful DevOps transformation.',
+    description: 'Die Diskussionen über DevOps fokussieren sich meist lediglich auf die zu verwendenden Tools für Automatisierung, CI/CD und Monitoring. Aber Automatisierung und Monitoring bringen einen nur den Teil des DevOps Weges. Die erste und womöglich anspruchvollste Herausforderung ist die entwickelte Software schnell zu den Kunden zu bringen. Dies setzt die Zusammenarbeit der Entwickler voraus, um so die Stabilität sowie der darunter liegenden Systeme zu gewährleisten. Dieser Vortrag behandelt die organisatorischen Aspekte von DevOps: Wie man die Effektivität von Teams misst und verbessert durch Abbau von Silos sowie die gemeinsame Verantwortung der Entwickler zu fördern - Die Basis einer erfolgreichen DevOps-Transformation.',
     tags: ['DevOps', 'culture', 'collaboration', 'communication', 'microservices', 'team structure'],
     link: 'https://jaxenter.com/devops-interview-schreck-uebel-145573.html',
     thumbnail: 'DevOpsCon_2018_Speaker.png',
@@ -445,13 +494,7 @@ export const TALKS: CvItem[] = [
     subtitle: '45 min. @ code.talks commerce special Berlin 2018',
     begin: '',
     end: '2018-04-13',
-    description: 'The discussion about DevOps is often focusing solely on the tooling aspect: automation, ' +
-      'continuous integration & delivery; and monitoring. But automation and monitoring will only get you so far on ' +
-      'your DevOps journey. The first and arguably hardest thing to master in DevOps is getting your work from ' +
-      'inception into the hands of the customer fast. It requires your engineers to work hand in hand to ensure the ' +
-      'stability of the software as well as the systems it runs on. We focus on the organizational ' +
-      'aspects of DevOps: How to measure and improve your team\'s effectiveness by reducing silos and silo thinking and ' +
-      'how to get your engineers to share responsibility - a basis for every successful DevOps transformation.',
+    description: 'Die Diskussionen über DevOps fokussieren sich meist lediglich auf die zu verwendenden Tools für Automatisierung, CI/CD und Monitoring. Aber Automatisierung und Monitoring bringen einen nur den Teil des DevOps Weges. Die erste und womöglich anspruchvollste Herausforderung ist die entwickelte Software schnell zu den Kunden zu bringen. Dies setzt die Zusammenarbeit der Entwickler voraus, um so die Stabilität sowie der darunter liegenden Systeme zu gewährleisten. Dieser Vortrag behandelt die organisatorischen Aspekte von DevOps: Wie man die Effektivität von Teams misst und verbessert durch Abbau von Silos sowie die gemeinsame Verantwortung der Entwickler zu fördern - Die Basis einer erfolgreichen DevOps-Transformation.',
     tags: ['DevOps', 'culture', 'collaboration', 'communication', 'microservices'],
     link: 'https://www.youtube.com/watch?v=KWw0H__mtxI',
     thumbnail: 'code-talks-commerce.png',
