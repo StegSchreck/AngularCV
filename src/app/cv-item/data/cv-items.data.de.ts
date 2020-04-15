@@ -29,7 +29,7 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Consultant',
     begin: '2019-01-14',
     end: '2019-12-31',
-    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
+    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle Ergebnisse für unsere Kunden erbringen.',
     tags: ['Java', 'SpringBoot', 'Kafka', 'MongoDB', 'Git', 'KanBan', 'Scrum', 'IntelliJ', 'AWS', 'Docker', 'Ansible', 'Jira', 'Bamboo',
       'Confluence', 'TeamCity', 'Jenkins', 'bash', 'Kubernetes'],
     link: 'https://www.netlight.com',
@@ -59,7 +59,7 @@ export const CVITEMS: CvItem[] = [
   },
   {
     title: 'Mister Spex GmbH',
-    subtitle: 'Working student Product Management / Quality Assurance',
+    subtitle: 'Werkstudent Produktmanagement / Quality Assurance',
     begin: '2012-10-01',
     end: '2015-05-31',
     description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. Planung und Durchführung von Releases.',
@@ -78,7 +78,7 @@ export const CVITEMS: CvItem[] = [
   },
   {
     title: 'MBU Merchandising und Sportreisen GmbH & Co. KG',
-    subtitle: 'Merchande-Verkäufer in der O2World Berlin',
+    subtitle: 'Merchandise-Verkäufer in der O2World Berlin',
     begin: '2008-09',
     end: '2010-07',
     description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
