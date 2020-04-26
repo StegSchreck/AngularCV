@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Title, Meta } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { CvItemService } from './cv-item/cv-item.service';
@@ -15,10 +15,12 @@ export class AppComponent {
   public constructor(
     private cvItemService: CvItemService,
     private titleService: Title,
+    private metaService: Meta,
     private router: Router,
   ) {
     this.getItems();
     this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
+    this.setMetaDescription();
 
     router.events
       // .filter(event => event instanceof NavigationEnd)
@@ -33,5 +35,10 @@ export class AppComponent {
 
   public setTitle(newTitle: string) {
     this.titleService.setTitle( newTitle );
+  }
+
+  private setMetaDescription() {
+    const description = 'This is the online-CV of ' + this.generalData.name + ' - created with the AngularCV project.';
+    this.metaService.updateTag({name: 'description', content: description});
   }
 }
