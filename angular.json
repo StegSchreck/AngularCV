@@ -86,7 +86,8 @@
             ],
             "assets": [
               "src/assets",
-              "src/favicon.ico"
+              "src/favicon.ico",
+              "src/robots.txt"
             ]
           }
         },

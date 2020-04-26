@@ -1,0 +1,5 @@
+# robots.txt for AngularCV
+
+User-agent: *
+Disallow: /src/assets/img/
+Disallow: /src/assets/attachment/
