@@ -36,31 +36,31 @@
 <mat-card class="text-card">
   <mat-card-title>{{l10n.contact.profiles}}</mat-card-title>
   <mat-card-content class="web-profiles">
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.linkedin}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.linkedin}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
       <i mat-list-icon class="link-icon icon-linkedin"></i>
       LinkedIn
     </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.xing}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.xing}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
       <i mat-list-icon class="link-icon icon-xing"></i>
       Xing
     </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.github}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.github}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
       <i mat-list-icon class="link-icon icon-github"></i>
       GitHub
     </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.stackoverflow}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.stackoverflow}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
       <i mat-list-icon class="link-icon icon-stackoverflow"></i>
       StackOverflow
     </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.facebook}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.facebook}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
       <i mat-list-icon class="link-icon icon-facebook"></i>
       Facebook
     </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.twitter}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.twitter}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
       <i mat-list-icon class="link-icon icon-twitter"></i>
       Twitter
     </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.instagram}}" target="_blank" *ngIf="contactItems !== undefined && contactItems.instagram !== undefined && contactItems.instagram !== ''">
+    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.instagram}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.instagram !== undefined && contactItems.instagram !== ''">
       <i mat-list-icon class="link-icon icon-instagram"></i>
       Instagram
     </a>
@@ -68,7 +68,7 @@
       <br><br>
       <mat-divider [inset]="true"></mat-divider>
       <br>
-      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{item.link}}" target="_blank" *ngFor="let item of contactItems.other">
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{item.link}}" target="_blank" rel="noopener" *ngFor="let item of contactItems.other">
         <i mat-list-icon class="link-icon {{item.icon | lowercase}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.startsWith('icon-')"></i>
         <mat-icon *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.startsWith('icon-')">{{item.icon | lowercase}}</mat-icon>
         <mat-icon *ngIf="item.icon === undefined && item.icon === ''">link</mat-icon>

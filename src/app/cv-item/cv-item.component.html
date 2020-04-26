@@ -35,11 +35,11 @@
     <mat-icon aria-label="toggle details"></mat-icon>
   </button>
   <mat-card-actions>
-    <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
+    <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" rel="noopener" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
       <mat-icon>link</mat-icon>
       {{l10n.cv_item.button_view_link}}
     </a>
-    <a mat-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
+    <a mat-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" rel="noopener" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
       <mat-icon>attachment</mat-icon>
       {{l10n.cv_item.button_view_attachment}}
     </a>
