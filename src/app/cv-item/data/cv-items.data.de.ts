@@ -438,15 +438,15 @@ export const PUBLICATIONS: CvItem[] = [
 ];
 
 export const TALKS: CvItem[] = [
-  // {
-  //   title: 'How to Touch the Cloud',
-  //   subtitle: '45 min. @ AWS User Group MeetUp Berlin 2020',
-  //   begin: '',
-  //   end: '2020-03-03',
-  //   description: 'Über die verschiedenen Wege mit AWS zu kommunizieren.',
-  //   tags: ['AWS', 'Python', 'Ansible', 'Terraform', 'S3', 'CloudFormation', 'SDK', 'CLI'],
-  //   thumbnail: 'AWS_MeetUp_Berlin.png',
-  // },
+  {
+    title: 'Looking at a New-Born Star Through the Telescope: Architecture Review Approach at idealo',
+    subtitle: '20 min. @ Netlight EdgeX Urknall',
+    begin: '',
+    end: '2020-06-17',
+    description: 'After starting a new project on a green field, you sometimes wonder if you made the right choices at the beginning. This talk will give you an overview of how idealo\'s team product page took a step back and reviewed their early architecture decisions considering the learnings made on the way.',
+    tags: ['Architektur', 'Arc42'],
+    thumbnail: 'NetlightEdgeXUrknall.png',
+  },
   {
     title: 'Bringing a complex stack to the cloud - Our journey and lessons learned',
     subtitle: '45 min. @ AWS Startup Day Berlin 2018',
