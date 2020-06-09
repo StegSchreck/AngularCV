@@ -16,7 +16,7 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
     subtitle: 'Senior Consultant',
-    begin: '2019-01-14',
+    begin: '2019-01',
     end: '',
     description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
     tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
@@ -27,8 +27,8 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Mister Spex GmbH',
     subtitle: 'Professional Software Engineer',
-    begin: '2015-06-01',
-    end: '2018-12-31',
+    begin: '2015-06',
+    end: '2018-12',
     description: 'Implementierung von Features auf der E-Commerce Plattform Intershop. Entwicklung einer separierted API als Microservice nach DevOps Prinzipien welche die Preise und Kombinationsmöglichkeiten der Brillengläser berechnet. Später erfolgte der Wechsel von der Produktentwicklung zum Infrastrukturbetrieb. ' +
       'Instandhaltung und Betrieb der IT-Plattform auf welcher der E-Commerce-Shop läuft. Automatisierung von Prozessen and Unterstützung der Entwicklungsteams in ihrer Arbeit. Planung und Durchführung der Migrations mehrerer Anwendungen hin zur Cloud, darunter der Haupt-Webshop.',
     tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo', 'TDD',
@@ -39,8 +39,8 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Mister Spex GmbH',
     subtitle: 'Werkstudent Produktmanagement / Quality Assurance',
-    begin: '2012-10-01',
-    end: '2015-05-31',
+    begin: '2012-10',
+    end: '2015-05',
     description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. Planung und Durchführung von Releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',

@@ -16,7 +16,7 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
     subtitle: 'Senior Consultant',
-    begin: '2019-01-14',
+    begin: '2019-01',
     end: '',
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
       'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
@@ -30,8 +30,8 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Mister Spex GmbH',
     subtitle: 'Professional Software Engineer',
-    begin: '2015-06-01',
-    end: '2018-12-31',
+    begin: '2015-06',
+    end: '2018-12',
     description: 'Implementing features for the e-Commerce platform Intershop in order to customize it. ' +
       'Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and ' +
       'feature configuration of prescription glasses. Later switched to the operations team. ' +
@@ -46,8 +46,8 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Mister Spex GmbH',
     subtitle: 'Working student Product Management / Quality Assurance',
-    begin: '2012-10-01',
-    end: '2015-05-31',
+    begin: '2012-10',
+    end: '2015-05',
     description: 'Ensuring the quality and functionality of the web shop, ERP software and their interfaces. ' +
       'Planning and conduct releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
