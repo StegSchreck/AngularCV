@@ -30,7 +30,7 @@
     "core-js": "^3.6.5",
     "jspdf": "^1.5.3",
     "material-design-icons": "^3.0.1",
-    "rxjs": "^6.5.5",
+    "rxjs": "^6.6.0",
     "tslib": "^1.13.0",
     "zone.js": "^0.10.3"
   },
