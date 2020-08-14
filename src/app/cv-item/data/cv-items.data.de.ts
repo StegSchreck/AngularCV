@@ -395,7 +395,7 @@ export const INTERESTS = [
 
 export const PUBLICATIONS: CvItem[] = [
   {
-    title: 'How to Touch the Cloud',
+    title: 'How to Touch the Cloud',
     subtitle: 'Artikel veröffentlicht auf Medium / MakeItNew.io',
     begin: '',
     end: '2019-10-03',

@@ -415,11 +415,11 @@ export const INTERESTS = [
 
 export const PUBLICATIONS: CvItem[] = [
   {
-    title: 'How to Touch the Cloud',
+    title: 'How to Touch the Cloud',
     subtitle: 'Article published on Medium / MakeItNew.io',
     begin: '',
     end: '2019-10-03',
-    description: 'Different Possibilities on How to Interact with AWS',
+    description: 'Different Possibilities on How to Interact with AWS',
     tags: ['AWS', 'Python', 'Ansible', 'Terraform', 'S3', 'CloudFormation', 'SDK', 'CLI'],
     link: 'https://makeitnew.io/how-to-touch-the-cloud-d08bcf14debe',
     thumbnail: 'Medium_MakeItNew.png',
