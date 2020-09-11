@@ -81,7 +81,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2018-11-26',
     description: '',
-    link: 'https://www.certmetrics.com/amazon/public/badge.aspx?i=9&t=c&d=2018-11-26&ci=AWS00520066',
+    link: 'https://www.youracclaim.com/badges/feda3cd6-424a-4874-804f-60cb005aa546',
     thumbnail: 'AWS_certified_cloud_practitioner.png',
     attachment: 'AWS_Certified_Cloud_Practitioner_certificate.pdf',
   },
