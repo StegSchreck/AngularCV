@@ -465,7 +465,7 @@ export const TALKS: CvItem[] = [
     begin: '',
     end: '2020-11-19',
     description: 'The term "DevOps" has been around for a few years now. Yet, there are still misconceptions and uncertainties around it. We invite you to experience the stories of two developers from different realms to spark your curiosity about the mindset and values behind that sometimes mysterious buzzword "DevOps".',
-    tags: ['DevOps', 'Kultur', 'Kollaboration', 'Kommunikation', 'Enablement'],
+    tags: ['DevOps', 'Culture', 'Collaboration', 'Communication', 'Enablement'],
     thumbnail: 'Netlight_EdgeX_MiCasaEsSuCasa.png',
   },
   {
