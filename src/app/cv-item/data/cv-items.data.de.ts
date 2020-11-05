@@ -439,6 +439,15 @@ export const PUBLICATIONS: CvItem[] = [
 
 export const TALKS: CvItem[] = [
   {
+    title: 'Something, Something... DevOps - A Tale of two developers',
+    subtitle: '20 min. @ Netlight EdgeX Vol. 8 - Mi Casa Es Su Casa',
+    begin: '',
+    end: '2020-11-19',
+    description: 'The term "DevOps" has been around for a few years now. Yet, there are still misconceptions and uncertainties around it. We invite you to experience the stories of two developers from different realms to spark your curiosity about the mindset and values behind that sometimes mysterious buzzword "DevOps".',
+    tags: ['DevOps', 'Culture', 'Collaboration', 'Communication', 'Enablement'],
+    thumbnail: 'Netlight_EdgeX_MiCasaEsSuCasa.png',
+  },
+  {
     title: 'Looking at a New-Born Star Through the Telescope: Architecture Review Approach at idealo',
     subtitle: '20 min. @ Netlight EdgeX Urknall',
     begin: '',
