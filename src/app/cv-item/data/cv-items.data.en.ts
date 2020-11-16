@@ -190,6 +190,17 @@ export const PROJECTS: CvItem[] = [
     thumbnail: 'UberPage_kompakt.png',
   },
   {
+    title: 'PP-Auxmoney-Parser',
+    subtitle: 'Python based parser for Auxmoney to import to Portfolio Performance',
+    begin: '2019-07',
+    end: '',
+    description: 'This script creates a CSV with the interests you received for your investments at Auxmoney. ' +
+      'The CSV is created in a format to be imported to Portfolio Performance.',
+    tags: ['Python', 'Git', 'Selenium', 'Beautifulsoup', 'CSV'],
+    link: 'https://github.com/StegSchreck/PP-Auxmoney-Parser',
+    thumbnail: 'PP-Auxmoney-Parser.png',
+  },
+  {
     title: 'IS24 Price Per Area',
     subtitle: 'Chrome extension to display the price per m² on ImmoScout',
     begin: '2020-02',

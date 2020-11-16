@@ -180,6 +180,17 @@ export const PROJECTS: CvItem[] = [
     thumbnail: 'UberPage_kompakt.png',
   },
   {
+    title: 'PP-Auxmoney-Parser',
+    subtitle: 'Skript für die Erstellung einer CSV Datei mit den erwirtschafteten Zinsen aus Auxmoney Investitionen.',
+    begin: '2019-07',
+    end: '',
+    description: 'Dieses Skript liest die Investitionen bei Auxmoney aus und erstellt eine CSV mit den erwirtschafteten Zinsen. ' +
+      'Die CSV Datei ist so formatiert, dass sie problemlos in Portfolio Performance importiert werden kann.',
+    tags: ['Python', 'Git', 'Selenium', 'Beautifulsoup', 'CSV'],
+    link: 'https://github.com/StegSchreck/PP-Auxmoney-Parser',
+    thumbnail: 'PP-Auxmoney-Parser.png',
+  },
+  {
     title: 'IS24 Price Per Area',
     subtitle: 'Chrome Erweiterung für die Anzeige des Quadratmeterpreises auf ImmoScout',
     begin: '2020-02',
