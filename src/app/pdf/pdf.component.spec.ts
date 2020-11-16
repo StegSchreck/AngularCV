@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import * as jsPDF from 'jspdf';
 
 import { MaterialModule } from '../material/material.module';
@@ -12,7 +12,7 @@ describe('PdfComponent', () => {
   let component: PdfComponent;
   let fixture: ComponentFixture<PdfComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule ],
       declarations: [ PdfComponent ],
