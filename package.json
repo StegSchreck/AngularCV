@@ -55,6 +55,6 @@
     "puppeteer": "^7.0.1",
     "ts-node": "~9.1.1",
     "tslint": "~6.1.0",
-    "typescript": "4.0.5"
+    "typescript": "4.0.7"
   }
 }
