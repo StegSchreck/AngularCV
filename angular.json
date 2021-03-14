@@ -78,7 +78,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [
-              "node_modules/jspdf/dist/jspdf.min.js"
+              "node_modules/jspdf/dist/jspdf.es.js"
             ],
             "styles": [
               "src/styles.css"
