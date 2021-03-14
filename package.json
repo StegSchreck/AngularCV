@@ -28,15 +28,15 @@
     "angular-in-memory-web-api": "^0.11.0",
     "angular-material": "^1.2.2",
     "core-js": "^3.9.1",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "material-design-icons": "^3.0.1",
     "rxjs": "^6.6.6",
     "tslib": "^2.1.0",
     "zone.js": "^0.10.3"
   },
   "devDependencies": {
-    "@angular/cli": "^11.2.4",
     "@angular-devkit/build-angular": "^0.1102.4",
+    "@angular/cli": "^11.2.4",
     "@angular/compiler-cli": "^11.0.0",
     "@angular/language-service": "11.2.5",
     "@types/jasmine": "~3.6.6",

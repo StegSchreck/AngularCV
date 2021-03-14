@@ -25,7 +25,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jspdf/dist/jspdf.min.js"
+              "node_modules/jspdf/dist/jspdf.es.js"
             ]
           },
           "configurations": {

@@ -62,7 +62,7 @@ export const L10N = {
       continuing_next_page: 'Continuing on the next page...',
       continued_from_last_page: '... continued from the previous page.',
       info_generation: 'This CV was generated from a self-hosted online-CV using the AngularCV project.',
-      info_headhunter: 'If you received this from a headhunter, he just might have downloaded it from my webpage and sent to you without my consent.',
+      info_headhunter: 'If you received this from a headhunter, they just might have downloaded it from my webpage and sent to you without my consent.',
     },
     projects: {
       title: 'Projects',
@@ -137,7 +137,7 @@ export const L10N = {
       continuing_next_page: 'Fortsetzung folgt auf der nächsten Seite...',
       continued_from_last_page: '... Fortsetzung der vorigen Seite.',
       info_generation: 'Dieser Lebenslauf wurde generiert aus einem Online-Lebenslauf welches auf dem Projekt AngularCV basiert.',
-      info_headhunter: 'Falls dies von einem Headhunter geschickt wurde, könnte er dies ohne meine Zustimmung heruntergeladen und verschickt haben.',
+      info_headhunter: 'Falls dies von einem Headhunter geschickt wurde, könnte dies ohne meine Zustimmung heruntergeladen und verschickt worden sein.',
     },
     projects: {
       title: 'Projekte',
