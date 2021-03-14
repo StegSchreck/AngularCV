@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
-import * as jsPDF from 'jspdf';
 
 import { MaterialModule } from '../material/material.module';
 import { LocalizationService } from '../l10n/l10n.service';
@@ -32,9 +31,9 @@ describe('PdfComponent', () => {
   });
 
   it('should generate the PDF', () => {
-    const pdf = component.generatePdfDocument(new jsPDF());
+    const pdf = component.generatePdfDocument();
     expect(pdf).toBeDefined();
-    expect(pdf.internal.getNumberOfPages()).toEqual(1);
+    expect(pdf.getNumberOfPages()).toEqual(1);
     expect(pdf.getCreationDate('jsDate').getFullYear()).toEqual(new Date().getFullYear());
     expect(pdf.getCreationDate('jsDate').getMonth()).toEqual(new Date().getMonth());
     expect(pdf.getCreationDate('jsDate').getDate()).toEqual(new Date().getDate());
@@ -51,8 +50,8 @@ describe('PdfComponent', () => {
       link: '',
       thumbnail: '',
     }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(2);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(2);
   });
 
   it('should generate the PDF with multiple pages, if many cv items', () => {
@@ -120,8 +119,8 @@ describe('PdfComponent', () => {
       link: '',
       thumbnail: '',
     }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(3);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(3);
   });
 
   it('should generate the PDF containing data for education', () => {
@@ -146,8 +145,8 @@ describe('PdfComponent', () => {
       thumbnail: '',
     }];
     component.languageItems = [{ title: 'English', level: '99' }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(3);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(3);
   });
 
   it('should generate the PDF containing data for volunteering', () => {
@@ -161,8 +160,8 @@ describe('PdfComponent', () => {
       link: '',
       thumbnail: '',
     }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(2);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(2);
   });
 
   it('should generate the PDF containing data for publication and talks', () => {
@@ -186,8 +185,8 @@ describe('PdfComponent', () => {
       link: '',
       thumbnail: '',
     }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(3);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(3);
   });
 
   it('should generate the PDF containing data for volunteering', () => {
@@ -201,8 +200,8 @@ describe('PdfComponent', () => {
       link: '',
       thumbnail: '',
     }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(2);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(2);
   });
 
   it('should generate the PDF containing data for projects', () => {
@@ -216,8 +215,8 @@ describe('PdfComponent', () => {
       link: '',
       thumbnail: '',
     }];
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(2);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(2);
   });
 
   it('should generate the PDF containing data for general data', () => {
@@ -226,7 +225,7 @@ describe('PdfComponent', () => {
       position: 'Software Engineer',
       description: 'This is just a test description.',
     };
-    const pdf = component.generatePdfDocument(new jsPDF());
-    expect(pdf.internal.getNumberOfPages()).toEqual(1);
+    const pdf = component.generatePdfDocument();
+    expect(pdf.getNumberOfPages()).toEqual(1);
   });
 });
