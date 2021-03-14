@@ -423,7 +423,7 @@ export const PUBLICATIONS: CvItem[] = [
     description: 'Wie man einen Vortrag auf einer Konferenz hält',
     tags: ['conference', 'speaker', 'public speaking'],
     link: 'https://medium.com/@stegschreck/the-speaker-at-the-end-of-the-universe-6fb8565587b6',
-    thumbnail: 'medium.png',
+    thumbnail: 'Medium.svg',
   },
   {
     title: 'The Hitchhiker’s Guide to a Tech Conference',
@@ -433,7 +433,7 @@ export const PUBLICATIONS: CvItem[] = [
     description: 'Eine kleine Hilfestellung was beim Besuch einer Tech-Konferenz beachten sollte',
     tags: ['conference', 'visitor', 'attendee'],
     link: 'https://medium.com/@stegschreck/the-hitchhikers-guide-to-a-tech-conference-983c29b1e9ef',
-    thumbnail: 'medium.png',
+    thumbnail: 'Medium.svg',
   },
   {
     title: 'Tear Down This Wall! - Overcoming Collaboration Obstacles on Your DevOps Journey',
