@@ -24,9 +24,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "node_modules/jspdf/dist/jspdf.es.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -77,9 +75,7 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [
-              "node_modules/jspdf/dist/jspdf.es.js"
-            ],
+            "scripts": [],
             "styles": [
               "src/styles.css"
             ],
