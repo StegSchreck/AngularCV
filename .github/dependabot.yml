@@ -1,0 +1,54 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    day: friday
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@angular/cli"
+    versions:
+    - ">= 10.0.a, < 10.1"
+  - dependency-name: "@angular/cli"
+    versions:
+    - ">= 10.1.a, < 10.2"
+  - dependency-name: jspdf
+    versions:
+    - ">= 2.1.a, < 2.2"
+  - dependency-name: typescript
+    versions:
+    - 4.2.3
+    - 4.2.4
+  - dependency-name: tslib
+    versions:
+    - 2.2.0
+  - dependency-name: "@angular/compiler"
+    versions:
+    - 11.2.6
+    - 11.2.8
+  - dependency-name: "@angular/cli"
+    versions:
+    - 11.2.2
+    - 11.2.4
+    - 11.2.6
+  - dependency-name: "@angular/core"
+    versions:
+    - 11.2.6
+    - 11.2.8
+  - dependency-name: jspdf
+    versions:
+    - 2.3.0
+    - 2.3.1
+  - dependency-name: "@angular/language-service"
+    versions:
+    - 11.1.1
+    - 11.1.2
+    - 11.2.3
+  - dependency-name: core-js
+    versions:
+    - 3.9.0
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.25
