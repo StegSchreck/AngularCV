@@ -41,7 +41,7 @@
     "@angular/language-service": "12.1.1",
     "@types/jasmine": "~3.7.6",
     "@types/jasminewd2": "^2.0.9",
-    "@types/node": "^15.12.2",
+    "@types/node": "^15.14.0",
     "codelyzer": "^6.0.2",
     "jasmine-core": "~3.7.1",
     "jasmine-spec-reporter": "~7.0.0",
@@ -56,6 +56,6 @@
     "puppeteer": "^10.0.0",
     "ts-node": "~10.0.0",
     "tslint": "~6.1.0",
-    "typescript": "4.2.4"
+    "typescript": "4.3.5"
   }
 }
