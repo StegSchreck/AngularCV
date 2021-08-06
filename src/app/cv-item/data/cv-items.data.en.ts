@@ -15,7 +15,7 @@ This website is designed to be a simple, self-hosted online-CV, based on Angular
 export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
-    subtitle: 'Senior Consultant',
+    subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
     end: '',
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +

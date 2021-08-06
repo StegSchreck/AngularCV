@@ -15,7 +15,7 @@ Diese Internetseite wurde als einfacher, selbst-gehosteter online-Lebenslauf kon
 export const CVITEMS: CvItem[] = [
   {
     title: 'Netlight Consulting GmbH',
-    subtitle: 'Senior Consultant',
+    subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
     end: '',
     description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
