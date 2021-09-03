@@ -27,7 +27,7 @@
     "@types/jspdf": "^2.0.0",
     "angular-in-memory-web-api": "^0.11.0",
     "angular-material": "^1.2.3",
-    "core-js": "^3.15.2",
+    "core-js": "^3.17.2",
     "jspdf": "^2.3.1",
     "material-design-icons": "^3.0.1",
     "rxjs": "^7.0.0",
