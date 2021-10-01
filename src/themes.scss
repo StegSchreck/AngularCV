@@ -1,0 +1,33 @@
+@use '~@angular/material' as mat;
+@import '~@angular/material/theming';
+@import '../src/styles.css';
+
+@include mat-core();
+
+
+//change this for your custom theme
+$angularCV-primary: mat-palette($mat-green);
+$angularCV-accent:  mat-palette($mat-pink, 500, 900, A100);
+$angularCV-warn:    mat-palette($mat-deep-orange);
+
+$angularCV-custom-typography: mat.define-typography-level(
+$font-family: 'Comic Sans',
+$font-weight: 400,
+$font-size: 1rem,
+$line-height: 1,
+$letter-spacing: normal,
+);
+
+$angularCV-theme: mat-light-theme($angularCV-primary, $angularCV-accent, $angularCV-warn);
+
+@include angular-material-theme($angularCV-theme);
+@include mat-base-typography($angularCV-custom-typography);
+
+
+
+
+
+
+
+
+
