@@ -23,7 +23,7 @@
     "@angular/material": "12.2.11",
     "@angular/platform-browser": "12.2.11",
     "@angular/platform-browser-dynamic": "12.2.11",
-    "@angular/router": "12.2.11",
+    "@angular/router": "13.0.1",
     "@types/jspdf": "^2.0.0",
     "angular-in-memory-web-api": "^0.11.0",
     "angular-material": "^1.2.3",
