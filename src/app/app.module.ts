@@ -32,44 +32,41 @@ import { LocalizationService }      from './l10n/l10n.service';
 import { LocalizationComponent }    from './l10n/l10n.component';
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    FormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-  ],
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    OverviewComponent,
-    ExperienceComponent,
-    EducationComponent,
-    PublicationsComponent,
-    ProjectsComponent,
-    VolunteeringComponent,
-    AboutComponent,
-    CvItemComponent,
-    FooterComponent,
-    ContactComponent,
-    PdfComponent,
-    CvDownloadCardComponent,
-    PictureModalComponent,
-    LocalizationComponent,
-    CvItemDirective,
-  ],
-  providers: [
-    Title,
-    CvItemService,
-    FeatureToggleService,
-    LocalizationService,
-  ],
-  bootstrap: [
-    AppComponent,
-  ],
-  entryComponents: [
-    PictureModalComponent,
-  ],
+    imports: [
+        BrowserModule,
+        HttpClientModule,
+        FormsModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+    ],
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        OverviewComponent,
+        ExperienceComponent,
+        EducationComponent,
+        PublicationsComponent,
+        ProjectsComponent,
+        VolunteeringComponent,
+        AboutComponent,
+        CvItemComponent,
+        FooterComponent,
+        ContactComponent,
+        PdfComponent,
+        CvDownloadCardComponent,
+        PictureModalComponent,
+        LocalizationComponent,
+        CvItemDirective,
+    ],
+    providers: [
+        Title,
+        CvItemService,
+        FeatureToggleService,
+        LocalizationService,
+    ],
+    bootstrap: [
+        AppComponent,
+    ]
 })
 export class AppModule { }
