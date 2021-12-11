@@ -1,6 +1,6 @@
 import { CvItem } from '../cv-item';
 
-// tslint:disable:max-line-length
+/* eslint-disable max-len */
 export const GENERAL = {
   name: 'Sebastian Schreck',
   position: 'Software Entwickler',
@@ -10,7 +10,7 @@ Sebastian ist auf der Suche nach neuen Herausforderungen welche moderne, fortsch
 
 Diese Internetseite wurde als einfacher, selbst-gehosteter online-Lebenslauf konzipiert. Um mehr hierüber zu erfahren, bitte auf das AngularCV logo in der unteren, rechten Ecke klicken.`,
 };
-// tslint:enable:max-line-length
+/* eslint-enable max-len */
 
 export const CVITEMS: CvItem[] = [
   {

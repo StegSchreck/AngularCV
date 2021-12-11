@@ -1,4 +1,4 @@
-/* tslint:disable:max-line-length camelcase */
+/* eslint-disable max-len */
 export const L10N = {
   'EN': {
     language_name: 'English',

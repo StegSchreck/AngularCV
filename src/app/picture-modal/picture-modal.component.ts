@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -6,7 +6,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   templateUrl: './picture-modal.component.html',
   styleUrls: ['./picture-modal.component.css'],
 })
-export class PictureModalComponent implements OnInit {
+export class PictureModalComponent {
   public title;
   public imagePath;
 
@@ -17,7 +17,4 @@ export class PictureModalComponent implements OnInit {
     this.imagePath = data.imagePath;
     this.title = data.title;
   }
-
-  ngOnInit() { }
-
 }

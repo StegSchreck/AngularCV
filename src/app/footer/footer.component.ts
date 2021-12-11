@@ -1,11 +1,11 @@
-import { Component, HostListener, OnInit, AfterViewInit } from '@angular/core';
+import { Component, HostListener, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent implements OnInit, AfterViewInit {
+export class FooterComponent implements AfterViewInit {
   public currentYear: Number = new Date().getFullYear();
   public windowWidth: number = window.innerWidth;
 
@@ -21,8 +21,4 @@ export class FooterComponent implements OnInit, AfterViewInit {
   }
 
   constructor() { }
-
-  ngOnInit() {
-  }
-
 }
