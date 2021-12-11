@@ -19,8 +19,8 @@ export const CVITEMS: CvItem[] = [
     begin: '2019-01',
     end: '',
     description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich und Frankfurt. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
-    tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Bamboo',
-      'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
+    tags: ['Java', 'SpringBoot', 'React', 'Python', 'FastAPI', 'Kafka', 'MongoDB', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ',
+      'Docker', 'Jira', 'Bamboo', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash', 'Tech Lead', 'Product Owner'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight_Consulting_logo.svg',
   },
@@ -83,7 +83,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2015-04',
     description: 'Overview (IS7-100), Intershop Frontend Development (IS7-114), Intershop Backend Programming (IS7-118)',
-    link: 'http://www.intershop.de/',
+    link: 'https://www.intershop.de/',
     thumbnail: 'intershop.svg',
     attachment: 'ISH_Development_Training_2015.pdf',
   },
@@ -124,7 +124,7 @@ export const EDUCATION: CvItem[] = [
     end: '2015-04',
     description: '',
     tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
-    link: 'http://www.tu-berlin.de',
+    link: 'https://www.tu-berlin.de',
     thumbnail: 'TU-Berlin-Logo.png',
   },
   {
@@ -134,7 +134,7 @@ export const EDUCATION: CvItem[] = [
     end: '2011-12',
     description: '',
     tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
-    link: 'http://www.tu-berlin.de',
+    link: 'https://www.tu-berlin.de',
     thumbnail: 'TU-Berlin-Logo.png',
   },
 ];
@@ -250,7 +250,7 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '2007',
     end: '2016',
     description: 'Einlass, Besuerservice, VIP Support, Springer, Sonderaufgaben',
-    link: 'http://www.dfb.de',
+    link: 'https://www.dfb.de',
     thumbnail: 'DFB-Logo.jpg',
   },
   {
@@ -277,7 +277,7 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '',
     end: '2015',
     description: 'Leiter Backstage-Sicherheit',
-    link: 'http://www.cev.lu/',
+    link: 'https://www.cev.lu/',
     thumbnail: 'CEV_Champions_League_logo.png',
   },
   {
@@ -313,7 +313,7 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '',
     end: '2014',
     description: '',
-    link: 'http://www.worldrowing.com/',
+    link: 'https://www.worldrowing.com/',
     thumbnail: 'FISA_JWM_2014.png',
   },
   {
@@ -322,7 +322,7 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '2008',
     end: '2011',
     description: 'Betreuung von Gästen bei Heimspielen im Olympiastadion Berlin, zuletzt als Teamleiter.',
-    link: 'http://www.hertha.de/',
+    link: 'https://www.hertha.de/',
     thumbnail: 'Hertha_BSC_Logo.svg',
   },
   {
@@ -340,7 +340,7 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '',
     end: '2009',
     description: 'Teambegleiter für die Basketball-Mannschaft von Montepaschi Siena (Italien)',
-    link: 'http://www.euroleague.net/',
+    link: 'https://www.euroleague.net/',
     thumbnail: 'ULEB_FinalFour_2009.png',
   },
   {
