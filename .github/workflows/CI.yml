@@ -23,7 +23,7 @@ jobs:
         npm ci
         ng lint
         ng test --watch false --browsers ChromeHeadless --code-coverage
-        codacy-coverage < coverage/lcov.info
+        CODACY_PROJECT_TOKEN=${CODACY_PROJECT_TOKEN} codacy-coverage < coverage/lcov.info
         ng build --prod
       env:
         CI: true
