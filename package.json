@@ -26,7 +26,7 @@
     "@angular/router": "14.1.1",
     "@types/jspdf": "^2.0.0",
     "angular-in-memory-web-api": "^0.13.0",
-    "angular-material": "^1.2.3",
+    "angular-material": "^1.1.24",
     "core-js": "^3.22.4",
     "jspdf": "^2.5.1",
     "material-design-icons": "^3.0.1",
