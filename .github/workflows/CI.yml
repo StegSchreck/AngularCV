@@ -23,7 +23,7 @@ jobs:
         npm ci
         ng lint
         ng test --watch false --browsers ChromeHeadless --code-coverage
-        ng build --prod
+        ng build --configuration production --aot
       env:
         CI: true
     - name: Codacy Coverage Reporter
@@ -69,7 +69,7 @@ jobs:
 #        run: |
 #          npm install -g npm@latest @angular/cli
 #          npm ci
-#          ng build --prod --aot
+#          ng build --configuration production --aot
 #        env:
 #          CI: true
 #      - name: GitHub Pages Deploy
