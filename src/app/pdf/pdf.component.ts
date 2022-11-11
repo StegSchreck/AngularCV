@@ -125,31 +125,31 @@ export class PdfComponent implements OnInit {
     this.addPageHeader(pdf);
 
     this.addOverviewPageContent(pdf);
-    if (this.cvItems !== undefined && this.cvItems !== [] && this.cvItems.length > 0) {
+    if (this.cvItems !== undefined && this.cvItems.length > 0) {
       this.switchPage(pdf);
       this.addExperiencePageContent(pdf);
     }
-    if (this.educationItems !== undefined && this.educationItems !== [] && this.educationItems.length > 0) {
+    if (this.educationItems !== undefined && this.educationItems.length > 0) {
       this.switchPage(pdf);
       this.addEducationPageContent(pdf);
     }
-    if (this.certificationItems !== undefined && this.certificationItems !== [] && this.certificationItems.length > 0) {
+    if (this.certificationItems !== undefined && this.certificationItems.length > 0) {
       this.switchPage(pdf);
       this.addCertificatesPageContent(pdf);
     }
-    if (this.publicationItems !== undefined && this.publicationItems !== [] && this.publicationItems.length > 0) {
+    if (this.publicationItems !== undefined && this.publicationItems.length > 0) {
       this.switchPage(pdf);
       this.addPublicationsPageContent(pdf);
     }
-    if (this.talkItems !== undefined && this.talkItems !== [] && this.talkItems.length > 0) {
+    if (this.talkItems !== undefined && this.talkItems.length > 0) {
       this.switchPage(pdf);
       this.addTalksPageContent(pdf);
     }
-    if (this.projectItems !== undefined && this.projectItems !== [] && this.projectItems.length > 0) {
+    if (this.projectItems !== undefined && this.projectItems.length > 0) {
       this.switchPage(pdf);
       this.addProjectsPageContent(pdf);
     }
-    if (this.volunteerItems !== undefined && this.volunteerItems !== [] && this.volunteerItems.length > 0) {
+    if (this.volunteerItems !== undefined && this.volunteerItems.length > 0) {
       this.switchPage(pdf);
       this.addVolunteeringPageContent(pdf);
     }
@@ -187,7 +187,7 @@ export class PdfComponent implements OnInit {
   }
 
   private addContactData(pdf: jsPDF) {
-    if (this.contactItems !== undefined && this.contactItems !== [] && this.contactItems.length > 0) {
+    if (this.contactItems !== undefined && this.contactItems.length > 0) {
       this.addLine(pdf, this.l10n.pdf.label_city.toUpperCase(), this.contactItems.city);
       this.addLine(pdf, this.l10n.pdf.label_email.toUpperCase(), this.contactItems.mail);
       this.addLine(pdf, this.l10n.contact.phone.toUpperCase(), this.contactItems.phone);
@@ -201,7 +201,7 @@ export class PdfComponent implements OnInit {
   }
 
   private addLanguages(pdf: jsPDF) {
-    if (this.languageItems !== undefined && this.languageItems !== [] && this.languageItems.length > 0) {
+    if (this.languageItems !== undefined && this.languageItems.length > 0) {
       this.verticalPosition += 10;
       pdf.setFontSize(14);
       pdf.setFont(STANDARD_FONT, 'bold');
@@ -229,7 +229,7 @@ export class PdfComponent implements OnInit {
   }
 
   private addInterests(pdf: jsPDF) {
-    if (this.interestItems !== undefined && this.interestItems !== [] && this.interestItems.length > 0) {
+    if (this.interestItems !== undefined && this.interestItems.length > 0) {
       pdf.setFontSize(14);
       pdf.setFont(STANDARD_FONT, 'bold');
       pdf.text(this.l10n.overview.subtitle_interests.toUpperCase(), PAGE_BORDER_LEFT, this.verticalPosition);

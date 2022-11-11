@@ -1,11 +1,11 @@
-<mat-card class="page-title" *ngIf="talkItems !== undefined && talkItems !== [] && talkItems.length > 0">
+<mat-card class="page-title" *ngIf="talkItems !== undefined && talkItems.length > 0">
   <mat-card-title>
     <mat-icon>record_voice_over</mat-icon>
     {{l10n.publications.title_talks}}
   </mat-card-title>
 </mat-card>
 <app-cv-item *ngFor="let item of talkItems" [cvItem]="item"></app-cv-item>
-<mat-card class="page-title" *ngIf="publicationItems !== undefined && publicationItems !== [] && publicationItems.length > 0">
+<mat-card class="page-title" *ngIf="publicationItems !== undefined && publicationItems.length > 0">
   <mat-card-title>
     <mat-icon>subject</mat-icon>
     {{l10n.publications.title_publications}}

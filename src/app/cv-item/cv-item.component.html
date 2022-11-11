@@ -19,7 +19,7 @@
     <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''">
       {{cvItem.description}}
     </p>
-    <mat-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0">
+    <mat-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
       <mat-chip *ngFor="let tag of cvItem.tags">
         <i mat-list-icon class="tag-icon icon-{{tag | lowercase}}" *ngIf="tag !== undefined && tag !== ''"></i>
         {{tag}}
@@ -29,7 +29,7 @@
 
   <button mat-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
           *ngIf="(cvItem.description !== undefined && cvItem.description !== '')
-           || (cvItem.tags !== undefined && cvItem.tags !== [] && cvItem.tags.length > 0)
+           || (cvItem.tags !== undefined && cvItem.tags.length > 0)
            || cvItem.link !== undefined && cvItem.link !== ''
            || cvItem.attachment !== undefined && cvItem.attachment !== ''">
     <mat-icon aria-label="toggle details"></mat-icon>
