@@ -19,12 +19,12 @@
     <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''">
       {{cvItem.description}}
     </p>
-    <mat-chip-list selectable="false" *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
+    <mat-chip-set role="list" *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
       <mat-chip *ngFor="let tag of cvItem.tags">
         <i mat-list-icon class="tag-icon icon-{{tag | lowercase}}" *ngIf="tag !== undefined && tag !== ''"></i>
         {{tag}}
       </mat-chip>
-    </mat-chip-list>
+    </mat-chip-set>
   </mat-card-content>
 
   <button mat-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"

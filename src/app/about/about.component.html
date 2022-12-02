@@ -12,7 +12,7 @@
     <p>
       {{l10n.about.content}}
     </p>
-    <mat-chip-list selectable="false">
+    <mat-chip-set role="list">
       <mat-chip>
         <i mat-list-icon class="tag-icon icon-angular"></i>
         Angular
@@ -41,10 +41,10 @@
         <i mat-list-icon class="tag-icon icon-aws"></i>
         AWS
       </mat-chip>
-    </mat-chip-list>
+    </mat-chip-set>
     <br>
     <p>{{l10n.about.additional}}</p>
-    <mat-chip-list selectable="false">
+    <mat-chip-set role="list">
       <mat-chip>
         <i mat-list-icon class="tag-icon icon-icomoon"></i>
         IcoMoon icon font
@@ -53,7 +53,7 @@
       <mat-chip>Roboto font</mat-chip>
       <mat-chip>Roboto Slab font</mat-chip>
       <mat-chip>jsPDF</mat-chip>
-    </mat-chip-list>
+    </mat-chip-set>
   </mat-card-content>
   <mat-card-actions>
     <a mat-button color="primary" href="https://github.com/StegSchreck/AngularCV" target="_blank">

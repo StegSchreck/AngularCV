@@ -20,13 +20,13 @@
 <mat-card class="text-card" *ngIf="interests !== undefined && interests.length > 0">
   <mat-card-title>{{l10n.overview.subtitle_interests}}</mat-card-title>
   <mat-card-content>
-    <mat-chip-list selectable="false">
+    <mat-chip-set role="list">
       <mat-chip *ngFor="let item of interests">
         <i class="tag-icon {{item.icon | lowercase}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.startsWith('icon-')"></i>
         <mat-icon class="tag-icon" *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.startsWith('icon-')">{{item.icon | lowercase}}</mat-icon>
         {{item.title}}
       </mat-chip>
-    </mat-chip-list>
+    </mat-chip-set>
   </mat-card-content>
 </mat-card>
 <app-cv-download-card></app-cv-download-card>
