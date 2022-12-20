@@ -6,14 +6,10 @@ mat-toolbar.footer {
   min-width: 250px;
   /*width: 800px;*/
   max-width: 800px;
-
-/*  min-height: 64px;
-  height: 64px;
-  max-height: 64px;*/
-
   bottom: 0;
   padding-left: 24px;
   font-size: 1em;
+  z-index: 100;
 }
 
 @media screen and (max-width: 400px) {

@@ -23,7 +23,7 @@ body {
     padding-top: 80px;
   }
 
-  .mat-dialog-container {
+  .mat-mdc-dialog-container {
     padding: 16px !important;
   }
 }
@@ -42,8 +42,8 @@ body {
 h1, h2, .header-title,
 mat-card mat-card-title {
   font-size: 1.4em !important;
-  text-transform: uppercase;
-  font-family: "Roboto Slab", serif;
+  text-transform: uppercase !important;
+  font-family: "Roboto Slab", serif !important;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,23 +63,32 @@ mat-card {
   }
 }
 
-@media screen and (max-width: 400px) {
-  mat-card {
-    padding: 12px !important;
-  }
-}
-
 mat-card.page-title {
   background-color: #444;
   color: white;
-  padding: 12px 60px 12px 24px;
+  padding: 6px 60px 6px 16px;
 }
 
 mat-card.page-title mat-icon {
   position: absolute;
-  font-size: 1.4em;
+  font-size: 1.5em;
   top: 8px;
   right: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  mat-card.page-title mat-icon {
+    right: 12px;
+  }
+}
+
+mat-card-content {
+  margin-top: 1em;
+}
+
+mat-card.text-card mat-card-title {
+  padding-top: 0.5em;
+  padding-left: 16px;
 }
 
 mat-chip {
@@ -87,7 +96,7 @@ mat-chip {
   margin-bottom: 0.5em !important;
 }
 
-mat-dialog-container.mat-dialog-container {
+mat-dialog-container.mat-mdc-dialog-container {
   padding: 16px;
 }
 
@@ -184,4 +193,9 @@ div.loading-animation {
       -webkit-transform: scale3D(0, 0, 1);
       transform: scale3D(0, 0, 1);
     }
+}
+
+mat-icon {
+  height: unset !important;
+  width: unset !important;
 }

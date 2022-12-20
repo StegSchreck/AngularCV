@@ -18,12 +18,12 @@
   </mat-card-content>
 </mat-card>
 <mat-card class="text-card" *ngIf="interests !== undefined && interests.length > 0">
-  <mat-card-title>{{l10n.overview.subtitle_interests}}</mat-card-title>
+  <mat-card-title class="hobbies-title">{{l10n.overview.subtitle_interests}}</mat-card-title>
   <mat-card-content>
     <mat-chip-set role="list">
       <mat-chip *ngFor="let item of interests">
-        <i class="tag-icon {{item.icon | lowercase}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.startsWith('icon-')"></i>
-        <mat-icon class="tag-icon" *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.startsWith('icon-')">{{item.icon | lowercase}}</mat-icon>
+        <i class="tag-icon {{item.icon.toLowerCase()}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.toLowerCase().startsWith('icon-')"></i>
+        <mat-icon class="tag-icon" *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.toLowerCase().startsWith('icon-')">{{item.icon.toLowerCase()}}</mat-icon>
         {{item.title}}
       </mat-chip>
     </mat-chip-set>

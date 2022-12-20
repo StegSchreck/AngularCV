@@ -9,7 +9,6 @@ import { LocalizationService } from './l10n.service';
   styleUrls: ['./l10n.component.css'],
 })
 export class LocalizationComponent implements OnInit {
-  @Input() color = 'default';
   public l10n_languages = [];
   public featureToggles;
 

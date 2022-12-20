@@ -1,3 +1,4 @@
+
 mat-card {
   margin-bottom: 1em;
   min-height: 100px;
@@ -91,16 +92,16 @@ mat-card-title {
 
 .toggle-details {
   position: absolute;
-  right: 24px;
-  bottom: 12px;
+  right: 12px;
+  bottom: 6px;
   font-size: 1em;
-  float:right;
+  float: right;
 }
 
 .toggle-details mat-icon {
   position: absolute;
-  top: 0.2em;
-  left: 0;
+  top: 0.1em;
+  left: 0.1em;
   font-size: 3em;
 }
 
@@ -146,17 +147,16 @@ mat-card.closed .toggle-details mat-icon:before {
 
 .timespan mat-icon {
   position: relative;
-  top: 6px;
+  top: -1px;
   font-size: 1.5em;
+  margin-right: 0.25em;
 }
 
 @media screen and (max-width: 600px) {
   .timespan {
     position: relative;
     left: -12px;
-    top: -2px;
   }
-
   mat-card-title {
     padding-right: 0;
   }
@@ -176,6 +176,8 @@ a[mat-button] {
   margin-left: -5px;
   font-size: 1.5em;
   padding-right: 5px;
+  top: 3px;
+  position: relative;
 }
 .tag-icon:before {
   color: unset;

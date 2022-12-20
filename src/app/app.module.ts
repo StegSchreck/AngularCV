@@ -30,6 +30,7 @@ import { PictureModalComponent }    from './picture-modal/picture-modal.componen
 import { FeatureToggleService }     from './feature-toggle/feature-toggle.service';
 import { LocalizationService }      from './l10n/l10n.service';
 import { LocalizationComponent }    from './l10n/l10n.component';
+import {MatLineModule} from '@angular/material/core';
 
 @NgModule({
     imports: [
@@ -39,6 +40,7 @@ import { LocalizationComponent }    from './l10n/l10n.component';
         AppRoutingModule,
         BrowserAnimationsModule,
         MaterialModule,
+        MatLineModule,
     ],
     declarations: [
         AppComponent,

@@ -1,3 +1,11 @@
+button.language-selection {
+  background-color: white;
+  color: black;
+}
+button.language-selection:hover {
+   background-color: rgba(0,0,0,.04);
+}
+
 @media screen and (max-width: 400px) {
   button.language-selection {
     max-width: 36px;

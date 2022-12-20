@@ -19,9 +19,9 @@
     <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''">
       {{cvItem.description}}
     </p>
-    <mat-chip-set role="list" *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
+    <mat-chip-set *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
       <mat-chip *ngFor="let tag of cvItem.tags">
-        <i mat-list-icon class="tag-icon icon-{{tag | lowercase}}" *ngIf="tag !== undefined && tag !== ''"></i>
+        <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
         {{tag}}
       </mat-chip>
     </mat-chip-set>

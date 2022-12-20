@@ -45,12 +45,14 @@ app-pdf {
 }
 
 .header-menu mat-icon {
-  font-size: 2em;
   color: #AAF;
+  font-size: 1.2em;
+  top: -3px;
+  position: relative;
+  left: -3px;
 }
 
 .header-menu:hover mat-icon {
-  font-size: 2em;
   color: white;
 }
 
@@ -70,18 +72,19 @@ nav a.hover {
   text-decoration: none;
 }
 
-nav a.mat-tab-link {
+nav a.mat-mdc-tab-link {
+  display: inline-flex;
   padding: 0 12px;
   margin: auto;
   min-width: 75px;
   text-decoration: none;
 }
 
-nav a.mat-tab-link:first-child {
+nav a.mat-mdc-tab-link:first-child {
   margin-left: 0;
 }
 
-nav a.mat-tab-link:last-child {
+nav a.mat-mdc-tab-link:last-child {
   margin-right: 0;
 }
 
@@ -90,15 +93,5 @@ nav mat-icon {
   margin-top: -0.1em;
   margin-left: -0.1em;
   font-size: 2em;
-  visibility: hidden;
-}
-
-nav a:hover mat-icon,
-nav a:active mat-icon {
-  visibility: visible;
-}
-
-nav a:hover span,
-nav a:active span {
   visibility: hidden;
 }

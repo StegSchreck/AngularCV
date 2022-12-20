@@ -1,25 +1,35 @@
+.text-card {
+  display: inline-block;
+}
+
 .text-card img {
   float: right;
   margin-left: 15px;
   margin-bottom: 0;
+  padding-right: 16px;
+  padding-top: 8px;
 }
 
 @media screen and (max-width: 400px) {
   .text-card img {
     float: none;
-    margin-left: 0;
-    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-top: 6px;
   }
+}
+
+mat-card-subtitle {
+  margin-left: 16px;
 }
 
 .text-card i.button-icon {
   position: relative;
   font-size: 1.4em;
-  top: -0.1em;
+  top: 3px;
   margin-right: 0.2em;
 }
 
-.mat-card>.mat-card-actions:last-child {
+.mat-mdc-card>.mat-mdc-card-actions:last-child {
   margin-bottom: 0;
   padding-bottom: 0;
   margin-left: 0;
@@ -29,6 +39,8 @@
   margin-left: -5px;
   font-size: 1.5em;
   padding-right: 5px;
+  top: 3px;
+  position: relative;
 }
 .tag-icon:before {
   color: unset;

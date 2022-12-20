@@ -10,7 +10,13 @@
 }
 i.tag-icon {
   font-size: 1.5em;
+  top: 3px;
+  position: relative;
 }
 .tag-icon:before {
   color: unset;
+}
+
+.mat-mdc-chip-action-label {
+  z-index: unset !important;
 }
