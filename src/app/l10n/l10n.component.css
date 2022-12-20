@@ -3,7 +3,7 @@ button.language-selection {
   color: black;
 }
 button.language-selection:hover {
-   background-color: rgba(0,0,0,.04);
+  background-color: #eee;
 }
 
 @media screen and (max-width: 400px) {

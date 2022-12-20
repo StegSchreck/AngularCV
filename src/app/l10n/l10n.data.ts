@@ -12,7 +12,7 @@ export const L10N = {
       link_to_github: 'VIEW PROJECT ON GITHUB',
     },
     contact: {
-      title: 'Contact Informations',
+      title: 'Contact Information',
       general: 'General',
       profiles: 'Other Profiles on the Web',
       phone: 'Phone',

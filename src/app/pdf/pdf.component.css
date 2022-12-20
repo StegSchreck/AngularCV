@@ -1,1 +1,7 @@
-
+button.pdf-download {
+  background-color: white;
+  color: black;
+}
+button.pdf-download:hover {
+  background-color: #eee;
+}

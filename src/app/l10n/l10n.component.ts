@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { LocalizationService } from './l10n.service';

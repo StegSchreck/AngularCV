@@ -1,8 +1,7 @@
-
 mat-card.cv-download app-pdf {
   position: absolute;
   right: 16px;
-  top: 12px;
+  top: 10px;
   float: right;
   color: black;
 }
@@ -20,7 +19,7 @@ mat-card.cv-download app-pdf {
 }
 
 mat-card.cv-download {
-  min-height: 30px;
+  min-height: 60px;
   padding-right: 90px;
 }
 
@@ -32,5 +31,12 @@ mat-card.cv-download {
 
 mat-card.cv-download mat-card-title {
   position: relative;
-  top: 10px;
+  top: 5px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  mat-card.cv-download mat-card-title {
+    top: 0;
+  }
 }
