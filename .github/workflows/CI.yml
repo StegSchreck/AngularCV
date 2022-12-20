@@ -20,7 +20,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install -g npm@latest @angular/cli
-        npm ci
+        npm ci --force
         ng lint
         ng test --watch false --browsers ChromeHeadless --code-coverage
         ng build --configuration production --aot
