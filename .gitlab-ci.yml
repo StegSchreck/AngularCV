@@ -1,4 +1,4 @@
-image: node:16.11.0  # change to match your node version
+image: node:18  # change to match your node version
 
 cache:
   paths:
@@ -26,7 +26,7 @@ test:
 
 build:
   stage: build
-  script: ng build --prod --aot
+  script: ng build --configuration production --aot
   artifacts:
     name: "$CI_COMMIT_REF_NAME"
     paths:
