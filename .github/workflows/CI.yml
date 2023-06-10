@@ -32,6 +32,9 @@ jobs:
       with:
         api-token: ${{ secrets.CODACY_API_TOKEN }}
         project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+    - name: Print PR Actor
+      run: echo "Actor ${{ github.actor }}"
+      
 
   release:
     needs: build
