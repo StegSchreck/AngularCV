@@ -11,6 +11,8 @@ jobs:
         node-version: [16.x, 18.x, latest]
 
     steps:
+    - name: Print PR Actor
+      run: echo "Actor ${{ github.actor }}"
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -32,8 +34,6 @@ jobs:
       with:
         api-token: ${{ secrets.CODACY_API_TOKEN }}
         project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-    - name: Print PR Actor
-      run: echo "Actor ${{ github.actor }}"
       
 
   release:
