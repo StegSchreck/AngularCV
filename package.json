@@ -29,7 +29,7 @@
     "jspdf": "^2.5.1",
     "material-design-icons": "^3.0.1",
     "rxjs": "^7.5.7",
-    "tslib": "^2.4.1",
+    "tslib": "^2.6.1",
     "zone.js": "^0.13.1"
   },
   "devDependencies": {
