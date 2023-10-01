@@ -25,6 +25,7 @@ export const L10N = {
       button_view_link: 'VIEW LINK',
       button_view_attachment: 'VIEW ATTACHED FILE',
       now: 'now',
+      positions: 'Positions',
     },
     education: {
       title_languages: 'Languages',
@@ -100,6 +101,7 @@ export const L10N = {
       button_view_link: 'LINK AUFRUFEN',
       button_view_attachment: 'ANHANG ANSEHEN',
       now: 'aktuell',
+      positions: 'Stellen',
     },
     education: {
       title_languages: 'Sprachen',
@@ -175,6 +177,7 @@ export const L10N = {
       button_view_link: 'APRI LINK',
       button_view_attachment: 'APRI FILE ALLEGATO',
       now: 'adesso',
+      positions: 'Posti',
     },
     education: {
       title_languages: 'Lingue',
@@ -250,6 +253,7 @@ export const L10N = {
       button_view_link: 'VER ENLACE',
       button_view_attachment: 'VER FICHERO ADJUNTO',
       now: 'presente',
+      positions: 'Puestos',
     },
     education: {
       title_languages: 'idiomas',
@@ -325,6 +329,7 @@ export const L10N = {
       button_view_link: 'VEURE ENLLAÇ',
       button_view_attachment: 'VEURE FITXER ADJUNT',
       now: 'ara',
+      positions: 'Projectes',
     },
     education: {
       title_languages: 'idiomes',
@@ -400,6 +405,7 @@ export const L10N = {
       button_view_link: 'VISA LINK',
       button_view_attachment: 'VISA FÖRTAGET FIL',
       now: 'nu',
+      positions: 'Arbetsplatser',
     },
     education: {
       title_languages: 'Språk',
@@ -473,6 +479,7 @@ export const L10N = {
       button_view_link: 'リンクを見る',
       button_view_attachment: '添付ファイルを表示',
       now: '今',
+      positions: '役職',
     },
     education: {
       title_languages: '言語',
@@ -547,6 +554,7 @@ export const L10N = {
       button_view_link: '링크보기',
       button_view_attachment: '첨부 파일보기',
       now: '지금',
+      positions: '직위',
     },
     education: {
       title_languages: '언어',
@@ -622,6 +630,7 @@ export const L10N = {
       button_view_link: '查看链接',
       button_view_attachment: '查看附件',
       now: '现在',
+      positions: '职位',
     },
     education: {
       title_languages: '语言能力',

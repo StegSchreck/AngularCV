@@ -8,4 +8,5 @@ export class CvItem {
   link?: string;
   thumbnail?: string;
   attachment?: string;
+  positions?: CvItem[];
 }

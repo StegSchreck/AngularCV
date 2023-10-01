@@ -31,6 +31,7 @@ import { FeatureToggleService }     from './feature-toggle/feature-toggle.servic
 import { LocalizationService }      from './l10n/l10n.service';
 import { LocalizationComponent }    from './l10n/l10n.component';
 import {MatLineModule} from '@angular/material/core';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
     imports: [
@@ -41,6 +42,7 @@ import {MatLineModule} from '@angular/material/core';
         BrowserAnimationsModule,
         MaterialModule,
         MatLineModule,
+        MatBadgeModule,
     ],
     declarations: [
         AppComponent,

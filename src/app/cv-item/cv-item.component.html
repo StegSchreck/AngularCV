@@ -25,6 +25,38 @@
         {{tag}}
       </mat-chip>
     </mat-chip-set>
+    <div *ngIf="cvItem.positions !== undefined && cvItem.positions.length > 0" class="cv-item__positions">
+      <span>{{l10n.cv_item.positions}}</span>
+    </div>
+    <div *ngFor="let position of cvItem.positions" class="cv-item__position">
+      <span class="cv-item__position__marker">⬤</span>
+<!--      TODO: make thumbnail a feature toggle?-->
+<!--      <img src="assets/img/item-thumbnails/{{position.thumbnail}}" width="40px" alt="" *ngIf="position.thumbnail !== undefined && position.thumbnail !== ''">-->
+      <span class="cv-item__position__timespan">
+        <span class="cv-item__position__timespan-begin" *ngIf="position.begin !== undefined && position.begin !== ''">
+          {{position.begin}}
+          <mat-icon>arrow_forward</mat-icon>
+        </span>
+        <span class="cv-item__position__timespan-end" *ngIf="position.end !== undefined && position.end !== ''">{{position.end}}</span>
+        <span class="cv-item__position__timespan-end" *ngIf="!(position.end !== undefined && position.end !== '')">{{l10n.cv_item.now}} <mat-icon>access_time</mat-icon></span>
+      </span>
+      <p class="cv-item__position__headline">
+        <span class="cv-item__position__title">{{position.title}}</span><br>
+        <span class="cv-item__position__subtitle">{{position.subtitle}}</span>
+      </p>
+<!--      TODO: description -> click on info-i -> open modal? -->
+<!--      <p *ngIf="position.description !== undefined && position.description !== ''">-->
+<!--        {{position.description}}-->
+<!--      </p>-->
+
+<!--      TODO: tags -->
+<!--      <mat-chip-set *ngIf="position.tags !== undefined && position.tags.length > 0">-->
+<!--        <mat-chip *ngFor="let tag of position.tags">-->
+<!--          <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>-->
+<!--          {{tag}}-->
+<!--        </mat-chip>-->
+<!--      </mat-chip-set>-->
+    </div>
   </mat-card-content>
 
   <button mat-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
@@ -32,7 +64,7 @@
            || (cvItem.tags !== undefined && cvItem.tags.length > 0)
            || cvItem.link !== undefined && cvItem.link !== ''
            || cvItem.attachment !== undefined && cvItem.attachment !== ''">
-    <mat-icon aria-label="toggle details"></mat-icon>
+    <mat-icon aria-label="toggle details" [matBadge]="cvItem.positions ? cvItem.positions.length : 0" matBadgeColor="primary" [matBadgeHidden]="!featureToggles.cvitem_show_position_count_badge || cvItem.positions === undefined || cvItem.positions.length == 0"></mat-icon>
   </button>
   <mat-card-actions>
     <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" rel="noopener" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
