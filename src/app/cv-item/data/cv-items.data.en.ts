@@ -23,10 +23,83 @@ export const CVITEMS: CvItem[] = [
       'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
       'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen, Zurich, Frankfurt, Amsterdam, and Cologne. ' +
       'We are rapidly expanding on the European market.',
-    tags: ['Java', 'SpringBoot', 'React', 'Python', 'FastAPI', 'Kafka', 'MongoDB', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ',
-      'Docker', 'Jira', 'Bamboo', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash', 'Tech Lead', 'Product Owner'],
+    tags: ['Staff Engineer', 'Tech Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight_Consulting_logo.svg',
+    positions: [
+      {
+        title: 'Automotive Innovation Lab',
+        subtitle: 'Expert Software Engineer',
+        begin: '2023-08',
+        end: '',
+        description: '',
+        tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+      },
+      {
+        title: 'Leading Global Audit Firm',
+        subtitle: 'Tech Lead & Technical Product Owner',
+        begin: '2022-07',
+        end: '2023-06',
+        description: 'Sebastian lead an engineering team which worked on the digitalization of audit workflows to make the audit process ' +
+          'easier, faster, more thorough, and less error-prone for the auditors. This is part of the global digitalization initiatives of the audit company.',
+        tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+      },
+      {
+        title: 'Automotive Mobility Provider',
+        subtitle: 'Tech Lead & Product Owner',
+        begin: '2021-01',
+        end: '2022-06',
+        description: 'Sebastian joined the team as a successor of two senior engineers to take over the role as a tech lead from them. In ' +
+          'this role, Sebastian was not only fulfilling the responsibilities of a full-stack developer for the Python/React-based ' +
+          'application but also took care of cross-team collaboration topics. Furthermore, Sebastian was actively driving the connection ' +
+          'between the tech leads of the development teams with the CTO as well as with the group of product owners in order to align and ' +
+          'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months.',
+        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum',
+          'Confluence', 'GitHub Actions'],
+      },
+      {
+        title: 'Leading German Price Comparison Website',
+        subtitle: 'Senior Lead Software Engineer & Architect',
+        begin: '2019-08',
+        end: '2020-12',
+        description: 'Sebastian joined a team which was running a monolithic application that relied on a shared Oracle database. The team ' +
+          'decided to have a dedicated MongoDB database which would not be shared with other teams or departments anymore. The database ' +
+          'would be filled by consuming Kafka message topics offered by other teams. Furthermore, Sebastian helped with the team\'s agile ' +
+          'routines and team culture by re-introducing things like pair-programming and team retrospectives.\n\n' +
+          'After taking part in a successful migration project and establishing himself as a valuable engineer and architect, Sebastian was ' +
+          'asked to join the team responsible for replacing the legacy product page variants with a modern implementation using React and ' +
+          'Kubernetes. As this was a fairly new tech setup for the client, Sebastian was brought in to evaluate the architecture decisions ' +
+          'made so far together with the team. Sebastian also supported the frontend engineers in implementing the required features using ' +
+          'React.  Additionally, Sebastian helped to evaluate the team\'s routines and practices for collaboration and helped them improve ' +
+          'themselves for the future. Furthermore, Sebastian helped in the hiring process to find the best fit for an open senior backend ' +
+          'engineer position in the team.\n\n' +
+          'With the experience of conducting an architecture review in another team at the same client already, Sebastian was asked to join ' +
+          'a team which was planning to do a complete rewrite of their main applications. This includes, for example, a service responsible ' +
+          'for calculating the cart which is not only used by the team checkout themselves, but also the mobile apps and the product page. ' +
+          'Sebastian joined the team with the focus on the architecture design for the new checkout, which based on a modern tech stack ' +
+          'including Java 14, Kafka, SpringBoot, React and Openshift (Kubernetes). During this process, the team also needed to maintain ' +
+          'the existing services and partly enhance their functionality to be compatible with the new checkout application. Sebastian also ' +
+          'encouraged more automatisation, e.g. in regards to regular dependency updates jobs by Jenkins. Similar to the other team, ' +
+          'Sebastian also supported the recently joined team lead with the hiring process and conducting full-day remote team workshops.',
+        tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+      },
+      {
+        title: 'Leading German Real Estate Platform',
+        subtitle: 'Software Engineer & Cloud Architect',
+        begin: '2019-01',
+        end: '2019-07',
+        description: 'Sebastian was part of the Team responsible for the search result list and expose view of the real estate entries. ' +
+          'Both of these major components are based on Maven, Java, Spring Boot, ElasticSearch, and React. The components are running as ' +
+          'independent Docker containers on AWS ECS (via a client-specific middle-layer), deployed using TeamCity. In addition to feature ' +
+          'development for the mentioned parts, Sebastian also supported the team to migrate services still running in the on-premise ' +
+          'datacenter to AWS.\n\n' +
+          'Sebastian became part of a newly formed team to automate a PoC solution which relied heavily on manual efforts. In this team, ' +
+          'he took responsibility to architect and implement the new, automated solution and its AWS cloud infrastructure. Multiple APIs ' +
+          'were to be connected to gather the required data, among those were REST APIs, as well as SNS/SQS message topics. The entire ' +
+          'setup was build using infrastructure as code as well as serverless technologies.',
+        tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
+      },
+    ],
   },
   {
     title: 'Mister Spex GmbH',

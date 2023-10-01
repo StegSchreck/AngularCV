@@ -38,6 +38,10 @@ mat-card-content {
   padding-right: 16px;
 }
 
+mat-card.opened mat-card-content {
+  max-height: 1000px !important;
+}
+
 mat-card-subtitle {
   font-size: 1.2em;
 }
@@ -181,4 +185,95 @@ a[mat-button] {
 }
 .tag-icon:before {
   color: unset;
+}
+
+.cv-item__positions {
+  margin: 24px 0 0 0;
+}
+
+.cv-item__positions span {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+.cv-item__position img {
+  display: block;
+  left: 80px;
+  position: absolute;
+}
+
+@media screen and (max-width: 600px) {
+  .cv-item__position {
+    margin-top: 12px;
+  }
+  .cv-item__position img {
+    display: none;
+  }
+}
+
+.cv-item__position__marker {
+  position: relative;
+  left: -16px;
+  top: 20px;
+  color: #888;
+  margin-right: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .cv-item__position__marker {
+    left: -13px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cv-item__position__marker {
+    left: -3px;
+  }
+}
+.cv-item__position__headline {
+  padding-right: 150px;
+  padding-left: 12px;
+  margin-bottom: 0;
+}
+.cv-item__position__title {
+  font-weight: bold;
+  box-decoration-break: clone;
+}
+.cv-item__position__subtitle {
+  color: #888;
+  box-decoration-break: clone;
+}
+
+.cv-item__position__timespan {
+  color: #888;
+  position: absolute;
+  right: 24px;
+  font-size: 0.9em;
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  .cv-item__position__timespan {
+    position: relative;
+    left: -12px;
+    display: unset;
+  }
+  .cv-item__position__headline {
+    padding-right: unset;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cv-item__position__timespan {
+    left: -6px;
+  }
+  .cv-item__position__headline {
+    padding-left: 18px;
+  }
+}
+.cv-item__position__timespan mat-icon {
+  position: relative;
+  top: 0;
+  font-size: 1.3em;
+  margin-right: 0.25em;
 }

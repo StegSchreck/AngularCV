@@ -3,6 +3,7 @@ import { AfterViewInit, Component, Input, OnInit, ViewChild } from '@angular/cor
 import { CvItemDirective } from './cv-item.directive';
 import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from './cv-item';
+import {FeatureToggleService} from '../feature-toggle/feature-toggle.service';
 
 @Component({
   selector: 'app-cv-item',
@@ -12,11 +13,13 @@ import { CvItem } from './cv-item';
 
 export class CvItemComponent implements OnInit, AfterViewInit {
   public l10n;
+  public featureToggles;
   @Input() public cvItem: CvItem;
   @ViewChild(CvItemDirective) public cvThumbnail: CvItemDirective;
 
   constructor(
     private localizationService: LocalizationService,
+    private featureToggleService: FeatureToggleService,
   ) {
     this.localizationService.languageChanged.subscribe((data) => { this.l10n = data; });
   }
@@ -25,8 +28,13 @@ export class CvItemComponent implements OnInit, AfterViewInit {
     this.l10n = this.localizationService.getDefault();
   }
 
+  private getFeatureToggles(): void {
+    this.featureToggles = this.featureToggleService.getFeatureToggles();
+  }
+
   ngOnInit(): void {
     this.getLocalization();
+    this.getFeatureToggles();
   }
 
   ngAfterViewInit() {
@@ -53,7 +61,7 @@ export class CvItemComponent implements OnInit, AfterViewInit {
     }
   }
 
-  private toggleDetails(event) {
+  private toggleDetails(event): void {
     const card = event.target.closest('mat-card');
     if (card.classList.contains('opened')) {
       card.classList.add('closed');
