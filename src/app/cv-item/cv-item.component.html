@@ -64,7 +64,7 @@
            || (cvItem.tags !== undefined && cvItem.tags.length > 0)
            || cvItem.link !== undefined && cvItem.link !== ''
            || cvItem.attachment !== undefined && cvItem.attachment !== ''">
-    <mat-icon aria-label="toggle details" [matBadge]="cvItem.positions ? cvItem.positions.length : 0" matBadgeColor="primary" [matBadgeHidden]="!featureToggles.cvitem_show_position_count_badge || cvItem.positions === undefined || cvItem.positions.length == 0"></mat-icon>
+    <mat-icon aria-label="toggle details" [matBadge]="cvItem.positions ? cvItem.positions.length : 0" matBadgeColor="primary" [matBadgeHidden]="!featureToggles.cvitem_show_position_count_badge || cvItem.positions === undefined || cvItem.positions.length === 0"></mat-icon>
   </button>
   <mat-card-actions>
     <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" rel="noopener" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
