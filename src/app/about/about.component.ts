@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { LocalizationService } from '../l10n/l10n.service';
+import packageJson from '../../../package.json';
 
 @Component({
   selector: 'app-about',
@@ -9,6 +10,7 @@ import { LocalizationService } from '../l10n/l10n.service';
 })
 export class AboutComponent implements OnInit {
   public l10n;
+  public appVersion: string = packageJson.version;
 
   constructor(
     private localizationService: LocalizationService,
