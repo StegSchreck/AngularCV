@@ -10,6 +10,7 @@ export const L10N = {
         'To build this, basically the following technologies are used:',
       additional: 'Additionally, the following third-party sources are included:',
       link_to_github: 'VIEW PROJECT ON GITHUB',
+      version: 'version',
     },
     contact: {
       title: 'Contact Information',
@@ -86,6 +87,7 @@ export const L10N = {
         'Für die Erstellung dieses Projekts wurden folgende Technologien benutzt:',
       additional: 'Darüber hinaus wurden folgende Drittanbieter-Quellen genutzt:',
       link_to_github: 'PROJEKT AUF GITHUB ANZEIGEN',
+      version: 'Version',
     },
     contact: {
       title: 'Kontaktinformationen',
@@ -162,6 +164,7 @@ export const L10N = {
         'Per costruire questo sito, vengono utilizzate le tecnologie seguenti:',
       additional: 'Inoltre, le seguenti origine di terze sono incluse:',
       link_to_github: 'APRI PROGETTO SU GITHUB',
+      version: 'versione',
     },
     contact: {
       title: 'Informazioni di contatto',
@@ -238,6 +241,7 @@ export const L10N = {
         'Para construirlo, se han utilizado básicamente las siguientes tecnologías:',
       additional: 'Además, también se han incluído las siguientes fuentes de terceros:',
       link_to_github: 'VER PROYECTO EN GITHUB',
+      version: 'versión',
     },
     contact: {
       title: 'Información de contacto',
@@ -314,6 +318,7 @@ export const L10N = {
         'programari. Per a construir-ho, s\'han utilitzat bàsicament les següents tecnologies:',
       additional: 'A més, també s\'han inclòs les següents fonts de tercers:',
       link_to_github: 'VER PROYECTO A GITHUB',
+      version: 'versió',
     },
     contact: {
       title: 'Informació de contacte',
@@ -329,7 +334,7 @@ export const L10N = {
       button_view_link: 'VEURE ENLLAÇ',
       button_view_attachment: 'VEURE FITXER ADJUNT',
       now: 'ara',
-      positions: 'Projectes',
+      positions: 'Llocs de treball',
     },
     education: {
       title_languages: 'idiomes',
@@ -390,6 +395,7 @@ export const L10N = {
         'För att bygga detta används i princip följande tekniker:',
       additional: 'Följande tredjepartskällor ingår dessutom:',
       link_to_github: 'VISA PROJEKTET PÅ GITHUB',
+      version: 'version',
     },
     contact: {
       title: 'Kontaktinformation',
@@ -464,6 +470,7 @@ export const L10N = {
       content: 'このウェブサイトは基本的なオンライン履歴書を持つことを目的としてGitHubプロジェクトとして作成されました。 ただし、主な対象読者はソフトウェア開発者です。 基本的に、これを構築するために以下のテクニックが使用されます。',
       additional: 'さらに、次のサードパーティソースが含まれています。',
       link_to_github: 'GITHUBでプロジェクトを見る',
+      version: 'バージョン',
     },
     contact: {
       title: '連絡先情報',
@@ -539,6 +546,7 @@ export const L10N = {
         '주요 대상은 소프트웨어 개발자입니다. 이를 구축하기 위해 기본적으로 다음 기술이 사용됩니다.',
       additional: '또한 다음과 같은 타사 소스가 포함됩니다.',
       link_to_github: 'GITHUB에서 프로젝트보기',
+      version: '버전',
     },
     contact: {
       title: '연락 정보',
@@ -615,6 +623,7 @@ export const L10N = {
         '为此，基本上使用以下技术：',
       additional: '此外，包括以下第三方来源：',
       link_to_github: '在GITHUB上查看项目',
+      version: '版本',
     },
     contact: {
       title: '联系信息',
