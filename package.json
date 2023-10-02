@@ -67,32 +67,37 @@
     "ts-node": "~10.9.1",
     "typescript": "5.1.6"
   },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    ["@semantic-release/changelog",
-      {
-        "changelogFile": "CHANGELOG.md"
-      }
-    ],
-    "@semantic-release/release-notes-generator",
-    ["@semantic-release/npm",
-      {
-        "npmPublish": false
-      }
-    ],
-    ["@semantic-release/git",
-      {
-        "assets": [
-          "package.json",
-          "CHANGELOG.md"
-        ],
-        "message": "Release: ${nextRelease.version} \n\n${nextRelease.notes}"
-      }
-    ],
-    "@semantic-release/github"
-  ],
   "release": {
-    "branches": ["master"]
+    "branches": [
+      "master"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      "@semantic-release/release-notes-generator",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "Release: ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "preset": "angular"
 }
