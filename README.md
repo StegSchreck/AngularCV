@@ -39,9 +39,9 @@ In order to comply with the license of this project and the third-party elements
 AngularCV offers some feature toggles (a.k.a. feature switches) to adjust the experience of the website. However, some features are part of the basic functionality and should not be deactivated and thus do not have a feature toggle, e.g. the work experience tab.
 The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.ts`. Currently, these feature toggles are implemented:
 * `downloadable_pdf`: whether to offer a PDF version of the data (download button will be placed in the header and on the contact page)
-* `tab_publications`: whether to shot the "publications" tab
-* `tab_projects`: whether to shot the "projects" tab
-* `tab_volunteering`: whether to shot the "volunteering" tab
+* `tab_publications`: whether to show the "publications" tab
+* `tab_projects`: whether to show the "projects" tab
+* `tab_volunteering`: whether to show the "volunteering" tab
 * `contact_show_about_section`: whether to show the "about this website" section on the contact page
 * `contact_email_link`: whether to link the email address on the contact page with `mailto:`
 * `contact_email_remove_at_sign`: whether to replace the `@` sign when displaying the email address on the contact page (in order to make it harder to scrape for a crawler)

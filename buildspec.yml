@@ -1,3 +1,4 @@
+# AWS CodeBuild pipeline
 version: 0.2
 env:
   variables:
