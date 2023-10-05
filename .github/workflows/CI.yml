@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, latest]
+        node-version: [18.x, 20.x, latest]
 
     steps:
     - name: Checkout code
@@ -42,7 +42,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
     - name: Setup Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
     - name: Install Dependencies
       run: npm install
     - name: Run Semantic Release
