@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/StegSchreck/AngularCV/compare/v1.2.0...v1.2.1) (2023-10-05)
+
+
+### Bug Fixes
+
+* Update setup-node task version ([3ab31b0](https://github.com/StegSchreck/AngularCV/commit/3ab31b0bdec4838aad11ba619f6f8bdf18964bb5))
+
 # [1.2.0](https://github.com/StegSchreck/AngularCV/compare/v1.1.3...v1.2.0) (2023-10-05)
 
 
