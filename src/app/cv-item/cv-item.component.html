@@ -16,9 +16,7 @@
     <mat-card-subtitle>{{cvItem.subtitle}}</mat-card-subtitle>
   </mat-card-header>
   <mat-card-content>
-    <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''">
-      {{cvItem.description}}
-    </p>
+    <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''" class="cv-item__description preformatted">{{cvItem.description}}</p>
     <mat-chip-set *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
       <mat-chip *ngFor="let tag of cvItem.tags">
         <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
@@ -29,7 +27,7 @@
       <span>{{l10n.cv_item.positions}}</span>
     </div>
     <div *ngFor="let position of cvItem.positions" class="cv-item__position">
-      <span class="cv-item__position__marker">⬤</span>
+      <span class="cv-item__position__marker"></span>
 <!--      TODO: make thumbnail a feature toggle?-->
 <!--      <img src="assets/img/item-thumbnails/{{position.thumbnail}}" width="40px" alt="" *ngIf="position.thumbnail !== undefined && position.thumbnail !== ''">-->
       <span class="cv-item__position__timespan">
@@ -44,18 +42,14 @@
         <span class="cv-item__position__title">{{position.title}}</span><br>
         <span class="cv-item__position__subtitle">{{position.subtitle}}</span>
       </p>
-<!--      TODO: description -> click on info-i -> open modal? -->
-<!--      <p *ngIf="position.description !== undefined && position.description !== ''">-->
-<!--        {{position.description}}-->
-<!--      </p>-->
+      <p *ngIf="position.description !== undefined && position.description !== ''"  class="cv-item__position__description preformatted">{{position.description}}</p>
 
-<!--      TODO: tags -->
-<!--      <mat-chip-set *ngIf="position.tags !== undefined && position.tags.length > 0">-->
-<!--        <mat-chip *ngFor="let tag of position.tags">-->
-<!--          <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>-->
-<!--          {{tag}}-->
-<!--        </mat-chip>-->
-<!--      </mat-chip-set>-->
+      <mat-chip-set *ngIf="position.tags !== undefined && position.tags.length > 0">
+        <mat-chip *ngFor="let tag of position.tags" class="small-chip">
+          <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
+          <span>{{tag}}</span>
+        </mat-chip>
+      </mat-chip-set>
     </div>
   </mat-card-content>
 
