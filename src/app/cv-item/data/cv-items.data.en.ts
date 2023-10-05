@@ -54,8 +54,7 @@ export const CVITEMS: CvItem[] = [
           'applications but also took care of cross-team collaboration topics. Furthermore, Sebastian was actively driving the connection ' +
           'between the tech leads of the development teams with the CTO as well as with the group of product owners in order to align and ' +
           'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months.',
-        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum',
-          'Confluence', 'GitHub Actions'],
+        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'Confluence', 'GitHub Actions'],
       },
       {
         title: 'Leading German Price Comparison Website',

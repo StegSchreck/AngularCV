@@ -18,7 +18,8 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
     end: '',
-    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich, Frankfurt, Amsterdam und Köln. Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle ERgebnisse für unsere Kunden erbringen.',
+    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich, Frankfurt, Amsterdam und Köln. ' +
+      'Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle Ergebnisse für unsere Kunden erbringen.',
     tags: ['Java', 'SpringBoot', 'React', 'Python', 'FastAPI', 'Kafka', 'MongoDB', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ',
       'Docker', 'Jira', 'Bamboo', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash', 'Tech Lead', 'Product Owner'],
     link: 'https://www.netlight.com',
@@ -37,7 +38,9 @@ export const CVITEMS: CvItem[] = [
         subtitle: 'Tech Lead & Technical Product Owner',
         begin: '2022-07',
         end: '2023-06',
-        description: '',
+        description: 'Sebastian leitete ein Team welches an der Digitalisierung und Automatisierung der Wirtschaftsprüfungsprozesse arbeitete. ' +
+          'Als Teil der globalen Anstrengungen der Wirtschaftsprüfungsgesellschaft wurden die Prüfungsprozesse hierbei ' +
+          'vereinfacht, beschleunigt und Fehler-unanfälliger gemacht.',
         tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {
@@ -45,25 +48,43 @@ export const CVITEMS: CvItem[] = [
         subtitle: 'Tech Lead & Product Owner',
         begin: '2021-01',
         end: '2022-06',
-        description: '',
-        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum',
-          'Confluence', 'GitHub Actions'],
+        description: 'Sebastian trat die Nachfolger von zwei senioren Entwicklern an in der Rolle des Tech Leads. ' +
+          'Hierbei arbeitete er sowohl als Fullstack-Entwickler, als auch team-übergreifend. Sebastien war Treiber für die ' +
+          'Kommunikation and Absprache zwischen den Teams auf technischer Ebene, inklusive dem CTO. ' +
+          'Später übernahm Sebastian 2 Monate lang interimsweise die Aufgabe eines Product Owners.',
+        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'Confluence', 'GitHub Actions'],
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
         subtitle: 'Senior Lead Software Engineer & Architect',
         begin: '2019-08',
         end: '2020-12',
-        description: '',
-        tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        description: 'Als Teil der Umstellung der monolithischen Webshop-Applikation hin zu Service-based Architektur, ' +
+          'arbeitete Sebastian an der Umsetzung der neuen Microservices. Dies beinhaltete das konsumieren verschiedener Eventstreams. ' +
+          'Darüber hinaus half Sebastian mit agilen Prakriken und Team-Kultur mittels Retrospektiven oder pair-programming.' +
+          '\n\n' +
+          'Nach der erfolgreichen Migratrion wurde Sebastian gebeten einem anderen Team bei der Einschätzung ihrer experimentelllen, modernen ' +
+          'Architektur zu unterstützen. Nach der Architektur-Review half Sebastian bei der Weiterentwicklung der Applikation, als auch bei ' +
+          'der Stabilisierung der Team-Kultur, insbesondere bezüglich Kollaboration. Er unterstütze auch den Interview-Prozess für die ' +
+          'offene Senior Engineer Stelle im Team.' +
+          '\n\n' +
+          'Nach der Architektur-Review wurde entschieden auch andere Teile des Webshops auf den neuen Architektur-Ansatz zu bringen. ' +
+          'Hierfür wurde Sebastian Teil des Checkout-Teams, um ihnen mit seinem Arhcitektur-Wissen bei der Migration ihrer Legacy-Systeme zu unterstützen. ' +
+          'Darüber hinaus brachte er auch wertvolle Automatisierungen mit ein, um etwa Dependencys zu aktualisieren. ' +
+          'Auch in diesem Team unterstütze Sebastian den erst kürzlich gestarteten Teamleiter - insbesondere bei Themen Hiring und Teamkultur.',
+        tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'GraphQL', 'Jira', 'Scrum', 'AWS', 'Openshift', 'Confluence', 'Jenkins', 'bash'],
       },
       {
         title: 'Führende deutsche Immobilienplattform',
         subtitle: 'Software Engineer & Cloud Architekt',
         begin: '2019-01',
         end: '2019-07',
-        description: '',
-        tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
+        description: 'Sebastian arbeitete im Team verantwortlich für die Suchergebnisliste und Expose-Ansicht der Immobilien ' +
+          'neben der Feature-Entwicklung auch an der Cloud-Migration.' +
+          '\n\n' +
+          'Später wurde Sebastian Teil eines ne-geformten Teams zur Automtisierung einer manuellen PoC Lösung. ' +
+          'Hierbei hatte er die Rolle eines Cloud Architekten und entwickelte die new hoch-automatisierte Lösung auf basis von Serverless-Services in der AWS Cloud.',
+        tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Maven', 'Jira', 'REST', 'API', 'SNS/SQS', 'Lambda', 'DynamoDB', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
       },
     ],
   },
@@ -72,28 +93,31 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2015-06',
     end: '2018-12',
-    description: 'Implementierung von Features auf der E-Commerce Plattform Intershop. Entwicklung einer separierted API als Microservice nach DevOps Prinzipien welche die Preise und Kombinationsmöglichkeiten der Brillengläser berechnet. Später erfolgte der Wechsel von der Produktentwicklung zum Infrastrukturbetrieb. ' +
-      'Instandhaltung und Betrieb der IT-Plattform auf welcher der E-Commerce-Shop läuft. Automatisierung von Prozessen and Unterstützung der Entwicklungsteams in ihrer Arbeit. Planung und Durchführung der Migrations mehrerer Anwendungen hin zur Cloud, darunter der Haupt-Webshop.',
-    tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo', 'TDD',
-      'JavaScript', 'eclipse', 'Scrum', 'Subversion', 'Scala', 'Testrail', 'trac', 'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
+    description: 'Später erfolgte der Wechsel von der Produktentwicklung zum Infrastrukturbetrieb. ' +
+      '',
+    tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
     positions: [
       {
-        title: 'Webshop Operations',
+        title: 'Webshop Betrieb',
         subtitle: 'Cloud / Infrastructure',
         begin: '2017',
         end: '2018-12',
-        description: '',
+        description: 'Instandhaltung und Betrieb der IT-Plattform auf welcher der E-Commerce-Shop läuft. ' +
+          'Automatisierung von Prozessen and Unterstützung der Entwicklungsteams in ihrer Arbeit. ' +
+          'Sicherung der Cloud-Umgebung gegenüber Angreifern. ' +
+          'Planung und Durchführung der Migrations mehrerer Anwendungen hin zur Cloud, darunter der Haupt-Webshop.',
         tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
       },
       {
         title: 'Webshop Entwicklung',
-        subtitle: 'Backend and Frontend',
+        subtitle: 'Backend und Frontend',
         begin: '2015-06',
         end: '2017',
-        description: '',
-        tags: ['Intershop', 'Java', 'Git', 'Jira', 'Scrum', 'Javascript', 'jQuery', 'AWS', 'Confluence', 'Bamboo', 'GitLab', 'Oracle PL/SQL', 'eclipse', 'bash', 'TDD'],
+        description: 'Implementierung von Features auf der E-Commerce Plattform Intershop. ' +
+          'Entwicklung einer separierted API als Microservice nach DevOps Prinzipien welche die Preise und Kombinationsmöglichkeiten der Brillengläser berechnet. ',
+        tags: ['Intershop', 'Java', 'Git', 'Jira', 'Scrum', 'Javascript', 'Maven', 'jQuery', 'AWS', 'Confluence', 'Bamboo', 'GitLab', 'Oracle PL/SQL', 'eclipse', 'bash', 'TDD'],
       },
     ],
   },
