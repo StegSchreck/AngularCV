@@ -50,8 +50,8 @@ export const CVITEMS: CvItem[] = [
         begin: '2021-01',
         end: '2022-06',
         description: 'Sebastian joined the team as a successor of two senior engineers to take over the role as a tech lead from them. In ' +
-          'this role, Sebastian was not only fulfilling the responsibilities of a full-stack developer for the Python/React-based ' +
-          'application but also took care of cross-team collaboration topics. Furthermore, Sebastian was actively driving the connection ' +
+          'this role, Sebastian was not only fulfilling the responsibilities of a full-stack engineer for the Python/React-based ' +
+          'applications but also took care of cross-team collaboration topics. Furthermore, Sebastian was actively driving the connection ' +
           'between the tech leads of the development teams with the CTO as well as with the group of product owners in order to align and ' +
           'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months.',
         tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum',
@@ -62,26 +62,22 @@ export const CVITEMS: CvItem[] = [
         subtitle: 'Senior Lead Software Engineer & Architect',
         begin: '2019-08',
         end: '2020-12',
-        description: 'Sebastian joined a team which was running a monolithic application that relied on a shared Oracle database. The team ' +
-          'decided to have a dedicated MongoDB database which would not be shared with other teams or departments anymore. The database ' +
-          'would be filled by consuming Kafka message topics offered by other teams. Furthermore, Sebastian helped with the team\'s agile ' +
-          'routines and team culture by re-introducing things like pair-programming and team retrospectives.\n\n' +
-          'After taking part in a successful migration project and establishing himself as a valuable engineer and architect, Sebastian was ' +
-          'asked to join the team responsible for replacing the legacy product page variants with a modern implementation using React and ' +
-          'Kubernetes. As this was a fairly new tech setup for the client, Sebastian was brought in to evaluate the architecture decisions ' +
-          'made so far together with the team. Sebastian also supported the frontend engineers in implementing the required features using ' +
-          'React.  Additionally, Sebastian helped to evaluate the team\'s routines and practices for collaboration and helped them improve ' +
-          'themselves for the future. Furthermore, Sebastian helped in the hiring process to find the best fit for an open senior backend ' +
-          'engineer position in the team.\n\n' +
-          'With the experience of conducting an architecture review in another team at the same client already, Sebastian was asked to join ' +
-          'a team which was planning to do a complete rewrite of their main applications. This includes, for example, a service responsible ' +
-          'for calculating the cart which is not only used by the team checkout themselves, but also the mobile apps and the product page. ' +
-          'Sebastian joined the team with the focus on the architecture design for the new checkout, which based on a modern tech stack ' +
-          'including Java 14, Kafka, SpringBoot, React and Openshift (Kubernetes). During this process, the team also needed to maintain ' +
-          'the existing services and partly enhance their functionality to be compatible with the new checkout application. Sebastian also ' +
-          'encouraged more automatisation, e.g. in regards to regular dependency updates jobs by Jenkins. Similar to the other team, ' +
-          'Sebastian also supported the recently joined team lead with the hiring process and conducting full-day remote team workshops.',
-        tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        description: 'Sebastian joined a team running a monolithic application that relied on a shared Oracle database. The team ' +
+          'decided to have a dedicated MongoDB database would be populated by consuming different Kafka topics. Furthermore, Sebastian ' +
+          'helped with the team\'s agile routines and team culture by re-introducing things like pair-programming and team retrospectives.' +
+          '\n\n' +
+          'After the successful migration project and establishing himself as a valuable engineer and architect, Sebastian was ' +
+          'asked to join the team responsible for replacing the legacy product page variants with a modern tech-stack. ' +
+          'Sebastian was brought in to evaluate the architecture decisions made so far together with the team. ' +
+          'Additionally, Sebastian helped to evaluate and improve the team\'s routines and practices for collaboration. ' +
+          'Sebastian supported the hiring process to find the best fit for an open senior backend engineer position in the team.' +
+          '\n\n' +
+          'With the experience of conducting the architecture review before, Sebastian was asked to join ' +
+          'another team to support their effort of rewriting the checkout applications.' +
+          'Sebastian joined the team with the focus on the architecture design for the new checkout, based on a modern tech stack. Meanwhile, he also ' +
+          'encouraged more automation, e.g. in regards to regular dependency updates jobs. ' +
+          'Sebastian also supported the recently joined team lead with the hiring process and conducting full-day team workshops.',
+        tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'GraphQL', 'Jira', 'Scrum', 'AWS', 'Openshift', 'Confluence', 'Jenkins', 'bash'],
       },
       {
         title: 'Leading German Real Estate Platform',
@@ -89,15 +85,12 @@ export const CVITEMS: CvItem[] = [
         begin: '2019-01',
         end: '2019-07',
         description: 'Sebastian was part of the Team responsible for the search result list and expose view of the real estate entries. ' +
-          'Both of these major components are based on Maven, Java, Spring Boot, ElasticSearch, and React. The components are running as ' +
-          'independent Docker containers on AWS ECS (via a client-specific middle-layer), deployed using TeamCity. In addition to feature ' +
-          'development for the mentioned parts, Sebastian also supported the team to migrate services still running in the on-premise ' +
-          'datacenter to AWS.\n\n' +
-          'Sebastian became part of a newly formed team to automate a PoC solution which relied heavily on manual efforts. In this team, ' +
-          'he took responsibility to architect and implement the new, automated solution and its AWS cloud infrastructure. Multiple APIs ' +
-          'were to be connected to gather the required data, among those were REST APIs, as well as SNS/SQS message topics. The entire ' +
-          'setup was build using infrastructure as code as well as serverless technologies.',
-        tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
+          'In addition to feature development, Sebastian also supported the team to migrate services still running in the on-premise ' +
+          'datacenter to AWS.' +
+          '\n\n' +
+          'Sebastian later became part of a newly formed team to automate a PoC solution which relied heavily on manual efforts. ' +
+          'In this team, he took responsibility to architect and implement the new, automated solution and its serverless AWS cloud infrastructure.',
+        tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Maven', 'Jira', 'REST', 'API', 'SNS/SQS', 'Lambda', 'DynamoDB', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
       },
     ],
   },
@@ -106,16 +99,33 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2015-06',
     end: '2018-12',
-    description: 'Implementing features for the e-Commerce platform Intershop in order to customize it. ' +
-      'Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and ' +
-      'feature configuration of prescription glasses. Later switched to the operations team. ' +
-      'Maintaining and operating the platform running the e-commerce shop. ' +
-      'Automating processes and enabling the development teams to work. ' +
-      'Planned and executed the migration of several services to the cloud, including the main webshop application.',
-    tags: ['Java', 'Intershop', 'Python', 'Ansible', 'Git', 'KanBan', 'PyCharm', 'Apache HTTPD', 'AWS', 'Docker', 'Jira', 'Bamboo', 'TDD',
-      'JavaScript', 'eclipse', 'Scrum', 'Subversion', 'Scala', 'Testrail', 'trac', 'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
+    description: '',
+    tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
+    positions: [
+      {
+        title: 'Webshop Operations',
+        subtitle: 'Cloud / Infrastructure',
+        begin: '2017',
+        end: '2018-12',
+        description: 'Maintaining and operating the platform running the e-commerce shop. ' +
+          'Automating processes and enabling the development teams to fully own their application. ' +
+          'Securing the cloud-based infrastructure against hacker attacks. ' +
+          'Planned and executed the migration of several services to the cloud, including the main webshop application.',
+        tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
+      },
+      {
+        title: 'Webshop Development',
+        subtitle: 'Backend and Frontend',
+        begin: '2015-06',
+        end: '2017',
+        description: 'Implementing features for the e-Commerce platform Intershop in order to customize it. ' +
+          'Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and ' +
+          'feature configuration of prescription glasses. Later switched to the operations team. ',
+        tags: ['Intershop', 'Java', 'Git', 'Jira', 'Scrum', 'Javascript', 'Maven', 'jQuery', 'AWS', 'Confluence', 'Bamboo', 'GitLab', 'Oracle PL/SQL', 'eclipse', 'bash', 'TDD'],
+      },
+    ],
   },
   {
     title: 'Mister Spex GmbH',

@@ -78,6 +78,24 @@ export const CVITEMS: CvItem[] = [
       'JavaScript', 'eclipse', 'Scrum', 'Subversion', 'Scala', 'Testrail', 'trac', 'Confluence', 'bash', 'Kubernetes', 'Oracle PL/SQL'],
     link: 'https://www.misterspex.com',
     thumbnail: 'msx-logo.png',
+    positions: [
+      {
+        title: 'Webshop Operations',
+        subtitle: 'Cloud / Infrastructure',
+        begin: '2017',
+        end: '2018-12',
+        description: '',
+        tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
+      },
+      {
+        title: 'Webshop Entwicklung',
+        subtitle: 'Backend and Frontend',
+        begin: '2015-06',
+        end: '2017',
+        description: '',
+        tags: ['Intershop', 'Java', 'Git', 'Jira', 'Scrum', 'Javascript', 'jQuery', 'AWS', 'Confluence', 'Bamboo', 'GitLab', 'Oracle PL/SQL', 'eclipse', 'bash', 'TDD'],
+      },
+    ],
   },
   {
     title: 'Mister Spex GmbH',

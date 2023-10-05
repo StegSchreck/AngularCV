@@ -39,7 +39,7 @@ mat-card-content {
 }
 
 mat-card.opened mat-card-content {
-  max-height: 1000px !important;
+  max-height: unset !important;
 }
 
 mat-card-subtitle {
@@ -172,6 +172,10 @@ mat-card.closed .toggle-details mat-icon:before {
   }
 }
 
+.cv-item__description {
+  text-align: justify;
+}
+
 a[mat-button] {
   text-transform: uppercase;
 }
@@ -215,9 +219,13 @@ a[mat-button] {
 .cv-item__position__marker {
   position: relative;
   left: -16px;
-  top: 20px;
-  color: #888;
+  top: 22px;
   margin-right: 6px;
+  height: 15px;
+  width: 15px;
+  background-color: #888;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 @media screen and (max-width: 600px) {
@@ -263,6 +271,13 @@ a[mat-button] {
   }
 }
 
+.cv-item__position__description {
+  font-size: 1em;
+  padding-left: 12px;
+  padding-top: 3px;
+  text-align: justify;
+}
+
 @media screen and (max-width: 400px) {
   .cv-item__position__timespan {
     left: -6px;
@@ -276,4 +291,26 @@ a[mat-button] {
   top: 0;
   font-size: 1.3em;
   margin-right: 0.25em;
+}
+
+.cv-item__position mat-chip-set{
+  padding-left: 12px;
+}
+@media screen and (max-width: 400px) {
+  .cv-item__position mat-chip-set{
+    padding-left: 18px;
+  }
+}
+
+.cv-item__position mat-chip span {
+  font-size: 0.85em;
+}
+
+.cv-item__position mat-chip .tag-icon {
+  font-size: 1em;
+  top: 2px;
+}
+
+.small-chip {
+  height: 20px !important;
 }
