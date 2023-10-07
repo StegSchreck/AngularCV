@@ -2,7 +2,7 @@
 version: 0.2
 env:
   variables:
-    S3_BUCKET: "cv.schreck.berlin"
+    S3_BUCKET: "doccheck-cv.pfeierabend.de"
 phases:
   install:
     runtime-versions:
