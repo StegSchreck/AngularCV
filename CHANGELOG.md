@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/StegSchreck/AngularCV/compare/v1.2.1...v1.2.2) (2023-12-22)
+
+
+### Bug Fixes
+
+* Refine German CV items ([6f1a03b](https://github.com/StegSchreck/AngularCV/commit/6f1a03be33aaf3e3f81ae375fa59d70ecafff6e3))
+
 ## [1.2.1](https://github.com/StegSchreck/AngularCV/compare/v1.2.0...v1.2.1) (2023-10-05)
 
 
