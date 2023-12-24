@@ -45,7 +45,7 @@
     "@angular/language-service": "17.0.8",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/jasmine": "~4.3.6",
+    "@types/jasmine": "~5.1.4",
     "@types/jasminewd2": "^2.0.10",
     "@types/node": "^20.8.10",
     "@typescript-eslint/eslint-plugin": "6.7.3",
