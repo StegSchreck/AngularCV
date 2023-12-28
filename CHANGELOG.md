@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/StegSchreck/AngularCV/compare/v1.2.2...v1.2.3) (2023-12-28)
+
+
+### Bug Fixes
+
+* zone.js import references ([22e6603](https://github.com/StegSchreck/AngularCV/commit/22e660377f61d7ddb72a45862e6a3238775c4603))
+
 ## [1.2.2](https://github.com/StegSchreck/AngularCV/compare/v1.2.1...v1.2.2) (2023-12-22)
 
 
