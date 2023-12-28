@@ -44,7 +44,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v3
     - name: Install Dependencies
-      run: npm install
+      run: npm install --legacy-peer-deps
     - name: Run Semantic Release
       # for configuration of semantic-release, check the package.json and https://github.com/semantic-release/semantic-release/
       run: npx semantic-release
