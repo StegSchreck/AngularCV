@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/StegSchreck/AngularCV/compare/v1.2.5...v1.2.6) (2024-2-3)
+
+
+### Bug Fixes
+
+* test execution on Gitlab needs chrome to be installed -- ref [#1065](https://github.com/StegSchreck/AngularCV/issues/1065) ([a921ce0](https://github.com/StegSchreck/AngularCV/commit/a921ce049e9f3aff14c31197c16343e6a66bd52a))
+
 ## [1.2.5](https://github.com/StegSchreck/AngularCV/compare/v1.2.4...v1.2.5) (2024-2-3)
 
 
