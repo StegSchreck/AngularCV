@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/StegSchreck/AngularCV/compare/v1.2.4...v1.2.5) (2024-2-3)
+
+
+### Bug Fixes
+
+* test execution on Gitlab should use tsame config as Gitlab -- ref [#1065](https://github.com/StegSchreck/AngularCV/issues/1065) ([1f39701](https://github.com/StegSchreck/AngularCV/commit/1f39701c392178790ea86089aa580d60de596415))
+
 ## [1.2.4](https://github.com/StegSchreck/AngularCV/compare/v1.2.3...v1.2.4) (2024-2-3)
 
 
