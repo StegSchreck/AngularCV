@@ -17,12 +17,6 @@ describe('PictureModalComponent', () => {
       providers: [ { provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: {} }, ],
     });
 
-    TestBed.overrideModule(BrowserDynamicTestingModule, {
-      set: {
-        entryComponents: [ PictureModalComponent ],
-      }
-    });
-
     TestBed.compileComponents();
   }));
 
