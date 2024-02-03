@@ -19,7 +19,7 @@
   </a>
 </mat-toolbar>
 
-<nav mat-tab-nav-bar *ngIf="windowWidth >= 800">
+<nav mat-tab-nav-bar [tabPanel]="tabPanel" *ngIf="windowWidth >= 800">
   <a mat-tab-link
      *ngFor="let link of navLinks"
      routerLink="{{link.location}}"
@@ -28,3 +28,4 @@
     <span>{{link.label | uppercase}}</span>
   </a>
 </nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

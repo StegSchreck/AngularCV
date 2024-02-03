@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MaterialModule } from '../material/material.module';
@@ -14,6 +15,13 @@ describe('PictureModalComponent', () => {
       imports: [ MaterialModule ],
       declarations: [ PictureModalComponent ],
       providers: [ { provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: {} }, ],
+    });
+
+    TestBed.overrideModule(BrowserDynamicTestingModule, {
+      set: {
+        // @ts-ignore
+        entryComponents: [ PictureModalComponent ],
+      }
     });
 
     TestBed.compileComponents();

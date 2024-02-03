@@ -22,7 +22,7 @@ jobs:
         npm install -g npm@latest @angular/cli
         npm ci --legacy-peer-deps
         ng lint
-        # ng test --watch false --browsers ChromeHeadless --code-coverage
+        ng test --watch false --browsers ChromeHeadless --code-coverage
         ng build --configuration production --aot
       env:
         CI: true
