@@ -1,3 +1,12 @@
+## [1.2.4](https://github.com/StegSchreck/AngularCV/compare/v1.2.3...v1.2.4) (2024-2-3)
+
+
+### Bug Fixes
+
+* Karma test setup -- closes [#1065](https://github.com/StegSchreck/AngularCV/issues/1065) ([47c6d79](https://github.com/StegSchreck/AngularCV/commit/47c6d7900c051648a2a086268b2fef634835b84e))
+* PictureModal Test ([4cee514](https://github.com/StegSchreck/AngularCV/commit/4cee5144d295694757fa2889963e82954d0dd019))
+* sematic-release needs node >= 20.8.1 ([84b450b](https://github.com/StegSchreck/AngularCV/commit/84b450bd5a25943da1bd51365a3b5c2a85cf320d))
+
 ## [1.2.3](https://github.com/StegSchreck/AngularCV/compare/v1.2.2...v1.2.3) (2023-12-28)
 
 
