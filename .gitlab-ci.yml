@@ -25,7 +25,7 @@ lint:
 test:
   stage: test
   script:
-    - ng test --watch false --browsers ChromeHeadless --code-coverage
+    - ng test --watch false --browsers Chrome_no_sandbox --code-coverage
 
 build:
   stage: build
