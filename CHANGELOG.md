@@ -1,3 +1,10 @@
+## [1.2.11](https://github.com/StegSchreck/AngularCV/compare/v1.2.10...v1.2.11) (2024-2-4)
+
+
+### Bug Fixes
+
+* gitlabCI: get Chrome -- ref [#1065](https://github.com/StegSchreck/AngularCV/issues/1065) ([face7db](https://github.com/StegSchreck/AngularCV/commit/face7dbb6d5d2da633d1f682bed5eb999d25a299))
+
 ## [1.2.10](https://github.com/StegSchreck/AngularCV/compare/v1.2.9...v1.2.10) (2024-2-4)
 
 
