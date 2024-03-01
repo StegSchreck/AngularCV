@@ -42,7 +42,7 @@
     "@angular-eslint/template-parser": "17.2.1",
     "@angular/cli": "^17.1.2",
     "@angular/compiler-cli": "^17.0.8",
-    "@angular/language-service": "17.1.2",
+    "@angular/language-service": "17.2.3",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/jasmine": "~5.1.4",
