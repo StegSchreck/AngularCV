@@ -255,6 +255,16 @@ export const PROJECTS: CvItem[] = [
     thumbnail: '../AngularCV.svg',
   },
   {
+    title: 'Beat the Host',
+    subtitle: 'Von "Schlag den Raab" inspiriertes Spiel basierend auf Vue3.',
+    begin: '2023-12',
+    end: '',
+    description: 'Web-Version für ein Spiel mit mehreren (konfigurierbaren) Einzelspielen mit aufsteigender Punktzahl.',
+    tags: ['Vue.js', 'Javascript', 'GitHub', 'CSS', 'JetBrains WebStorm', 'AWS', 'npm'],
+    link: 'https://github.com/WiSchLabs/beat-the-host',
+    thumbnail: 'BeatTheHost.png',
+  },
+  {
     title: 'UberPage',
     subtitle: 'Eine simple Internetseite zur Darstellung von verschiedenen Links.',
     begin: '2019-07',
@@ -534,6 +544,16 @@ export const PUBLICATIONS: CvItem[] = [
 ];
 
 export const TALKS: CvItem[] = [
+  {
+    title: 'Erfahrungen mit dem SAFe Framework in Großkonzernen',
+    subtitle: '20 min. @ DB Agile Round Table',
+    begin: '',
+    end: '2024-03-14',
+    description: 'Deep-dive wie das Scaled Agile Framework (SAFe) funktioniert und welche Stolperfallen man vermeiden sollte.',
+    tags: ['SAFe', 'Agil', 'Scrum', 'Kultur', 'Kollaboration', 'Kommunikation'],
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7167808754770526209/',
+    thumbnail: 'DB_ART_BERLIN.png',
+  },
   {
     title: 'Something, Something... DevOps - A Tale of two developers',
     subtitle: '20 min. @ Netlight EdgeX Vol. 8 - Mi Casa Es Su Casa',

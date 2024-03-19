@@ -263,6 +263,16 @@ export const PROJECTS: CvItem[] = [
     thumbnail: '../AngularCV.svg',
   },
   {
+    title: 'Beat the Host',
+    subtitle: 'This is a Vue3-based game inspired by the German TV show "Schlag den Raab".',
+    begin: '2023-12',
+    end: '',
+    description: 'This is a web version for a game consisting of multiple (configurable) games/challenges worth different points.',
+    tags: ['Vue.js', 'Javascript', 'GitHub', 'CSS', 'JetBrains WebStorm', 'AWS', 'npm'],
+    link: 'https://github.com/WiSchLabs/beat-the-host',
+    thumbnail: 'BeatTheHost.png',
+  },
+  {
     title: 'UberPage',
     subtitle: 'A simple self-hosted website as overview on different self-defined links',
     begin: '2019-07',
@@ -553,6 +563,16 @@ export const PUBLICATIONS: CvItem[] = [
 ];
 
 export const TALKS: CvItem[] = [
+  {
+    title: 'Learnings from using SAFe Framework at big corporations',
+    subtitle: '20 min. @ DB Agile Round Table',
+    begin: '',
+    end: '2024-03-14',
+    description: 'Deep-dive on how the Scaled Agile Framework (SAFe) works and what pitfalls to avoid on the way.',
+    tags: ['SAFe', 'Agile', 'Scrum', 'Culture', 'Collaboration', 'Communication'],
+    link: 'https://www.linkedin.com/feed/update/urn:li:activity:7167808754770526209/',
+    thumbnail: 'DB_ART_BERLIN.png',
+  },
   {
     title: 'Something, Something... DevOps - A Tale of two developers',
     subtitle: '20 min. @ Netlight EdgeX Vol. 8 - Mi Casa Es Su Casa',
