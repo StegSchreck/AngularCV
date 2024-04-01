@@ -63,7 +63,7 @@
     "karma-spec-reporter": "^0.0.36",
     "protractor": "^7.0.0",
     "puppeteer": "^22.3.0",
-    "semantic-release": "^23.0.2",
+    "semantic-release": "^23.0.6",
     "ts-node": "~10.9.1",
     "typescript": "5.3.3"
   },
