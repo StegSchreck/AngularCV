@@ -29,8 +29,14 @@ export const CVITEMS: CvItem[] = [
         title: 'Automotive Innovation Lab',
         subtitle: 'Expert Software Engineer',
         begin: '2023-08',
-        end: '',
-        description: '',
+        end: '2024-12',
+        description: 'Sebastian kam als Expert Software Engineer zum Information Architecture Team (IA), um deren Bemühungen beim Aufbau ' +
+          'einer professionellen Softwareentwicklungsumgebung und der Förderung von Engineering Craftmanship zu unterstützen. Da das ' +
+          'aktuelle Architekturkonzept an seine Grenzen stieß, unterstützte Sebastian die Konzeption und Implementierung einer neuen Lösung, ' +
+          'die sowohl den aktuellen Anforderungen gerecht wird als auch auf zukünftige Erweiterungen und Skalierungen vorbereitet ist – ' +
+          'basierend auf einer bestehenden unternehmensweiten IAM-Lösung. Er vernetzte aktiv Ingenieure über Teamgrenzen hinweg und bildete ' +
+          'eine Fokusgruppe aus leitenden Ingenieuren um die Systemarchitekten herum, um die Systemarchitektur und die ' +
+          'Engineering-Landschaft weiterzuentwickeln.',
         tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {

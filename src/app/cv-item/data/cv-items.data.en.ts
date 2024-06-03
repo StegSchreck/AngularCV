@@ -31,8 +31,13 @@ export const CVITEMS: CvItem[] = [
         title: 'Automotive Innovation Lab',
         subtitle: 'Expert Software Engineer',
         begin: '2023-08',
-        end: '',
-        description: '',
+        end: '2024-12',
+        description: 'Sebastian joined the Information Architecture team (IA) as expert software engineer to help in their efforts to build ' +
+          'a professional software development environment and fostering engineering craftmanship.\n' +
+          'As the current architecture concept was reaching its limitations, Sebastian supported the design and implementation of a new ' +
+          'solution to solve the current needs but also be ready for future extension and scaling - based on an existing corporate IAM ' +
+          'solution. He actively connected engineers across team boundaries and created a focus group of principal engineers around the ' +
+          'system architects to further evolve the system architecture and engineering landscape.',
         tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {
