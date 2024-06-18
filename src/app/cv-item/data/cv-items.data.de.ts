@@ -295,7 +295,7 @@ export const PROJECTS: CvItem[] = [
     title: 'IS24 Price Per Area',
     subtitle: 'Chrome Erweiterung für die Anzeige des Quadratmeterpreises auf ImmoScout',
     begin: '2020-02',
-    end: '',
+    end: '2022-08',
     description: 'Anzeige des Quadratmeterpreises für Wohnungen auf der Suchergebnisliste, dem Merkzettel und der Expose-Seite von ImmobilienScout24. Die Erweiterung bietet darüber hinaus die Möglichkeit die Quadratmeterpreise farblich hervorzuheben, basierend auf anpassbaren Grenzwerten.' +
       'Dieses Projekt steht in keiner Verbindung zur ImmobilienScout24 GmbH.',
     tags: ['Javascript', 'CSS', 'MaterialDesign', 'Chrome'],
@@ -406,7 +406,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2014',
     description: 'Betreuung von Kindern und Jugendlichen in Trainingslagern, Wanderfahrten, Jugendlager zu den Olympischen Spielen',
     link: 'https://www.ruderjugend.org',
-    thumbnail: 'DRJ+DRV.jpg',
+    thumbnail: 'DRJ+DRV.png',
   },
   {
     title: 'FISA Juniorenweltmeisterschaft 2014 Hamburg',

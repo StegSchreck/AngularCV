@@ -2,7 +2,7 @@
 import { NgModule }                 from '@angular/core';
 import { BrowserModule, Title }     from '@angular/platform-browser';
 import { FormsModule }              from '@angular/forms';
-import { HttpClientModule }         from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi }         from '@angular/common/http';
 import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 import { MaterialModule }           from './material/material.module';
 
@@ -33,18 +33,7 @@ import { LocalizationComponent }    from './l10n/l10n.component';
 import {MatLineModule} from '@angular/material/core';
 import {MatBadgeModule} from '@angular/material/badge';
 
-@NgModule({
-    imports: [
-        BrowserModule,
-        HttpClientModule,
-        FormsModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MaterialModule,
-        MatLineModule,
-        MatBadgeModule,
-    ],
-    declarations: [
+@NgModule({ declarations: [
         AppComponent,
         HeaderComponent,
         OverviewComponent,
@@ -63,14 +52,19 @@ import {MatBadgeModule} from '@angular/material/badge';
         LocalizationComponent,
         CvItemDirective,
     ],
-    providers: [
+    bootstrap: [
+        AppComponent,
+    ], imports: [BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        MatLineModule,
+        MatBadgeModule], providers: [
         Title,
         CvItemService,
         FeatureToggleService,
         LocalizationService,
-    ],
-    bootstrap: [
-        AppComponent,
-    ]
-})
+        provideHttpClient(withInterceptorsFromDi()),
+    ] })
 export class AppModule { }

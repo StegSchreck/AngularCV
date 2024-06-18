@@ -302,7 +302,7 @@ export const PROJECTS: CvItem[] = [
     title: 'IS24 Price Per Area',
     subtitle: 'Chrome extension to display the price per m² on ImmoScout',
     begin: '2020-02',
-    end: '',
+    end: '2022-08',
     description: 'Show price per m² on the search result pages, the shortlist page, and the expose pages of ImmobilienScout24. ' +
       'The extension also allows a colored highlighting with customizable thresholds.' +
       'Not affiliated with ImmobilienScout24 GmbH.',
