@@ -25,7 +25,7 @@ export const CVITEMS: CvItem[] = [
       'We are rapidly expanding on the European market.',
     tags: ['Staff Engineer', 'Tech Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
     link: 'https://www.netlight.com',
-    thumbnail: 'Netlight_Consulting_logo.svg',
+    thumbnail: 'Netlight.svg',
     positions: [
       {
         title: 'Automotive Innovation Lab',
@@ -106,7 +106,7 @@ export const CVITEMS: CvItem[] = [
     description: '',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'msx-logo.png',
+    thumbnail: 'MisterSpex.png',
     positions: [
       {
         title: 'Webshop Operations',
@@ -140,7 +140,7 @@ export const CVITEMS: CvItem[] = [
       'Planning and conduct releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'msx-logo.png',
+    thumbnail: 'MisterSpex.png',
   },
   {
     title: 'Müllers Fanshop',
@@ -149,7 +149,7 @@ export const CVITEMS: CvItem[] = [
     end: '2012-09',
     description: 'Selling merchandising for sport events and concerts. Responsibility over one of the sale points.',
     link: '',
-    thumbnail: 'muellers_fanshop_logo_001.jpg',
+    thumbnail: 'Müllers_Fanshop.jpg',
   },
   {
     title: 'MBU Merchandising und Sportreisen GmbH & Co. KG',
@@ -158,7 +158,7 @@ export const CVITEMS: CvItem[] = [
     end: '2010-07',
     description: 'Selling merchandising for sport events and concerts. Responsibility over one of the sale points.',
     link: '',
-    thumbnail: 'mbu.png',
+    thumbnail: 'MBU.png',
   },
 ];
 
@@ -180,7 +180,7 @@ export const CERTIFICATES: CvItem[] = [
     end: '2015-04',
     description: 'Overview (IS7-100), Intershop Frontend Development (IS7-114), Intershop Backend Programming (IS7-118)',
     link: 'https://www.intershop.de/',
-    thumbnail: 'intershop.svg',
+    thumbnail: 'Intershop.svg',
     attachment: 'ISH_Development_Training_2015.pdf',
   },
   {
@@ -189,7 +189,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2014-05-12',
     description: '',
-    thumbnail: 'Git-Logo-2Color.png',
+    thumbnail: 'Git.png',
     attachment: '',
   },
   {
@@ -198,7 +198,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2012-07-02',
     description: '',
-    thumbnail: 'itil_foundation.png',
+    thumbnail: 'ITIL_certified.png',
     attachment: 'ITIL-Zertifikat_2012.pdf',
   },
   {
@@ -221,7 +221,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin-Logo.png',
+    thumbnail: 'TU-Berlin.png',
   },
   {
     title: 'Technische Universität Berlin',
@@ -231,7 +231,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin-Logo.png',
+    thumbnail: 'TU-Berlin.png',
   },
 ];
 
@@ -321,7 +321,7 @@ export const PROJECTS: CvItem[] = [
       'which awarded their partner prize.',
     tags: ['Angular 2', 'MaterialDesign', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
     link: 'https://github.com/StegSchreck/RecodingAviation',
-    thumbnail: 're-coding-avation-ba.png',
+    thumbnail: 're-coding-avation.png',
   },
   {
     title: 'OFM Helper',
@@ -357,7 +357,7 @@ export const PROJECTS: CvItem[] = [
       'weather data. The web-application was created during a project course at the TU Berlin, which Sebastian took part at.',
     tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
-    thumbnail: 'Huberlin-logo.png',
+    thumbnail: 'HU-Berlin.png',
   },
 ];
 
@@ -369,7 +369,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2016',
     description: 'Admission, visitor services, VIP support, stand-by man, special tasks',
     link: 'https://www.dfb.de',
-    thumbnail: 'DFB-Logo.jpg',
+    thumbnail: 'DFB_mit_Schriftzug.png',
   },
   {
     title: 'ISTAF & ISTAF Indoor',
@@ -387,7 +387,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Team lead visitor service',
     link: 'https://www.uefa.com',
-    thumbnail: 'UEFA_Champions_League-logo.png',
+    thumbnail: 'UEFA_Champions_League.png',
   },
   {
     title: 'CEV Champions League Final Four 2015 Berlin',
@@ -396,7 +396,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Team lead backstage security',
     link: 'https://www.cev.lu/',
-    thumbnail: 'CEV_Champions_League_logo.png',
+    thumbnail: 'CEV_Champions_League.png',
   },
   {
     title: 'German indoor rowing series',
@@ -405,7 +405,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Technical setup and time measurements',
     link: 'https://www.concept2.de/indoor-rowers/indoor-regatten/dirm',
-    thumbnail: 'dirs_logo.jpg',
+    thumbnail: 'Concept2_DIRS.jpg',
   },
   {
     title: 'Ruder-Bundesliga',
@@ -414,7 +414,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Technical setup and time measurements for rowing Bundesliga.',
     link: 'https://www.ruder-bundesliga.de',
-    thumbnail: 'Logo-Bundesliga_quer.jpg',
+    thumbnail: 'RBL_horizonztal.jpg',
   },
   {
     title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
@@ -423,7 +423,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2014',
     description: 'Taking care of young rowers in training camps, recreational rowing tours, camp for visiting the Olympic Games.',
     link: 'https://www.ruderjugend.org',
-    thumbnail: 'DRJ_Logo.jpg',
+    thumbnail: 'DRJ+DRV.png',
   },
   {
     title: 'FISA World Rowing Junior Championships 2014 Hamburg',
@@ -441,7 +441,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2011',
     description: 'Guiding visitors of home matches in the olympic stadium in Berlin. Lastly, as team lead.',
     link: 'https://www.hertha.de/',
-    thumbnail: 'Hertha_BSC_Logo.svg',
+    thumbnail: 'Hertha_BSC.svg',
   },
   {
     title: 'IAAF World Championships 2009 Berlin',
@@ -450,7 +450,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2009',
     description: '',
     link: 'https://www.iaaf.org/',
-    thumbnail: 'IAAF_2009_in_Berlin.png',
+    thumbnail: 'IAAF_World_Championship_2009_Berlin.png',
   },
   {
     title: 'ULEB Euroleague Final Four 2009 Berlin',
@@ -468,7 +468,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2006',
     description: 'Guiding visitors of the olympic stadium in Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'fifa_world_cup_2006.jpg',
+    thumbnail: 'FIFA_World_Cup_2006.jpg',
   },
 ];
 
@@ -579,6 +579,15 @@ export const TALKS: CvItem[] = [
     thumbnail: 'DB_ART_BERLIN.png',
   },
   {
+    title: 'What is DevOps? - The Mindset behind the Buzzword',
+    subtitle: '45 min. @ Netlight Architecture Barcamp',
+    begin: '',
+    end: '2022-11-05',
+    description: 'Workshop regarding the cultural and communicative background of DevOps.',
+    tags: ['DevOps', 'Culture', 'Collaboration', 'Communication', 'Enablement'],
+    thumbnail: 'Netlight_Architecture_Barcamp_2022_Hamburg.png',
+  },
+  {
     title: 'Something, Something... DevOps - A Tale of two developers',
     subtitle: '20 min. @ Netlight EdgeX Vol. 8 - Mi Casa Es Su Casa',
     begin: '',
@@ -594,7 +603,7 @@ export const TALKS: CvItem[] = [
     end: '2020-06-17',
     description: 'After starting a new project on a green field, you sometimes wonder if you made the right choices at the beginning. This talk will give you an overview of how idealo\'s team product page took a step back and reviewed their early architecture decisions considering the learnings made on the way.',
     tags: ['Architecture', 'Arc42'],
-    thumbnail: 'NetlightEdgeXUrknall.png',
+    thumbnail: 'Netlight_EdgeX_Urknall.png',
   },
   {
     title: 'Bringing a complex stack to the cloud - Our journey and lessons learned',

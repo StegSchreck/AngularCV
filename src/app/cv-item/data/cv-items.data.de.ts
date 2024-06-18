@@ -23,7 +23,7 @@ export const CVITEMS: CvItem[] = [
     tags: ['Java', 'SpringBoot', 'React', 'Python', 'FastAPI', 'Kafka', 'MongoDB', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ',
       'Docker', 'Jira', 'Bamboo', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash', 'Tech Lead', 'Product Owner'],
     link: 'https://www.netlight.com',
-    thumbnail: 'Netlight_Consulting_logo.svg',
+    thumbnail: 'Netlight.svg',
     positions: [
       {
         title: 'Automotive Innovation Lab',
@@ -103,7 +103,7 @@ export const CVITEMS: CvItem[] = [
       '',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'msx-logo.png',
+    thumbnail: 'MisterSpex.png',
     positions: [
       {
         title: 'Webshop Betrieb',
@@ -135,7 +135,7 @@ export const CVITEMS: CvItem[] = [
     description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. Planung und Durchführung von Releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'msx-logo.png',
+    thumbnail: 'MisterSpex.png',
   },
   {
     title: 'Müllers Fanshop',
@@ -144,7 +144,7 @@ export const CVITEMS: CvItem[] = [
     end: '2012-09',
     description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
     link: '',
-    thumbnail: 'muellers_fanshop_logo_001.jpg',
+    thumbnail: 'Müllers_Fanshop.jpg',
   },
   {
     title: 'MBU Merchandising und Sportreisen GmbH & Co. KG',
@@ -153,7 +153,7 @@ export const CVITEMS: CvItem[] = [
     end: '2010-07',
     description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
     link: '',
-    thumbnail: 'mbu.png',
+    thumbnail: 'MBU.png',
   },
 ];
 
@@ -175,7 +175,7 @@ export const CERTIFICATES: CvItem[] = [
     end: '2015-04',
     description: 'Overview (IS7-100), Intershop Frontend Development (IS7-114), Intershop Backend Programming (IS7-118)',
     link: 'https://www.intershop.de/',
-    thumbnail: 'intershop.svg',
+    thumbnail: 'Intershop.svg',
     attachment: 'ISH_Development_Training_2015.pdf',
   },
   {
@@ -184,7 +184,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2014-05-12',
     description: '',
-    thumbnail: 'Git-Logo-2Color.png',
+    thumbnail: 'Git.png',
     attachment: '',
   },
   {
@@ -193,7 +193,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2012-07-02',
     description: '',
-    thumbnail: 'itil_foundation.png',
+    thumbnail: 'ITIL_certified.png',
     attachment: 'ITIL-Zertifikat_2012.pdf',
   },
   {
@@ -216,7 +216,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin-Logo.png',
+    thumbnail: 'TU-Berlin.png',
   },
   {
     title: 'Technische Universität Berlin',
@@ -226,7 +226,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin-Logo.png',
+    thumbnail: 'TU-Berlin.png',
   },
 ];
 
@@ -310,7 +310,7 @@ export const PROJECTS: CvItem[] = [
     description: 'Sebastian nahm zusammen mit drei Kollegen an diesem Hackathon teil. Dabei haben sie eine Idee entwickelt, welche selten reisende Personen vom Stress and Hektik am Flughafen zu befreien. Die Lösung wurde \'Unwait the airport\' getauft. Das Ergebnis hat die technischen Experten des Münchener Flughafens überzeugt, welche der Idee deren Partnerpreis verliehen.',
     tags: ['Angular 2', 'MaterialDesign', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
     link: 'https://github.com/StegSchreck/RecodingAviation',
-    thumbnail: 're-coding-avation-ba.png',
+    thumbnail: 're-coding-avation.png',
   },
   {
     title: 'OFM Helper',
@@ -340,7 +340,7 @@ export const PROJECTS: CvItem[] = [
     description: 'GPM ist ein globales Programm zur Beobachtung von bestimmtem Pflanzensorten und Analyse ihres Verhaltens im Kontext von meterologischen Daten. Während eines Projektkurses an der TU Berlin wurde hierfür eine Webanwendung entwickelt.',
     tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
-    thumbnail: 'Huberlin-logo.png',
+    thumbnail: 'HU-Berlin.png',
   },
 ];
 
@@ -352,7 +352,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2016',
     description: 'Einlass, Besuerservice, VIP Support, Springer, Sonderaufgaben',
     link: 'https://www.dfb.de',
-    thumbnail: 'DFB-Logo.jpg',
+    thumbnail: 'DFB_mit_Schriftzug.png',
   },
   {
     title: 'ISTAF & ISTAF Indoor',
@@ -370,7 +370,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Teamleiter Besucherservice',
     link: 'https://www.uefa.com',
-    thumbnail: 'UEFA_Champions_League-logo.png',
+    thumbnail: 'UEFA_Champions_League.png',
   },
   {
     title: 'CEV Champions League Final Four 2015 Berlin',
@@ -379,7 +379,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Leiter Backstage-Sicherheit',
     link: 'https://www.cev.lu/',
-    thumbnail: 'CEV_Champions_League_logo.png',
+    thumbnail: 'CEV_Champions_League.png',
   },
   {
     title: 'Deutsche Indoor-Ruder-Serie',
@@ -388,7 +388,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
     link: 'https://www.concept2.de/indoor-rowers/indoor-regatten/dirm',
-    thumbnail: 'dirs_logo.jpg',
+    thumbnail: 'Concept2_DIRS.jpg',
   },
   {
     title: 'Ruder-Bundesliga',
@@ -397,7 +397,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
     link: 'https://www.ruder-bundesliga.de',
-    thumbnail: 'Logo-Bundesliga_quer.jpg',
+    thumbnail: 'RBL_horizonztal.jpg',
   },
   {
     title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
@@ -406,7 +406,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2014',
     description: 'Betreuung von Kindern und Jugendlichen in Trainingslagern, Wanderfahrten, Jugendlager zu den Olympischen Spielen',
     link: 'https://www.ruderjugend.org',
-    thumbnail: 'DRJ_Logo.jpg',
+    thumbnail: 'DRJ+DRV.jpg',
   },
   {
     title: 'FISA Juniorenweltmeisterschaft 2014 Hamburg',
@@ -424,7 +424,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2011',
     description: 'Betreuung von Gästen bei Heimspielen im Olympiastadion Berlin, zuletzt als Teamleiter.',
     link: 'https://www.hertha.de/',
-    thumbnail: 'Hertha_BSC_Logo.svg',
+    thumbnail: 'Hertha_BSC.svg',
   },
   {
     title: 'IAAF Leichtathletik-Weltmeisterschaft 2009 Berlin',
@@ -433,7 +433,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2009',
     description: '',
     link: 'https://www.iaaf.org/',
-    thumbnail: 'IAAF_2009_in_Berlin.png',
+    thumbnail: 'IAAF_World_Championship_2009_Berlin.png',
   },
   {
     title: 'ULEB Euroleague Final Four 2009 Berlin',
@@ -561,6 +561,15 @@ export const TALKS: CvItem[] = [
     thumbnail: 'DB_ART_BERLIN.png',
   },
   {
+    title: 'What is DevOps? - The Mindset behind the Buzzword',
+    subtitle: '45 min. @ Netlight Architecture Barcamp',
+    begin: '',
+    end: '2022-11-05',
+    description: 'Workshop zu den kulturellen und kommunikativen Grundlagen von DevOps.',
+    tags: ['DevOps', 'Kultur', 'Kollaboration', 'Kommunikation', 'Enablement'],
+    thumbnail: 'Netlight_Architecture_Barcamp_2022_Hamburg.png',
+  },
+  {
     title: 'Something, Something... DevOps - A Tale of two developers',
     subtitle: '20 min. @ Netlight EdgeX Vol. 8 - Mi Casa Es Su Casa',
     begin: '',
@@ -576,7 +585,7 @@ export const TALKS: CvItem[] = [
     end: '2020-06-17',
     description: 'After starting a new project on a green field, you sometimes wonder if you made the right choices at the beginning. This talk will give you an overview of how idealo\'s team product page took a step back and reviewed their early architecture decisions considering the learnings made on the way.',
     tags: ['Architektur', 'Arc42'],
-    thumbnail: 'NetlightEdgeXUrknall.png',
+    thumbnail: 'Netlight_EdgeX_Urknall.png',
   },
   {
     title: 'Bringing a complex stack to the cloud - Our journey and lessons learned',
