@@ -406,7 +406,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2014',
     description: 'Betreuung von Kindern und Jugendlichen in Trainingslagern, Wanderfahrten, Jugendlager zu den Olympischen Spielen',
     link: 'https://www.ruderjugend.org',
-    thumbnail: 'DRJ+DRV.png',
+    thumbnail: 'DRJ_DRV.png',
   },
   {
     title: 'FISA Juniorenweltmeisterschaft 2014 Hamburg',

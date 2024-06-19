@@ -17,13 +17,13 @@ npm install angular-cli-ghpages --save-dev
 
 ### Step 1: Compile your Angular app into `/dist`
 ```sh
-ng build && ng build --prod
+ng build && ng build --configuration production
 ```
 
 ### Step 2: Set your URL
 Adapt this with your GitHub account name.
 ```sh
-ng build --prod --base-href https://<YoutGithubAccount>.github.io/AngularCV/
+ng build --configuration production --base-href https://<YoutGithubAccount>.github.io/AngularCV/
 ```
 
 This command will set your base-href which is the URL of the site were running our application to. When creating the URL the format is as follows:

@@ -423,7 +423,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2014',
     description: 'Taking care of young rowers in training camps, recreational rowing tours, camp for visiting the Olympic Games.',
     link: 'https://www.ruderjugend.org',
-    thumbnail: 'DRJ+DRV.png',
+    thumbnail: 'DRJ_DRV.png',
   },
   {
     title: 'FISA World Rowing Junior Championships 2014 Hamburg',

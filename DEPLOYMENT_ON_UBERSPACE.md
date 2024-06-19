@@ -38,7 +38,7 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
         git co -- .   # ignore local changes
         git pull      # get the new stuff
         npm install   # install changes made to package.json
-        ng build --prod --aot --output-path=~/html/  # build the app for production environment and copy the result to the web root directory
+        ng build --configuration production --aot --output-path=~/html/  # build the app for production environment and copy the result to the web root directory
         
         popd
         ```

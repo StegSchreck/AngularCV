@@ -10,7 +10,7 @@ before_script:
   - sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
   - apt-get -y update && apt-get install -y google-chrome-stable
   - npm install -g @angular/cli
-  - npm ci --legacy-peer-deps
+  - npm ci
 
 stages:
   - test
@@ -49,7 +49,7 @@ build:
 #    - build
 #  script:
 #    - rm -rf ../public
-#    - mv dist ../public
+#    - mv dist/browser ../public
 #  artifacts:
 #    paths:
 #      - public # GitLab pages serve from a 'public' directory

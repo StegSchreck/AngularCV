@@ -20,7 +20,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install -g npm@latest @angular/cli
-        npm ci --legacy-peer-deps
+        npm ci
         ng lint
         ng test --watch false --browsers ChromeHeadless --code-coverage
         ng build --configuration production --aot
@@ -46,7 +46,7 @@ jobs:
       with:
         node-version: latest
     - name: Install Dependencies
-      run: npm install --legacy-peer-deps
+      run: npm install
     - name: Run Semantic Release
       # for configuration of semantic-release, check the package.json and https://github.com/semantic-release/semantic-release/
       run: npx semantic-release
@@ -87,7 +87,7 @@ jobs:
 #          # Create incremental commit instead of doing push force
 #          keep_history: true
 #          # Build directory to deploy
-#          build_dir: dist
+#          build_dir: dist/browser
 #          # Write the given domain name to the CNAME file
 #          #fqdn: stegschreck.github.io
 #        env:

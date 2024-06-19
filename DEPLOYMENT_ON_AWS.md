@@ -79,7 +79,7 @@ This will create an automated pipeline, which will deploy any changes you do to 
 * Now, we can continue with the CodePipeline
 * In the next step, we select `no deployment` as deployment provider
   * The artifacts are already deployed to S3 by the following line in the `buildspec.yml`:
-  `    - aws s3 cp dist s3://${S3_BUCKET} --recursive`
+  `    - aws s3 cp dist/browser s3://${S3_BUCKET} --recursive`
 * Finally, you will have to create a AWS Service Role
   * Click "Create" and name it e.g. `AWS-CodePipeline-Service-AngularCV`
   * Leave the default values for the other fields
