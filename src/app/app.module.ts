@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { NgModule }                 from '@angular/core';
+import { NgModule, isDevMode }                 from '@angular/core';
 import { BrowserModule, Title }     from '@angular/platform-browser';
 import { FormsModule }              from '@angular/forms';
 import { provideHttpClient, withInterceptorsFromDi }         from '@angular/common/http';
@@ -32,6 +32,8 @@ import { LocalizationService }      from './l10n/l10n.service';
 import { LocalizationComponent }    from './l10n/l10n.component';
 import {MatLineModule} from '@angular/material/core';
 import {MatBadgeModule} from '@angular/material/badge';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -59,8 +61,15 @@ import {MatBadgeModule} from '@angular/material/badge';
         AppRoutingModule,
         BrowserAnimationsModule,
         MaterialModule,
+        MatCardModule,
         MatLineModule,
-        MatBadgeModule], providers: [
+        MatBadgeModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+          enabled: !isDevMode(),
+          // Register the ServiceWorker as soon as the application is stable
+          // or after 30 seconds (whichever comes first).
+          registrationStrategy: 'registerWhenStable:30000'
+        })], providers: [
         Title,
         CvItemService,
         FeatureToggleService,

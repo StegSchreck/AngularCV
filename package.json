@@ -25,6 +25,7 @@
     "@angular/platform-browser": "18.0.3",
     "@angular/platform-browser-dynamic": "18.0.3",
     "@angular/router": "18.0.3",
+    "@angular/service-worker": "18.0.3",
     "core-js": "^3.37.1",
     "jspdf": "^2.5.1",
     "material-design-icons": "^3.0.1",
