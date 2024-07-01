@@ -28,8 +28,7 @@
     </div>
     <div *ngFor="let position of cvItem.positions" class="cv-item__position">
       <span class="cv-item__position__marker"></span>
-<!--      TODO: make thumbnail a feature toggle?-->
-<!--      <img src="assets/img/item-thumbnails/{{position.thumbnail}}" width="40px" alt="" *ngIf="position.thumbnail !== undefined && position.thumbnail !== ''">-->
+      <img src="assets/img/item-thumbnails/{{position.thumbnail}}" width="80px" alt="" *ngIf="featureToggles.cvitem_show_position_thumbnail && position.thumbnail !== undefined && position.thumbnail !== ''">
       <span class="cv-item__position__timespan">
         <span class="cv-item__position__timespan-begin" *ngIf="position.begin !== undefined && position.begin !== ''">
           {{position.begin}}

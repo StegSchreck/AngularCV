@@ -30,7 +30,7 @@ export const CVITEMS: CvItem[] = [
         subtitle: 'Expert Software Engineer',
         begin: '2023-08',
         end: '2024-12',
-        description: 'Sebastian kam als Expert Software Engineer zum Information Architecture Team (IA), um deren Bemühungen beim Aufbau ' +
+        description: 'Sebastian kam als Expert Software Engineer zum Information Architecture Team, um deren Bemühungen beim Aufbau ' +
           'einer professionellen Softwareentwicklungsumgebung und der Förderung von Engineering Craftmanship zu unterstützen. Da das ' +
           'aktuelle Architekturkonzept an seine Grenzen stieß, unterstützte Sebastian die Konzeption und Implementierung einer neuen Lösung, ' +
           'die sowohl den aktuellen Anforderungen gerecht wird als auch auf zukünftige Erweiterungen und Skalierungen vorbereitet ist – ' +
@@ -38,6 +38,7 @@ export const CVITEMS: CvItem[] = [
           'eine Fokusgruppe aus leitenden Ingenieuren um die Systemarchitekten herum, um die Systemarchitektur und die ' +
           'Engineering-Landschaft weiterzuentwickeln.',
         tags: ['Python', 'Django', 'Git', 'KanBan', 'PyCharm', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        thumbnail: 'MBition.png',
       },
       {
         title: 'Führende globale Wirtschaftsprüfungsgesellschaft',
@@ -48,6 +49,7 @@ export const CVITEMS: CvItem[] = [
           'Als Teil der globalen Anstrengungen der Wirtschaftsprüfungsgesellschaft wurden die Prüfungsprozesse hierbei ' +
           'vereinfacht, beschleunigt und Fehler-unanfälliger gemacht.',
         tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        thumbnail: 'PwC.svg',
       },
       {
         title: 'Automotive Mobilitätsanbieter',
@@ -59,6 +61,7 @@ export const CVITEMS: CvItem[] = [
           'Kommunikation and Absprache zwischen den Teams auf technischer Ebene, inklusive dem CTO. ' +
           'Später übernahm Sebastian 2 Monate lang interimsweise die Aufgabe eines Product Owners.',
         tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'SAFe', 'Confluence', 'GitHub Actions'],
+        thumbnail: 'MBVR.png',
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
@@ -79,6 +82,7 @@ export const CVITEMS: CvItem[] = [
           'Darüber hinaus brachte er auch wertvolle Automatisierungen mit ein, um etwa Dependencys zu aktualisieren. ' +
           'Auch in diesem Team unterstütze Sebastian den erst kürzlich gestarteten Teamleiter - insbesondere bei Themen Hiring und Teamkultur.',
         tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'GraphQL', 'Jira', 'Scrum', 'AWS', 'Openshift', 'Confluence', 'Jenkins', 'bash'],
+        thumbnail: 'idealo_transparent.png',
       },
       {
         title: 'Führende deutsche Immobilienplattform',
@@ -91,6 +95,7 @@ export const CVITEMS: CvItem[] = [
           'Später wurde Sebastian Teil eines ne-geformten Teams zur Automtisierung einer manuellen PoC Lösung. ' +
           'Hierbei hatte er die Rolle eines Cloud Architekten und entwickelte die new hoch-automatisierte Lösung auf basis von Serverless-Services in der AWS Cloud.',
         tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Maven', 'Jira', 'REST', 'API', 'SNS/SQS', 'Lambda', 'DynamoDB', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
+        thumbnail: 'ImmoScout24_2020.svg',
       },
     ],
   },
