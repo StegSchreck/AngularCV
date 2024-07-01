@@ -38,7 +38,7 @@ export const CVITEMS: CvItem[] = [
           'solution to solve the current needs but also be ready for future extension and scaling - based on an existing corporate IAM ' +
           'solution. He actively connected engineers across team boundaries and created a focus group of principal engineers around the ' +
           'system architects to further evolve the system architecture and engineering landscape.',
-        tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {
         title: 'Leading Global Audit Firm',
@@ -47,7 +47,7 @@ export const CVITEMS: CvItem[] = [
         end: '2023-06',
         description: 'Sebastian lead an engineering team which worked on the digitalization of audit workflows to make the audit process ' +
           'easier, faster, more thorough, and less error-prone for the auditors. This is part of the global digitalization initiatives of the audit company.',
-        tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {
         title: 'Automotive Mobility Provider',
@@ -59,7 +59,7 @@ export const CVITEMS: CvItem[] = [
           'applications but also took care of cross-team collaboration topics. Furthermore, Sebastian was actively driving the connection ' +
           'between the tech leads of the development teams with the CTO as well as with the group of product owners in order to align and ' +
           'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months.',
-        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'Confluence', 'GitHub Actions'],
+        tags: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'SAFe', 'Confluence', 'GitHub Actions'],
       },
       {
         title: 'Leading German Price Comparison Website',
@@ -144,21 +144,31 @@ export const CVITEMS: CvItem[] = [
   },
   {
     title: 'Müllers Fanshop',
-    subtitle: 'Merchandising salesman at O2World Berlin',
+    subtitle: 'Merchandising salesman at O₂World Berlin',
     begin: '2010-08',
     end: '2012-09',
-    description: 'Selling merchandising for sport events and concerts. Responsibility over one of the sale points.',
+    description: 'Selling merchandising for sport events and concerts. Responsibility for one of the sale points. Accounting, inventory, logistics.',
     link: '',
-    thumbnail: 'Müllers_Fanshop.jpg',
+    thumbnail: 'Müllers_Fanshop_O2World.png',
   },
   {
     title: 'MBU Merchandising und Sportreisen GmbH & Co. KG',
-    subtitle: 'Merchandising salesman at O2World Berlin',
+    subtitle: 'Merchandising salesman at O₂World Berlin',
     begin: '2008-09',
     end: '2010-07',
-    description: 'Selling merchandising for sport events and concerts. Responsibility over one of the sale points.',
+    description: 'Selling merchandising for sport events and concerts. Responsibility for one of the sale points. Accounting, inventory, logistics.',
     link: '',
-    thumbnail: 'MBU.png',
+    thumbnail: 'MBU_O2World.png',
+  },
+  {
+    title: 'n-tv Nachrichtenfernsehen GmbH & Co. KG',
+    subtitle: 'Internship',
+    begin: '',
+    end: '2003-06',
+    description: 'Mandatory 3 week internship for high school students with insights to the areas: ' +
+      'technical engineering, sound engineering, on-screen TV graphics, video editing, transmission processing, and TV directing.',
+    link: '',
+    thumbnail: 'n-tv.svg',
   },
 ];
 
@@ -178,7 +188,7 @@ export const CERTIFICATES: CvItem[] = [
     subtitle: 'Intershop Communications AG',
     begin: '',
     end: '2015-04',
-    description: 'Overview (IS7-100), Intershop Frontend Development (IS7-114), Intershop Backend Programming (IS7-118)',
+    description: 'Overview (IS7-100)\nIntershop Frontend Development (IS7-114)\nIntershop Backend Programming (IS7-118)',
     link: 'https://www.intershop.de/',
     thumbnail: 'Intershop.svg',
     attachment: 'ISH_Development_Training_2015.pdf',
@@ -238,9 +248,9 @@ export const EDUCATION: CvItem[] = [
 export const LANGUAGES = [
   // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
   { title: 'German | Deutsch', level: '100' },
-  { title: 'English', level: '80' },
-  { title: 'Italian | Italiano', level: '70' },
-  { title: 'French | Français', level: '30' },
+  { title: 'English', level: '85' },
+  { title: 'Italian | Italiano', level: '75' },
+  { title: 'French | Français', level: '25' },
   { title: 'Swedish | Svenska', level: '15' },
 ];
 

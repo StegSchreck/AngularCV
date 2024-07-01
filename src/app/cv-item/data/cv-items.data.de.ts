@@ -37,7 +37,7 @@ export const CVITEMS: CvItem[] = [
           'basierend auf einer bestehenden unternehmensweiten IAM-Lösung. Er vernetzte aktiv Ingenieure über Teamgrenzen hinweg und bildete ' +
           'eine Fokusgruppe aus leitenden Ingenieuren um die Systemarchitekten herum, um die Systemarchitektur und die ' +
           'Engineering-Landschaft weiterzuentwickeln.',
-        tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        tags: ['Python', 'Django', 'Git', 'KanBan', 'PyCharm', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {
         title: 'Führende globale Wirtschaftsprüfungsgesellschaft',
@@ -47,7 +47,7 @@ export const CVITEMS: CvItem[] = [
         description: 'Sebastian leitete ein Team welches an der Digitalisierung und Automatisierung der Wirtschaftsprüfungsprozesse arbeitete. ' +
           'Als Teil der globalen Anstrengungen der Wirtschaftsprüfungsgesellschaft wurden die Prüfungsprozesse hierbei ' +
           'vereinfacht, beschleunigt und Fehler-unanfälliger gemacht.',
-        tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
       },
       {
         title: 'Automotive Mobilitätsanbieter',
@@ -58,7 +58,7 @@ export const CVITEMS: CvItem[] = [
           'Hierbei arbeitete er sowohl als Fullstack-Entwickler, als auch team-übergreifend. Sebastien war Treiber für die ' +
           'Kommunikation and Absprache zwischen den Teams auf technischer Ebene, inklusive dem CTO. ' +
           'Später übernahm Sebastian 2 Monate lang interimsweise die Aufgabe eines Product Owners.',
-        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'Confluence', 'GitHub Actions'],
+        tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'SAFe', 'Confluence', 'GitHub Actions'],
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
@@ -139,21 +139,35 @@ export const CVITEMS: CvItem[] = [
   },
   {
     title: 'Müllers Fanshop',
-    subtitle: 'Merchande-Verkäufer in der O2World Berlin',
+    subtitle: 'Merchandise-Verkäufer in der O₂World Berlin',
     begin: '2010-08',
     end: '2012-09',
-    description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
+    description: 'Verkäufer für Merchandise-Artikel während Sportveranstaltungen, Konzerten, und Events. ' +
+      'Darunter Heimspiele der Eisbären Berlin, ALBA Berlin, Konzerte von Linkin Park, Depeche Mode, Lady Gaga, Justin Bieber, Elton John, KISS, Udo Lindenberg, Die Fantastischen Vier, uvm. ' +
+      'Hauptverantwortlich für einen der Verkaufsstände. Abrechnung, Inventur, Warenlogistik.',
     link: '',
-    thumbnail: 'Müllers_Fanshop.jpg',
+    thumbnail: 'Müllers_Fanshop_O2World.png',
   },
   {
     title: 'MBU Merchandising und Sportreisen GmbH & Co. KG',
-    subtitle: 'Merchandise-Verkäufer in der O2World Berlin',
+    subtitle: 'Merchandise-Verkäufer in der O₂World Berlin',
     begin: '2008-09',
     end: '2010-07',
-    description: 'Verkäufer für Merchandise Artikel während Sportveranstaltungen und Konzerten. Verantwortlich für einen der Verkaufsstände.',
+    description: 'Verkäufer für Merchandise-Artikel während Sportveranstaltungen, Konzerten, und Events. ' +
+      'Darunter Heimspiele der Eisbären Berlin, ALBA Berlin, Konzerte von Linkin Park, Depeche Mode, Lady Gaga, Justin Bieber, Elton John, KISS, Udo Lindenberg, Die Fantastischen Vier, uvm. ' +
+      'Hauptverantwortlich für einen der Verkaufsstände. Abrechnung, Inventur, Warenlogistik.',
     link: '',
-    thumbnail: 'MBU.png',
+    thumbnail: 'MBU_O2World.png',
+  },
+  {
+    title: 'n-tv Nachrichtenfernsehen GmbH & Co. KG',
+    subtitle: 'Schülerpraktikum',
+    begin: '',
+    end: '2003-06',
+    description: 'Schülerbetriebspraktikum in der Oberschule mit Einblicken in die Bereiche: ' +
+      'Service & Systeme, Audiotechnik, Grafik, Videobearbeitung, Sendeabwicklung, Regie/Studio.',
+    link: '',
+    thumbnail: 'n-tv.svg',
   },
 ];
 
@@ -173,7 +187,7 @@ export const CERTIFICATES: CvItem[] = [
     subtitle: 'Intershop Communications AG',
     begin: '',
     end: '2015-04',
-    description: 'Overview (IS7-100), Intershop Frontend Development (IS7-114), Intershop Backend Programming (IS7-118)',
+    description: 'Overview (IS7-100)\nIntershop Frontend Development (IS7-114)\nIntershop Backend Programming (IS7-118)',
     link: 'https://www.intershop.de/',
     thumbnail: 'Intershop.svg',
     attachment: 'ISH_Development_Training_2015.pdf',
@@ -228,14 +242,23 @@ export const EDUCATION: CvItem[] = [
     link: 'https://www.tu-berlin.de',
     thumbnail: 'TU-Berlin.png',
   },
+  // {
+  //   title: 'Max-Beckman-Oberschule',
+  //   subtitle: 'Abitur',
+  //   begin: '',
+  //   end: '2007-06',
+  //   description: '',
+  //   link: 'https://www.mbo-berlin.de',
+  //   thumbnail: 'MBO.png',
+  // },
 ];
 
 export const LANGUAGES = [
   // RATE YOURSELF  =>  100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
   { title: 'Deutsch', level: '100' },
-  { title: 'Englisch | English', level: '80' },
-  { title: 'Italienisch | Italiano', level: '70' },
-  { title: 'Französisch | Français', level: '30' },
+  { title: 'Englisch | English', level: '85' },
+  { title: 'Italienisch | Italiano', level: '75' },
+  { title: 'Französisch | Français', level: '25' },
   { title: 'Schwedisch | Svenska', level: '15' },
 ];
 
@@ -409,7 +432,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'DRJ_DRV.png',
   },
   {
-    title: 'FISA Juniorenweltmeisterschaft 2014 Hamburg',
+    title: 'FISA Ruderweltmeisterschaft Junioren 2014 Hamburg',
     subtitle: 'IT-Netzwerktechnik',
     begin: '',
     end: '2014',
