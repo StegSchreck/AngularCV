@@ -479,7 +479,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2006',
     description: 'Besucherservice für Besucher der WM-Spiele im Olympiastadion Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'FIFA_World_Cup_2006_Germany.png',
+    thumbnail: 'FIFA_WM_2006_Deutschland.png',
   },
 ];
 

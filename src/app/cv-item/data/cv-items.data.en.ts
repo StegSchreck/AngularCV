@@ -33,7 +33,7 @@ export const CVITEMS: CvItem[] = [
         begin: '2023-08',
         end: '2024-12',
         description: 'Sebastian joined the Information Architecture team as expert software engineer to help in their efforts to build ' +
-          'a professional software development environment and fostering engineering craftmanship.\n' +
+          'a professional software development environment and fostering engineering craftsmanship.\n' +
           'As the current architecture concept was reaching its limitations, Sebastian supported the design and implementation of a new ' +
           'solution to solve the current needs but also be ready for future extension and scaling - based on an existing corporate IAM ' +
           'solution. He actively connected engineers across team boundaries and created a focus group of principal engineers around the ' +
@@ -330,8 +330,8 @@ export const PROJECTS: CvItem[] = [
     subtitle: 'Hackathon for improving the passenger journey for flights',
     begin: '',
     end: '2017-06',
-    description: 'Sebastian participated in this hackathon together with three collegues. ' +
-      'They develpoed an idea how the passenger can be relieved from stress and anxiety at an airport. ' +
+    description: 'Sebastian participated in this hackathon together with three colleagues. ' +
+      'They developed an idea how the passenger can be relieved from stress and anxiety at an airport. ' +
       'The idea was named \'Unwait the airport\'. The resulting idea convinced the technical experts of the Munich Airport, ' +
       'which awarded their partner prize.',
     tags: ['Angular 2', 'MaterialDesign', 'Git', 'NodeJS', 'ACI ACRIS Seamless Tavel API', 'Express.js', 'MongoDB', 'twilio'],
@@ -359,7 +359,7 @@ export const PROJECTS: CvItem[] = [
       'It is a research project at the DIMA department of TU Berlin. ' +
       'Sebastian was part of the team which was responsible of the project management. ' +
       'Later he wrote his bachelor thesis about the data persistence layer of the application.',
-    tags: ['Project Managemant', 'Hadoop', 'MySQL', 'Mantis'],
+    tags: ['Project Management', 'Hadoop', 'MySQL', 'Mantis'],
     link: 'http://goolap.info/',
     thumbnail: 'TU_DIMA_GoOLAP.png',
   },
@@ -483,7 +483,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2006',
     description: 'Guiding visitors of the olympic stadium in Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'FIFA_World_Cup_2006.jpg',
+    thumbnail: 'FIFA_World_Cup_2006_Germany.jpg',
   },
 ];
 
