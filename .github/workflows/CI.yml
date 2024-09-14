@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
     - name: npm install, build, and test
@@ -40,9 +40,9 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: latest
     - name: Install Dependencies
@@ -56,7 +56,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -82,11 +82,11 @@ jobs:
 #
 #    steps:
 #      - name: Checkout code
-#        uses: actions/checkout@v3
-#      - name: Use Node.js 20.x
-#        uses: actions/setup-node@v3
+#        uses: actions/checkout@v4
+#      - name: Use Node.js
+#        uses: actions/setup-node@v4
 #        with:
-#          node-version: 20.x
+#          node-version: latest
 #      - name: Build
 #        run: |
 #          npm install -g npm@latest @angular/cli
@@ -94,20 +94,16 @@ jobs:
 #          ng build --configuration production --aot
 #        env:
 #          CI: true
-#      - name: GitHub Pages Deploy
-#        uses: crazy-max/ghaction-github-pages@v1.2.5
-#        if: success() && github.ref == 'refs/heads/master'
+#      - name: Deploy GitHub Page
+#        uses: JamesIves/github-pages-deploy-action@v4
+#        if: github.ref_name == 'master'
 #        with:
 #          # GitHub repository where assets will be deployed (default current)
-#          repo: StegSchreck/stegschreck.github.io
+#          repository-name: StegSchreck/stegschreck.github.io
 #          # Git branch where assets will be deployed
-#          target_branch: master
-#          # Create incremental commit instead of doing push force
-#          keep_history: true
+#          branch: master
+#          # delete files from your deployment destination that no longer exist in your deployment source
+#          clean: true
 #          # Build directory to deploy
-#          build_dir: dist/browser
-#          # Write the given domain name to the CNAME file
-#          #fqdn: stegschreck.github.io
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#          GITHUB_PAT: ${{ secrets.GITHUB_PAT }}
+#          folder: dist/browser
+#          token: ${{ secrets.GHA_PAT }}
