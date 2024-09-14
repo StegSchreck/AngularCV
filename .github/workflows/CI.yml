@@ -54,6 +54,23 @@ jobs:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
+  delpoy:
+    needs: release
+    runs-on: ubuntu
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    steps:
+      - name: Checkout code
+        uses: reggionick/s3-deploy@v4
+        with:
+          folder: dist
+          bucket: ${{ secrets.AWS_S3_BUCKET }}
+          bucket-region: eu-central-1
+          dist-id: ${{ secrets.AWS_CLOUDFORNT_ID }}
+          delete-removed: true
+          private: true
 
 
 ### UNCOMMENT THE FOLLOWING SECTION TO DEPLOY THE MASTER TO YOUR GITHUB USER PAGE ###
