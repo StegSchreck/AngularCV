@@ -108,7 +108,7 @@ export const CVITEMS: CvItem[] = [
       '',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'MisterSpex.png',
+    thumbnail: 'MisterSpex.svg',
     positions: [
       {
         title: 'Webshop Betrieb',
@@ -140,7 +140,7 @@ export const CVITEMS: CvItem[] = [
     description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. Planung und Durchführung von Releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'MisterSpex.png',
+    thumbnail: 'MisterSpex.svg',
   },
   {
     title: 'Müllers Fanshop',
@@ -164,6 +164,15 @@ export const CVITEMS: CvItem[] = [
     link: '',
     thumbnail: 'MBU_O2World.png',
   },
+  // {
+  //   title: 'Teamwork - Büttgen GmbH',
+  //   subtitle: 'Regalauffüller in div. Supermärkten',
+  //   begin: '2008-01',
+  //   end: '2008-09',
+  //   description: 'Regalauffüllung, -pflege, Lieferlisten-Kontrolle, Lagermanagement',
+  //   link: '',
+  //   thumbnail: 'Teamwork.png',
+  // },
   {
     title: 'n-tv Nachrichtenfernsehen GmbH & Co. KG',
     subtitle: 'Schülerpraktikum',
@@ -250,7 +259,7 @@ export const EDUCATION: CvItem[] = [
   // {
   //   title: 'Max-Beckman-Oberschule',
   //   subtitle: 'Abitur',
-  //   begin: '',
+  //   begin: '2001-08',
   //   end: '2007-06',
   //   description: '',
   //   link: 'https://www.mbo-berlin.de',
@@ -373,8 +382,17 @@ export const PROJECTS: CvItem[] = [
 ];
 
 export const VOLUNTEERING: CvItem[] = [
+  // {
+  //   title: 'Technisches Hilfswerk',
+  //   subtitle: 'Helfer',
+  //   begin: '',
+  //   end: 'geplant',
+  //   description: '',
+  //   link: 'https://www.thw.de',
+  //   thumbnail: 'THW.svg',
+  // },
   {
-    title: 'DFB-Pokalfinals & Länderspiele',
+    title: 'DFB-Pokalfinals & Nationalmannschaft Länderspiele',
     subtitle: 'Volunteer',
     begin: '2007',
     end: '2016',
@@ -389,7 +407,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2016',
     description: 'Technischer Aufbau, Besucherservice, Ordnungsdienst, Sonderaufgaben, Abbau',
     link: 'https://www.istaf.de',
-    thumbnail: 'ISTAF.png',
+    thumbnail: 'ISTAF_ISTAF_Indoor.png',
   },
   {
     title: 'UEFA Champions League Finals 2015 Berlin',
@@ -416,16 +434,25 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
     link: 'https://www.concept2.de/indoor-rowers/indoor-regatten/dirm',
-    thumbnail: 'Concept2_DIRS.jpg',
+    thumbnail: 'Concept2_DIRS.png',
   },
   {
-    title: 'Ruder-Bundesliga',
+    title: 'Ruder-Bundesliga & Rowing Champions League',
     subtitle: 'Time measurement',
     begin: '2009',
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
     link: 'https://www.ruder-bundesliga.de',
-    thumbnail: 'RBL_horizonztal.jpg',
+    thumbnail: 'RBL_RCL.png',
+  },
+  {
+    title: 'SCC Events & Berlin Läuft',
+    subtitle: 'Aufbau, Streckenposten, Siegerehrung, Teamleiter',
+    begin: '2007',
+    end: '2015',
+    description: 'Laufveranstaltungen: Berlin Marathon, 25km of Berlin, Great 10k, und viele andere',
+    link: 'https://berlin-laeuft.de/volunteers/',
+    thumbnail: 'SCCEvents_BerlinLaeuft.png',
   },
   {
     title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
@@ -435,6 +462,17 @@ export const VOLUNTEERING: CvItem[] = [
     description: 'Betreuung von Kindern und Jugendlichen in Trainingslagern, Wanderfahrten, Jugendlager zu den Olympischen Spielen',
     link: 'https://www.ruderjugend.org',
     thumbnail: 'DRJ_DRV.png',
+  },
+  {
+    title: 'div. Ruderregatten',
+    subtitle: 'Aufbau, Helfer, Organisation, Zeitmessung',
+    begin: '2005',
+    end: '2015',
+    description: 'u.a. Norddeutsche Meisterschaften in Hamburg, Lübecker Regatta, ' +
+      'Bundeswettbewerb der Deustchen Ruderjugend, Bundesfinale "Jugend trainiert für Olympia", Oberhavel-Regatta ' +
+      'und div. andere Regatten in Berlin',
+    link: '',
+    thumbnail: 'Regatten.png',
   },
   {
     title: 'FISA Ruderweltmeisterschaft Junioren 2014 Hamburg',
@@ -450,7 +488,8 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Besucherservice, Sonderaufgaben, Teamleiter',
     begin: '2008',
     end: '2011',
-    description: 'Betreuung von Gästen bei Heimspielen im Olympiastadion Berlin, zuletzt als Teamleiter.',
+    description: 'Betreuung von Gästen bei Heimspielen im Olympiastadion Berlin, zuletzt als Teamleiter. ' +
+      'Bundesliga, UEFA-Cup, UEFA Europa League, DFB-Pokal, Freundschaftsspiele',
     link: 'https://www.hertha.de/',
     thumbnail: 'Hertha_BSC.svg',
   },
@@ -481,6 +520,15 @@ export const VOLUNTEERING: CvItem[] = [
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_WM_2006_Deutschland.png',
   },
+  // {
+  //   title: 'Ruder-Verein "Preußen" e.V.',
+  //   subtitle: '1. Vorstizender, 2. Vorsitzender, Sportwart, Judendwart, Webmaster',
+  //   begin: '2001',
+  //   end: '2013',
+  //   description: 'Ruder-Verein im Nordwesten von Berlin-Reinickendorf.',
+  //   link: 'https://www.rv-preussen.de/',
+  //   thumbnail: 'RVP_Flagge.jpg',
+  // },
 ];
 
 export const CONTACT = {
@@ -492,7 +540,7 @@ export const CONTACT = {
   xing: 'https://www.xing.com/profile/Sebastian_Schreck2', // full url
   github: 'https://github.com/StegSchreck', // full url
   stackoverflow: 'https://stackoverflow.com/users/story/6538600', // full url
-  twitter: 'https://twitter.com/StegSchreck', // full url
+  twitter: '', // full url
   facebook: '', // full url
   instagram: '', // full url
   other: [

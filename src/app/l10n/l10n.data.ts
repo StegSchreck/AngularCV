@@ -123,9 +123,9 @@ export const L10N = {
       menu_overiew: 'Überblick',
       menu_experience: 'Erfahrung',
       menu_education: 'Ausbildung',
-      menu_publications: 'Veröffentlichungen',
+      menu_publications: 'Vorträge & Artikel',
       menu_projects: 'Projekte',
-      menu_volunteering: 'Soziales',
+      menu_volunteering: 'Ehrenamt',
       menu_contact: 'Kontakt',
       menu_about: 'Über diese Seite',
     },
@@ -151,7 +151,7 @@ export const L10N = {
       title_publications: 'Veröffentlichungen',
     },
     volunteering: {
-      title: 'Soziales Engagement',
+      title: 'Soziales Engagement & Ehrenamt',
     },
   },
   'IT': {

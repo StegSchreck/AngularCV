@@ -111,7 +111,7 @@ export const CVITEMS: CvItem[] = [
     description: '',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'MisterSpex.png',
+    thumbnail: 'MisterSpex.svg',
     positions: [
       {
         title: 'Webshop Operations',
@@ -145,7 +145,7 @@ export const CVITEMS: CvItem[] = [
       'Planning and conduct releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
-    thumbnail: 'MisterSpex.png',
+    thumbnail: 'MisterSpex.svg',
   },
   {
     title: 'Müllers Fanshop',
@@ -377,8 +377,17 @@ export const PROJECTS: CvItem[] = [
 ];
 
 export const VOLUNTEERING: CvItem[] = [
+  // {
+  //   title: 'Technisches Hilfswerk',
+  //   subtitle: 'Volunteer',
+  //   begin: '',
+  //   end: 'planned',
+  //   description: '',
+  //   link: 'https://www.thw.de',
+  //   thumbnail: 'THW.svg',
+  // },
   {
-    title: 'DFB cup finals & international matches',
+    title: "DFB Cup finals & national team's matches",
     subtitle: 'Admission, visitor services, VIP support, stand-by man, special tasks',
     begin: '2007',
     end: '2016',
@@ -393,7 +402,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2016',
     description: 'Technical setup, visitor service, security, special tasks, teardown',
     link: 'https://www.istaf.de',
-    thumbnail: 'ISTAF.png',
+    thumbnail: 'ISTAF_ISTAF_Indoor.png',
   },
   {
     title: 'UEFA Champions League Finals 2015 Berlin',
@@ -420,16 +429,25 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2015',
     description: 'Technical setup and time measurements',
     link: 'https://www.concept2.de/indoor-rowers/indoor-regatten/dirm',
-    thumbnail: 'Concept2_DIRS.jpg',
+    thumbnail: 'Concept2_DIRS.png',
   },
   {
-    title: 'Ruder-Bundesliga',
+    title: 'Ruder-Bundesliga & Rowing Champions League',
     subtitle: 'Time measurement',
     begin: '2009',
     end: '2015',
-    description: 'Technical setup and time measurements for rowing Bundesliga.',
+    description: 'Technical setup and time measurements for Rowing Bundesliga and Rowing Champions League.',
     link: 'https://www.ruder-bundesliga.de',
-    thumbnail: 'RBL_horizonztal.jpg',
+    thumbnail: 'RBL_RCL.png',
+  },
+  {
+    title: 'SCC Events & Berlin Läuft',
+    subtitle: 'Setup, track marshall, medal ceremony, team lead',
+    begin: '2007',
+    end: '2015',
+    description: 'Running events: Berlin Marathon, 25km of Berlin, Great 10k, and many others',
+    link: 'https://berlin-laeuft.de/volunteers/',
+    thumbnail: 'SCCEvents_BerlinLaeuft.png',
   },
   {
     title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
@@ -439,6 +457,15 @@ export const VOLUNTEERING: CvItem[] = [
     description: 'Taking care of young rowers in training camps, recreational rowing tours, camp for visiting the Olympic Games.',
     link: 'https://www.ruderjugend.org',
     thumbnail: 'DRJ_DRV.png',
+  },
+  {
+    title: 'Rowing regattas',
+    subtitle: 'Setup, volunteer, organisation, time measurement',
+    begin: '2005',
+    end: '2015',
+    description: 'in Hamburg, Lübecker, Berlin, and other locations',
+    link: '',
+    thumbnail: 'Regatten.png',
   },
   {
     title: 'FISA World Rowing Junior Championships 2014 Hamburg',
@@ -454,7 +481,8 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Visitor services, special tasks, team lead',
     begin: '2008',
     end: '2011',
-    description: 'Guiding visitors of home matches in the olympic stadium in Berlin. Lastly, as team lead.',
+    description: 'Guiding visitors of home matches in the olympic stadium in Berlin. Lastly, as team lead. ' +
+      'Bundesliga, UEFA-Cup, UEFA Europa League, DFB Cup, friendly matches',
     link: 'https://www.hertha.de/',
     thumbnail: 'Hertha_BSC.svg',
   },
@@ -481,10 +509,19 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Visitor service',
     begin: '',
     end: '2006',
-    description: 'Guiding visitors of the olympic stadium in Berlin.',
+    description: 'Guiding visitors in the Olympic Stadium of Berlin.',
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_World_Cup_2006_Germany.jpg',
   },
+  // {
+  //   title: 'Ruder-Verein "Preußen" e.V.',
+  //   subtitle: 'Club President, Vice President, webmaster, and other roles',
+  //   begin: '2001',
+  //   end: '2013',
+  //   description: 'Rowing club in the north-west of Berlin.',
+  //   link: 'https://www.rv-preussen.de/',
+  //   thumbnail: 'RVP_Flagge.jpg',
+  // },
 ];
 
 export const CONTACT = {
@@ -496,7 +533,7 @@ export const CONTACT = {
   xing: 'https://www.xing.com/profile/Sebastian_Schreck2', // full url
   github: 'https://github.com/StegSchreck', // full url
   stackoverflow: 'https://stackoverflow.com/users/story/6538600', // full url
-  twitter: 'https://twitter.com/StegSchreck', // full url
+  twitter: '', // full url
   facebook: '', // full url
   instagram: '', // full url
   other: [

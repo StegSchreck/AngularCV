@@ -18,9 +18,9 @@
   <mat-card-content>
     <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''" class="cv-item__description preformatted">{{cvItem.description}}</p>
     <mat-chip-set *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
-      <mat-chip *ngFor="let tag of cvItem.tags">
+      <mat-chip *ngFor="let tag of cvItem.tags" class="cv-item__tag">
         <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
-        {{tag}}
+        <span class="cv-item__tag__text">{{tag}}</span>
       </mat-chip>
     </mat-chip-set>
     <div *ngIf="cvItem.positions !== undefined && cvItem.positions.length > 0" class="cv-item__positions">
@@ -44,9 +44,9 @@
       <p *ngIf="position.description !== undefined && position.description !== ''"  class="cv-item__position__description preformatted">{{position.description}}</p>
 
       <mat-chip-set *ngIf="position.tags !== undefined && position.tags.length > 0">
-        <mat-chip *ngFor="let tag of position.tags" class="small-chip">
+        <mat-chip *ngFor="let tag of position.tags" class="small-chip cv-item__position__tag">
           <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
-          <span>{{tag}}</span>
+          <span class="cv-item__position__tag__text">{{tag}}</span>
         </mat-chip>
       </mat-chip-set>
     </div>
