@@ -27,6 +27,12 @@ jobs:
         ng build --configuration production --aot
       env:
         CI: true
+    - name: Upload build result as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: build_artifact
+        path: dist
+        retention-days: 1
     - name: Codacy Coverage Reporter
       uses: codacy/codacy-coverage-reporter-action@v1.3.0
       with:
@@ -62,10 +68,15 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     steps:
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build_artifact
+          path: dist
       - name: Checkout code on S3
         uses: reggionick/s3-deploy@v4
         with:
-          folder: dist
+          folder: dist/browser
           bucket: ${{ secrets.AWS_S3_BUCKET }}
           bucket-region: eu-central-1
           dist-id: ${{ secrets.AWS_CLOUDFORNT_ID }}
@@ -81,19 +92,11 @@ jobs:
 #    runs-on: ubuntu-latest
 #
 #    steps:
-#      - name: Checkout code
-#        uses: actions/checkout@v4
-#      - name: Use Node.js
-#        uses: actions/setup-node@v4
+#      - name: Download Build Artifact
+#        uses: actions/download-artifact@v4
 #        with:
-#          node-version: latest
-#      - name: Build
-#        run: |
-#          npm install -g npm@latest @angular/cli
-#          npm ci
-#          ng build --configuration production --aot
-#        env:
-#          CI: true
+#          name: build_artifact
+#          path: dist
 #      - name: Deploy GitHub Page
 #        uses: JamesIves/github-pages-deploy-action@v4
 #        if: github.ref_name == 'master'
