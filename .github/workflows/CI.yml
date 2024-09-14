@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x, 20.x, latest]
+        node-version: [22.x, latest]
 
     steps:
     - name: Checkout code
@@ -54,15 +54,15 @@ jobs:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-  delpoy:
-    needs: release
+  deploy:
+    needs: build
     runs-on: ubuntu
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
     steps:
-      - name: Checkout code
+      - name: Checkout code on S3
         uses: reggionick/s3-deploy@v4
         with:
           folder: dist
@@ -70,6 +70,7 @@ jobs:
           bucket-region: eu-central-1
           dist-id: ${{ secrets.AWS_CLOUDFORNT_ID }}
           delete-removed: true
+          no-cache: true
           private: true
 
 
