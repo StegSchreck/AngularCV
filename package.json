@@ -50,7 +50,7 @@
     "@types/node": "^22.8.6",
     "@typescript-eslint/eslint-plugin": "7.15.0",
     "@typescript-eslint/parser": "7.18.0",
-    "@typescript-eslint/utils": "8.12.2",
+    "@typescript-eslint/utils": "8.16.0",
     "eslint": "^8.57.1",
     "jasmine-core": "~5.4.0",
     "jasmine-spec-reporter": "~7.0.0",
