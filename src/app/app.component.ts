@@ -5,9 +5,10 @@ import { Router, NavigationEnd } from '@angular/router';
 import { CvItemService } from './cv-item/cv-item.service';
 
 @Component({
-  selector: 'app-root',
-  styleUrls: [ './app.component.css' ],
-  templateUrl: './app.component.html',
+    selector: 'app-root',
+    styleUrls: ['./app.component.css'],
+    templateUrl: './app.component.html',
+    standalone: false
 })
 export class AppComponent {
   private generalData;

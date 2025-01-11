@@ -5,9 +5,10 @@ import { CvItem } from '../cv-item/cv-item';
 import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
-  selector: 'app-volunteering',
-  templateUrl: './volunteering.component.html',
-  styleUrls: ['./volunteering.component.css'],
+    selector: 'app-volunteering',
+    templateUrl: './volunteering.component.html',
+    styleUrls: ['./volunteering.component.css'],
+    standalone: false
 })
 export class VolunteeringComponent implements OnInit {
   public l10n;

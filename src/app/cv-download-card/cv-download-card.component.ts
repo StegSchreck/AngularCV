@@ -4,9 +4,10 @@ import { LocalizationService } from '../l10n/l10n.service';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 
 @Component({
-  selector: 'app-cv-download-card',
-  templateUrl: './cv-download-card.component.html',
-  styleUrls: ['./cv-download-card.component.css'],
+    selector: 'app-cv-download-card',
+    templateUrl: './cv-download-card.component.html',
+    styleUrls: ['./cv-download-card.component.css'],
+    standalone: false
 })
 export class CvDownloadCardComponent implements OnInit {
   public l10n;

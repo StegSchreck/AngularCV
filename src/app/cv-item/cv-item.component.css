@@ -235,7 +235,6 @@ a[mat-button] {
   background-color: #888;
   border-radius: 50%;
   display: inline-block;
-  z-index: 1000;
   overflow: visible;
 }
 

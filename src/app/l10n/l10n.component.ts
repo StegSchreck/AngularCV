@@ -4,9 +4,10 @@ import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { LocalizationService } from './l10n.service';
 
 @Component({
-  selector: 'app-l10n',
-  templateUrl: './l10n.component.html',
-  styleUrls: ['./l10n.component.css'],
+    selector: 'app-l10n',
+    templateUrl: './l10n.component.html',
+    styleUrls: ['./l10n.component.css'],
+    standalone: false
 })
 export class LocalizationComponent implements OnInit {
   public l10n_languages = [];

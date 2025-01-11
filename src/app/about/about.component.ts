@@ -4,9 +4,10 @@ import { LocalizationService } from '../l10n/l10n.service';
 import packageJson from '../../../package.json';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css'],
+    selector: 'app-about',
+    templateUrl: './about.component.html',
+    styleUrls: ['./about.component.css'],
+    standalone: false
 })
 export class AboutComponent implements OnInit {
   public l10n;

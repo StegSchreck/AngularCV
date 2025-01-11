@@ -15,12 +15,13 @@ const TEXT_COLOR_LIGHT_GREY = '#868686';
 const TEXT_COLOR_DARK_GREY = '#444444';
 
 @Component({
-  selector: 'app-pdf',
-  templateUrl: './pdf.component.html',
-  styleUrls: ['./pdf.component.css'],
-  providers: [
-    { provide: 'Window', useValue: window, },
-  ],
+    selector: 'app-pdf',
+    templateUrl: './pdf.component.html',
+    styleUrls: ['./pdf.component.css'],
+    providers: [
+        { provide: 'Window', useValue: window, },
+    ],
+    standalone: false
 })
 export class PdfComponent implements OnInit {
   public l10n;

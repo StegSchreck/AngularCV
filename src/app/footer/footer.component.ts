@@ -1,9 +1,10 @@
 import { Component, HostListener, AfterViewInit } from '@angular/core';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css'],
+    selector: 'app-footer',
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.css'],
+    standalone: false
 })
 export class FooterComponent implements AfterViewInit {
   public currentYear: Number = new Date().getFullYear();

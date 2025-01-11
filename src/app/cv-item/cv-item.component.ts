@@ -6,9 +6,10 @@ import { CvItem } from './cv-item';
 import {FeatureToggleService} from '../feature-toggle/feature-toggle.service';
 
 @Component({
-  selector: 'app-cv-item',
-  templateUrl: './cv-item.component.html',
-  styleUrls: ['./cv-item.component.css'],
+    selector: 'app-cv-item',
+    templateUrl: './cv-item.component.html',
+    styleUrls: ['./cv-item.component.css'],
+    standalone: false
 })
 
 export class CvItemComponent implements OnInit, AfterViewInit {

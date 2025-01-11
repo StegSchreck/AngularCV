@@ -5,9 +5,10 @@ import { CvItem } from '../cv-item/cv-item';
 import { CvItemService } from '../cv-item/cv-item.service';
 
 @Component({
-  selector: 'app-publications',
-  templateUrl: './publications.component.html',
-  styleUrls: ['./publications.component.css'],
+    selector: 'app-publications',
+    templateUrl: './publications.component.html',
+    styleUrls: ['./publications.component.css'],
+    standalone: false
 })
 export class PublicationsComponent implements OnInit {
   public l10n;

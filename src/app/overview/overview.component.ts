@@ -6,9 +6,10 @@ import { CvItemService } from '../cv-item/cv-item.service';
 import { PictureModalComponent } from '../picture-modal/picture-modal.component';
 
 @Component({
-  selector: 'app-overview',
-  templateUrl: './overview.component.html',
-  styleUrls: ['./overview.component.css'],
+    selector: 'app-overview',
+    templateUrl: './overview.component.html',
+    styleUrls: ['./overview.component.css'],
+    standalone: false
 })
 export class OverviewComponent implements OnInit {
   public l10n;
