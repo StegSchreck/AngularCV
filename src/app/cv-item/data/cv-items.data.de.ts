@@ -187,6 +187,16 @@ export const CVITEMS: CvItem[] = [
 
 export const CERTIFICATES: CvItem[] = [
   {
+    title: 'Introduction to FinOps',
+    subtitle: 'FinOps Foundation',
+    begin: '',
+    end: '2025-01-28',
+    description: '',
+    link: 'https://verify.skilljar.com/c/nrw64kyd5cqu',
+    thumbnail: 'FinOps_Foundation_Introduction_to_FinOps.png',
+    attachment: 'FinOps_certificate-nrw64kyd5cqu-1738071659.pdf',
+  },
+  {
     title: 'AWS Cloud Practitioner',
     subtitle: 'Amazon Web Services (AWS)',
     begin: '',
