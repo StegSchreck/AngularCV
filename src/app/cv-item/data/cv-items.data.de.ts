@@ -18,13 +18,26 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
     end: '',
-    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in Stockholm, Oslo, München, Helsinki, Berlin, Hamburg, Kopenhagen, Zürich, Frankfurt, Amsterdam und Köln. ' +
-      'Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle Ergebnisse für unsere Kunden erbringen.',
-    tags: ['Java', 'SpringBoot', 'React', 'Python', 'FastAPI', 'Kafka', 'MongoDB', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ',
-      'Docker', 'Jira', 'Bamboo', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash', 'Tech Lead', 'Product Owner'],
+    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in ' +
+      'Stockholm, Oslo, München, Berlin, Hamburg, Kopenhagen, Helsinki, Zürich, Frankfurt, Amsterdam, Köln und Toronto. ' +
+      'Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle Ergebnisse für unsere Kunden erbringen.\n\n' +
+      'Neben der Tätigkeit als IT Consultant ist Sebastian hier auch als Führungskraft (genannt "Mentor") sowie als technischer und ' +
+      'persönlicher Coach im Kundenprojekt-Kontext aktiv. ' +
+      'Außerdem führt er regelmäßig technische Interviews um die passenden Kandidaten für die nächsten Generationen auszuwählen.',
+    tags: ['Principal Engineer', 'Staff Engineer', 'Engineering Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight.svg',
     positions: [
+      {
+        title: 'Skandinavische Bank',
+        subtitle: 'Cloud Migration Expert',
+        begin: '2025-02',
+        end: '',
+        description: 'In diesem Projekt arbeitete Sebastian zusammen mit einem Hyperscaler Beratungsteam bei einer großen Skandinavischen ' +
+          'Bank um deren large-scale Cloud Migration mittels eines innovativen Hyper-Automation Ansatzes zu untersützen.',
+        tags: ['AWS', 'Python', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Jira', 'Kubernetes', 'Confluence', 'bash'],
+        thumbnail: 'AWS_ProServe_DanskeBank.png',
+      },
       {
         title: 'Automotive Innovation Lab',
         subtitle: 'Expert Software Engineer',
@@ -38,7 +51,7 @@ export const CVITEMS: CvItem[] = [
           'eine Fokusgruppe aus leitenden Ingenieuren um die Systemarchitekten herum, um die Systemarchitektur und die ' +
           'Engineering-Landschaft weiterzuentwickeln.',
         tags: ['Python', 'Django', 'Git', 'KanBan', 'PyCharm', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
-        thumbnail: 'MBition.png',
+        thumbnail: 'MBition.svg',
       },
       {
         title: 'Führende globale Wirtschaftsprüfungsgesellschaft',
@@ -65,7 +78,7 @@ export const CVITEMS: CvItem[] = [
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
-        subtitle: 'Senior Lead Software Engineer & Architect',
+        subtitle: 'Lead Software Engineer & Architect',
         begin: '2019-08',
         end: '2020-12',
         description: 'Als Teil der Umstellung der monolithischen Webshop-Applikation hin zu Service-based Architektur, ' +
@@ -86,7 +99,7 @@ export const CVITEMS: CvItem[] = [
       },
       {
         title: 'Führende deutsche Immobilienplattform',
-        subtitle: 'Software Engineer & Cloud Architekt',
+        subtitle: 'Senior Software Engineer & Cloud Architekt',
         begin: '2019-01',
         end: '2019-07',
         description: 'Sebastian arbeitete im Team verantwortlich für die Suchergebnisliste und Expose-Ansicht der Immobilien ' +
@@ -530,15 +543,15 @@ export const VOLUNTEERING: CvItem[] = [
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_WM_2006_Deutschland.png',
   },
-  // {
-  //   title: 'Ruder-Verein "Preußen" e.V.',
-  //   subtitle: '1. Vorstizender, 2. Vorsitzender, Sportwart, Judendwart, Webmaster',
-  //   begin: '2001',
-  //   end: '2013',
-  //   description: 'Ruder-Verein im Nordwesten von Berlin-Reinickendorf.',
-  //   link: 'https://www.rv-preussen.de/',
-  //   thumbnail: 'RVP_Flagge.jpg',
-  // },
+  {
+    title: 'Ruder-Verein "Preußen" e.V.',
+    subtitle: '1. Vorsitzender, 2. Vorsitzender, Sportwart, Judendwart',
+    begin: '2001',
+    end: '2013',
+    description: 'Ruder-Verein im Nordwesten von Berlin-Reinickendorf.',
+    link: 'https://www.rv-preussen.de/',
+    thumbnail: 'RVP_Flagge.jpg',
+  },
 ];
 
 export const CONTACT = {

@@ -19,14 +19,25 @@ export const CVITEMS: CvItem[] = [
     begin: '2019-01',
     end: '',
     description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
-      'create valuable results for our clients. To continue to grow locally and internationally, we are looking for motivated team ' +
-      'players & people with drive to join the Netlight team of inspiring, knowledgeable and emphatic talents. Currently we have offices ' +
-      'in Stockholm, Oslo, Munich, Helsinki, Berlin, Hamburg, Copenhagen, Zurich, Frankfurt, Amsterdam, and Cologne. ' +
-      'We are rapidly expanding on the European market.',
-    tags: ['Staff Engineer', 'Tech Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
+      'create valuable results for our clients. Currently we have offices in ' +
+      'Stockholm, Oslo, Munich, Berlin, Hamburg, Copenhagen, Helsinki, Zurich, Frankfurt, Amsterdam, Cologne, and Toronto.\n\n' +
+      'Apart from his role as an IT consultant, Sebastian is also actively involved in the personal development of his colleagues through ' +
+      'his roles as a mentor as well as a personal and technical coach in the context of client engagements. ' +
+      'Furthermore, he is regularly conducting technical interviews to find the best matches to shape the future generations.',
+    tags: ['Principal Engineer', 'Staff Engineer', 'Engineering Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight.svg',
     positions: [
+      {
+        title: 'Scandinavian Bank',
+        subtitle: 'Cloud Migration Expert',
+        begin: '2025-02',
+        end: '',
+        description: 'For this project, Sebastian joined forces with a hyperscaler consulting team to support the large-scale cloud ' +
+          'migration of a large Scandinavian bank using an innovative hyper-automation approach.',
+        tags: ['AWS', 'Python', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Jira', 'Kubernetes', 'Confluence', 'bash'],
+        thumbnail: 'AWS_ProServe_DanskeBank.png',
+      },
       {
         title: 'Automotive Innovation Lab',
         subtitle: 'Expert Software Engineer',
@@ -39,7 +50,7 @@ export const CVITEMS: CvItem[] = [
           'solution. He actively connected engineers across team boundaries and created a focus group of principal engineers around the ' +
           'system architects to further evolve the system architecture and engineering landscape.',
         tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
-        thumbnail: 'MBition.png',
+        thumbnail: 'MBition.svg',
       },
       {
         title: 'Leading Global Audit Firm',
@@ -66,7 +77,7 @@ export const CVITEMS: CvItem[] = [
       },
       {
         title: 'Leading German Price Comparison Website',
-        subtitle: 'Senior Lead Software Engineer & Architect',
+        subtitle: 'Lead Software Engineer & Architect',
         begin: '2019-08',
         end: '2020-12',
         description: 'Sebastian joined a team running a monolithic application that relied on a shared Oracle database. The team ' +
@@ -89,7 +100,7 @@ export const CVITEMS: CvItem[] = [
       },
       {
         title: 'Leading German Real Estate Platform',
-        subtitle: 'Software Engineer & Cloud Architect',
+        subtitle: 'Senior Software Engineer & Cloud Architect',
         begin: '2019-01',
         end: '2019-07',
         description: 'Sebastian was part of the Team responsible for the search result list and expose view of the real estate entries. ' +
@@ -525,7 +536,7 @@ export const VOLUNTEERING: CvItem[] = [
   },
   // {
   //   title: 'Ruder-Verein "Preußen" e.V.',
-  //   subtitle: 'Club President, Vice President, webmaster, and other roles',
+  //   subtitle: 'Club President, Vice President, and other roles',
   //   begin: '2001',
   //   end: '2013',
   //   description: 'Rowing club in the north-west of Berlin.',
