@@ -235,7 +235,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2014-05-12',
     description: '',
-    thumbnail: 'Git.png',
+    thumbnail: 'Git.svg',
     attachment: '',
   },
   {
@@ -267,7 +267,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin.png',
+    thumbnail: 'TU-Berlin.svg',
   },
   {
     title: 'Technische Universität Berlin',
@@ -277,7 +277,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin.png',
+    thumbnail: 'TU-Berlin.svg',
   },
   // {
   //   title: 'Max-Beckman-Oberschule',
@@ -400,28 +400,80 @@ export const PROJECTS: CvItem[] = [
     description: 'GPM ist ein globales Programm zur Beobachtung von bestimmtem Pflanzensorten und Analyse ihres Verhaltens im Kontext von meterologischen Daten. Während eines Projektkurses an der TU Berlin wurde hierfür eine Webanwendung entwickelt.',
     tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
-    thumbnail: 'HU-Berlin.png',
+    thumbnail: 'HU-Berlin.svg',
   },
 ];
 
 export const VOLUNTEERING: CvItem[] = [
-  // {
-  //   title: 'Technisches Hilfswerk',
-  //   subtitle: 'Helfer',
-  //   begin: '',
-  //   end: 'geplant',
-  //   description: '',
-  //   link: 'https://www.thw.de',
-  //   thumbnail: 'THW.svg',
-  // },
+  {
+    title: 'Technisches Hilfswerk',
+    subtitle: 'Anwärter',
+    begin: '2025',
+    end: '',
+    description: 'Grundausbildung im Ortsverband Berlin-Mitte',
+    link: 'https://www.thw.de',
+    thumbnail: 'THW.svg',
+  },
   {
     title: 'DFB-Pokalfinals & Nationalmannschaft Länderspiele',
     subtitle: 'Volunteer',
     begin: '2007',
     end: '2016',
-    description: 'Einlass, Besuerservice, VIP Support, Springer, Sonderaufgaben',
+    description: 'Einlass, Besucherservice, VIP Support, Springer, Sonderaufgaben',
     link: 'https://www.dfb.de',
     thumbnail: 'DFB_mit_Schriftzug.png',
+    // positions: [
+    //   {
+    //     title: 'DFB-Pokal-Finale',
+    //     subtitle: '',
+    //     end: '2016-05-21',
+    //   },
+    //   {
+    //     title: 'DFB-Länderspiel: GER - ENG',
+    //     subtitle: '',
+    //     end: '2016-03-26',
+    //   },
+    //   {
+    //     title: 'DFB-Länderspiel: GER - SWE',
+    //     subtitle: '',
+    //     end: '2012-10-16',
+    //   },
+    //   {
+    //     title: 'DFB-Pokal-Endspiele',
+    //     subtitle: '',
+    //     end: '2012-05-12',
+    //   },
+    //   {
+    //     title: 'DFB-Pokal-Endspiele',
+    //     subtitle: '',
+    //     end: '2011-05-21',
+    //   },
+    //   {
+    //     title: 'DFB-Pokal-Endspiele',
+    //     subtitle: '',
+    //     end: '2010-05-15',
+    //   },
+    //   {
+    //     title: 'DFB-Pokal-Endspiele',
+    //     subtitle: '',
+    //     end: '2009-05-30',
+    //   },
+    //   {
+    //     title: 'DFB-Länderspiel: GER - ENG',
+    //     subtitle: '',
+    //     end: '2008-11-19',
+    //   },
+    //   {
+    //     title: 'DFB-Pokal-Endspiele',
+    //     subtitle: '',
+    //     end: '2008-04-19',
+    //   },
+    //   {
+    //     title: 'DFB-Pokal-Endspiele',
+    //     subtitle: '',
+    //     end: '2007-05-26',
+    //   },
+    // ]
   },
   {
     title: 'ISTAF & ISTAF Indoor',
@@ -431,15 +483,98 @@ export const VOLUNTEERING: CvItem[] = [
     description: 'Technischer Aufbau, Besucherservice, Ordnungsdienst, Sonderaufgaben, Abbau',
     link: 'https://www.istaf.de',
     thumbnail: 'ISTAF_ISTAF_Indoor.png',
+    // positions: [
+    //   {
+    //     title: 'ISTAF Indoor',
+    //     subtitle: 'Teamleiter Equipment',
+    //     end: '2016-02-13',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Teamleiter Gegentribüne',
+    //     begin: '2015-09-04',
+    //     end: '2015-09-07',
+    //   },
+    //   {
+    //     title: 'ISTAF Indoor',
+    //     subtitle: 'Teamleiter Sonderaufgaben',
+    //     end: '2015-02-14',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Sicherheitskoordinator Helferdienst',
+    //     begin: '2014-08-29',
+    //     end: '2014-09-01',
+    //   },
+    //   {
+    //     title: 'ISTAF Indoor',
+    //     subtitle: 'Sonderaufgaben',
+    //     end: '2014-03-01',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Teamleiter Haupttribüne',
+    //     begin: '2013-08-30',
+    //     end: '2013-09-02',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Teamleiter Haupttribüne',
+    //     begin: '2012-08-31',
+    //     end: '2012-09-03',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Teamleiter Haupttribüne',
+    //     begin: '2011-09-09',
+    //     end: '2011-09-12',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Teamleiter Haupttribüne',
+    //     begin: '2010-08-21',
+    //     end: '2010-08-23',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Teamleiter Oberring',
+    //     begin: '2009-06-12',
+    //     end: '2009-06-15',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Siegerehrung',
+    //     begin: '2008-05-30',
+    //     end: '2008-06-02',
+    //   },
+    //   {
+    //     title: 'ISTAF',
+    //     subtitle: 'Siegerehrung',
+    //     begin: '2008-09-14',
+    //     end: '2008-09-17',
+    //   },
+    // ]
   },
   {
     title: 'UEFA Champions League Finals 2015 Berlin',
     subtitle: 'Teamleiter',
     begin: '',
     end: '2015',
-    description: 'Teamleiter Besucherservice',
+    description: 'Teamleiter Besucherservice beim Finale der Frauen sowie beim Finale der Männer',
     link: 'https://www.uefa.com',
-    thumbnail: 'UEFA_Champions_League.png',
+    thumbnail: 'UEFA_Champions_League.svg',
+    // positions: [
+    //     {
+    //       title: 'UEFA Champions League Finale - Männer',
+    //       subtitle: 'Teamleiter',
+    //       end: '2015-06-06',
+    //     },
+    //     {
+    //       title: 'UEFA Champions League Finale - Frauen',
+    //       subtitle: '',
+    //       end: '2015-05-14',
+    //     },
+    // ]
   },
   {
     title: 'CEV Champions League Final Four 2015 Berlin',
@@ -447,8 +582,8 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '',
     end: '2015',
     description: 'Leiter Backstage-Sicherheit',
-    link: 'https://www.cev.lu/',
-    thumbnail: 'CEV_Champions_League.png',
+    link: 'https://www.cev.eu/',
+    thumbnail: 'CEV.png',
   },
   {
     title: 'Deutsche Indoor-Ruder-Serie',
@@ -516,6 +651,15 @@ export const VOLUNTEERING: CvItem[] = [
     link: 'https://www.hertha.de/',
     thumbnail: 'Hertha_BSC.svg',
   },
+  // {
+  //   title: 'EHF EuroHockey Club-Champions-Cup Berlin',
+  //   subtitle: 'Besucherservice',
+  //   begin: '',
+  //   end: '2010',
+  //   description: 'Betreuung von Gästen während der Spiele im Hockeystadion im Olympiapark Berlin',
+  //   link: '',
+  //   thumbnail: 'EHF.jpg',
+  // },
   {
     title: 'IAAF Leichtathletik-Weltmeisterschaft 2009 Berlin',
     subtitle: 'Anti-Doping-Chaperone',
@@ -523,7 +667,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2009',
     description: '',
     link: 'https://www.iaaf.org/',
-    thumbnail: 'IAAF_World_Championship_2009_Berlin.png',
+    thumbnail: 'IAAF_World_Championship_2009_Berlin.svg',
   },
   {
     title: 'ULEB Euroleague Final Four 2009 Berlin',
@@ -541,16 +685,40 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2006',
     description: 'Besucherservice für Besucher der WM-Spiele im Olympiastadion Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'FIFA_WM_2006_Deutschland.png',
+    thumbnail: 'FIFA_WM_2006_Deutschland.svg',
   },
   {
     title: 'Ruder-Verein "Preußen" e.V.',
-    subtitle: '1. Vorsitzender, 2. Vorsitzender, Sportwart, Judendwart',
+    subtitle: '1. Vorsitzender, Stellv. Vorsitzender, Sportwart, Judendwart',
     begin: '2001',
     end: '2013',
     description: 'Ruder-Verein im Nordwesten von Berlin-Reinickendorf.',
     link: 'https://www.rv-preussen.de/',
     thumbnail: 'RVP_Flagge.jpg',
+    // positions: [
+    //   {
+    //     title: '1. Vorsitzender',
+    //     subtitle: '',
+    //     end: '2013',
+    //   },
+    //   {
+    //     title: 'Stellv. Vorsitzender',
+    //     subtitle: '',
+    //     end: '2012',
+    //   },
+    //   {
+    //     title: 'Sportwart',
+    //     subtitle: '',
+    //     begin: '2008',
+    //     end: '2009',
+    //   },
+    //   {
+    //     title: 'Jugendwart',
+    //     subtitle: '',
+    //     begin: '2006',
+    //     end: '2007',
+    //   },
+    // ]
   },
 ];
 
@@ -558,7 +726,6 @@ export const CONTACT = {
   city: 'Berlin, Germany',
   phone: '',
   mail: 'sebastian@schreck.berlin',
-  skype: '', // just the account name
   linkedin: 'https://www.linkedin.com/in/sebastian-schreck-050739131/', // full url
   xing: 'https://www.xing.com/profile/Sebastian_Schreck2', // full url
   github: 'https://github.com/StegSchreck', // full url

@@ -24,11 +24,6 @@
         <h4 mat-line>{{l10n.contact.phone}}</h4>
         <p mat-line>{{contactItems.phone}}</p>
       </mat-list-item>
-      <mat-list-item class="contact-info" *ngIf="contactItems !== undefined && contactItems.skype !== undefined && contactItems.skype !== ''">
-        <i matListItemIcon class="icon-skype"></i>
-        <h4 mat-line>Skype</h4>
-        <p mat-line>{{contactItems.skype}}</p>
-      </mat-list-item>
     </mat-list>
   </mat-card-content>
 </mat-card>

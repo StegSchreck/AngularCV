@@ -213,6 +213,10 @@ a[mat-button] {
   display: block;
   left: 34px;
   position: absolute;
+
+  width: auto;
+  max-width: 80px;
+  height: auto;
 }
 
 @media screen and (max-width: 600px) {

@@ -225,7 +225,7 @@ export const CERTIFICATES: CvItem[] = [
     begin: '',
     end: '2014-05-12',
     description: '',
-    thumbnail: 'Git.png',
+    thumbnail: 'Git.svg',
     attachment: '',
   },
   {
@@ -257,7 +257,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin.png',
+    thumbnail: 'TU-Berlin.svg',
   },
   {
     title: 'Technische Universität Berlin',
@@ -267,7 +267,7 @@ export const EDUCATION: CvItem[] = [
     description: '',
     tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'https://www.tu-berlin.de',
-    thumbnail: 'TU-Berlin.png',
+    thumbnail: 'TU-Berlin.svg',
   },
 ];
 
@@ -393,20 +393,21 @@ export const PROJECTS: CvItem[] = [
       'weather data. The web-application was created during a project course at the TU Berlin, which Sebastian took part at.',
     tags: ['Java', 'JSF', 'JSP', 'Subversion', 'Scrum', 'Trac', 'Spring', 'ant'],
     link: 'http://gpm.hu-berlin.de/',
-    thumbnail: 'HU-Berlin.png',
+    thumbnail: 'HU-Berlin.svg',
   },
 ];
 
 export const VOLUNTEERING: CvItem[] = [
-  // {
-  //   title: 'Technisches Hilfswerk',
-  //   subtitle: 'Volunteer',
-  //   begin: '',
-  //   end: 'planned',
-  //   description: '',
-  //   link: 'https://www.thw.de',
-  //   thumbnail: 'THW.svg',
-  // },
+  {
+    title: 'Technisches Hilfswerk',
+    subtitle: 'Recruit',
+    begin: '2025',
+    end: '',
+    description: 'The Federal Agency for Technical Relief is a federal agency specialised in providing technical and humanitarian assistance. ' +
+      'Its 88,000 volunteer operatives help in the wake of natural disasters, accidents and other emergencies, both in Germany and abroad.',
+    link: 'https://www.thw.de',
+    thumbnail: 'THW.svg',
+  },
   {
     title: "DFB Cup finals & national team's matches",
     subtitle: 'Admission, visitor services, VIP support, stand-by man, special tasks',
@@ -414,7 +415,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2016',
     description: 'Admission, visitor services, VIP support, stand-by man, special tasks',
     link: 'https://www.dfb.de',
-    thumbnail: 'DFB_mit_Schriftzug.png',
+    thumbnail: 'DFB.svg',
   },
   {
     title: 'ISTAF & ISTAF Indoor',
@@ -430,9 +431,9 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Team lead',
     begin: '',
     end: '2015',
-    description: 'Team lead visitor service',
+    description: "Team lead visitor service at the women's finals as well as at the men's finals",
     link: 'https://www.uefa.com',
-    thumbnail: 'UEFA_Champions_League.png',
+    thumbnail: 'UEFA_Champions_League.svg',
   },
   {
     title: 'CEV Champions League Final Four 2015 Berlin',
@@ -440,8 +441,8 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '',
     end: '2015',
     description: 'Team lead backstage security',
-    link: 'https://www.cev.lu/',
-    thumbnail: 'CEV_Champions_League.png',
+    link: 'https://www.cev.eu/',
+    thumbnail: 'CEV.png',
   },
   {
     title: 'German indoor rowing series',
@@ -484,10 +485,11 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Setup, volunteer, organisation, time measurement',
     begin: '2005',
     end: '2015',
-    description: 'in Hamburg, Lübecker, Berlin, and other locations',
+    description: 'in Hamburg, Lübeck, Berlin, and other locations',
     link: '',
     thumbnail: 'Regatten.png',
   },
+
   {
     title: 'FISA World Rowing Junior Championships 2014 Hamburg',
     subtitle: 'IT network setup',
@@ -514,7 +516,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2009',
     description: '',
     link: 'https://www.iaaf.org/',
-    thumbnail: 'IAAF_World_Championship_2009_Berlin.png',
+    thumbnail: 'IAAF_World_Championship_2009_Berlin.svg',
   },
   {
     title: 'ULEB Euroleague Final Four 2009 Berlin',
@@ -532,7 +534,7 @@ export const VOLUNTEERING: CvItem[] = [
     end: '2006',
     description: 'Guiding visitors in the Olympic Stadium of Berlin.',
     link: 'https://www.fifa.com/',
-    thumbnail: 'FIFA_World_Cup_2006_Germany.jpg',
+    thumbnail: 'FIFA_World_Cup_2006_Germany_.svg',
   },
   // {
   //   title: 'Ruder-Verein "Preußen" e.V.',
@@ -549,7 +551,6 @@ export const CONTACT = {
   city: 'Berlin, Germany',
   phone: '',
   mail: 'sebastian@schreck.berlin',
-  skype: '', // just the account name
   linkedin: 'https://www.linkedin.com/in/sebastian-schreck-050739131/', // full url
   xing: 'https://www.xing.com/profile/Sebastian_Schreck2', // full url
   github: 'https://github.com/StegSchreck', // full url

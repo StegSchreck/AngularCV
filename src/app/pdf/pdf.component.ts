@@ -192,12 +192,12 @@ export class PdfComponent implements OnInit {
       this.addLine(pdf, this.l10n.pdf.label_city.toUpperCase(), this.contactItems.city);
       this.addLine(pdf, this.l10n.pdf.label_email.toUpperCase(), this.contactItems.mail);
       this.addLine(pdf, this.l10n.contact.phone.toUpperCase(), this.contactItems.phone);
-      this.addLine(pdf, 'SKYPE', this.contactItems.skype);
       this.addLine(pdf, 'LINKEDIN', this.contactItems.linkedin);
       this.addLine(pdf, 'XING', this.contactItems.xing);
       this.addLine(pdf, 'GITHUB', this.contactItems.github);
       this.addLine(pdf, 'STACKOVERFLOW', this.contactItems.stackoverflow);
       this.addLine(pdf, 'TWITTER', this.contactItems.twitter);
+      this.addLine(pdf, 'INSTAGRAM', this.contactItems.instagram);
     }
   }
 

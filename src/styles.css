@@ -117,6 +117,7 @@ p.capitalize:first-letter {
   margin-left: 0.1em;
   font-family: "Roboto Slab", serif;
   color: #666;
+  font-weight: 600;
 }
 
 /***** LOADING ANIMATION *****/
