@@ -35,7 +35,7 @@ export const CVITEMS: CvItem[] = [
         end: '',
         description: 'In diesem Projekt arbeitete Sebastian zusammen mit einem Hyperscaler Beratungsteam bei einer großen Skandinavischen ' +
           'Bank um deren large-scale Cloud Migration mittels eines innovativen Hyper-Automation Ansatzes zu untersützen.',
-        tags: ['AWS', 'Python', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Jira', 'Kubernetes', 'Confluence', 'bash'],
+        tags: ['AWS', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
       },
       {
@@ -74,7 +74,7 @@ export const CVITEMS: CvItem[] = [
           'Kommunikation and Absprache zwischen den Teams auf technischer Ebene, inklusive dem CTO. ' +
           'Später übernahm Sebastian 2 Monate lang interimsweise die Aufgabe eines Product Owners.',
         tags: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'SAFe', 'Confluence', 'GitHub Actions'],
-        thumbnail: 'MBVR.png',
+        thumbnail: 'Mercedes-Benz_Van_Rental.svg',
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
@@ -124,14 +124,14 @@ export const CVITEMS: CvItem[] = [
     thumbnail: 'MisterSpex.svg',
     positions: [
       {
-        title: 'Webshop Betrieb',
+        title: 'Webshop Infrastruktur',
         subtitle: 'Cloud / Infrastructure',
         begin: '2017',
         end: '2018-12',
         description: 'Instandhaltung und Betrieb der IT-Plattform auf welcher der E-Commerce-Shop läuft. ' +
           'Automatisierung von Prozessen and Unterstützung der Entwicklungsteams in ihrer Arbeit. ' +
           'Sicherung der Cloud-Umgebung gegenüber Angreifern. ' +
-          'Planung und Durchführung der Migrations mehrerer Anwendungen hin zur Cloud, darunter der Haupt-Webshop.',
+          'Planung und Durchführung der Migrations mehrerer Anwendungen hin zur AWS Cloud, darunter der Haupt-Webshop.',
         tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
       },
       {
@@ -416,10 +416,11 @@ export const VOLUNTEERING: CvItem[] = [
   },
   {
     title: 'DFB-Pokalfinals & Nationalmannschaft Länderspiele',
-    subtitle: 'Volunteer',
+    subtitle: 'Einlass, Besucherservice, VIP Support, Springer, Sonderaufgaben',
     begin: '2007',
     end: '2016',
-    description: 'Einlass, Besucherservice, VIP Support, Springer, Sonderaufgaben',
+    description: 'Der Helferdienst (Volunteers) wurde durch den Berlinber Fußball-Verband organisiert für die Länderspiele,' +
+      'sowie der DFB-Pokal-Endspiele der Männer, der Frauen, sowie der Junioren in Berlin.',
     link: 'https://www.dfb.de',
     thumbnail: 'DFB_mit_Schriftzug.png',
     // positions: [
@@ -622,7 +623,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'DRJ_DRV.png',
   },
   {
-    title: 'div. Ruderregatten',
+    title: 'diverse Ruderregatten',
     subtitle: 'Aufbau, Helfer, Organisation, Zeitmessung',
     begin: '2005',
     end: '2015',
@@ -633,7 +634,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'Regatten.png',
   },
   {
-    title: 'FISA Ruderweltmeisterschaft Junioren 2014 Hamburg',
+    title: 'FISA Ruder-Weltmeisterschaft Junioren 2014 Hamburg',
     subtitle: 'IT-Netzwerktechnik',
     begin: '',
     end: '2014',
@@ -650,6 +651,15 @@ export const VOLUNTEERING: CvItem[] = [
       'Bundesliga, UEFA-Cup, UEFA Europa League, DFB-Pokal, Freundschaftsspiele',
     link: 'https://www.hertha.de/',
     thumbnail: 'Hertha_BSC.svg',
+  },
+  {
+    title: 'FIFA Fußball-Weltmeisterschaft Frauen 2011 Deutschland',
+    subtitle: 'Besucherservice',
+    begin: '',
+    end: '2011',
+    description: 'Besucherservice für Besucher der WM-Spiele im Olympiastadion Berlin.',
+    link: 'https://www.fifa.com/',
+    thumbnail: 'FIFA_Womens_World_Cup_2011.svg',
   },
   // {
   //   title: 'EHF EuroHockey Club-Champions-Cup Berlin',

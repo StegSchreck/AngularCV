@@ -35,7 +35,7 @@ export const CVITEMS: CvItem[] = [
         end: '',
         description: 'For this project, Sebastian joined forces with a hyperscaler consulting team to support the large-scale cloud ' +
           'migration of a large Scandinavian bank using an innovative hyper-automation approach.',
-        tags: ['AWS', 'Python', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'Jira', 'Kubernetes', 'Confluence', 'bash'],
+        tags: ['AWS', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
       },
       {
@@ -73,7 +73,7 @@ export const CVITEMS: CvItem[] = [
           'between the tech leads of the development teams with the CTO as well as with the group of product owners in order to align and ' +
           'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months.',
         tags: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'SAFe', 'Confluence', 'GitHub Actions'],
-        thumbnail: 'MBVR.png',
+        thumbnail: 'Mercedes-Benz_Van_Rental.svg',
       },
       {
         title: 'Leading German Price Comparison Website',
@@ -132,7 +132,7 @@ export const CVITEMS: CvItem[] = [
         description: 'Maintaining and operating the platform running the e-commerce shop. ' +
           'Automating processes and enabling the development teams to fully own their application. ' +
           'Securing the cloud-based infrastructure against hacker attacks. ' +
-          'Planned and executed the migration of several services to the cloud, including the main webshop application.',
+          'Planned and executed the migration of several services to the AWS cloud, including the main webshop application.',
         tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
       },
       {
@@ -403,9 +403,9 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Recruit',
     begin: '2025',
     end: '',
-    description: 'The Federal Agency for Technical Relief is a federal agency specialised in providing technical and humanitarian assistance. ' +
+    description: 'The German Federal Agency for Technical Relief is specialised in providing technical and humanitarian assistance. ' +
       'Its 88,000 volunteer operatives help in the wake of natural disasters, accidents and other emergencies, both in Germany and abroad.',
-    link: 'https://www.thw.de',
+    link: 'https://www.thw.de/en/',
     thumbnail: 'THW.svg',
   },
   {
@@ -413,7 +413,8 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Admission, visitor services, VIP support, stand-by man, special tasks',
     begin: '2007',
     end: '2016',
-    description: 'Admission, visitor services, VIP support, stand-by man, special tasks',
+    description: "Volunteer-Service was organised by the Berlin Football Association (BFV) for the national team's matches as well as the" +
+      "men's, women's, and junior's DFB Cup Finals.",
     link: 'https://www.dfb.de',
     thumbnail: 'DFB.svg',
   },
@@ -489,7 +490,6 @@ export const VOLUNTEERING: CvItem[] = [
     link: '',
     thumbnail: 'Regatten.png',
   },
-
   {
     title: 'FISA World Rowing Junior Championships 2014 Hamburg',
     subtitle: 'IT network setup',
@@ -509,6 +509,24 @@ export const VOLUNTEERING: CvItem[] = [
     link: 'https://www.hertha.de/',
     thumbnail: 'Hertha_BSC.svg',
   },
+  {
+    title: "FIFA Women's World Cup 2011 Germany",
+    subtitle: 'Visitor service',
+    begin: '',
+    end: '2011',
+    description: 'Guiding visitors in the Olympic Stadium of Berlin.',
+    link: 'https://www.fifa.com/',
+    thumbnail: 'FIFA_Womens_World_Cup_2011.svg',
+  },
+  // {
+  //   title: 'EHF EuroHockey Club-Champions-Cup Berlin',
+  //   subtitle: 'Visitor service',
+  //   begin: '',
+  //   end: '2010',
+  //   description: 'Guiding visitors in the Olympic Hockey Stadium, located at the Olympic Park Berlin',
+  //   link: '',
+  //   thumbnail: 'EHF.jpg',
+  // },
   {
     title: 'IAAF World Championships 2009 Berlin',
     subtitle: 'Anti-Doping-Chaperone',
