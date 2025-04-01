@@ -23,7 +23,7 @@
     "@angular/forms": "19.0.6",
     "@angular/material": "19.0.5",
     "@angular/platform-browser": "19.0.6",
-    "@angular/platform-browser-dynamic": "19.0.6",
+    "@angular/platform-browser-dynamic": "19.2.4",
     "@angular/router": "19.0.6",
     "@angular/service-worker": "19.0.6",
     "core-js": "^3.39.0",
