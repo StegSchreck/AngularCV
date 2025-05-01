@@ -24,7 +24,7 @@
     "@angular/material": "19.2.8",
     "@angular/platform-browser": "19.2.5",
     "@angular/platform-browser-dynamic": "19.2.5",
-    "@angular/router": "19.2.5",
+    "@angular/router": "19.2.9",
     "@angular/service-worker": "19.2.5",
     "core-js": "^3.42.0",
     "jspdf": "^3.0.1",
