@@ -189,6 +189,16 @@ export const CVITEMS: CvItem[] = [
 ];
 
 export const CERTIFICATES: CvItem[] = [
+  // {
+  //   title: 'First Aid',
+  //   subtitle: 'Technisches Hilfswerk',
+  //   begin: '',
+  //   end: '2025-04-26',
+  //   description: '',
+  //   link: '',
+  //   thumbnail: 'THW_mit_Schriftzug.svg',
+  //   attachment: '2025_THW_ErsteHilfe.pdf',
+  // },
   {
     title: 'Introduction to FinOps',
     subtitle: 'FinOps Foundation',
