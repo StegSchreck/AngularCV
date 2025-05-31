@@ -4,6 +4,7 @@ export const FEATURE_TOGGLES = {
   tab_publications: true,
   tab_projects: true,
   tab_volunteering: true,
+  pdf_interests: false,
   contact_show_about_section: true,
   contact_email_link: false,
   contact_email_remove_at_sign: false,

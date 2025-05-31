@@ -62,9 +62,11 @@ export class PdfComponent implements OnInit {
 
   private getItems(): void {
     this.generalData = this.cvItemService.getGeneralData();
-    this.cvItemService
-      .getInterestItems()
-      .then(items => this.interestItems = items);
+    if (this.featureToggles.pdf_interests === false) {
+      this.cvItemService
+        .getInterestItems()
+        .then(items => this.interestItems = items);
+    }
     this.cvItemService
       .getCvItems()
       .then(items => this.cvItems = items);
