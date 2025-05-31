@@ -201,6 +201,16 @@ export const CVITEMS: CvItem[] = [
 ];
 
 export const CERTIFICATES: CvItem[] = [
+  {
+    title: 'AWS Badge Migration Foundation',
+    subtitle: 'Amazon Web Services (AWS)',
+    begin: '',
+    end: '2025-05-28',
+    description: 'Earners of this badge have developed technical knowledge on AWS migration concepts and services with a focus on AWS Migration Evaluator, AWS Migration Hub, and AWS Application Migration Service.',
+    link: 'https://www.credly.com/badges/57dc5062-a373-40c7-9db2-9817183721cb',
+    thumbnail: 'AWS_Badge_Migration_Foundation.png',
+    attachment: '',
+  },
   // {
   //   title: 'First Aid',
   //   subtitle: 'Technisches Hilfswerk',
