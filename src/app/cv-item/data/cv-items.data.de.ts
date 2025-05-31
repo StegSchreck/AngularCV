@@ -77,6 +77,17 @@ export const CVITEMS: CvItem[] = [
         thumbnail: 'Mercedes-Benz_Van_Rental.svg',
       },
       {
+        title: 'Merger&Acquisition Project',
+        subtitle: 'Technical Due Diligence Assessment',
+        begin: '2019-11',
+        end: '2020-01',
+        description: 'Sebastian was engaged in the technical assessment of two target companies during an M&A process. ' +
+          'This process required a thorough look into the available documentation and summarising the state of the current technical ' +
+          'landscape of the companies as well as identifying potential risks and deriving recommendations for the interested investor in a ' +
+          'concise presentation.',
+        tags: [''],
+      },
+      {
         title: 'Führende deutsche Preisvergleichsseite',
         subtitle: 'Lead Software Engineer & Architect',
         begin: '2019-08',
