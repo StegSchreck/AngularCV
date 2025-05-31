@@ -48,7 +48,8 @@ export const CVITEMS: CvItem[] = [
           'As the current architecture concept was reaching its limitations, Sebastian supported the design and implementation of a new ' +
           'solution to solve the current needs but also be ready for future extension and scaling - based on an existing corporate IAM ' +
           'solution. He actively connected engineers across team boundaries and created a focus group of principal engineers around the ' +
-          'system architects to further evolve the system architecture and engineering landscape.',
+          'system architects to further evolve the system architecture and engineering landscape. When the engineering manager decided to create two additonal internal engineering positions, Sebastian designed the recruitment process and conducted the technical interview rounds.\n\n' +
+          'While implementing the migration from the old architecture to the new landscape, Sebastian has been a role model in software craftmanship topics like clean code, lean architecture, and CI/CD concepts. Sebastian enabled other teams to re-use functionality he has developed by extracting this as a innersource Python library, setting up an independent and fully automated test and release pipeline using Gitlab CI and self-hosted Artifactory.',
         tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
         thumbnail: 'MBition.svg',
       },
@@ -71,7 +72,7 @@ export const CVITEMS: CvItem[] = [
           'this role, Sebastian was not only fulfilling the responsibilities of a full-stack engineer for the Python/React-based ' +
           'applications but also took care of cross-team collaboration topics. Furthermore, Sebastian was actively driving the connection ' +
           'between the tech leads of the development teams with the CTO as well as with the group of product owners in order to align and ' +
-          'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months.',
+          'discuss the overall IT strategy. Additionally, Sebastian took the role of the team\'s interim PO for two months. When the organisation wanted to grow their internal workforce, Sebastian co-designed the recruitment process and conducted the technical interview rounds.',
         tags: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Docker', 'Jira', 'Scrum', 'SAFe', 'Confluence', 'GitHub Actions'],
         thumbnail: 'Mercedes-Benz_Van_Rental.svg',
       },
