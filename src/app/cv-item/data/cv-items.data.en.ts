@@ -108,7 +108,7 @@ export const CVITEMS: CvItem[] = [
           'encouraged more automation, e.g. in regards to regular dependency updates jobs. ' +
           'Sebastian also supported the recently joined team lead with the hiring process and conducting full-day team workshops.',
         tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'GraphQL', 'Jira', 'Scrum', 'AWS', 'Openshift', 'Confluence', 'Jenkins', 'bash'],
-        thumbnail: 'idealo_transparent.png',
+        thumbnail: 'idealo_transparent.svg',
       },
       {
         title: 'Leading German Real Estate Platform',
@@ -202,7 +202,7 @@ export const CVITEMS: CvItem[] = [
 
 export const CERTIFICATES: CvItem[] = [
   {
-    title: 'AWS Badge Migration Foundation',
+    title: 'AWS Badge Migration Foundations',
     subtitle: 'Amazon Web Services (AWS)',
     begin: '',
     end: '2025-05-28',
@@ -445,7 +445,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Admission, visitor services, VIP support, stand-by man, special tasks',
     begin: '2007',
     end: '2016',
-    description: "Volunteer-Service was organised by the Berlin Football Association (BFV) for the national team's matches as well as the" +
+    description: "Volunteer-Service was organised by the Berlin Football Association (BFV) for the national team's matches as well as the " +
       "men's, women's, and junior's DFB Cup Finals.",
     link: 'https://www.dfb.de',
     thumbnail: 'DFB.svg',

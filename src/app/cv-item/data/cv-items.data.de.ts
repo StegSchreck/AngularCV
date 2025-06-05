@@ -106,7 +106,7 @@ export const CVITEMS: CvItem[] = [
           'Darüber hinaus brachte er auch wertvolle Automatisierungen mit ein, um etwa Dependencys zu aktualisieren. ' +
           'Auch in diesem Team unterstütze Sebastian den erst kürzlich gestarteten Teamleiter - insbesondere bei Themen Hiring und Teamkultur.',
         tags: ['Java', 'SpringBoot', 'React', 'Kafka', 'MongoDB', 'Kubernetes', 'Git', 'IntelliJ', 'Docker', 'GraphQL', 'Jira', 'Scrum', 'AWS', 'Openshift', 'Confluence', 'Jenkins', 'bash'],
-        thumbnail: 'idealo_transparent.png',
+        thumbnail: 'idealo_transparent.svg',
       },
       {
         title: 'Führende deutsche Immobilienplattform',
@@ -211,7 +211,7 @@ export const CVITEMS: CvItem[] = [
 
 export const CERTIFICATES: CvItem[] = [
   {
-    title: 'AWS Badge Migration Foundation',
+    title: 'AWS Badge Migration Foundations',
     subtitle: 'Amazon Web Services (AWS)',
     begin: '',
     end: '2025-05-28',
@@ -450,8 +450,8 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Einlass, Besucherservice, VIP Support, Springer, Sonderaufgaben',
     begin: '2007',
     end: '2016',
-    description: 'Der Helferdienst (Volunteers) wurde durch den Berlinber Fußball-Verband organisiert für die Länderspiele,' +
-      'sowie der DFB-Pokal-Endspiele der Männer, der Frauen, sowie der Junioren in Berlin.',
+    description: 'Der Helferdienst (Volunteers) wurde durch den Berliner Fußball-Verband organisiert für die Länderspiele, ' +
+      'sowie der DFB-Pokal-Endspiele der Männer, der Frauen, und der Junioren in Berlin.',
     link: 'https://www.dfb.de',
     thumbnail: 'DFB_mit_Schriftzug.png',
     // positions: [
