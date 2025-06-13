@@ -85,7 +85,7 @@ export const CVITEMS: CvItem[] = [
           'This process required a thorough look into the available documentation and summarising the state of the current technical ' +
           'landscape of the companies as well as identifying potential risks and deriving recommendations for the interested investor in a ' +
           'concise presentation.',
-        tags: [''],
+        tags: [],
       },
       {
         title: 'Leading German Price Comparison Website',
@@ -208,7 +208,7 @@ export const CERTIFICATES: CvItem[] = [
     end: '2025-05-28',
     description: 'Earners of this badge have developed technical knowledge on AWS migration concepts and services with a focus on AWS Migration Evaluator, AWS Migration Hub, and AWS Application Migration Service.',
     link: 'https://www.credly.com/badges/57dc5062-a373-40c7-9db2-9817183721cb',
-    thumbnail: 'AWS_Badge_Migration_Foundation.png',
+    thumbnail: 'AWS_Badge_Migration_Foundations.png',
     attachment: '',
   },
   // {
@@ -505,7 +505,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'SCCEvents_BerlinLaeuft.png',
   },
   {
-    title: 'Deutsche Ruderjugend im Deutschen Ruderverband',
+    title: 'Deutsche Ruderjugend (German Rowing Federation)',
     subtitle: 'Youth trainer and youth leader',
     begin: '2007',
     end: '2014',

@@ -85,7 +85,7 @@ export const CVITEMS: CvItem[] = [
           'This process required a thorough look into the available documentation and summarising the state of the current technical ' +
           'landscape of the companies as well as identifying potential risks and deriving recommendations for the interested investor in a ' +
           'concise presentation.',
-        tags: [''],
+        tags: [],
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
@@ -128,8 +128,7 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2015-06',
     end: '2018-12',
-    description: 'Später erfolgte der Wechsel von der Produktentwicklung zum Infrastrukturbetrieb. ' +
-      '',
+    description: '',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
     thumbnail: 'MisterSpex.svg',
@@ -217,7 +216,7 @@ export const CERTIFICATES: CvItem[] = [
     end: '2025-05-28',
     description: 'Dieses Badge zertifiziert technisches Wissen zu AWS Migratiosnkonzepten sowie Angeboten mit einem Schwerpunkt auf AWS Migration Evaluator, AWS Migration Hub und AWS Application Migration Service.',
     link: 'https://www.credly.com/badges/57dc5062-a373-40c7-9db2-9817183721cb',
-    thumbnail: 'AWS_Badge_Migration_Foundation.png',
+    thumbnail: 'AWS_Badge_Migration_Foundations.png',
     attachment: '',
   },
   // {
