@@ -11,5 +11,5 @@ export const FEATURE_TOGGLES = {
   default_language: 'EN', // please make sure your language is added to ../l10n/l10n.data.ts
   localization: true,
   cvitem_show_position_count_badge: true,
-  cvitem_show_position_thumbnail: false,
+  cvitem_show_position_thumbnail: true,
 };

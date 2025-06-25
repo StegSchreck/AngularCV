@@ -3,12 +3,12 @@ import { CvItem } from '../cv-item';
 /* eslint-disable max-len */
 export const GENERAL = {
   name: 'Sebastian Schreck',
-  position: 'Software Entwickler',
-  description: `Sebastian begann seine IT-Karriere als QA Werkstudent während seines Informatik-Studiums an der TU Berlin. Nach dem Abschluss der Masterarbeit wurde er ein festangestellter Vollzeit-Softwareentwickler bei Mister Spex. Dort nahm er sowohl Backend- als auch Frontend-Aufgaben wahr. Durch Unzufriedenheit bezüglich der Auftrennung von Entwicklung und Betrieb trieb es ihn zu einem Wechsel auf die Betriebsseite um dort mehr Einblicke zu gewinnen. Nachdem er beide Seiten kennengelernt hatte, wurde Sebastian zu einem starken Verfechter von DevOps Prinzipien und geteilter Verantwortung. Hierzu hielt Sebastian Vorträge auf der code.talks und DevOpsCon über die Themen DevOps, Kollaboration, Feedback-Kultur und Verantwortlichkeiten.
+  position: 'Principal Software Entwickler',
+  description: `Sebastian ist ein erfahrener Technologieexperte und Softwareentwickler mit über zehn Jahren Erfahrung, der fundierte technische Kompetenzen in Softwareentwicklung, Cloud-Architektur, und DevOps mit wirkungsstarker Führung und Mentoring kombiniert. Nach seinem Karriere-Start als QA-Werkstudent und Backend-/Frontend-Entwickler wechselte er in Führungspositionen, in denen er erfolgreich Legacy-Architekturen modernisierte, DevOps-Prinzipien und kollaborative Verantwortung etablierte und groß angelegte Cloud-Migrationsprojekte leitete. Sebastian hat umfangreiche Erfahrung in der Gestaltung skalierbarer Systeme, der Automatisierung von CI/CD-Pipelines und im Mentoring funktionsübergreifender Teams, um technische Exzellenz und Innovation voranzutreiben.
 
-Sebastian ist auf der Suche nach neuen Herausforderungen welche moderne, fortschrittliche Technologien beinhalten und ein kollaboratives Arbeitsumfeld. Sich neues Wissen anzueignen und neue Technologien auszuprobieren sind Teil seiner Motivation. Neue Stellen sind für Sebastian interessant, falls diese es ermöglichen die Software über den gesamten Weg zu begleiten: von der Planung über die Implementierung bis hin zum Deployment und Monitoring. Verstärkte Feedback-Zyklen und eine Kultur des stetigen Lernens und Experimentierens definieren eine ordentliche Arbeitsumgebung für ihn. Angebote für Stellen außerhalb Berlins sind für Sebastian nicht relevant.
+Sebastian fühlt sich in Umgebungen wohl, in denen er alle Phasen des Software-Lebenszyklus aktiv begleiten kann – von der Konzeption und Entwicklung bis hin zur Bereitstellung und Überwachung. Seine Expertise umfasst dabei Technologien wie Python, Java, AWS, Terraform, Docker, Kubernetes und CI/CD ebenso wie agile Methoden wie Scrum, Kanban und SAFe. Besonders wichtig sind ihm Software craftsmanship, sowie saubere Architekturen und Automatisierung, um Teams dazu zu befähigen, innovative, wartbare und zuverlässige Systeme zu entwickeln.
 
-Diese Internetseite wurde als einfacher, selbst-gehosteter online-Lebenslauf konzipiert. Um mehr hierüber zu erfahren, bitte auf das AngularCV logo in der unteren, rechten Ecke klicken.`,
+Darüber hinaus trägt Sebastian aktiv zur Skalierung von Organisationen bei – sei es durch die Rekrutierung neuer Talente, das Mentoring von Fachkräften oder die Organisation strategischer Wissensaustausch-Formate. Ein bemerkenswertes Beispiel dafür ist die erfolgreiche Durchführung des größten internen Wissensaustausch-Events bei Netlight, welches sich auf Software-Engineering- und Architektur-Themen fokussierte. Dank seiner einzigartigen Kombination aus technischer Expertise, Führungsqualitäten und kollaborativer Stärke ist Sebastian prädestiniert für Rollen wie Principal Engineer, Cloud Architect oder Engineering Manager – insbesondere in Unternehmen, die auf digitale Innovation, groß angelegte Systemmodernisierung oder Cloud-Transformation setzen.`,
 };
 /* eslint-enable max-len */
 
@@ -18,24 +18,25 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
     end: '',
-    description: 'Netlight ist eine IT-Beratungsfirma mit Büros in ' +
-      'Stockholm, Oslo, München, Berlin, Hamburg, Kopenhagen, Helsinki, Zürich, Frankfurt, Amsterdam, Köln und Toronto. ' +
-      'Der Kern von IT-Consulting für uns sind die Talente, welche in Kooperation miteinander wertvolle Ergebnisse für unsere Kunden erbringen.\n\n' +
-      'Neben der Tätigkeit als IT Consultant ist Sebastian hier auch als Führungskraft (genannt "Mentor") sowie als technischer und ' +
-      'persönlicher Coach im Kundenprojekt-Kontext aktiv. ' +
-      'Außerdem führt er regelmäßig technische Interviews um die passenden Kandidaten für die nächsten Generationen auszuwählen.',
+    description: `Netlight ist eine Beratungsgesellschaft, die den Schwerpunkt auf Zusammenarbeit legt, um maßgeschneiderte und wertvolle Ergebnisse für ihre Kunden zu liefern. Durch die vollständige Integration in die Kundenteams übertreffen die Berater regelmäßig die Erwartungen, indem sie die tatsächlichen Bedürfnisse der Kunden adressieren. Über seine Rolle als IT-Berater hinaus hat Sebastian wesentliche Beiträge zur Entwicklung sowohl von Kollegen als auch der Organisation insgesamt geleistet.
+
+Als disziplinarischer Mentor förderte Sebastian kontinuierlich das Wachstum seiner Mentees, und trieb die globale „Welcome to Level“-Eventserie voran, die Karrieremeilensteine feiert. Außerdem übernimmt er eine zentrale Rolle als Pilot-Interviewer, indem er sich mit junior Interviewern zusammenschließt, um qualitativ hochwertige und evidenzbasierte Entscheidungen bei der Kandidatenbewertung sicherzustellen. Mit der Erfahrung aus über 50 durchgeführten technischen Interviews ist Sebastian maßgeblich an der Gestaltung der nächsten Generation von Netlightern beteiligt.
+
+Sebastian hat den Umfang des Delivery Coachings erweitert, indem er Kollegen sowohl auf Kundenprojekten als auch in internen Rollen unterstützt, die Matching-Prozesse optimiert und Dashboards entwickelt hat, um die „Gesundheit“ des Coachings zu überwachen und zu verbessern. Als Engagement Coach richtete er die Arbeit der Delivery-Teams auf die Erwartungen der Kunden aus, während er weitere Möglichkeiten zur Zusammenarbeit identifizierte. Intern war Sebastian darüber hinaus Teil des Employer Value Proposition Teams und führte datengetriebene Ansätze in die Diskussionen rund um Gehalts- und Benefitstrukturen der fünf deutschen Standorte ein. Zusätzlich übernahm er die Rolle des strategischen Stakeholders in internen Projekten, z.B. zur Erstellung einer flexiblen Event-App, die sowohl für interne als auch externe Veranstaltungen genutzt wird.
+
+Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung für die Organisation des größten globalen Wissensaustausch-Events von Netlight, das sich auf Themen aus den Bereichen Software Engineering und Architektur konzentrierte. Diese Initiativen verdeutlichen Sebastians Fähigkeit, technisches Fachwissen, Leadership und Zusammenarbeit zu vereinen, um wirkungsvolle Ergebnisse auf verschiedenen organisatorischen Ebenen zu erzielen.`,
     tags: ['Principal Engineer', 'Staff Engineer', 'Engineering Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight.svg',
     positions: [
       {
         title: 'Skandinavische Bank',
-        subtitle: 'Cloud Migration Expert',
+        subtitle: 'Staff Consultant',
         begin: '2025-02',
         end: '',
         description: 'In diesem Projekt arbeitete Sebastian zusammen mit einem Hyperscaler Beratungsteam bei einer großen Skandinavischen ' +
-          'Bank um deren large-scale Cloud Migration mittels eines innovativen Hyper-Automation Ansatzes zu untersützen.',
-        tags: ['AWS', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Jira', 'Confluence', 'bash', 'PowerShell'],
+          'Bank um deren large-scale Cloud Migration mittels eines innovativen Hyper-Automation Ansatzes zu unterstützen.',
+        tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
       },
       {
@@ -128,7 +129,7 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2015-06',
     end: '2018-12',
-    description: '',
+    description: 'Sebastian trug maßgeblich zum Erfolg von Mister Spex bei, indem er Backend- und Frontend-Funktionen für die auf Intershop basierende E-Commerce-Plattform entwickelte. Ein Schlüsselprojekt war die Entwicklung der GlassAPI, eines eigenständigen Microservices zur Preisberechnung und Funktionskonfiguration von Brillen, der den Logistikprozess vom Deployment des Webshop-Monolithen entkoppelte. Er erkannte den Wert von bereichsübergreifender Zusammenarbeit und trieb die Einführung von DevOps-Prinzipien voran, bevor er vollständig in das Infrastruktur-Team wechselte. In dieser Rolle automatisierte er Prozesse, erhöhte die Sicherheit der Plattform durch Maßnahmen gegen Hackerangriffe und leitete die Migration der Plattform zu AWS mithilfe von Infrastructure-as-Code-Tools wie CloudFormation und Ansible. Sebastians Arbeit ermöglichte es den Entwicklungsteams, Verantwortung für ihre Anwendungen zu übernehmen, und verbesserte Skalierbarkeit sowie Resilienz der E-Commerce-Plattform.',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
     thumbnail: 'MisterSpex.svg',
@@ -138,10 +139,7 @@ export const CVITEMS: CvItem[] = [
         subtitle: 'Cloud / Infrastructure',
         begin: '2017',
         end: '2018-12',
-        description: 'Instandhaltung und Betrieb der IT-Plattform auf welcher der E-Commerce-Shop läuft. ' +
-          'Automatisierung von Prozessen and Unterstützung der Entwicklungsteams in ihrer Arbeit. ' +
-          'Sicherung der Cloud-Umgebung gegenüber Angreifern. ' +
-          'Planung und Durchführung der Migrations mehrerer Anwendungen hin zur AWS Cloud, darunter der Haupt-Webshop.',
+        description: 'Im Bereich Infrastruktur-Operations bei Mister Spex konnte Sebastian durch die Modernisierung der Cloud-Operations und Verbesserung der Plattform-Sicherheit überzeugen. Ein Meilenstein war die Migration zentraler Services, einschließlich der Webshop-Anwendung, zurück in die AWS Cloud. Durch den Einsatz von Infrastructure as Code (IaC) mit Tools wie AWS CloudFormation und Ansible automatisierte er Entwicklungs- und Deployment-Prozesse und schuf eine sichere, skalierbare und belastbare Infrastruktur. Darüber hinaus setzte er Schutzmaßnahmen gegen Hackerangriffe um und führte interne Schulungen sowie Workshops ein, um Wissen und Best Practices im Team zu teilen. Mit seinem ganzheitlichen Ansatz optimierte Sebastian nicht nur die betriebliche Effizienz, sondern positionierte Mister Spex erfolgreich, um das Potenzial der Cloud-Technologien voll auszuschöpfen.',
         tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
       },
       {
@@ -149,8 +147,7 @@ export const CVITEMS: CvItem[] = [
         subtitle: 'Backend und Frontend',
         begin: '2015-06',
         end: '2017',
-        description: 'Implementierung von Features auf der E-Commerce Plattform Intershop. ' +
-          'Entwicklung einer separierted API als Microservice nach DevOps Prinzipien welche die Preise und Kombinationsmöglichkeiten der Brillengläser berechnet. ',
+        description: 'Während seiner Zeit bei Mister Spex leistete Sebastian entscheidende Beiträge zur Weiterentwicklung des Webshops, mit einem Fokus auf Backend- und Frontend-Funktionalitäten sowie Microservice-Architektur. Ein besonders bedeutendes Projekt war die Konzeption und Umsetzung der GlassAPI, eines dedizierten Microservices zur Preisberechnung und Funktionskonfiguration von Brillen. Diese Lösung entkoppelte den ERP-basierten Logistikprozess vom Webshop-Monolithen und ermöglichte ungestörte Logistikabläufe während Webshop-Deployments. Durch die Integration des Microservices in die bestehende Systemlandschaft schuf Sebastian eine skalierbare und wartbare Lösung. Darüber hinaus arbeitete er an der Anpassung der kommerziellen E-Commerce-Plattform und überbrückte klassische Rollengrenzen zwischen Backend- und Frontendentwicklung, was die Effizienz im Team deutlich steigerte.',
         tags: ['Intershop', 'Java', 'Git', 'Jira', 'Scrum', 'Javascript', 'Maven', 'jQuery', 'AWS', 'Confluence', 'Bamboo', 'GitLab', 'Oracle PL/SQL', 'eclipse', 'bash', 'TDD'],
       },
     ],
@@ -160,7 +157,8 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Werkstudent Produktmanagement / Quality Assurance',
     begin: '2012-10',
     end: '2015-05',
-    description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. Planung und Durchführung von Releases.',
+    description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. ' +
+      'Planung und Durchführung von Releases.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
     thumbnail: 'MisterSpex.svg',
@@ -798,16 +796,8 @@ export const INTERESTS = [
     icon: 'icon-book',
   },
   {
-    title: 'Rudern',
-    icon: 'rowing',
-  },
-  {
     title: 'Fotografie',
     icon: 'camera_alt',
-  },
-  {
-    title: 'Ehrenamt im Sport',
-    icon: 'favorite',
   },
 ];
 

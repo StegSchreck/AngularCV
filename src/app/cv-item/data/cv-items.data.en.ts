@@ -3,12 +3,12 @@ import { CvItem } from '../cv-item';
 /* eslint-disable max-len */
 export const GENERAL = {
   name: 'Sebastian Schreck',
-  position: 'Software Engineer',
-  description: `Sebastian started his career in IT as a QA Engineer during his studies of Computer Science at TU Berlin. After completing his master's thesis, Sebastian became a professional software engineer at Mister Spex doing backend as well as frontend development. Unhappy with the segregation between Operations and Development teams, he decided to transfer into Ops full time to get more insights. Having seen both sides of the wall of confusion, Sebastian became a strong advocate for DevOps principles and shared responsibility. He talked at code.talks and DevOpsCon about the topics DevOps, collaboration, feedback culture, and responsibilities.
+  position: 'Principal Software Engineer',
+  description: `Sebastian is a technology leader and seasoned software engineer with over ten years of experience, bridging strong technical expertise in cloud architecture, DevOps, and software development with impactful leadership and mentoring roles. Beginning his career as a QA working student and backend/frontend developer, he transitioned into leadership positions where he successfully modernized legacy architectures, championed DevOps principles and collaborative responsibility, and drove large-scale cloud migration projects. Sebastian has extensive experience designing scalable systems, automating CI/CD pipelines, and mentoring cross-functional teams to foster engineering excellence and innovation.
 
-Sebastian am looking for new opportunities which include modern, progressive technologies in a collaborative working environment. Learning new things and trying out new stuff are part of his motivation. New roles are of interest if he can accompany the software end to end - from planning, implementation, deployment towards monitoring. Amplified feedback loops and a culture of continuous learning and experimentation define a proper working environment for him. Job offers outside of Berlin are not relevant to him.
+Passionate about modern technologies, continuous learning, and cultivating shared ownership, Sebastian thrives in environments where he can participate in every stage of the software lifecycle — from ideation and development to deployment and monitoring. Sebastian’s expertise spans technologies like Python, Java, AWS, Terraform, Docker, Kubernetes, and CI/CD, alongside agile methodologies like Scrum, KanBan, and SAFe. He is passionate about software craftsmanship, clean architecture, automation, and enabling teams to build innovative, maintainable, reliable systems. Beyond technical prowess, Sebastian has been actively involved in scaling organizations through recruitment, mentoring, and strategic knowledge-sharing events, such as organizing Netlight's largest internal knowledge-sharing event focussing on software engineering and architecture topics.
 
-This website is designed to be a simple, self-hosted online-CV, based on Angular. To find out more about the project, please click on the AngularCV logo in the bottom right corner.`,
+His strong leadership capabilities in stakeholder alignment, recruitment, and coaching complement his hands-on technical expertise in cloud and software engineering. Sebastian seeks a role where he can combine technical architecture with strategic influence. His unique blend of technical depth, leadership, and collaborative skills make him an excellent fit for roles such as Principal Engineer, Cloud Architect, or Engineering Manager in organizations focusing on digital innovation, large-scale system modernization, or cloud transformation.`,
 };
 /* eslint-enable max-len */
 
@@ -18,24 +18,25 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
     end: '',
-    description: 'Netlight is a genuine consulting firm. We refine the concept of IT-consulting to be about talents who, in cooperation, ' +
-      'create valuable results for our clients. Currently we have offices in ' +
-      'Stockholm, Oslo, Munich, Berlin, Hamburg, Copenhagen, Helsinki, Zurich, Frankfurt, Amsterdam, Cologne, and Toronto.\n\n' +
-      'Apart from his role as an IT consultant, Sebastian is also actively involved in the personal development of his colleagues through ' +
-      'his roles as a mentor as well as a personal and technical coach in the context of client engagements. ' +
-      'Furthermore, he is regularly conducting technical interviews to find the best matches to shape the future generations.',
+    description: `Netlight is a consulting firm that emphasises collaboration and leveraging talent to deliver tailored, valuable results for clients. Fully integrated into client teams, consultants consistently exceed expectations by addressing real client needs. Beyond his role as an IT consultant, Sebastian has made extensive contributions to the development of colleagues and the organisation as a whole.
+
+As a disciplinary lead (mentor), Sebastian fostered the continuous growth and development of his mentees, and driving the global "Welcome to Level" event series, celebrating career milestones. He also plays a key role as a pilot interviewer, pairing with junior interviewers to ensure high-quality evaluations and evidence-based decisions about candidates. With experience conducting over 50 technical interviews, Sebastian is instrumental in shaping the future generations of Netlighters.
+
+Sebastian broadened the scope of Delivery Coaching, supporting consultants both on and off client projects, improving matching processes, and building dashboards to monitor and enhance coaching health metrics. As an Engagement Coach, he aligned delivery teams with client expectations while identifying partnership opportunities. Internally, Sebastian contributed to the Employer Value Proposition team, introducing data-driven approaches to salary and benefits decisions, and acted as the strategic stakeholder on an internal project to create a flexible event app used for internal and external events.
+
+His leadership is exemplified by his role in organising Netlight’s largest global knowledge-sharing event, focusing on software engineering and architecture. These initiatives showcase Sebastian’s ability to balance technical expertise, leadership, and collaboration to drive impactful outcomes across multiple organisational layers.`,
     tags: ['Principal Engineer', 'Staff Engineer', 'Engineering Leadership', 'Product Owner', 'Mentoring', 'Coaching'],
     link: 'https://www.netlight.com',
     thumbnail: 'Netlight.svg',
     positions: [
       {
         title: 'Scandinavian Bank',
-        subtitle: 'Cloud Migration Expert',
+        subtitle: 'Staff Consultant',
         begin: '2025-02',
         end: '',
         description: 'For this project, Sebastian joined forces with a hyperscaler consulting team to support the large-scale cloud ' +
           'migration of a large Scandinavian bank using an innovative hyper-automation approach.',
-        tags: ['AWS', 'Terraform', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Jira', 'Confluence', 'bash', 'PowerShell'],
+        tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
       },
       {
@@ -131,30 +132,25 @@ export const CVITEMS: CvItem[] = [
     subtitle: 'Professional Software Engineer',
     begin: '2015-06',
     end: '2018-12',
-    description: '',
+    description: 'Sebastian contributed to the growth of Mister Spex by developing backend and frontend features for the e-commerce platform based on Intershop. He played a key role in building the GlassAPI microservice, which improved price calculation and feature configuration processes while decoupling different parts of the system landscape. Recognizing the value of cross-functional collaboration, Sebastian drove the adoption of DevOps principles, eventually joining the infrastructure operations team. In this role, he automated processes, enhanced platform security to mitigate hacker attacks, and led the AWS cloud migration project using Infrastructure as Code (IaC) tools like CloudFormation and Ansible. His efforts empowered development teams and improved the scalability and resilience of the e-commerce platform.',
     tags: ['Cloud', 'Infrastructure', 'Microservice', 'Architecture', 'Backend', 'Fullstack', 'Operations', 'DevOps Culture'],
     link: 'https://www.misterspex.com',
     thumbnail: 'MisterSpex.svg',
     positions: [
       {
-        title: 'Webshop Operations',
+        title: 'Webshop Operations Team',
         subtitle: 'Cloud / Infrastructure',
         begin: '2017',
         end: '2018-12',
-        description: 'Maintaining and operating the platform running the e-commerce shop. ' +
-          'Automating processes and enabling the development teams to fully own their application. ' +
-          'Securing the cloud-based infrastructure against hacker attacks. ' +
-          'Planned and executed the migration of several services to the AWS cloud, including the main webshop application.',
+        description: 'Sebastian excelled in infrastructure operations at Mister Spex by modernizing its cloud operations and strengthening platform security. He was instrumental in migrating key services, including the webshop application, to AWS cloud infrastructure. Leveraging Infrastructure as Code (IaC) with tools like AWS CloudFormation and Ansible, he automated deployment and development workflows, ensuring a secure, scalable, and resilient environment for the e-commerce platform. Additionally, he implemented measures to protect the cloud infrastructure from hacker attacks and conducted internal workshops to share his expertise. His holistic approach to cloud adoption and security improved operational efficiency and positioned Mister Spex to leverage the full potential of cloud technologies. The cloud migration approach was also shared in a talk Sebastian held at a public AWS event.',
         tags: ['GitLab CI', 'Git', 'Docker', 'Jira', 'KanBan', 'AWS', 'Confluence', 'Bamboo', 'Kubernetes', 'Ansible', 'Python', 'Apache HTTPD', 'bash', 'PyCharm'],
       },
       {
-        title: 'Webshop Development',
+        title: 'Webshop Development Team',
         subtitle: 'Backend and Frontend',
         begin: '2015-06',
         end: '2017',
-        description: 'Implementing features for the e-Commerce platform Intershop in order to customize it. ' +
-          'Developing a separated API as microservice in a DevOps way, which is responsible for price calculation and ' +
-          'feature configuration of prescription glasses. Later switched to the operations team. ',
+        description: 'During his tenure at Mister Spex, Sebastian made significant contributions to webshop development, focusing on backend and frontend enhancements as well as microservice architecture. A cornerstone achievement was the design and implementation of the GlassAPI, a standalone microservice responsible for pricing and feature configuration of prescription glasses. This system resolved operational dependencies between the ERP system and the webshop monolith, allowing uninterrupted logistics operations during webshop deployments. By seamlessly integrating the API into the company\'s infrastructure, Sebastian ensured a scalable and maintainable solution. He worked on customizing the commercial e-commerce platform and bridging traditional backend and frontend roles, fostering cross-functional efficiency.',
         tags: ['Intershop', 'Java', 'Git', 'Jira', 'Scrum', 'Javascript', 'Maven', 'jQuery', 'AWS', 'Confluence', 'Bamboo', 'GitLab', 'Oracle PL/SQL', 'eclipse', 'bash', 'TDD'],
       },
     ],
@@ -633,16 +629,8 @@ export const INTERESTS = [
     icon: 'icon-book',
   },
   {
-    title: 'Rowing',
-    icon: 'rowing',
-  },
-  {
     title: 'Photography',
     icon: 'camera_alt',
-  },
-  {
-    title: 'Volunteering in sports',
-    icon: 'favorite',
   },
 ];
 
