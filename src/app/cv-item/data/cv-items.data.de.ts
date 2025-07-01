@@ -34,9 +34,8 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
         subtitle: 'Staff Consultant',
         begin: '2025-02',
         end: '',
-        description: 'In diesem Projekt arbeitete Sebastian zusammen mit einem Hyperscaler Beratungsteam bei einer großen Skandinavischen ' +
-          'Bank um deren large-scale Cloud Migration mittels eines innovativen Hyper-Automation Ansatzes zu unterstützen.',
-        tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
+        description: 'Unterstützung bei der Cloud-Migration einer skandinavischen Bank in Zusammenarbeit mit AWS ProServe, wobei Cutover.com-Runbooks, Terraform und Lambda-Funktionen zur Hyperautomatisierung und Optimierung der Workflows eingesetzt wurden. Entwicklung von EC2 Image Builder-Pipelines für konforme, wiederverwendbare AMIs mit Terraform IaC und einem GitOps-Ansatz sowie Aufbau der Infrastruktur für eine synthetische Anwendung, um Migrationsworkflows zu demonstrieren. Fokussiert auf Automatisierung-First-Strategien zur Steigerung von Effizienz und Einhaltung von Vorschriften in stark regulierten Umgebungen unter enger Zusammenarbeit mit AWS-Experten, um skalierbare und sichere Lösungen zu liefern.',
+        tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'Cutover', 'Lambda', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
       },
       {
@@ -59,9 +58,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
         subtitle: 'Tech Lead & Technical Product Owner',
         begin: '2022-07',
         end: '2023-06',
-        description: 'Sebastian leitete ein Team welches an der Digitalisierung und Automatisierung der Wirtschaftsprüfungsprozesse arbeitete. ' +
-          'Als Teil der globalen Anstrengungen der Wirtschaftsprüfungsgesellschaft wurden die Prüfungsprozesse hierbei ' +
-          'vereinfacht, beschleunigt und Fehler-unanfälliger gemacht.',
+        description: 'Sebastian leitete ein Engineering-Team zur Digitalisierung von Audit-Workflows, um Prozesse schneller, gründlicher und weniger fehleranfällig zu gestalten. Im Rahmen der globalen Digitalisierungsinitiative des Kunden arbeitete das Team an ETL-Prozessen für Versicherungsdaten mit Python, Docker und Azure. Sebastian steuerte die Kommunikation mit Stakeholdern, förderte den Wissensaustausch zur Lösung gemeinsamer Herausforderungen und führte Best Practices wie CI/CD, automatisierte Abhängigkeitsupdates und Schwachstellenscans ein. Darüber hinaus betreute er Compliance-Prozesse für maßgeschneiderte Anwendungen.',
         tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
         thumbnail: 'PwC.svg',
       },

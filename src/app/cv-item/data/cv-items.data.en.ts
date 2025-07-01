@@ -34,9 +34,8 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
         subtitle: 'Staff Consultant',
         begin: '2025-02',
         end: '',
-        description: 'For this project, Sebastian joined forces with a hyperscaler consulting team to support the large-scale cloud ' +
-          'migration of a large Scandinavian bank using an innovative hyper-automation approach.',
-        tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
+        description: 'Contributed to the large-scale cloud migration of a Scandinavian bank in collaboration with AWS ProServe, employing hyperautomation with Cutover.com runbooks, Terraform, and Lambda functions to streamline workflows. Provisioned EC2 Image Builder pipelines for compliant, reusable AMIs using Terraform IaC with a GitOps approach, and built infrastructure for a synthetic application to showcase migration workflows. Focused on automation-first strategies to enhance efficiency and compliance in a highly regulated environment, leveraging close collaboration with AWS experts to deliver scalable and secure solutions.',
+        tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'Cutover', 'Lambda', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
       },
       {
@@ -59,8 +58,7 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
         subtitle: 'Tech Lead & Technical Product Owner',
         begin: '2022-07',
         end: '2023-06',
-        description: 'Sebastian lead an engineering team which worked on the digitalization of audit workflows to make the audit process ' +
-          'easier, faster, more thorough, and less error-prone for the auditors. This is part of the global digitalization initiatives of the audit company.',
+        description: 'Sebastian led an engineering team to digitalise audit workflows, making processes faster, more thorough, and less error-prone. As part of the client’s global digitalisation initiative, the team worked on ETL processes for insurance claims data using Python, Docker, and Azure. Sebastian managed communication with stakeholders, fostered knowledge exchange to solve shared challenges, and introduced best practices like CI/CD, automated dependency updates, and vulnerability scans. He also oversaw compliance processes for tailored applications.',
         tags: ['Python', 'Kubernetes', 'Git', 'KanBan', 'IntelliJ', 'Azure DevOps', 'Docker', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
         thumbnail: 'PwC.svg',
       },
