@@ -1,72 +1,114 @@
-<mat-card class="cv-card closed" appCvItem *ngIf="cvItem">
-  <span class="cv-thumbnail">
-    <img src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" width="100px" alt="" *ngIf="cvItem.thumbnail !== undefined && cvItem.thumbnail !== ''">
-    <span class="vertical-divider"></span>
-  </span>
-  <span class="timespan">
-    <span class="timespan-begin" *ngIf="cvItem.begin !== undefined && cvItem.begin !== ''">
-      {{cvItem.begin}}
-      <mat-icon>arrow_forward</mat-icon>
+@if (cvItem) {
+  <mat-card class="cv-card closed" appCvItem>
+    <span class="cv-thumbnail">
+      @if (cvItem.thumbnail !== undefined && cvItem.thumbnail !== '') {
+        <img src="assets/img/item-thumbnails/{{cvItem.thumbnail}}" width="100px" alt="">
+      }
+      <span class="vertical-divider"></span>
     </span>
-    <span class="timespan-end" *ngIf="cvItem.end !== undefined && cvItem.end !== ''">{{cvItem.end}}</span>
-    <span class="timespan-end" *ngIf="!(cvItem.end !== undefined && cvItem.end !== '')">{{l10n.cv_item.now}} <mat-icon>access_time</mat-icon></span>
-  </span>
-  <mat-card-header>
-    <mat-card-title>{{cvItem.title}}</mat-card-title>
-    <mat-card-subtitle>{{cvItem.subtitle}}</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-content>
-    <p *ngIf="cvItem.description !== undefined && cvItem.description !== ''" class="cv-item__description preformatted">{{cvItem.description}}</p>
-    <mat-chip-set *ngIf="cvItem.tags !== undefined && cvItem.tags.length > 0">
-      <mat-chip *ngFor="let tag of cvItem.tags" class="cv-item__tag">
-        <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
-        <span class="cv-item__tag__text">{{tag}}</span>
-      </mat-chip>
-    </mat-chip-set>
-    <div *ngIf="cvItem.positions !== undefined && cvItem.positions.length > 0" class="cv-item__positions">
-      <span>{{l10n.cv_item.positions}}</span>
-    </div>
-    <div *ngFor="let position of cvItem.positions" class="cv-item__position">
-      <span class="cv-item__position__marker"></span>
-      <img src="assets/img/item-thumbnails/{{position.thumbnail}}" width="80px" alt="" *ngIf="featureToggles.cvitem_show_position_thumbnail && position.thumbnail !== undefined && position.thumbnail !== ''">
-      <span class="cv-item__position__timespan">
-        <span class="cv-item__position__timespan-begin" *ngIf="position.begin !== undefined && position.begin !== ''">
-          {{position.begin}}
+    <span class="timespan">
+      @if (cvItem.begin !== undefined && cvItem.begin !== '') {
+        <span class="timespan-begin">
+          {{cvItem.begin}}
           <mat-icon>arrow_forward</mat-icon>
         </span>
-        <span class="cv-item__position__timespan-end" *ngIf="position.end !== undefined && position.end !== ''">{{position.end}}</span>
-        <span class="cv-item__position__timespan-end" *ngIf="!(position.end !== undefined && position.end !== '')">{{l10n.cv_item.now}} <mat-icon>access_time</mat-icon></span>
-      </span>
-      <p class="cv-item__position__headline">
-        <span class="cv-item__position__title">{{position.title}}</span><br>
-        <span class="cv-item__position__subtitle">{{position.subtitle}}</span>
-      </p>
-      <p *ngIf="position.description !== undefined && position.description !== ''"  class="cv-item__position__description preformatted">{{position.description}}</p>
-
-      <mat-chip-set *ngIf="position.tags !== undefined && position.tags.length > 0">
-        <mat-chip *ngFor="let tag of position.tags" class="small-chip cv-item__position__tag">
-          <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}" *ngIf="tag !== undefined && tag !== ''"></i>
-          <span class="cv-item__position__tag__text">{{tag}}</span>
-        </mat-chip>
-      </mat-chip-set>
-    </div>
-  </mat-card-content>
-
-  <button mat-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
-          *ngIf="(cvItem.description !== undefined && cvItem.description !== '')
-           || (cvItem.tags !== undefined && cvItem.tags.length > 0)
-           || cvItem.link !== undefined && cvItem.link !== ''
-           || cvItem.attachment !== undefined && cvItem.attachment !== ''">
-    <mat-icon aria-label="toggle details" [matBadge]="cvItem.positions ? cvItem.positions.length : 0" matBadgeColor="primary" [matBadgeHidden]="!featureToggles.cvitem_show_position_count_badge || cvItem.positions === undefined || cvItem.positions.length === 0"></mat-icon>
-  </button>
-  <mat-card-actions>
-    <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" rel="noopener" *ngIf="cvItem.link !== undefined && cvItem.link !== ''">
-      <mat-icon>link</mat-icon>
-      {{l10n.cv_item.button_view_link}}
-    </a>
-    <a mat-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" rel="noopener" *ngIf="cvItem.attachment !== undefined && cvItem.attachment !== ''">
-      <mat-icon>attachment</mat-icon>
-      {{l10n.cv_item.button_view_attachment}}
-    </a>
-  </mat-card-actions>
-</mat-card>
+      }
+      @if (cvItem.end !== undefined && cvItem.end !== '') {
+        <span class="timespan-end">{{cvItem.end}}</span>
+      }
+      @if (!(cvItem.end !== undefined && cvItem.end !== '')) {
+        <span class="timespan-end">{{l10n.cv_item.now}} <mat-icon>access_time</mat-icon></span>
+      }
+    </span>
+    <mat-card-header>
+      <mat-card-title>{{cvItem.title}}</mat-card-title>
+      <mat-card-subtitle>{{cvItem.subtitle}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      @if (cvItem.description !== undefined && cvItem.description !== '') {
+        <p class="cv-item__description preformatted">{{cvItem.description}}</p>
+      }
+      @if (cvItem.tags !== undefined && cvItem.tags.length > 0) {
+        <mat-chip-set>
+          @for (tag of cvItem.tags; track tag) {
+            <mat-chip class="cv-item__tag">
+              @if (tag !== undefined && tag !== '') {
+                <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}"></i>
+              }
+              <span class="cv-item__tag__text">{{tag}}</span>
+            </mat-chip>
+          }
+        </mat-chip-set>
+      }
+      @if (cvItem.positions !== undefined && cvItem.positions.length > 0) {
+        <div class="cv-item__positions">
+          <span>{{l10n.cv_item.positions}}</span>
+        </div>
+      }
+      @for (position of cvItem.positions; track position) {
+        <div class="cv-item__position">
+          <span class="cv-item__position__marker"></span>
+          @if (featureToggles.cvitem_show_position_thumbnail && position.thumbnail !== undefined && position.thumbnail !== '') {
+            <img src="assets/img/item-thumbnails/{{position.thumbnail}}" width="80px" alt="">
+          }
+          <span class="cv-item__position__timespan">
+            @if (position.begin !== undefined && position.begin !== '') {
+              <span class="cv-item__position__timespan-begin">
+                {{position.begin}}
+                <mat-icon>arrow_forward</mat-icon>
+              </span>
+            }
+            @if (position.end !== undefined && position.end !== '') {
+              <span class="cv-item__position__timespan-end">{{position.end}}</span>
+            }
+            @if (!(position.end !== undefined && position.end !== '')) {
+              <span class="cv-item__position__timespan-end">{{l10n.cv_item.now}} <mat-icon>access_time</mat-icon></span>
+            }
+          </span>
+          <p class="cv-item__position__headline">
+            <span class="cv-item__position__title">{{position.title}}</span><br>
+            <span class="cv-item__position__subtitle">{{position.subtitle}}</span>
+          </p>
+          @if (position.description !== undefined && position.description !== '') {
+            <p  class="cv-item__position__description preformatted">{{position.description}}</p>
+          }
+          @if (position.tags !== undefined && position.tags.length > 0) {
+            <mat-chip-set>
+              @for (tag of position.tags; track tag) {
+                <mat-chip class="small-chip cv-item__position__tag">
+                  @if (tag !== undefined && tag !== '') {
+                    <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}"></i>
+                  }
+                  <span class="cv-item__position__tag__text">{{tag}}</span>
+                </mat-chip>
+              }
+            </mat-chip-set>
+          }
+        </div>
+      }
+    </mat-card-content>
+    @if ((cvItem.description !== undefined && cvItem.description !== '')
+      || (cvItem.tags !== undefined && cvItem.tags.length > 0)
+      || cvItem.link !== undefined && cvItem.link !== ''
+      || cvItem.attachment !== undefined && cvItem.attachment !== '') {
+      <button mat-icon-button class="toggle-details" color="primary" (click)="toggleDetails($event)"
+        >
+        <mat-icon aria-label="toggle details" [matBadge]="cvItem.positions ? cvItem.positions.length : 0" matBadgeColor="primary" [matBadgeHidden]="!featureToggles.cvitem_show_position_count_badge || cvItem.positions === undefined || cvItem.positions.length === 0"></mat-icon>
+      </button>
+    }
+    <mat-card-actions>
+      @if (cvItem.link !== undefined && cvItem.link !== '') {
+        <a mat-button color="primary" href="{{cvItem.link}}" target="_blank" rel="noopener">
+          <mat-icon>link</mat-icon>
+          {{l10n.cv_item.button_view_link}}
+        </a>
+      }
+      @if (cvItem.attachment !== undefined && cvItem.attachment !== '') {
+        <a mat-button color="primary" href="assets/attachments/{{cvItem.attachment}}" target="_blank" rel="noopener">
+          <mat-icon>attachment</mat-icon>
+          {{l10n.cv_item.button_view_attachment}}
+        </a>
+      }
+    </mat-card-actions>
+  </mat-card>
+}

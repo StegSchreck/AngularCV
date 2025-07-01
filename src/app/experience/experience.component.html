@@ -4,4 +4,6 @@
     {{l10n.experience.title}}
   </mat-card-title>
 </mat-card>
-<app-cv-item *ngFor="let item of experienceItems" [cvItem]="item"></app-cv-item>
+@for (item of experienceItems; track item) {
+  <app-cv-item [cvItem]="item"></app-cv-item>
+}

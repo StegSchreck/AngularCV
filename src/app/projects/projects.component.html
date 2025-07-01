@@ -4,4 +4,6 @@
     {{l10n.projects.title}}
   </mat-card-title>
 </mat-card>
-<app-cv-item *ngFor="let item of projectItems" [cvItem]="item"></app-cv-item>
+@for (item of projectItems; track item) {
+  <app-cv-item [cvItem]="item"></app-cv-item>
+}

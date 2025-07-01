@@ -8,25 +8,37 @@
   <mat-card-header>
     <div mat-card-avatar class="overview-header-image" (click)="showAvatar()"></div>
     <mat-card-title>{{l10n.overview.subtitle_aboutme}}</mat-card-title>
-    <mat-card-subtitle *ngIf="generalData !== undefined && generalData.position !== undefined && generalData.position !== ''">
-      {{generalData.position}}
-    </mat-card-subtitle>
+    @if (generalData !== undefined && generalData.position !== undefined && generalData.position !== '') {
+      <mat-card-subtitle>
+        {{generalData.position}}
+      </mat-card-subtitle>
+    }
   </mat-card-header>
   <div class="banner"><img mat-card-image src="assets/img/cover.png" alt=""></div>
-  <mat-card-content *ngIf="generalData !== undefined && generalData.description !== undefined && generalData.description !== ''">
-    <p class="preformatted capitalize">{{generalData.description}}</p>
-  </mat-card-content>
+  @if (generalData !== undefined && generalData.description !== undefined && generalData.description !== '') {
+    <mat-card-content>
+      <p class="preformatted capitalize">{{generalData.description}}</p>
+    </mat-card-content>
+  }
 </mat-card>
-<mat-card class="text-card" *ngIf="interests !== undefined && interests.length > 0">
-  <mat-card-title class="hobbies-title">{{l10n.overview.subtitle_interests}}</mat-card-title>
-  <mat-card-content>
-    <mat-chip-set role="list">
-      <mat-chip *ngFor="let item of interests">
-        <i class="tag-icon {{item.icon.toLowerCase()}}" *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.toLowerCase().startsWith('icon-')"></i>
-        <mat-icon class="tag-icon" *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.toLowerCase().startsWith('icon-')">{{item.icon.toLowerCase()}}</mat-icon>
-        {{item.title}}
-      </mat-chip>
-    </mat-chip-set>
-  </mat-card-content>
-</mat-card>
+@if (interests !== undefined && interests.length > 0) {
+  <mat-card class="text-card">
+    <mat-card-title class="hobbies-title">{{l10n.overview.subtitle_interests}}</mat-card-title>
+    <mat-card-content>
+      <mat-chip-set role="list">
+        @for (item of interests; track item) {
+          <mat-chip>
+            @if (item.icon !== undefined && item.icon !== '' && item.icon.toLowerCase().startsWith('icon-')) {
+              <i class="tag-icon {{item.icon.toLowerCase()}}"></i>
+            }
+            @if (item.icon !== undefined && item.icon !== '' && ! item.icon.toLowerCase().startsWith('icon-')) {
+              <mat-icon class="tag-icon">{{item.icon.toLowerCase()}}</mat-icon>
+            }
+            {{item.title}}
+          </mat-chip>
+        }
+      </mat-chip-set>
+    </mat-card-content>
+  </mat-card>
+}
 <app-cv-download-card></app-cv-download-card>

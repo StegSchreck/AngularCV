@@ -1,14 +1,22 @@
-<mat-card class="page-title" *ngIf="talkItems !== undefined && talkItems.length > 0">
-  <mat-card-title>
-    <mat-icon>record_voice_over</mat-icon>
-    {{l10n.publications.title_talks}}
-  </mat-card-title>
-</mat-card>
-<app-cv-item *ngFor="let item of talkItems" [cvItem]="item"></app-cv-item>
-<mat-card class="page-title" *ngIf="publicationItems !== undefined && publicationItems.length > 0">
-  <mat-card-title>
-    <mat-icon>subject</mat-icon>
-    {{l10n.publications.title_publications}}
-  </mat-card-title>
-</mat-card>
-<app-cv-item *ngFor="let item of publicationItems" [cvItem]="item"></app-cv-item>
+@if (talkItems !== undefined && talkItems.length > 0) {
+  <mat-card class="page-title">
+    <mat-card-title>
+      <mat-icon>record_voice_over</mat-icon>
+      {{l10n.publications.title_talks}}
+    </mat-card-title>
+  </mat-card>
+}
+@for (item of talkItems; track item) {
+  <app-cv-item [cvItem]="item"></app-cv-item>
+}
+@if (publicationItems !== undefined && publicationItems.length > 0) {
+  <mat-card class="page-title">
+    <mat-card-title>
+      <mat-icon>subject</mat-icon>
+      {{l10n.publications.title_publications}}
+    </mat-card-title>
+  </mat-card>
+}
+@for (item of publicationItems; track item) {
+  <app-cv-item [cvItem]="item"></app-cv-item>
+}

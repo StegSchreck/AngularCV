@@ -8,22 +8,32 @@
   <mat-card-title>{{l10n.contact.general}}</mat-card-title>
   <mat-card-content>
     <mat-list>
-      <mat-list-item class="contact-info" *ngIf="contactItems !== undefined && contactItems.city !== undefined && contactItems.city !== ''">
-        <mat-icon matListItemIcon>place</mat-icon>
-        <p mat-line>{{contactItems.city}}</p>
-      </mat-list-item>
-      <mat-list-item class="contact-info" *ngIf="contactItems !== undefined && contactItems.mail !== undefined && contactItems.mail !== ''">
-        <mat-icon matListItemIcon>email</mat-icon>
-        <p mat-line>
-          <a mat-button color="primary" href="mailto:{{contactItems.mail}}" *ngIf="featureToggles.contact_email_link">{{featureToggles.contact_email_remove_at_sign ? contactItems.mail.replace('@',' \'at\' ') : contactItems.mail}}</a>
-          <span *ngIf="!featureToggles.contact_email_link">{{featureToggles.contact_email_remove_at_sign ? contactItems.mail.replace('@',' \'at\' ') : contactItems.mail}}</span>
-        </p>
-      </mat-list-item>
-      <mat-list-item class="contact-info" *ngIf="contactItems !== undefined && contactItems.phone !== undefined && contactItems.phone !== ''">
-        <mat-icon matListItemIcon>phone</mat-icon>
-        <h4 mat-line>{{l10n.contact.phone}}</h4>
-        <p mat-line>{{contactItems.phone}}</p>
-      </mat-list-item>
+      @if (contactItems !== undefined && contactItems.city !== undefined && contactItems.city !== '') {
+        <mat-list-item class="contact-info">
+          <mat-icon matListItemIcon>place</mat-icon>
+          <p mat-line>{{contactItems.city}}</p>
+        </mat-list-item>
+      }
+      @if (contactItems !== undefined && contactItems.mail !== undefined && contactItems.mail !== '') {
+        <mat-list-item class="contact-info">
+          <mat-icon matListItemIcon>email</mat-icon>
+          <p mat-line>
+            @if (featureToggles.contact_email_link) {
+              <a mat-button color="primary" href="mailto:{{contactItems.mail}}">{{featureToggles.contact_email_remove_at_sign ? contactItems.mail.replace('@',' \'at\' ') : contactItems.mail}}</a>
+            }
+            @if (!featureToggles.contact_email_link) {
+              <span>{{featureToggles.contact_email_remove_at_sign ? contactItems.mail.replace('@',' \'at\' ') : contactItems.mail}}</span>
+            }
+          </p>
+        </mat-list-item>
+      }
+      @if (contactItems !== undefined && contactItems.phone !== undefined && contactItems.phone !== '') {
+        <mat-list-item class="contact-info">
+          <mat-icon matListItemIcon>phone</mat-icon>
+          <h4 mat-line>{{l10n.contact.phone}}</h4>
+          <p mat-line>{{contactItems.phone}}</p>
+        </mat-list-item>
+      }
     </mat-list>
   </mat-card-content>
 </mat-card>
@@ -31,45 +41,71 @@
 <mat-card class="text-card">
   <mat-card-title>{{l10n.contact.profiles}}</mat-card-title>
   <mat-card-content class="web-profiles">
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.linkedin}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== ''">
-      <i matListItemIcon class="link-icon icon-linkedin"></i>
-      LinkedIn
-    </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.xing}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== ''">
-      <i matListItemIcon class="link-icon icon-xing"></i>
-      Xing
-    </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.github}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== ''">
-      <i matListItemIcon class="link-icon icon-github"></i>
-      GitHub
-    </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.stackoverflow}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== ''">
-      <i matListItemIcon class="link-icon icon-stackoverflow"></i>
-      StackOverflow
-    </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.facebook}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== ''">
-      <i matListItemIcon class="link-icon icon-facebook"></i>
-      Facebook
-    </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.twitter}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== ''">
-      <i matListItemIcon class="link-icon icon-twitter"></i>
-      Twitter
-    </a>
-    <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.instagram}}" target="_blank" rel="noopener" *ngIf="contactItems !== undefined && contactItems.instagram !== undefined && contactItems.instagram !== ''">
-      <i matListItemIcon class="link-icon icon-instagram"></i>
-      Instagram
-    </a>
-    <span class="other-links" *ngIf="contactItems !== undefined && contactItems.other !== undefined && contactItems.other.length > 0">
-      <br><br>
-      <mat-divider></mat-divider>
-      <br>
-      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{item.link}}" target="_blank" rel="noopener" *ngFor="let item of contactItems.other">
-        <span *ngIf="item.icon !== undefined && item.icon !== '' && item.icon.toLowerCase().startsWith('icon-')" ><i class="link-icon {{item.icon.toLowerCase()}}"></i></span>
-        <mat-icon *ngIf="item.icon !== undefined && item.icon !== '' && ! item.icon.toLowerCase().startsWith('icon-')">{{item.icon.toLowerCase()}}</mat-icon>
-        <mat-icon *ngIf="item.icon === undefined && item.icon === ''">link</mat-icon>
-        {{item.title}}
+    @if (contactItems !== undefined && contactItems.linkedin !== undefined && contactItems.linkedin !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.linkedin}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-linkedin"></i>
+        LinkedIn
       </a>
-    </span>
-  </mat-card-content>
-</mat-card>
-<app-about *ngIf="featureToggles.contact_show_about_section"></app-about>
+    }
+    @if (contactItems !== undefined && contactItems.xing !== undefined && contactItems.xing !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.xing}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-xing"></i>
+        Xing
+      </a>
+    }
+    @if (contactItems !== undefined && contactItems.github !== undefined && contactItems.github !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.github}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-github"></i>
+        GitHub
+      </a>
+    }
+    @if (contactItems !== undefined && contactItems.stackoverflow !== undefined && contactItems.stackoverflow !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.stackoverflow}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-stackoverflow"></i>
+        StackOverflow
+      </a>
+    }
+    @if (contactItems !== undefined && contactItems.facebook !== undefined && contactItems.facebook !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.facebook}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-facebook"></i>
+        Facebook
+      </a>
+    }
+    @if (contactItems !== undefined && contactItems.twitter !== undefined && contactItems.twitter !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.twitter}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-twitter"></i>
+        Twitter
+      </a>
+    }
+    @if (contactItems !== undefined && contactItems.instagram !== undefined && contactItems.instagram !== '') {
+      <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{contactItems.instagram}}" target="_blank" rel="noopener">
+        <i matListItemIcon class="link-icon icon-instagram"></i>
+        Instagram
+      </a>
+    }
+    @if (contactItems !== undefined && contactItems.other !== undefined && contactItems.other.length > 0) {
+      <span class="other-links">
+        <br><br>
+        <mat-divider></mat-divider>
+        <br>
+          @for (item of contactItems.other; track item) {
+            <a mat-button matTooltip="{{l10n.contact.button_open_profile}}" matTooltipPosition="above" color="primary" class="profile-link" href="{{item.link}}" target="_blank" rel="noopener">
+              @if (item.icon !== undefined && item.icon !== '' && item.icon.toLowerCase().startsWith('icon-')) {
+                <span ><i class="link-icon {{item.icon.toLowerCase()}}"></i></span>
+              }
+              @if (item.icon !== undefined && item.icon !== '' && ! item.icon.toLowerCase().startsWith('icon-')) {
+                <mat-icon>{{item.icon.toLowerCase()}}</mat-icon>
+              }
+              @if (item.icon === undefined && item.icon === '') {
+                <mat-icon>link</mat-icon>
+              }
+              {{item.title}}
+            </a>
+          }
+        </span>
+      }
+    </mat-card-content>
+  </mat-card>
+  @if (featureToggles.contact_show_about_section) {
+    <app-about></app-about>
+  }

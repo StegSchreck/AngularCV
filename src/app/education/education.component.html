@@ -1,38 +1,52 @@
-<mat-card class="page-title" *ngIf="languageItems !== undefined && languageItems.length > 0">
-  <mat-card-title>
-    <mat-icon>translate</mat-icon>
-    {{l10n.education.title_languages}}
-  </mat-card-title>
-</mat-card>
-<mat-card class="text-card" *ngIf="languageItems !== undefined  && languageItems.length > 0">
-  <mat-card-content>
-    <mat-list>
-      <mat-list-item *ngFor="let language of languageItems">
-        <h4 mat-line>{{language.title}}</h4>
-        <p mat-line>
-          <mat-progress-bar
-            matTooltip="{{getLanguageLevelDescription(language.level)}}"
-            matTooltipPosition="above"
-            color="primary"
-            mode="determinate"
-            value="{{language.level}}">
-          </mat-progress-bar>
-        </p>
-      </mat-list-item>
-    </mat-list>
-  </mat-card-content>
-</mat-card>
-<mat-card class="page-title" *ngIf="certificationItems !== undefined && certificationItems.length > 0">
-  <mat-card-title>
-    <mat-icon>verified_user</mat-icon>
-    {{l10n.education.title_certificates}}
-  </mat-card-title>
-</mat-card>
-<app-cv-item *ngFor="let item of certificationItems" [cvItem]="item"></app-cv-item>
-<mat-card class="page-title" *ngIf="educationItems !== undefined && educationItems.length > 0">
-  <mat-card-title>
-    <mat-icon>school</mat-icon>
-    {{l10n.education.title_education}}
-  </mat-card-title>
-</mat-card>
-<app-cv-item *ngFor="let item of educationItems" [cvItem]="item"></app-cv-item>
+@if (languageItems !== undefined && languageItems.length > 0) {
+  <mat-card class="page-title">
+    <mat-card-title>
+      <mat-icon>translate</mat-icon>
+      {{l10n.education.title_languages}}
+    </mat-card-title>
+  </mat-card>
+}
+@if (languageItems !== undefined  && languageItems.length > 0) {
+  <mat-card class="text-card">
+    <mat-card-content>
+      <mat-list>
+        @for (language of languageItems; track language) {
+          <mat-list-item>
+            <h4 mat-line>{{language.title}}</h4>
+            <p mat-line>
+              <mat-progress-bar
+                matTooltip="{{getLanguageLevelDescription(language.level)}}"
+                matTooltipPosition="above"
+                color="primary"
+                mode="determinate"
+                value="{{language.level}}">
+              </mat-progress-bar>
+            </p>
+          </mat-list-item>
+        }
+      </mat-list>
+    </mat-card-content>
+  </mat-card>
+}
+@if (certificationItems !== undefined && certificationItems.length > 0) {
+  <mat-card class="page-title">
+    <mat-card-title>
+      <mat-icon>verified_user</mat-icon>
+      {{l10n.education.title_certificates}}
+    </mat-card-title>
+  </mat-card>
+}
+@for (item of certificationItems; track item) {
+  <app-cv-item [cvItem]="item"></app-cv-item>
+}
+@if (educationItems !== undefined && educationItems.length > 0) {
+  <mat-card class="page-title">
+    <mat-card-title>
+      <mat-icon>school</mat-icon>
+      {{l10n.education.title_education}}
+    </mat-card-title>
+  </mat-card>
+}
+@for (item of educationItems; track item) {
+  <app-cv-item [cvItem]="item"></app-cv-item>
+}

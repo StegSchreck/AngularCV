@@ -1,31 +1,41 @@
 <mat-toolbar color="primary" class="header">
-  <app-pdf color="default" *ngIf="windowWidth >= 500"></app-pdf>
-  <span class="header-menu" *ngIf="windowWidth < 800">
-    <button mat-icon-button [matMenuTriggerFor]="menu">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <a mat-menu-item
-         *ngFor="let link of navLinks"
-         routerLink="{{link.location}}"
-         routerLinkActive #rla="routerLinkActive">
-        <mat-icon>{{link.icon}}</mat-icon>
-        <span>{{link.label | uppercase}}</span>
-      </a>
-    </mat-menu>
-  </span>
-  <a href="/" class="header-title" *ngIf="generalData !== undefined && generalData.name !== undefined && generalData.name !== ''">
-    {{generalData.name}}
-  </a>
+  @if (windowWidth >= 500) {
+    <app-pdf color="default"></app-pdf>
+  }
+  @if (windowWidth < 800) {
+    <span class="header-menu">
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        @for (link of navLinks; track link) {
+          <a mat-menu-item
+            routerLink="{{link.location}}"
+            routerLinkActive #rla="routerLinkActive">
+            <mat-icon>{{link.icon}}</mat-icon>
+            <span>{{link.label | uppercase}}</span>
+          </a>
+        }
+      </mat-menu>
+    </span>
+  }
+  @if (generalData !== undefined && generalData.name !== undefined && generalData.name !== '') {
+    <a href="/" class="header-title">
+      {{generalData.name}}
+    </a>
+  }
 </mat-toolbar>
 
-<nav mat-tab-nav-bar [tabPanel]="tabPanel" *ngIf="windowWidth >= 800">
-  <a mat-tab-link
-     *ngFor="let link of navLinks"
-     routerLink="{{link.location}}"
-     routerLinkActive #rla="routerLinkActive"
-     [active]="rla.isActive">
-    <span>{{link.label | uppercase}}</span>
-  </a>
-</nav>
+@if (windowWidth >= 800) {
+  <nav mat-tab-nav-bar [tabPanel]="tabPanel">
+    @for (link of navLinks; track link) {
+      <a mat-tab-link
+        routerLink="{{link.location}}"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        <span>{{link.label | uppercase}}</span>
+      </a>
+    }
+  </nav>
+}
 <mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
