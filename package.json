@@ -41,7 +41,7 @@
     "@angular-eslint/schematics": "20.1.1",
     "@angular-eslint/template-parser": "20.1.1",
     "@angular/cli": "^20.1.4",
-    "@angular/compiler-cli": "^20.0.5",
+    "@angular/compiler-cli": "^20.1.4",
     "@angular/language-service": "20.0.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
