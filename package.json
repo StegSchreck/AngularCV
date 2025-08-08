@@ -20,7 +20,7 @@
     "@angular/common": "20.0.5",
     "@angular/compiler": "20.0.5",
     "@angular/core": "20.0.5",
-    "@angular/forms": "20.0.5",
+    "@angular/forms": "20.1.6",
     "@angular/material": "20.0.4",
     "@angular/platform-browser": "20.0.5",
     "@angular/platform-browser-dynamic": "20.0.5",
