@@ -50,7 +50,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
           'basierend auf einer bestehenden unternehmensweiten IAM-Lösung. Er vernetzte aktiv Ingenieure über Teamgrenzen hinweg und bildete ' +
           'eine Fokusgruppe aus leitenden Ingenieuren um die Systemarchitekten herum, um die Systemarchitektur und die ' +
           'Engineering-Landschaft weiterzuentwickeln.',
-        tags: ['Python', 'Django', 'Git', 'KanBan', 'PyCharm', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        tags: ['Python', 'Django', 'Git', 'KanBan', 'PyCharm', 'Poetry', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash', 'Artifactory'],
         thumbnail: 'MBition.svg',
       },
       {
@@ -79,10 +79,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
         subtitle: 'Technical Due Diligence Assessment',
         begin: '2019-11',
         end: '2020-01',
-        description: 'Sebastian was engaged in the technical assessment of two target companies during an M&A process. ' +
-          'This process required a thorough look into the available documentation and summarising the state of the current technical ' +
-          'landscape of the companies as well as identifying potential risks and deriving recommendations for the interested investor in a ' +
-          'concise presentation.',
+        description: 'Sebastian war während eines M&A-Prozesses an der technischen Bewertung von zwei Zielunternehmen beteiligt. Dieser Prozess erforderte einen gründlichen Einblick in die verfügbaren Dokumentation und die Zusammenfassung des Standes der aktuellen technischen Landschaft der Unternehmen sowie die Ermittlung potenzieller Risiken und die Abgabe von Empfehlungen für den interessierten Investor in einer prägnanten Präsentation.',
         tags: [],
       },
       {
@@ -114,7 +111,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
         description: 'Sebastian arbeitete im Team verantwortlich für die Suchergebnisliste und Expose-Ansicht der Immobilien ' +
           'neben der Feature-Entwicklung auch an der Cloud-Migration.' +
           '\n\n' +
-          'Später wurde Sebastian Teil eines ne-geformten Teams zur Automtisierung einer manuellen PoC Lösung. ' +
+          'Später wurde Sebastian Teil eines neu-geformten Teams zur Automtisierung einer manuellen PoC Lösung. ' +
           'Hierbei hatte er die Rolle eines Cloud Architekten und entwickelte die new hoch-automatisierte Lösung auf basis von Serverless-Services in der AWS Cloud.',
         tags: ['Java', 'SpringBoot', 'Git', 'IntelliJ', 'Docker', 'Maven', 'Jira', 'REST', 'API', 'SNS/SQS', 'Lambda', 'DynamoDB', 'Scrum', 'AWS', 'Confluence', 'TeamCity', 'Jenkins', 'BitBucket', 'bash'],
         thumbnail: 'ImmoScout24_2020.svg',
@@ -331,7 +328,7 @@ export const PROJECTS: CvItem[] = [
     begin: '2017-02',
     end: '',
     description: 'Dieses Python-Projekt bietet eine einfache Möglichkeit zur Übertragung der persönlichen Filmbewertungen von einer Seite (z.B. IMDB) zu einer anderen (z.B. Trakt). Aktuell unterstützt das Projekt 14 Seiten und wird kontinuierlich erweitert.',
-    tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV'],
+    tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV', 'Poetry', 'uv', 'ruff'],
     link: 'https://github.com/StegSchreck/RatS',
     thumbnail: 'RatS.png',
   },
@@ -372,7 +369,7 @@ export const PROJECTS: CvItem[] = [
     end: '',
     description: 'Dieses Skript liest die Investitionen bei Auxmoney aus und erstellt eine CSV mit den erwirtschafteten Zinsen. ' +
       'Die CSV Datei ist so formatiert, dass sie problemlos in Portfolio Performance importiert werden kann.',
-    tags: ['Python', 'Git', 'Selenium', 'Beautifulsoup', 'CSV'],
+    tags: ['Python', 'Git', 'Selenium', 'Beautifulsoup', 'CSV', 'pip'],
     link: 'https://github.com/StegSchreck/PP-Auxmoney-Parser',
     thumbnail: 'PP-Auxmoney-Parser.png',
   },
@@ -403,7 +400,7 @@ export const PROJECTS: CvItem[] = [
     begin: '2016-05',
     end: '2017-05',
     description: 'OFM ist ein Browserspiel bei dem man den Manager eines Fußballteams spielt. Der \'OFM Helper\' hilft dem Nutzer die Daten aus den Fußballspielen, Trainingseinheiten usw. zu analysieren.',
-    tags: ['Python', 'Django', 'Git', 'Selenium', 'Beautifulsoup', 'TDD', 'Docker'],
+    tags: ['Python', 'Django', 'Git', 'Selenium', 'Beautifulsoup', 'TDD', 'Docker', 'pip'],
     link: 'https://www.ofmhelper.de/',
     thumbnail: 'OFM_Helper.png',
   },

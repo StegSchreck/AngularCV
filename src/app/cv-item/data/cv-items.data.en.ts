@@ -50,7 +50,7 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
           'solution. He actively connected engineers across team boundaries and created a focus group of principal engineers around the ' +
           'system architects to further evolve the system architecture and engineering landscape. When the engineering manager decided to create two additonal internal engineering positions, Sebastian designed the recruitment process and conducted the technical interview rounds.\n\n' +
           'While implementing the migration from the old architecture to the new landscape, Sebastian has been a role model in software craftmanship topics like clean code, lean architecture, and CI/CD concepts. Sebastian enabled other teams to re-use functionality he has developed by extracting this as a innersource Python library, setting up an independent and fully automated test and release pipeline using Gitlab CI and self-hosted Artifactory.',
-        tags: ['Python', 'Django', 'Git', 'KanBan', 'IntelliJ', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash'],
+        tags: ['Python', 'Django', 'Git', 'KanBan', 'PyCharm', 'Poetry', 'Gitlab CI', 'Docker', 'Jira', 'SAFe', 'Scrum', 'AWS', 'Confluence', 'Jenkins', 'bash', 'Artifactory'],
         thumbnail: 'MBition.svg',
       },
       {
@@ -314,7 +314,7 @@ export const PROJECTS: CvItem[] = [
     end: '',
     description: 'This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) ' +
       'to another (e.g. Trakt). The script supports 13 sites currently and is constantly expanding.',
-    tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV'],
+    tags: ['Python', 'Git', 'Docker', 'Selenium', 'Beautifulsoup', 'JSON', 'CSV', 'Poetry', 'uv', 'ruff'],
     link: 'https://github.com/StegSchreck/RatS',
     thumbnail: 'RatS.png',
   },
