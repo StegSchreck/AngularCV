@@ -85,6 +85,7 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
           'landscape of the companies as well as identifying potential risks and deriving recommendations for the interested investor in a ' +
           'concise presentation.',
         tags: [],
+        thumbnail: 'EQT.svg',
       },
       {
         title: 'Leading German Price Comparison Website',

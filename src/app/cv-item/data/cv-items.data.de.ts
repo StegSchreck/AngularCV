@@ -81,6 +81,7 @@ Sebastians F체hrungsqualit채ten zeigen sich besonders in seiner Verantwortung f�
         end: '2020-01',
         description: 'Sebastian war w채hrend eines M&A-Prozesses an der technischen Bewertung von zwei Zielunternehmen beteiligt. Dieser Prozess erforderte einen gr체ndlichen Einblick in die verf체gbaren Dokumentation und die Zusammenfassung des Standes der aktuellen technischen Landschaft der Unternehmen sowie die Ermittlung potenzieller Risiken und die Abgabe von Empfehlungen f체r den interessierten Investor in einer pr채gnanten Pr채sentation.',
         tags: [],
+        thumbnail: 'EQT.svg',
       },
       {
         title: 'F체hrende deutsche Preisvergleichsseite',
