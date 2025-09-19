@@ -425,6 +425,19 @@ export const PROJECTS: CvItem[] = [
     link: 'http://gpm.hu-berlin.de/',
     thumbnail: 'HU-Berlin.svg',
   },
+  {
+    title: 'Internetauftritt mit Mitgliederbereich für Ruderverein',
+    subtitle: '',
+    begin: '2002',
+    end: '2013',
+    description: "Der Internetauftritt des Vereins machte nicht nur Werbung für den Verein und seinen Sport, sondern wurde nach und nach " +
+      "erweitert. Eine selbst-entwickelte Bilder sowie ein Mitgliederbereich kaman hinzu. Der Mitlgiederbereich bat über Authentifizierung " +
+      "und Authorisierung den Vereinsmitgliedern enstsprechenden Zugriff auf Dokumente und Funktionen. Darunter auch eine vollständiges " +
+      "Mitgliederverwaltung für den Vereinsvorstand.",
+    tags: ['PHP', 'HTML', 'MySQL', 'CSS', 'JavaScript', 'jQuery', 'PHPmyAdmin'],
+    link: '',
+    thumbnail: 'RVP_Flagge.jpg',
+  },
 ];
 
 export const VOLUNTEERING: CvItem[] = [
@@ -726,7 +739,7 @@ export const VOLUNTEERING: CvItem[] = [
     begin: '2001',
     end: '2013',
     description: 'Ruder-Verein im Nordwesten von Berlin-Reinickendorf.',
-    link: 'https://www.rv-preussen.de/',
+    link: '',
     thumbnail: 'RVP_Flagge.jpg',
     // positions: [
     //   {

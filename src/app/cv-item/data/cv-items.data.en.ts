@@ -422,6 +422,18 @@ export const PROJECTS: CvItem[] = [
     link: 'http://gpm.hu-berlin.de/',
     thumbnail: 'HU-Berlin.svg',
   },
+  {
+    title: 'Website and member portal for rowing club',
+    subtitle: '',
+    begin: '2002',
+    end: '2013',
+    description: "The club's website showcases the club's activities. Over the time, the website was extended with an image gallery and a " +
+      "member portal. The member portal authentication and authorisation mechanism to define which parts could be accessed by whom. " +
+      "It also featured a full member administration section for the club's board members.",
+    tags: ['PHP', 'HTML', 'MySQL', 'CSS', 'JavaScript', 'jQuery', 'PHPmyAdmin'],
+    link: '',
+    thumbnail: 'RVP_Flagge.jpg',
+  },
 ];
 
 export const VOLUNTEERING: CvItem[] = [
@@ -587,7 +599,7 @@ export const VOLUNTEERING: CvItem[] = [
   //   begin: '2001',
   //   end: '2013',
   //   description: 'Rowing club in the north-west of Berlin.',
-  //   link: 'https://www.rv-preussen.de/',
+  //   link: '',
   //   thumbnail: 'RVP_Flagge.jpg',
   // },
 ];
