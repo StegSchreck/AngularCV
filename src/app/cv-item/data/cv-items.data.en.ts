@@ -33,7 +33,7 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
         title: 'Scandinavian Bank',
         subtitle: 'Staff Consultant',
         begin: '2025-02',
-        end: '',
+        end: '2025-09',
         description: 'Contributed to the large-scale cloud migration of a Scandinavian bank in collaboration with AWS ProServe, employing hyperautomation with Cutover.com runbooks, Terraform, and Lambda functions to streamline workflows. Provisioned EC2 Image Builder pipelines for compliant, reusable AMIs using Terraform IaC with a GitOps approach, and built infrastructure for a synthetic application to showcase migration workflows. Focused on automation-first strategies to enhance efficiency and compliance in a highly regulated environment, leveraging close collaboration with AWS experts to deliver scalable and secure solutions.',
         tags: ['AWS', 'Terraform', 'Git', 'Python', 'PyCharm', 'Azure DevOps', 'Cutover', 'Lambda', 'KanBan', 'Jira', 'Confluence', 'bash', 'PowerShell'],
         thumbnail: 'AWS_ProServe_DanskeBank.png',
@@ -310,7 +310,7 @@ export const LANGUAGES = [
 export const PROJECTS: CvItem[] = [
   {
     title: 'RatS',
-    subtitle: 'Script for transfering personal movie ratings from one site to another',
+    subtitle: 'Script for transferring personal movie ratings from one site to another',
     begin: '2017-02',
     end: '',
     description: 'This Python project offers an easy way of synchronizing personal movie ratings from one site (e.g. IMDB) ' +
