@@ -18,10 +18,10 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: install, build, and test
       run: |
-        npm install -g npm@latest @angular/cli
-        npm clean-install
+        npm install -g npm@latest @angular/cli yarn
+        yarn install --immutable
         ng lint
         ng test --watch false --browsers ChromeHeadless --code-coverage
         ng build --configuration production --aot
@@ -46,7 +46,7 @@ jobs:
       with:
         node-version: latest
     - name: Install Dependencies
-      run: npm install
+      run: yarn install --immutable
     - name: Run Semantic Release
       # for configuration of semantic-release, check the package.json and https://github.com/semantic-release/semantic-release/
       run: npx semantic-release
@@ -68,10 +68,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: latest
-      - name: npm install, build, and test
+      - name: install, build, and test
         run: |
-          npm install -g npm@latest @angular/cli
-          npm clean-install
+          npm install -g npm@latest @angular/cli yarn
+          yarn install --immutable
           ng build --configuration production --aot
         env:
           CI: true

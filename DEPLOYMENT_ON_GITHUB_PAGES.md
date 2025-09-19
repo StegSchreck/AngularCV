@@ -12,7 +12,7 @@ This is a little guide of how to deploy this Angular project to [GitHub Pages](h
 
 ### Step 0: Install `angular-cli-ghpages`
 ```sh
-npm install angular-cli-ghpages --save-dev
+yarn add angular-cli-ghpages --dev
 ```
 
 ### Step 1: Compile your Angular app into `/dist`
@@ -44,4 +44,3 @@ If you like to use GitHub Actions, you can uncomment the deploy job in the `.git
 - create a GitHub Release (tags only)
 - deploy to GitHub Pages (master branch only)
   In this case I am using a separate repository for the code and the deployed website. You can also configure this to be in the same repo.
-

@@ -56,7 +56,6 @@ Always write a clear log message for your commits. One-line messages are fine fo
 * Reference issues and pull requests liberally after the first line
 
 ### Coding Conventions
-The project contains a linting configuration at `tslint.json`. In order to check if your proposed changes are compliant with that configuration, you can run `npm run lint`.
+The project contains a linting configuration at `tslint.json`. In order to check if your proposed changes are compliant with that configuration, you can run `yarn run lint`.
 
-Please make sure that you adapt the existing tests if necessary or write new ones. The unit tests can be executed locally by running `npm run test`.
-The end-to-end tests can be executed by running `npm run e2e`. If you are running a server locally (with `npm run start`), you might need to adapt the port. In this case your would need to run the command using the Angular CLI directly: `ng e2e --port 4201`.
+Please make sure that you adapt the existing tests if necessary or write new ones. The unit tests can be executed locally by running `yarn run test`.

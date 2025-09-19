@@ -16,7 +16,7 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
     ```sh
     echo 'export PATH=/package/host/localhost/nodejs-8/bin:$PATH' >> ~/.bash_profile  # use the newer nodejs version, as this is not the default
     source ~/.bash_profile  # immediately apply the above change
-    npm install @angular/cli
+    yarn add @angular/cli
     ```
 5.  Deploy your AngularJS app
     ```sh
@@ -37,7 +37,7 @@ In order to deploy AngularCV to Uberspace, you will have to perform the followin
         
         git co -- .   # ignore local changes
         git pull      # get the new stuff
-        npm install   # install changes made to package.json
+        yarn install   # install changes made to package.json
         ng build --configuration production --aot --output-path=~/html/  # build the app for production environment and copy the result to the web root directory
         
         popd

@@ -212,16 +212,6 @@ export const CERTIFICATES: CvItem[] = [
     thumbnail: 'AWS_Badge_Migration_Foundations.png',
     attachment: '',
   },
-  // {
-  //   title: 'Erste Hilfe',
-  //   subtitle: 'Technisches Hilfswerk',
-  //   begin: '',
-  //   end: '2025-04-26',
-  //   description: '',
-  //   link: '',
-  //   thumbnail: 'THW_mit_Schriftzug.svg',
-  //   attachment: '2025_THW_ErsteHilfe.pdf',
-  // },
   {
     title: 'Introduction to FinOps',
     subtitle: 'FinOps Foundation',
@@ -339,7 +329,7 @@ export const PROJECTS: CvItem[] = [
     begin: '2017-09',
     end: '',
     description: 'Dieses Projekt wurde erstellt um einen simplen Online-Lebenslauf erstellen zu können, welchen jeder selbst hosten kann. Dieser Internetauftritt ist das Ergebnis davon.',
-    tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
+    tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'yarn', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
     thumbnail: '../AngularCV.svg',
   },
@@ -443,10 +433,10 @@ export const PROJECTS: CvItem[] = [
 export const VOLUNTEERING: CvItem[] = [
   {
     title: 'Technisches Hilfswerk',
-    subtitle: 'Anwärter',
+    subtitle: 'Helfer',
     begin: '2025',
     end: '',
-    description: 'Grundausbildung im Ortsverband Berlin-Mitte',
+    description: 'Fachgruppe Wasserschaden/Pumpen (WP) im Ortsverband Berlin-Mitte',
     link: 'https://www.thw.de',
     thumbnail: 'THW.svg',
   },
@@ -734,7 +724,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'FIFA_WM_2006_Deutschland.svg',
   },
   {
-    title: 'Ruder-Verein "Preußen" e.V.',
+    title: 'Ruder-Verein „Preußen“ e.V.',
     subtitle: '1. Vorsitzender, Stellv. Vorsitzender, Sportwart, Judendwart',
     begin: '2001',
     end: '2013',

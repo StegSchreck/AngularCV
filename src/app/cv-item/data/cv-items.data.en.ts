@@ -206,16 +206,6 @@ export const CERTIFICATES: CvItem[] = [
     thumbnail: 'AWS_Badge_Migration_Foundations.png',
     attachment: '',
   },
-  // {
-  //   title: 'First Aid',
-  //   subtitle: 'Technisches Hilfswerk',
-  //   begin: '',
-  //   end: '2025-04-26',
-  //   description: '',
-  //   link: '',
-  //   thumbnail: 'THW_mit_Schriftzug.svg',
-  //   attachment: '2025_THW_ErsteHilfe.pdf',
-  // },
   {
     title: 'Introduction to FinOps',
     subtitle: 'FinOps Foundation',
@@ -326,7 +316,7 @@ export const PROJECTS: CvItem[] = [
     end: '',
     description: 'This project was created for the purpose of having a basic online-CV, which anyone can host by themselves. ' +
       'This very website is the result of it.',
-    tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'npm'],
+    tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'yarn', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
     thumbnail: '../AngularCV.svg',
   },
@@ -439,7 +429,7 @@ export const PROJECTS: CvItem[] = [
 export const VOLUNTEERING: CvItem[] = [
   {
     title: 'Technisches Hilfswerk',
-    subtitle: 'Recruit',
+    subtitle: 'Volunteer',
     begin: '2025',
     end: '',
     description: 'The German Federal Agency for Technical Relief is specialised in providing technical and humanitarian assistance. ' +
@@ -594,7 +584,7 @@ export const VOLUNTEERING: CvItem[] = [
     thumbnail: 'FIFA_World_Cup_2006_Germany_.svg',
   },
   // {
-  //   title: 'Ruder-Verein "Preußen" e.V.',
+  //   title: 'Ruder-Verein „Preußen“ e.V.',
   //   subtitle: 'Club President, Vice President, and other roles',
   //   begin: '2001',
   //   end: '2013',

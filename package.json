@@ -66,7 +66,8 @@
     "puppeteer": "^24.7.2",
     "semantic-release": "^24.2.6",
     "ts-node": "~10.9.1",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "semantic-release-yarn": "^3.0.2"
   },
   "release": {
     "branches": [
@@ -95,6 +96,12 @@
             "CHANGELOG.md"
           ],
           "message": "Release: ${nextRelease.version} \n\n${nextRelease.notes}"
+        }
+      ],
+      [
+        "semantic-release/yarn",
+        {
+          "npmPublish": false
         }
       ],
       "@semantic-release/github"

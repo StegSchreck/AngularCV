@@ -110,7 +110,7 @@ I recommend further reading for all AWS resources you are going to create in ord
   * The certificate will only be suitable for CloudFront, if it lies in the US East region!
 * Click on "Get Started" or "Request a certificate" (depending if you already have one or not)
 * Enter the domain name(s) you need, e.g. `yourdomain.tld` and `cv.yourdomain.tld`
-* Click on "Review an Request"
+* Click on "Review a Request"
 * Accept the request from the email you just received
 
 #### Step 3b: Create the CloudFront distribution

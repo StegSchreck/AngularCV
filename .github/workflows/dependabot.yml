@@ -16,10 +16,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: latest
-      - name: npm install, build, and test
+      - name: install, build, and test
         run: |
-          npm install -g npm@latest @angular/cli
-          npm ci
+          npm install -g npm@latest @angular/cli yarn
+          yarn install --immutable
           ng lint
           ng test --watch false --browsers ChromeHeadless --code-coverage
           ng build --configuration production --aot
