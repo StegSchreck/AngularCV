@@ -633,7 +633,7 @@ export const VOLUNTEERING: CvItem[] = [
   },
   {
     title: 'Ruder-Bundesliga & Rowing Champions League',
-    subtitle: 'Time measurement',
+    subtitle: 'Zeitmessung',
     begin: '2009',
     end: '2015',
     description: 'Technischer Aufbau und Zeitmessung',
