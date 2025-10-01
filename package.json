@@ -47,7 +47,7 @@
     "@semantic-release/git": "^10.0.1",
     "@types/jasmine": "~5.1.4",
     "@types/jasminewd2": "^2.0.10",
-    "@types/node": "^24.0.8",
+    "@types/node": "^24.6.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
     "@typescript-eslint/utils": "8.41.0",
