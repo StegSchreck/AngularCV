@@ -30,6 +30,15 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
     thumbnail: 'Netlight.svg',
     positions: [
       {
+        title: 'German Public Transport Association',
+        subtitle: 'Staff Engineer',
+        begin: '2025-09',
+        end: '',
+        description: 'As part of the modernisation of their software infrastructure, the client designed a new system for the generation and management of customer-facing documents, like ticket confirmation, contract cancellation, etc. The documents generation was triggered from an event queue message. The resulting document then needed to be made available to the customer in their customer portal and via e-mail. Sebastian was responsible for the initial research regarding the solution, including the evaluation of potential 3rd party vendor solutions in context of the make-or-buy question. After the technology decision was finalised and documented, he designed the new system architecture and broke the implementation efforts down into epics and stories.',
+        tags: ['Java', 'Spring Boot', 'Git', 'Jira', 'Confluence'],
+        thumbnail: 'RMV+RMS.png',
+      },
+      {
         title: 'Scandinavian Bank',
         subtitle: 'Staff Consultant',
         begin: '2025-02',

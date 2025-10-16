@@ -30,6 +30,15 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
     thumbnail: 'Netlight.svg',
     positions: [
       {
+        title: 'Deutscher Verkehrsverbund',
+        subtitle: 'Software Architekt',
+        begin: '2025-09',
+        end: '',
+        description: 'Im Rahmen der Modernisierung seiner Software-Infrastruktur entwickelte der Kunde ein neues System zur Generierung und Verwaltung kundenbezogener Dokumente wie Ticketbestätigungen, Vertragskündigungen etc. Die Generierung der Dokumente wurde durch eine Ereigniswarteschlangennachricht ausgelöst. Das resultierende Dokument musste dem Kunden anschließend im Kundenportal und per E-Mail zur Verfügung gestellt werden. Sebastian war für die anfängliche Recherche der Lösung verantwortlich, einschließlich der Bewertung potenzieller Drittanbieterlösungen im Kontext der Make-or-Buy-Frage. Nachdem die Technologieentscheidung finalisiert und dokumentiert war, entwarf er die neue Systemarchitektur und unterteilte die Implementierungsarbeiten in Epics und Stories.',
+        tags: ['Java', 'Spring Boot', 'Git', 'Jira', 'Confluence'],
+        thumbnail: 'RMV+RMS.png',
+      },
+      {
         title: 'Skandinavische Bank',
         subtitle: 'Staff Consultant',
         begin: '2025-02',
@@ -436,7 +445,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Helfer',
     begin: '2025',
     end: '',
-    description: 'Fachgruppe Wasserschaden/Pumpen (WP) im Ortsverband Berlin-Mitte',
+    description: 'Ehrenamtliche Einsatzkraft in der Fachgruppe Wasserschaden/Pumpen (WP) im THW Ortsverband Berlin-Mitte.',
     link: 'https://www.thw.de',
     thumbnail: 'THW.svg',
   },
