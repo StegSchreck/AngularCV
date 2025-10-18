@@ -65,9 +65,9 @@
     "protractor": "^7.0.0",
     "puppeteer": "^24.22.3",
     "semantic-release": "^24.2.9",
+    "semantic-release-yarn": "^3.0.2",
     "ts-node": "~10.9.1",
-    "typescript": "5.9.2",
-    "semantic-release-yarn": "^3.0.2"
+    "typescript": "5.9.2"
   },
   "release": {
     "branches": [
