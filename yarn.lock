@@ -260,10 +260,10 @@
   resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-20.3.0.tgz#661e4796569c6fbd4e1a071e58da6df1426de7ad"
   integrity sha512-QwuNnmRNr/uNj89TxknPbGcs5snX1w7RoJJPNAsfb2QGcHzUTQovS8hqm9kaDZdpUJDPP7jt7B6F0+EjrPAXRA==
 
-"@angular-eslint/bundled-angular-compiler@20.4.0":
-  version "20.4.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-20.4.0.tgz#f3a8df8287f3c1ca44d7b176a7193515cac8aa50"
-  integrity sha512-u3I/yABCm+lda/AdnLKJnjdQp1i4BACgEKY9D6eKIgijcRtlvUc6Jq+43e1oPZLj+3DdrlABNcB8HsA/+RzikA==
+"@angular-eslint/bundled-angular-compiler@20.5.0":
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-20.5.0.tgz#b0dd9ffd89f5cb0139741d112bdb228f1ba7a46d"
+  integrity sha512-XjvSZk+G/4rRUOLHHjlHBeS4OnnsLV9G1YtE5OerBB2H4x6nKgUEzpptad3uuL4iYWI9rGaWMLqGPTvyYqw/IA==
 
 "@angular-eslint/eslint-plugin-template@20.3.0":
   version "20.3.0"
@@ -275,13 +275,13 @@
     aria-query "5.3.2"
     axobject-query "4.1.0"
 
-"@angular-eslint/eslint-plugin-template@20.4.0":
-  version "20.4.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-20.4.0.tgz#e9053ce3b1527d258fe24d0149fcf74bbe3b2385"
-  integrity sha512-AWXtpWfivSE3PIwTPkuACPww5qu8dn3p1nuGuk2M/3LoHJFAMVvH6y2toTqGSUSTKALSdYzGhxbRPyDy6aEzDw==
+"@angular-eslint/eslint-plugin-template@20.5.0":
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-20.5.0.tgz#bcf90feba010ea6b5757ed4025abd23025b2d5f9"
+  integrity sha512-sX3TgTTGusYv4CjnEWWNvSyVCPmf2WF2LT5NpcKF+4BLcIVLXHdTXKz9H+OxIHeHk9R7QSRkuop/F7DAKyEPhA==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "20.4.0"
-    "@angular-eslint/utils" "20.4.0"
+    "@angular-eslint/bundled-angular-compiler" "20.5.0"
+    "@angular-eslint/utils" "20.5.0"
     aria-query "5.3.2"
     axobject-query "4.1.0"
 
@@ -337,12 +337,12 @@
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "20.3.0"
 
-"@angular-eslint/utils@20.4.0":
-  version "20.4.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-20.4.0.tgz#1570f60ea2999ecbd625fca62d6febf677eb7e75"
-  integrity sha512-SkR4fdPc+40W/53JmF6Nz6EIXIxvoRzhOdUiHoBKr/6fWONQwm7Vq55vk11AdK/oKTDUQCJ84HExQw6mzFljtg==
+"@angular-eslint/utils@20.5.0":
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-20.5.0.tgz#ec3558157b569b213bb808c060af8abdbf40fd29"
+  integrity sha512-eP8al/UKP9FpmwK3hVWkYUjBuq4BnUDrcboS51L9mRZsoOblkPt1/UgU6MJqW8sh6sfebP9N3RxLQOAFrM3juQ==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "20.4.0"
+    "@angular-eslint/bundled-angular-compiler" "20.5.0"
 
 "@angular/animations@20.3.1":
   version "20.3.1"
