@@ -237,10 +237,10 @@
     ora "8.2.0"
     rxjs "7.8.2"
 
-"@angular-eslint/builder@^20.1.1":
-  version "20.4.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-20.4.0.tgz#c651a55fb34d115ea84f8dcbd6ee0e4f743e1fa9"
-  integrity sha512-65mekrXZOurc2K6Ft7/aISiW9vsGcSTKvBxQVXarySBh1jzEvYKnG3tmiYP/ApTh6GPKrDo/XgbW85T67s9UXg==
+"@angular-eslint/builder@^20.5.0":
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-20.5.0.tgz#8b2458437f0dc2564adf9f5229ec1bfab22cafa6"
+  integrity sha512-ycrvgomFgitSwzDndo+i3Ob1iu9lAJeuZZ8cwBR4E/RYsCxNm02NLCv5qjQ3ya57yjkh12N6yvjzWnCO9Vdiuw==
   dependencies:
     "@angular-devkit/architect" ">= 0.2000.0 < 0.2100.0"
     "@angular-devkit/core" ">= 20.0.0 < 21.0.0"
@@ -249,11 +249,6 @@
   version "18.4.0"
   resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-18.4.0.tgz#3503d8b796a3d9d6c997b342a3ae5ddf264601a4"
   integrity sha512-HlFHt2qgdd+jqyVIkCXmrjHauXo/XY3Rp0UNabk83ejGi/raM/6lEFI7iFWzHxLyiAKk4OgGI5W26giSQw991A==
-
-"@angular-eslint/bundled-angular-compiler@20.1.1":
-  version "20.1.1"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-20.1.1.tgz#aca45911806a21daf4b1c60aecadfd908f458fcb"
-  integrity sha512-hEWh/upyTj2bhyRmbNnGtlOXhBSEHwLg8/9YYhwmiNApQwKcvcg7lkstZMEVrKievNHZT6Wh4dWZvjRjMqLNSg==
 
 "@angular-eslint/bundled-angular-compiler@20.3.0":
   version "20.3.0"
@@ -315,12 +310,12 @@
     semver "7.7.2"
     strip-json-comments "3.1.1"
 
-"@angular-eslint/template-parser@20.1.1":
-  version "20.1.1"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/template-parser/-/template-parser-20.1.1.tgz#9c3db7050e3e4bf48f87ffc775a30785fe7d8684"
-  integrity sha512-giIMYORf8P8MbBxh6EUfiR/7Y+omxJtK2C7a8lYTtLSOIGO0D8c8hXx9hTlPcdupVX+xZXDuZ85c9JDen+JSSA==
+"@angular-eslint/template-parser@20.5.0":
+  version "20.5.0"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/template-parser/-/template-parser-20.5.0.tgz#a17bbd7bcff72ee1e13cdf4d786876ea3d0f17ba"
+  integrity sha512-dWaz2Knjy6yJI5/xVYqp5iu65b725wveMwt1DgJ9EDTZ5gpJcTsvSCW4zQr/6iXfpAZHKPh9LJvVW1svowhtWw==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "20.1.1"
+    "@angular-eslint/bundled-angular-compiler" "20.5.0"
     eslint-scope "^8.0.2"
 
 "@angular-eslint/utils@18.4.0":
