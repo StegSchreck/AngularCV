@@ -35,11 +35,11 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^20.3.3",
-    "@angular-eslint/builder": "^20.1.1",
+    "@angular-eslint/builder": "^20.5.0",
     "@angular-eslint/eslint-plugin": "18.4.0",
-    "@angular-eslint/eslint-plugin-template": "20.4.0",
+    "@angular-eslint/eslint-plugin-template": "20.5.0",
     "@angular-eslint/schematics": "20.3.0",
-    "@angular-eslint/template-parser": "20.1.1",
+    "@angular-eslint/template-parser": "20.5.0",
     "@angular/cli": "^20.3.3",
     "@angular/compiler-cli": "^20.0.5",
     "@angular/language-service": "20.3.2",
@@ -50,9 +50,9 @@
     "@types/node": "^24.6.1",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "@typescript-eslint/utils": "8.45.0",
+    "@typescript-eslint/utils": "8.46.2",
     "eslint": "^8.57.1",
-    "jasmine-core": "~5.8.0",
+    "jasmine-core": "~5.12.1",
     "jasmine-spec-reporter": "~7.0.0",
     "karma": "~6.4.4",
     "karma-chrome-launcher": "~3.2.0",
@@ -67,7 +67,7 @@
     "semantic-release": "^24.2.9",
     "semantic-release-yarn": "^3.0.2",
     "ts-node": "~10.9.1",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "release": {
     "branches": [
