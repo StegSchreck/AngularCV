@@ -260,6 +260,11 @@
   resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-20.5.0.tgz#b0dd9ffd89f5cb0139741d112bdb228f1ba7a46d"
   integrity sha512-XjvSZk+G/4rRUOLHHjlHBeS4OnnsLV9G1YtE5OerBB2H4x6nKgUEzpptad3uuL4iYWI9rGaWMLqGPTvyYqw/IA==
 
+"@angular-eslint/bundled-angular-compiler@21.0.1":
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-21.0.1.tgz#dbb54acc52fe1649a691d06c500bf462f2fe2189"
+  integrity sha512-Kb59SopkJ2sDgZSysL+ZqcfqM2cbK+gciAyHljkrCUsqo66eEq5KCZUU//RVoo4MHi+qL/dFy54JG/+A/35xcQ==
+
 "@angular-eslint/eslint-plugin-template@20.3.0":
   version "20.3.0"
   resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-20.3.0.tgz#a5b9a90b04dc992481bf2e41cff8ef4e30f87ccc"
@@ -270,13 +275,13 @@
     aria-query "5.3.2"
     axobject-query "4.1.0"
 
-"@angular-eslint/eslint-plugin-template@20.5.0":
-  version "20.5.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-20.5.0.tgz#bcf90feba010ea6b5757ed4025abd23025b2d5f9"
-  integrity sha512-sX3TgTTGusYv4CjnEWWNvSyVCPmf2WF2LT5NpcKF+4BLcIVLXHdTXKz9H+OxIHeHk9R7QSRkuop/F7DAKyEPhA==
+"@angular-eslint/eslint-plugin-template@21.0.1":
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-21.0.1.tgz#24fa9b94369ebf9b5aa34ec0a44e49b13e4d2c4a"
+  integrity sha512-DF1WEMalbV1hNKxbu3nwK1yUa+E2FQpNz0KDORU65/vdCffeuftCetobrsAS7zDgJ6FO+Fsb+ZeCzNKEhhh1vA==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "20.5.0"
-    "@angular-eslint/utils" "20.5.0"
+    "@angular-eslint/bundled-angular-compiler" "21.0.1"
+    "@angular-eslint/utils" "21.0.1"
     aria-query "5.3.2"
     axobject-query "4.1.0"
 
@@ -332,12 +337,12 @@
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "20.3.0"
 
-"@angular-eslint/utils@20.5.0":
-  version "20.5.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-20.5.0.tgz#ec3558157b569b213bb808c060af8abdbf40fd29"
-  integrity sha512-eP8al/UKP9FpmwK3hVWkYUjBuq4BnUDrcboS51L9mRZsoOblkPt1/UgU6MJqW8sh6sfebP9N3RxLQOAFrM3juQ==
+"@angular-eslint/utils@21.0.1":
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-21.0.1.tgz#15230c24976ae836b271651496ac5c00acc8a27c"
+  integrity sha512-tovWIDiEsfSAsPWH+/wL9Hfl/Hc+2j2IP+Z85I6uWTbynLVdyURx8gmJjKBUTSCmcyrgBnTbnnlr4DTM6/aFOg==
   dependencies:
-    "@angular-eslint/bundled-angular-compiler" "20.5.0"
+    "@angular-eslint/bundled-angular-compiler" "21.0.1"
 
 "@angular/animations@20.3.1":
   version "20.3.1"
