@@ -136,12 +136,20 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@angular-devkit/architect@0.2003.6", "@angular-devkit/architect@>= 0.2000.0 < 0.2100.0":
+"@angular-devkit/architect@0.2003.6":
   version "0.2003.6"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.2003.6.tgz#e242a12e49c577703a77ac26d2fff321d1ab336c"
   integrity sha512-VtXxfJzrBZ8MQN83shXNaTUaLSOIwa+4/3LD5drxSnHuYJrz+d3FIApWAxcA9QzucsTDZwXyFxaWZN/e5XVm6g==
   dependencies:
     "@angular-devkit/core" "20.3.6"
+    rxjs "7.8.2"
+
+"@angular-devkit/architect@>= 0.2100.0 < 0.2200.0":
+  version "0.2100.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.2100.1.tgz#e0b4086a03155fe204e50628bfc8500ab8684619"
+  integrity sha512-MLxTT6EE7NHuCen9yGdv9iT2vtB/fAdXTRnulOWfVa/SVmGoKawBGCNOAPpI2yA8Fb/D5xlU6ThS1ggDsiCqrQ==
+  dependencies:
+    "@angular-devkit/core" "21.0.1"
     rxjs "7.8.2"
 
 "@angular-devkit/build-angular@^20.3.3":
@@ -226,6 +234,18 @@
     rxjs "7.8.2"
     source-map "0.7.6"
 
+"@angular-devkit/core@21.0.1", "@angular-devkit/core@>= 21.0.0 < 22.0.0":
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-21.0.1.tgz#6e26f3e01f3fb826060664cbc761b3389ab1a16e"
+  integrity sha512-AGdAu0hV2TLCWYHiyVSxUFbpR2chO+xA4OkRrG2YirQGcqJTmr651C4rWDkheWqeWDxMicZklqKaTw66mNSUkw==
+  dependencies:
+    ajv "8.17.1"
+    ajv-formats "3.0.1"
+    jsonc-parser "3.3.1"
+    picomatch "4.0.3"
+    rxjs "7.8.2"
+    source-map "0.7.6"
+
 "@angular-devkit/schematics@20.3.6", "@angular-devkit/schematics@>= 20.0.0 < 21.0.0":
   version "20.3.6"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-20.3.6.tgz#8741661e81ae49bb8052b400e4a8773c91d726d6"
@@ -237,13 +257,13 @@
     ora "8.2.0"
     rxjs "7.8.2"
 
-"@angular-eslint/builder@^20.5.0":
-  version "20.5.0"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-20.5.0.tgz#8b2458437f0dc2564adf9f5229ec1bfab22cafa6"
-  integrity sha512-ycrvgomFgitSwzDndo+i3Ob1iu9lAJeuZZ8cwBR4E/RYsCxNm02NLCv5qjQ3ya57yjkh12N6yvjzWnCO9Vdiuw==
+"@angular-eslint/builder@^21.0.1":
+  version "21.0.1"
+  resolved "https://registry.yarnpkg.com/@angular-eslint/builder/-/builder-21.0.1.tgz#d1d2915dcd28cc371251911f064751d3de50c767"
+  integrity sha512-6BqpmW0XvjTOs2YOHwzeZcQ32eL8vs8SCHjt1cQnq1+libOVDXky1eb/jRs7ouyA49UagLDoM34K1kjrYo8P3Q==
   dependencies:
-    "@angular-devkit/architect" ">= 0.2000.0 < 0.2100.0"
-    "@angular-devkit/core" ">= 20.0.0 < 21.0.0"
+    "@angular-devkit/architect" ">= 0.2100.0 < 0.2200.0"
+    "@angular-devkit/core" ">= 21.0.0 < 22.0.0"
 
 "@angular-eslint/bundled-angular-compiler@18.4.0":
   version "18.4.0"
