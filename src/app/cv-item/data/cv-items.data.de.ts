@@ -17,7 +17,7 @@ export const CVITEMS: CvItem[] = [
     title: 'Netlight Consulting GmbH',
     subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
-    end: '',
+    end: '2025-12',
     description: `Netlight ist eine Beratungsgesellschaft, die den Schwerpunkt auf Zusammenarbeit legt, um maßgeschneiderte und wertvolle Ergebnisse für ihre Kunden zu liefern. Durch die vollständige Integration in die Kundenteams übertreffen die Berater regelmäßig die Erwartungen, indem sie die tatsächlichen Bedürfnisse der Kunden adressieren. Über seine Rolle als IT-Berater hinaus hat Sebastian wesentliche Beiträge zur Entwicklung sowohl von Kollegen als auch der Organisation insgesamt geleistet.
 
 Als disziplinarischer Mentor förderte Sebastian kontinuierlich das Wachstum seiner Mentees, und trieb die globale „Welcome to Level“-Eventserie voran, die Karrieremeilensteine feiert. Außerdem übernimmt er eine zentrale Rolle als Pilot-Interviewer, indem er sich mit junior Interviewern zusammenschließt, um qualitativ hochwertige und evidenzbasierte Entscheidungen bei der Kandidatenbewertung sicherzustellen. Mit der Erfahrung aus über 50 durchgeführten technischen Interviews ist Sebastian maßgeblich an der Gestaltung der nächsten Generation von Netlightern beteiligt.
@@ -31,9 +31,9 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
     positions: [
       {
         title: 'Deutscher Verkehrsverbund',
-        subtitle: 'Software Architekt',
+        subtitle: 'Software Architekt & Staff Engineer',
         begin: '2025-09',
-        end: '',
+        end: '2025-12',
         description: 'Im Rahmen der Modernisierung seiner Software-Infrastruktur entwickelte der Kunde ein neues System zur Generierung und Verwaltung kundenbezogener Dokumente wie Ticketbestätigungen, Vertragskündigungen etc. Die Generierung der Dokumente wurde durch eine Ereigniswarteschlangennachricht ausgelöst. Das resultierende Dokument musste dem Kunden anschließend im Kundenportal und per E-Mail zur Verfügung gestellt werden. Sebastian war für die anfängliche Recherche der Lösung verantwortlich, einschließlich der Bewertung potenzieller Drittanbieterlösungen im Kontext der Make-or-Buy-Frage. Nachdem die Technologieentscheidung finalisiert und dokumentiert war, entwarf er die neue Systemarchitektur und unterteilte die Implementierungsarbeiten in Epics und Stories.',
         tags: ['Java', 'Spring Boot', 'Git', 'Jira', 'Confluence'],
         thumbnail: 'RMV+RMS.png',
