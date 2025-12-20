@@ -36,7 +36,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
         end: '2025-12',
         description: 'Im Rahmen der Modernisierung seiner Software-Infrastruktur entwickelte der Kunde ein neues System zur Generierung und Verwaltung kundenbezogener Dokumente wie Ticketbestätigungen, Vertragskündigungen etc. Die Generierung der Dokumente wurde durch eine Ereigniswarteschlangennachricht ausgelöst. Das resultierende Dokument musste dem Kunden anschließend im Kundenportal und per E-Mail zur Verfügung gestellt werden. Sebastian war für die anfängliche Recherche der Lösung verantwortlich, einschließlich der Bewertung potenzieller Drittanbieterlösungen im Kontext der Make-or-Buy-Frage. Nachdem die Technologieentscheidung finalisiert und dokumentiert war, entwarf er die neue Systemarchitektur und unterteilte die Implementierungsarbeiten in Epics und Stories.',
         tags: ['Java', 'Spring Boot', 'Git', 'Jira', 'Confluence'],
-        thumbnail: 'RMV+RMS.png',
+        thumbnail: 'RMV_RMS.png',
       },
       {
         title: 'Skandinavische Bank',
