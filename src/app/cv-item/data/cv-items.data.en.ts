@@ -17,7 +17,7 @@ export const CVITEMS: CvItem[] = [
     title: 'Netlight Consulting GmbH',
     subtitle: 'IT Consultant - Associate Manager',
     begin: '2019-01',
-    end: '',
+    end: '2025-12',
     description: `Netlight is a consulting firm that emphasises collaboration and leveraging talent to deliver tailored, valuable results for clients. Fully integrated into client teams, consultants consistently exceed expectations by addressing real client needs. Beyond his role as an IT consultant, Sebastian has made extensive contributions to the development of colleagues and the organisation as a whole.
 
 As a disciplinary lead (mentor), Sebastian fostered the continuous growth and development of his mentees, and driving the global "Welcome to Level" event series, celebrating career milestones. He also plays a key role as a pilot interviewer, pairing with junior interviewers to ensure high-quality evaluations and evidence-based decisions about candidates. With experience conducting over 50 technical interviews, Sebastian is instrumental in shaping the future generations of Netlighters.
@@ -31,9 +31,9 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
     positions: [
       {
         title: 'German Public Transport Association',
-        subtitle: 'Staff Engineer',
+        subtitle: 'Software Architect & Staff Engineer',
         begin: '2025-09',
-        end: '',
+        end: '2025-12',
         description: 'As part of the modernisation of their software infrastructure, the client designed a new system for the generation and management of customer-facing documents, like ticket confirmation, contract cancellation, etc. The documents generation was triggered from an event queue message. The resulting document then needed to be made available to the customer in their customer portal and via e-mail. Sebastian was responsible for the initial research regarding the solution, including the evaluation of potential 3rd party vendor solutions in context of the make-or-buy question. After the technology decision was finalised and documented, he designed the new system architecture and broke the implementation efforts down into epics and stories.',
         tags: ['Java', 'Spring Boot', 'Git', 'Jira', 'Confluence'],
         thumbnail: 'RMV+RMS.png',
