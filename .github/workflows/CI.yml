@@ -47,6 +47,10 @@ jobs:
         node-version: latest
     - name: Install Dependencies
       run: yarn install --immutable
+      env:
+        CI: true
+        NPM_CONFIG_PRODUCTION: false
+
     - name: Run Semantic Release
       # for configuration of semantic-release, check the package.json and https://github.com/semantic-release/semantic-release/
       run: npx semantic-release
