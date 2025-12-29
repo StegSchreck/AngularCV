@@ -102,7 +102,7 @@
         }
       ],
       [
-        "semantic-release/yarn",
+        "semantic-release-yarn",
         {
           "npmPublish": false
         }
