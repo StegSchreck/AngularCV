@@ -1,8 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 import { CvItemService } from './cv-item/cv-item.service';
 import { LocalizationService } from './l10n/l10n.service';
+
+interface GeneralData {
+  name?: string;
+  position?: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -10,11 +17,6 @@ import { LocalizationService } from './l10n/l10n.service';
   styleUrls: ['./app.component.css'],
   standalone: false
 })
-interface GeneralData {
-  name?: string;
-  position?: string;
-}
-
 export class AppComponent implements OnInit {
   public l10n: unknown;
   public generalData: GeneralData | null = null;
@@ -24,11 +26,19 @@ export class AppComponent implements OnInit {
     private localizationService: LocalizationService,
     private titleService: Title,
     private metaService: Meta,
+    private router: Router,
   ) {
     this.localizationService.languageChanged.subscribe(data => {
       this.l10n = data;
       this.loadData();
     });
+
+    // Scroll to top on route navigation
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0);
+      });
   }
 
   ngOnInit() {
