@@ -22,6 +22,7 @@ export class AppComponent implements OnInit, OnDestroy {
   public l10n: unknown;
   public generalData: GeneralData | null = null;
   private routerSubscription?: Subscription;
+  private languageSubscription?: Subscription;
 
   constructor(
     private cvItemService: CvItemService,
@@ -30,7 +31,7 @@ export class AppComponent implements OnInit, OnDestroy {
     private metaService: Meta,
     private router: Router,
   ) {
-    this.localizationService.languageChanged.subscribe(data => {
+    this.languageSubscription = this.localizationService.languageChanged.subscribe(data => {
       this.l10n = data;
       this.loadData();
     });
@@ -50,6 +51,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.routerSubscription?.unsubscribe();
+    this.languageSubscription?.unsubscribe();
   }
 
   private loadData(): void {
