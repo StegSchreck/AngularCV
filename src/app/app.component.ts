@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 
 import { CvItemService } from './cv-item/cv-item.service';
 import { LocalizationService } from './l10n/l10n.service';
-import {CvItem} from './cv-item/cv-item';
+import { CvItem } from './cv-item/cv-item';
 
 @Component({
   selector: 'app-root',
