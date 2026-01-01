@@ -36,8 +36,6 @@ export class AppComponent implements OnInit {
     this.localizationService.languageChanged.subscribe(data => {
       this.l10n = data;
       this.loadData();
-      this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
-      this.setMetaDescription();
     });
   }
 
@@ -48,6 +46,13 @@ export class AppComponent implements OnInit {
 
   private loadData(): void {
     this.generalData = this.cvItemService.getGeneralData();
+    
+    // Update title and meta description after general data is loaded
+    if (this.generalData && this.generalData.name && this.generalData.position) {
+      this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
+      this.setMetaDescription();
+    }
+    
     this.cvItemService.getContactItems().then(items => this.contactItems = items);
 
     this.cvItemService.getCvItems().then(items => this.cvItems = items);
@@ -66,7 +71,9 @@ export class AppComponent implements OnInit {
   }
 
   private setMetaDescription() {
-    const description = 'This is the online-CV of ' + this.generalData.name + ' - created with the AngularCV project.';
-    this.metaService.updateTag({name: 'description', content: description});
+    if (this.generalData && this.generalData.name) {
+      const description = 'This is the online-CV of ' + this.generalData.name + ' - created with the AngularCV project.';
+      this.metaService.updateTag({name: 'description', content: description});
+    }
   }
 }
