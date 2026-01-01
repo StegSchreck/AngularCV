@@ -138,12 +138,6 @@
     width: 40%
   }
 
-  .print-item .print-title {
-  }
-
-  .print-item .print-subtitle {
-  }
-
   .print-item .print-date {
     float: right;
     font-weight: bold;
