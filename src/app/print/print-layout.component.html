@@ -134,8 +134,12 @@
           </div>
           <div class="print-subtitle">{{item.subtitle}}</div>
           <div class="print-description">{{item.description}}</div>
-          @for (tag of item.tags; track tag) {
-            <span class="print-tag">{{tag}}</span>
+          @if (item.tags?.length) {
+            <div class="print-tags">
+              @for (tag of item.tags; track tag) {
+                <span class="print-tag">{{tag}}</span>
+              }
+            </div>
           }
         </div>
       }
@@ -156,8 +160,12 @@
             {{item.end || l10n.cv_item.now}}</div>
           <div class="print-subtitle">{{item.subtitle}}</div>
           <div class="print-description">{{item.description}}</div>
-          @for (tag of item.tags; track tag) {
-            <span class="print-tag">{{tag}}</span>
+          @if (item.tags?.length) {
+            <div class="print-tags">
+              @for (tag of item.tags; track tag) {
+                <span class="print-tag">{{tag}}</span>
+              }
+            </div>
           }
         </div>
       }
