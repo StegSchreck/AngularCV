@@ -24,16 +24,16 @@ import { CvItemDirective }          from './cv-item/cv-item.directive';
 import { CvItemService }            from './cv-item/cv-item.service';
 import { FooterComponent }          from './footer/footer.component';
 import { ContactComponent }         from './contact/contact.component';
-import { PdfComponent }             from './pdf/pdf.component';
-import { CvDownloadCardComponent }  from './cv-download-card/cv-download-card.component';
 import { PictureModalComponent }    from './picture-modal/picture-modal.component';
 import { FeatureToggleService }     from './feature-toggle/feature-toggle.service';
 import { LocalizationService }      from './l10n/l10n.service';
 import { LocalizationComponent }    from './l10n/l10n.component';
-import {MatLineModule} from '@angular/material/core';
-import {MatBadgeModule} from '@angular/material/badge';
-import { ServiceWorkerModule } from '@angular/service-worker';
-import {MatCardModule} from '@angular/material/card';
+import { MatLineModule }            from '@angular/material/core';
+import { MatBadgeModule }           from '@angular/material/badge';
+import { ServiceWorkerModule }      from '@angular/service-worker';
+import { MatCardModule }            from '@angular/material/card';
+import { PrintComponent }           from './print/print.component';
+import { PrintLayoutComponent }     from './print/print-layout.component';
 
 @NgModule({ declarations: [
         AppComponent,
@@ -48,8 +48,8 @@ import {MatCardModule} from '@angular/material/card';
         CvItemComponent,
         FooterComponent,
         ContactComponent,
-        PdfComponent,
-        CvDownloadCardComponent,
+        PrintComponent,
+        PrintLayoutComponent,
         PictureModalComponent,
         LocalizationComponent,
         CvItemDirective,

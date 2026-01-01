@@ -12,4 +12,5 @@ export const FEATURE_TOGGLES = {
   localization: true,
   cvitem_show_position_count_badge: true,
   cvitem_show_position_thumbnail: false,
+  print_view: true,
 };

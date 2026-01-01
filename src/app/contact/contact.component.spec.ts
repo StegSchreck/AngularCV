@@ -5,9 +5,7 @@ import { LocalizationService } from '../l10n/l10n.service';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { CvItemService } from '../cv-item/cv-item.service';
 
-import { CvDownloadCardComponent } from '../cv-download-card/cv-download-card.component';
 import { AboutComponent } from '../about/about.component';
-import { PdfComponent } from '../pdf/pdf.component';
 
 import { ContactComponent } from './contact.component';
 
@@ -18,7 +16,7 @@ describe('ContactComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule ],
-      declarations: [ AboutComponent, ContactComponent, CvDownloadCardComponent, PdfComponent ],
+      declarations: [ AboutComponent, ContactComponent ],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

@@ -1,0 +1,185 @@
+@import "assets/roboto-font/style.css";
+@import "assets/material-icons/style.css";
+
+/* Hide print view on screen */
+.print-cv-container {
+  display: none !important;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
+  /* 1. Hide the entire SPA UI */
+  .screen-view,
+  app-header,
+  app-footer,
+  #main,
+  router-outlet,
+  .no-print {
+    display: none !important;
+  }
+
+  /* 2. Show the Print Container */
+  .print-cv-container {
+    display: block !important;
+    position: static !important;
+    visibility: visible !important;
+    background: white !important;
+    color: black !important;
+    padding: 20px !important;
+    width: auto !important;
+  }
+
+  /* 3. Aggressive Reset of Body/Material backgrounds */
+  html, body {
+    background-color: white; /* Force out the #303030 dark background */
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* 4. Typography Reset */
+  .print-cv-container,
+  .print-cv-container * {
+    font-family: 'Roboto', sans-serif !important;
+    color: black !important;
+    text-shadow: none !important;
+  }
+
+  .print-header {
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+
+  .print-header h1 {
+    font-family: 'Roboto Slab', serif !important;
+    text-align: center;
+    font-size: 28pt;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .print-header p {
+    text-align: center;
+    font-size: 12pt;
+    margin: 5px;
+  }
+
+  .print-section-title {
+    font-family: 'Roboto Slab', serif !important;
+    background: #eee !important;
+    padding: 5px 10px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 14pt;
+    border-left: 5px solid #333;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print-item {
+    page-break-inside: avoid;
+  }
+
+  .print-item:not(:last-child):not(.print-item-small) {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+
+  .print-item-small.print-item-small:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .print-item-small .print-description {
+    margin-top: 0;
+  }
+
+  .print-positions-title {
+    font-family: 'Roboto Slab', serif !important;
+    background: #eee !important;
+    padding: 5px 1em;
+    text-transform: uppercase;
+    line-height: 12pt;
+    font-size: 12pt;
+    border-left: 3px solid #333;
+    margin: 1em 3em 0 2em;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .print-item-position:not(:first-of-type) {
+    margin-top: 1em;
+  }
+
+  .print-item-position {
+    border-left: 3px solid #999;
+    /*border-right: 3px solid #999;*/
+    padding-left: 1em;
+    margin-left: 2em;
+    padding-right: 1em;
+    margin-right: 2em;
+  }
+
+  .print-item-language {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .print-item-language .print-language-title {
+    font-weight: bold;
+    width: 40%
+  }
+
+  .print-item .print-title {
+  }
+
+  .print-item .print-subtitle {
+  }
+
+  .print-item .print-date {
+    float: right;
+    font-weight: bold;
+    color: #444 !important;
+  }
+
+  .print-description {
+    margin-top: 10px;
+    white-space: pre-wrap;
+    font-size: 11pt;
+    line-height: 1.4;
+  }
+
+  .print-item .print-tags {
+    margin-top: 0.5em;
+  }
+
+  .print-item .print-tag {
+    font-style: italic;
+    font-size: smaller;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding: 2px 5px;
+    break-inside: avoid;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .print-item .print-tag:not(:last-of-type) {
+    margin-right: 0.5em;
+  }
+
+  /* 5. Force Browser to print background colors (for the section title bars) */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    box-sizing: border-box !important;
+  }
+}
