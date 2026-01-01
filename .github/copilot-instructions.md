@@ -32,7 +32,7 @@ src/
 │   ├── projects/           # Projects section component
 │   ├── publications/       # Publications section component
 │   ├── volunteering/       # Volunteering section component
-│   └── pdf/                # PDF generation component
+│   └── print/              # Print functionality components
 ├── assets/
 │   ├── img/                # Images including avatar, cover, thumbnails
 │   └── attachments/        # PDF attachments
@@ -78,7 +78,6 @@ CV data is stored in `src/app/cv-item/data/cv-items.data.[locale].ts` files:
 ### Feature Toggles
 
 Feature toggles are configured in `src/app/feature-toggle/feature-toggles.data.ts`:
-- `downloadable_pdf`: Enable/disable PDF download functionality
 - `tab_publications`: Show/hide publications tab
 - `tab_projects`: Show/hide projects tab
 - `tab_volunteering`: Show/hide volunteering tab
@@ -87,6 +86,9 @@ Feature toggles are configured in `src/app/feature-toggle/feature-toggles.data.t
 - `contact_email_remove_at_sign`: Replace @ in email display
 - `default_language`: Set default language (e.g., 'EN', 'DE')
 - `localization`: Enable/disable language switching feature
+- `cvitem_show_position_count_badge`: Show position count badge on CV items
+- `cvitem_show_position_thumbnail`: Show thumbnails for CV item positions
+- `print_view`: Enable/disable browser print functionality
 
 ### Localization
 
@@ -115,7 +117,7 @@ Localization data is in `src/app/l10n/l10n.data.ts`:
 
 7. **Sorting**: CV items should be sorted by descending end-date (newest first)
 
-8. **Third-Party Components**: Project uses jsPDF (package: `jspdf`) for PDF generation, Material Design Icons, and various Google Fonts
+8. **Third-Party Components**: Project uses Material Design Icons and various Google Fonts (Roboto, Roboto Slab)
 
 ## Testing Considerations
 
