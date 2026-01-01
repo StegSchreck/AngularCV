@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { Subscription } from 'rxjs';
 
 import { CvItemService } from './cv-item/cv-item.service';
 import { LocalizationService } from './l10n/l10n.service';
@@ -17,9 +18,10 @@ interface GeneralData {
   styleUrls: ['./app.component.css'],
   standalone: false
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   public l10n: unknown;
   public generalData: GeneralData | null = null;
+  private routerSubscription?: Subscription;
 
   constructor(
     private cvItemService: CvItemService,
@@ -34,7 +36,7 @@ export class AppComponent implements OnInit {
     });
 
     // Scroll to top on route navigation
-    this.router.events
+    this.routerSubscription = this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
       .subscribe(() => {
         window.scrollTo(0, 0);
@@ -44,6 +46,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.l10n = this.localizationService.getDefault();
     this.loadData();
+  }
+
+  ngOnDestroy() {
+    this.routerSubscription?.unsubscribe();
   }
 
   private loadData(): void {
