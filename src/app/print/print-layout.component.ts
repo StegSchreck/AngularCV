@@ -39,7 +39,6 @@ export class PrintLayoutComponent implements OnInit {
   private loadData(): void {
     this.generalData = this.cvItemService.getGeneralData();
     this.cvItemService.getContactItems().then(items => this.contactItems = items);
-
     this.cvItemService.getCvItems().then(items => this.cvItems = items);
     this.cvItemService.getEducationItems().then(items => this.educationItems = items);
     this.cvItemService.getCertificationItems().then(items => this.certificationItems = items);
