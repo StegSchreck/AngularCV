@@ -10,13 +10,13 @@ import { CvItem } from '../cv-item/cv-item';
   standalone: false
 })
 export class PrintLayoutComponent implements OnInit {
-  public l10n;
-  public generalData;
-  public contactItems;
+  public l10n: any;
+  public generalData: any;
+  public contactItems: CvItem[];
   public cvItems: CvItem[];
   public educationItems: CvItem[];
   public certificationItems: CvItem[];
-  public languageItems;
+  public languageItems: CvItem[];
   public talkItems: CvItem[];
   public projectItems: CvItem[];
   public volunteerItems: CvItem[];
