@@ -303,25 +303,10 @@
   resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-20.5.0.tgz#b0dd9ffd89f5cb0139741d112bdb228f1ba7a46d"
   integrity sha512-XjvSZk+G/4rRUOLHHjlHBeS4OnnsLV9G1YtE5OerBB2H4x6nKgUEzpptad3uuL4iYWI9rGaWMLqGPTvyYqw/IA==
 
-"@angular-eslint/bundled-angular-compiler@21.0.1":
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-21.0.1.tgz#dbb54acc52fe1649a691d06c500bf462f2fe2189"
-  integrity sha512-Kb59SopkJ2sDgZSysL+ZqcfqM2cbK+gciAyHljkrCUsqo66eEq5KCZUU//RVoo4MHi+qL/dFy54JG/+A/35xcQ==
-
 "@angular-eslint/bundled-angular-compiler@21.1.0":
   version "21.1.0"
   resolved "https://registry.yarnpkg.com/@angular-eslint/bundled-angular-compiler/-/bundled-angular-compiler-21.1.0.tgz#56ef7b91cdc406161afab748aab476e31bfdd4b1"
   integrity sha512-t52J6FszgEHaJ+IjuzU9qaWfVxsjlVNkAP+B5z2t4NDgbbDDsmI+QJh0OtP1qdlqzjh2pbocEml30KhYmNZm/Q==
-
-"@angular-eslint/eslint-plugin-template@21.0.1":
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/eslint-plugin-template/-/eslint-plugin-template-21.0.1.tgz#24fa9b94369ebf9b5aa34ec0a44e49b13e4d2c4a"
-  integrity sha512-DF1WEMalbV1hNKxbu3nwK1yUa+E2FQpNz0KDORU65/vdCffeuftCetobrsAS7zDgJ6FO+Fsb+ZeCzNKEhhh1vA==
-  dependencies:
-    "@angular-eslint/bundled-angular-compiler" "21.0.1"
-    "@angular-eslint/utils" "21.0.1"
-    aria-query "5.3.2"
-    axobject-query "4.1.0"
 
 "@angular-eslint/eslint-plugin-template@21.1.0":
   version "21.1.0"
@@ -377,13 +362,6 @@
   integrity sha512-At1yS8GRviGBoaupiQwEOL4/IcZJCE/+2vpXdItMWPGB1HWetxlKAUZTMmIBX/r5Z7CoXxl+LbqpGhrhyzIQAg==
   dependencies:
     "@angular-eslint/bundled-angular-compiler" "18.4.0"
-
-"@angular-eslint/utils@21.0.1":
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/@angular-eslint/utils/-/utils-21.0.1.tgz#15230c24976ae836b271651496ac5c00acc8a27c"
-  integrity sha512-tovWIDiEsfSAsPWH+/wL9Hfl/Hc+2j2IP+Z85I6uWTbynLVdyURx8gmJjKBUTSCmcyrgBnTbnnlr4DTM6/aFOg==
-  dependencies:
-    "@angular-eslint/bundled-angular-compiler" "21.0.1"
 
 "@angular-eslint/utils@21.1.0":
   version "21.1.0"
