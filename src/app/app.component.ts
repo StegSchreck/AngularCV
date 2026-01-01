@@ -10,14 +10,10 @@ import { LocalizationService } from './l10n/l10n.service';
   styleUrls: ['./app.component.css'],
   standalone: false
 })
-interface GeneralData {
-  name?: string;
-  position?: string;
-}
 
 export class AppComponent implements OnInit {
-  public l10n: unknown;
-  public generalData: GeneralData | null = null;
+  public l10n;
+  public generalData;
 
   constructor(
     private cvItemService: CvItemService,

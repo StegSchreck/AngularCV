@@ -12,7 +12,7 @@ import { CvItem } from '../cv-item/cv-item';
 export class PrintLayoutComponent implements OnInit {
   public l10n: any;
   public generalData: any;
-  public contactItems: CvItem[];
+  public contactItems: any;
   public cvItems: CvItem[];
   public educationItems: CvItem[];
   public certificationItems: CvItem[];
