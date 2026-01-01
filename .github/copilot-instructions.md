@@ -115,7 +115,7 @@ Localization data is in `src/app/l10n/l10n.data.ts`:
 
 7. **Sorting**: CV items should be sorted by descending end-date (newest first)
 
-8. **Third-Party Components**: Project uses jsPDF for PDF generation, Material Design Icons, and various Google Fonts
+8. **Third-Party Components**: Project uses jsPDF (package: `jspdf`) for PDF generation, Material Design Icons, and various Google Fonts
 
 ## Testing Considerations
 
