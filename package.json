@@ -39,7 +39,7 @@
     "@angular-eslint/eslint-plugin": "18.4.0",
     "@angular-eslint/eslint-plugin-template": "21.1.0",
     "@angular-eslint/schematics": "21.1.0",
-    "@angular-eslint/template-parser": "20.5.0",
+    "@angular-eslint/template-parser": "21.1.0",
     "@angular/cli": "^21.0.4",
     "@angular/compiler-cli": "^20.3.15",
     "@angular/language-service": "20.3.2",
