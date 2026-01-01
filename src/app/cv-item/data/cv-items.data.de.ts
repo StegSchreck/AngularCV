@@ -286,7 +286,7 @@ export const EDUCATION: CvItem[] = [
     subtitle: 'Master of Science | Informatik',
     begin: '2011-10',
     end: '2015-04',
-    description: '',
+    description: 'Gesamtnote: 1,9   |   GPA: 3.1/4.0',
     tags: ['Scrum', 'Subversion', 'Git', 'Java', 'Scala', 'eclipse', 'Lua', 'Maven'],
     link: 'https://www.tu-berlin.de',
     thumbnail: 'TU-Berlin.svg',
@@ -296,7 +296,7 @@ export const EDUCATION: CvItem[] = [
     subtitle: 'Bachelor of Science | Informatik',
     begin: '2008-10',
     end: '2011-12',
-    description: '',
+    description: 'Gesamtnote: 2,4   |   GPA: 2.8/4.0',
     tags: ['Scrum', 'Subversion', 'Java', 'C', 'Assembler', 'eclipse', 'Opal', 'ant'],
     link: 'https://www.tu-berlin.de',
     thumbnail: 'TU-Berlin.svg',
@@ -452,7 +452,7 @@ export const PROJECTS: CvItem[] = [
 export const VOLUNTEERING: CvItem[] = [
   {
     title: 'Technisches Hilfswerk',
-    subtitle: 'Helfer',
+    subtitle: 'Ehrenamtliche Einsatzkraft',
     begin: '2025',
     end: '',
     description: 'Ehrenamtliche Einsatzkraft in der Fachgruppe Wasserschaden/Pumpen (WP) im THW Ortsverband Berlin-Mitte.',

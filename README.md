@@ -38,7 +38,6 @@ In order to comply with the license of this project and the third-party elements
 ### Feature Toggles
 AngularCV offers some feature toggles (a.k.a. feature switches) to adjust the experience of the website. However, some features are part of the basic functionality and should not be deactivated and thus do not have a feature toggle, e.g. the work experience tab.
 The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.ts`. Currently, these feature toggles are implemented:
-* `downloadable_pdf`: whether to offer a PDF version of the data (download button will be placed in the header and on the contact page)
 * `tab_publications`: whether to show the "publications" tab
 * `tab_projects`: whether to show the "projects" tab
 * `tab_volunteering`: whether to show the "volunteering" tab
@@ -47,6 +46,9 @@ The feature toggles are defined in `src/app/feature-toggle/feature-toggles.data.
 * `contact_email_remove_at_sign`: whether to replace the `@` sign when displaying the email address on the contact page (in order to make it harder to scrape for a crawler)
 * `default_language`: which language to use for the navigation menu entries, page titles, etc.
 * `localization`: whether to offer the visitor of the website to switch the localization language
+* `cvitem_show_position_count_badge`: if a CV item has entries in `positions`, show their count as badge
+* `cvitem_show_position_thumbnail`: show the thumbnail on the `positions` of a CV item
+* `print_view`: show the print button to trigger the browser's print dialogue
 
 ### Localization
 By switching the `default_language` feature toggle (see above), you can define which language to choose for navigation menu entries, page titles, etc. You can also let the user switch the language by activating the `localization` feature toggle. You will still need to adjust your data in `src/app/cv-item/data/cv-items.data.*.ts` to adapt the same language, where `*` is a placeholder for the language you defined as default language before. 
@@ -92,6 +94,5 @@ Furthermore, the following third-party sources are included:
 * [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
 * [IcoMoon Free](https://icomoon.io/#preview-free)
 * [SimpleIcons](https://simpleicons.org/)
-* [jsPDF](https://github.com/MrRio/jsPDF)
 
 The images in the `/src/assets/img/item-thumbnails` directory in this repository are property of their respective right owners and do not fall under the license of this repository. They're included for show-case purposes.

@@ -1,6 +1,5 @@
 /* eslint-disable */
 export const FEATURE_TOGGLES = {
-  downloadable_pdf: false,
   tab_publications: true,
   tab_projects: true,
   tab_volunteering: true,
@@ -12,4 +11,5 @@ export const FEATURE_TOGGLES = {
   localization: true,
   cvitem_show_position_count_badge: true,
   cvitem_show_position_thumbnail: false,
+  print_view: true,
 };

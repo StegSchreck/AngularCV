@@ -15,11 +15,9 @@ import { EducationComponent } from './education/education.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { VolunteeringComponent } from './volunteering/volunteering.component';
-import { PdfComponent } from './pdf/pdf.component';
 import { ContactComponent } from './contact/contact.component';
 import { CvItemComponent } from './cv-item/cv-item.component';
 import { LocalizationComponent } from './l10n/l10n.component';
-import { CvDownloadCardComponent } from './cv-download-card/cv-download-card.component';
 
 import { AppComponent } from './app.component';
 
@@ -29,8 +27,8 @@ describe('AppComponent', () => {
       imports: [ AppRoutingModule, MaterialModule, ],
       declarations: [
         AppComponent, AboutComponent, ExperienceComponent, EducationComponent, FooterComponent, HeaderComponent, OverviewComponent,
-        PublicationsComponent, ProjectsComponent, VolunteeringComponent, ContactComponent, PdfComponent, CvItemComponent,
-        LocalizationComponent, CvDownloadCardComponent,
+        PublicationsComponent, ProjectsComponent, VolunteeringComponent, ContactComponent, CvItemComponent,
+        LocalizationComponent,
       ],
       providers: [ CvItemService, FeatureToggleService, LocalizationService, ],
     }).compileComponents();

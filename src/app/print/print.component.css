@@ -1,7 +1,11 @@
-button.pdf-download {
+button.print {
   background-color: white;
   color: black;
 }
-button.pdf-download:hover {
+button.print:hover {
   background-color: #eee;
+}
+
+.no-print {
+  display: block;
 }

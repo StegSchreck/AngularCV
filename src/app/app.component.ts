@@ -1,37 +1,45 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { Router, NavigationEnd } from '@angular/router';
 
 import { CvItemService } from './cv-item/cv-item.service';
+import { LocalizationService } from './l10n/l10n.service';
 
 @Component({
-    selector: 'app-root',
-    styleUrls: ['./app.component.css'],
-    templateUrl: './app.component.html',
-    standalone: false
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  standalone: false
 })
-export class AppComponent {
-  private generalData;
 
-  public constructor(
+export class AppComponent implements OnInit {
+  public l10n;
+  public generalData;
+
+  constructor(
     private cvItemService: CvItemService,
+    private localizationService: LocalizationService,
     private titleService: Title,
     private metaService: Meta,
-    private router: Router,
   ) {
-    this.getItems();
-    this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
-    this.setMetaDescription();
-
-    router.events
-      // .filter(event => event instanceof NavigationEnd)
-      .subscribe((event: NavigationEnd) => {
-        window.scrollTo(0, 0);
-      });
+    this.localizationService.languageChanged.subscribe(data => {
+      this.l10n = data;
+      this.loadData();
+    });
   }
 
-  private getItems(): void {
+  ngOnInit() {
+    this.l10n = this.localizationService.getDefault();
+    this.loadData();
+  }
+
+  private loadData(): void {
     this.generalData = this.cvItemService.getGeneralData();
+
+    // Update title and meta description after general data is loaded
+    if (this.generalData && this.generalData.name && this.generalData.position) {
+      this.setTitle(this.generalData.name + ' | ' + this.generalData.position);
+      this.setMetaDescription();
+    }
   }
 
   public setTitle(newTitle: string) {
@@ -39,7 +47,9 @@ export class AppComponent {
   }
 
   private setMetaDescription() {
-    const description = 'This is the online-CV of ' + this.generalData.name + ' - created with the AngularCV project.';
-    this.metaService.updateTag({name: 'description', content: description});
+    if (this.generalData && this.generalData.name) {
+      const description = 'This is the online-CV of ' + this.generalData.name + ' - created with the AngularCV project.';
+      this.metaService.updateTag({name: 'description', content: description});
+    }
   }
 }
