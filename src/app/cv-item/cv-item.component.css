@@ -185,9 +185,10 @@ a[mat-button] {
 .tag-icon {
   margin-left: -5px;
   font-size: 1.5em;
-  padding-right: 5px;
+  padding-right: 10px;
   top: 3px;
   position: relative;
+  left: 5px;
 }
 .tag-icon:before {
   color: unset;
@@ -327,7 +328,8 @@ a[mat-button] {
 }
 
 .cv-item__position__tag__text {
-  font-size: 0.9em !important;
+  font-size: 0.8em !important;
+  line-height: 16px;
 }
 
 .small-chip {

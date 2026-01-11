@@ -76,9 +76,7 @@
             <mat-chip-set>
               @for (tag of position.tags; track tag) {
                 <mat-chip class="small-chip cv-item__position__tag">
-                  @if (tag !== undefined && tag !== '') {
-                    <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}"></i>
-                  }
+                  <i matListItemIcon class="tag-icon icon-{{tag.toLowerCase()}}"></i>
                   <span class="cv-item__position__tag__text">{{tag}}</span>
                 </mat-chip>
               }

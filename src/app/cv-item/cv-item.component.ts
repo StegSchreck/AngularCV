@@ -62,7 +62,7 @@ export class CvItemComponent implements OnInit, AfterViewInit {
     }
   }
 
-  private toggleDetails(event): void {
+  protected toggleDetails(event): void {
     const card = event.target.closest('mat-card');
     if (card.classList.contains('opened')) {
       card.classList.add('closed');
