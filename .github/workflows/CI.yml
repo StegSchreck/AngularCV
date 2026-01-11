@@ -32,6 +32,10 @@ jobs:
       with:
         api-token: ${{ secrets.CODACY_API_TOKEN }}
         project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+    - name: Lighthouse CI Action
+      uses: treosh/lighthouse-ci-action@12.6.1
+      with:
+        uploadArtifacts: true
 
   release:
     needs: build
