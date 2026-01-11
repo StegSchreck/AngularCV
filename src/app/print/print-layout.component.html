@@ -1,0 +1,192 @@
+<!-- Full CV Layout (Print Only) -->
+<div class="print-cv-container">
+  <div class="print-header">
+    <h1>{{generalData?.name}}</h1>
+    <p>{{contactItems?.city}}
+      @if (contactItems?.mail !== undefined && contactItems?.mail !== '') {<span> &nbsp; | &nbsp; <a href="{{contactItems?.mail}}" target="_blank">{{contactItems?.mail}}</a></span>}
+      @if (contactItems?.phone !== undefined && contactItems?.phone !== '') {<span> &nbsp; | &nbsp; {{contactItems?.phone}}</span>}
+      @if (contactItems?.linkedin !== undefined && contactItems?.linkedin !== '') {<span> &nbsp; | &nbsp; <a href="{{contactItems?.linkedin}}" target="_blank">LinkedIn</a></span>}
+      @if (contactItems?.github !== undefined && contactItems?.github !== '') {<span> &nbsp; | &nbsp; <a href="{{contactItems?.github}}" target="_blank">GitHub</a></span>}
+  </div>
+
+  <section>
+    <h3 class="print-section-title">{{l10n?.overview.subtitle_aboutme}}</h3>
+    <p class="print-description">{{generalData?.description}}</p>
+  </section>
+
+  @if (cvItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n?.experience.title}}</h3>
+      @for (item of cvItems; track item) {
+        <div class="print-item">
+          <strong class="print-title">{{item.title}}</strong>
+          <div class="print-date">
+            @if (item.begin !== undefined && item.begin !== '') {
+              {{item.begin}}
+              &mdash;
+            }
+            {{item.end || l10n.cv_item.now}}
+          </div>
+          <div class="print-subtitle">{{item.subtitle}}</div>
+          <div class="print-description">{{item.description}}</div>
+          @if (item.tags?.length) {
+            <div class="print-tags">
+              @for (tag of item.tags; track tag) {
+                <span class="print-tag">{{tag}}</span>
+              }
+            </div>
+          }
+
+          @if (item.positions?.length) {
+            <h4 class="print-positions-title">{{l10n.cv_item.positions}}</h4>
+            @for (position of item.positions; track position) {
+              <div class="print-item-position">
+                <strong class="print-title">{{position.title}}</strong>
+                <div class="print-date">
+                  @if (position.begin !== undefined && position.begin !== '') {
+                    {{position.begin}}
+                    &mdash;
+                  }
+                  {{position.end || l10n.cv_position.now}}
+                </div>
+                <div class="print-subtitle">{{position.subtitle}}</div>
+                <div class="print-description">{{position.description}}</div>
+                @if (position.tags?.length) {
+                  <div class="print-tags">
+                    @for (tag of position.tags; track tag) {
+                      <span class="print-tag">{{tag}}</span>
+                    }
+                  </div>
+                }
+              </div>
+            }
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (educationItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n.education.title_education}}</h3>
+      @for (item of educationItems; track item) {
+        <div class="print-item print-item-small">
+          <strong class="print-title">{{item.title}}</strong> • {{item.subtitle}}
+          <div class="print-date">
+            @if (item.begin !== undefined && item.begin !== '') {
+              {{item.begin}}
+              &mdash;
+            }
+            {{item.end || l10n.cv_position.now}}
+          </div>
+          <div class="print-description">{{item.description}}</div>
+        </div>
+      }
+    </section>
+  }
+
+  @if (certificationItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n.education.title_certificates}}</h3>
+      @for (item of certificationItems; track item) {
+        <div class="print-item print-item-small">
+          <strong class="print-title">{{item.title}}</strong> • {{item.subtitle}}
+          <div class="print-date">
+            @if (item.begin !== undefined && item.begin !== '') {
+              {{item.begin}}
+              &mdash;
+            }
+            {{item.end || l10n.cv_position.now}}
+          </div>
+        </div>
+      }
+    </section>
+  }
+
+  @if (languageItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n.education.title_languages}}</h3>
+      @for (item of languageItems; track item) {
+        <div class="print-item-language">
+          <span class="print-language-title">{{item.title}}</span>
+          <mat-progress-bar
+            color="primary"
+            mode="determinate"
+            value="{{item.level}}">
+          </mat-progress-bar>
+        </div>
+      }
+    </section>
+  }
+
+  @if (projectItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n.projects.title}}</h3>
+      @for (item of projectItems; track item) {
+        <div class="print-item">
+          <strong class="print-title">{{item.title}}</strong>
+          <div class="print-date">
+            @if (item.begin !== undefined && item.begin !== '') {
+                {{item.begin}}
+                &mdash;
+            }
+            {{item.end || l10n.cv_item.now}}
+          </div>
+          <div class="print-subtitle">{{item.subtitle}}</div>
+          <div class="print-description">{{item.description}}</div>
+          @if (item.tags?.length) {
+            <div class="print-tags">
+              @for (tag of item.tags; track tag) {
+                <span class="print-tag">{{tag}}</span>
+              }
+            </div>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (talkItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n.publications.title_talks}}</h3>
+      @for (item of talkItems; track item) {
+        <div class="print-item">
+          <strong class="print-title">{{item.title}}</strong>
+          <div class="print-date">
+            @if (item.begin !== undefined && item.begin !== '') {
+              {{item.begin}}
+              &mdash;
+            }
+            {{item.end || l10n.cv_item.now}}</div>
+          <div class="print-subtitle">{{item.subtitle}}</div>
+          <div class="print-description">{{item.description}}</div>
+          @if (item.tags?.length) {
+            <div class="print-tags">
+              @for (tag of item.tags; track tag) {
+                <span class="print-tag">{{tag}}</span>
+              }
+            </div>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  @if (volunteerItems?.length) {
+    <section>
+      <h3 class="print-section-title">{{l10n.volunteering.title}}</h3>
+      @for (item of volunteerItems; track item) {
+        <div class="print-item print-item-small">
+          <strong class="print-title">{{item.title}}</strong>
+          <div class="print-date">
+            @if (item.begin !== undefined && item.begin !== '') {
+              {{item.begin}}
+              &mdash;
+            }
+            {{item.end || l10n.cv_item.now}}</div>
+          <div class="print-subtitle">{{item.subtitle}}</div>
+        </div>
+      }
+    </section>
+  }
+</div>

@@ -15,9 +15,7 @@ import { PublicationsComponent } from '../publications/publications.component';
 import { ContactComponent } from '../contact/contact.component';
 import { AboutComponent } from '../about/about.component';
 import { ProjectsComponent } from '../projects/projects.component';
-import { CvDownloadCardComponent } from '../cv-download-card/cv-download-card.component';
 import { CvItemComponent } from '../cv-item/cv-item.component';
-import { PdfComponent } from '../pdf/pdf.component';
 
 import { HeaderComponent } from './header.component';
 
@@ -29,8 +27,8 @@ describe('HeaderComponent', () => {
     TestBed.configureTestingModule({
       imports: [ MaterialModule, RouterModule, AppRoutingModule ],
       declarations: [
-        HeaderComponent, PdfComponent, OverviewComponent, ExperienceComponent, EducationComponent, ProjectsComponent, VolunteeringComponent,
-        PublicationsComponent, ContactComponent, AboutComponent, CvDownloadCardComponent, CvItemComponent ],
+        HeaderComponent, OverviewComponent, ExperienceComponent, EducationComponent, ProjectsComponent, VolunteeringComponent,
+        PublicationsComponent, ContactComponent, AboutComponent, CvItemComponent ],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

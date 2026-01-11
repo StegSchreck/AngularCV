@@ -36,6 +36,13 @@ app-pdf {
   color: black;
 }
 
+app-print {
+  position: absolute;
+  right: 24px;
+  float: right;
+  color: black;
+}
+
 .header-menu {
   margin-right: 12px;
 }

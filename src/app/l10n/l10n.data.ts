@@ -69,6 +69,9 @@ export const L10N = {
     projects: {
       title: 'Projects',
     },
+    print: {
+      button_tooltip: 'Print full CV',
+    },
     publications: {
       title_talks: 'Talks',
       title_publications: 'Publications',
@@ -142,6 +145,9 @@ export const L10N = {
       continued_from_last_page: '... Fortsetzung der vorigen Seite.',
       info_generation: 'Dieser Lebenslauf wurde generiert aus einem Online-Lebenslauf welches auf dem Projekt AngularCV basiert.',
       info_headhunter: 'Falls dies von einem Headhunter geschickt wurde, könnte dies ohne meine Zustimmung heruntergeladen und verschickt worden sein.',
+    },
+    print: {
+      button_tooltip: 'Lebenslauf komplett ausdrucken',
     },
     projects: {
       title: 'Projekte',
@@ -223,6 +229,9 @@ export const L10N = {
     projects: {
       title: 'Progetti',
     },
+    print: {
+      button_tooltip: 'Stampa il CV completo',
+    },
     publications: {
       title_talks: 'Letture',
       title_publications: 'Pubblicazioni',
@@ -296,6 +305,9 @@ export const L10N = {
       continued_from_last_page: '... viene de la página anterior.',
       info_generation: 'Este CV ha sido generado desde un CV online en mi servidor, usando el proyecto AngularCV.',
       info_headhunter: 'Si ha recibido esto de una empresa de colocación, puede que simplemente lo haya descargado y enviado sin mi consentimiento.',
+    },
+    print: {
+      button_tooltip: 'Imprimir CV completo',
     },
     projects: {
       title: 'Proyectos',
@@ -374,6 +386,9 @@ export const L10N = {
       info_generation: 'Aquest CV ha estat generat des d\'un CV online en el meu servidor, usant el projecte AngularCV.',
       info_headhunter: 'Si ha rebut això d\'una empresa de col·locació, pot ser que simplement ho hagi descarregat i enviat sense el meu consentiment.',
     },
+    print: {
+      button_tooltip: 'Imprimir CV complet',
+    },
     projects: {
       title: 'Projectes',
     },
@@ -451,6 +466,9 @@ export const L10N = {
       info_generation: 'Detta CV genererades från en självhostad online-CV med AngularCV-projektet.',
       info_headhunter: 'Om du fick detta från en headhunter, kan han kanske ha laddat ner den från min webbsida och skickat till dig utan mitt samtycke.',
     },
+    print: {
+      button_tooltip: 'Skriv ut hela CV:t',
+    },
     projects: {
       title: 'Projekt',
     },
@@ -525,6 +543,9 @@ export const L10N = {
       continued_from_last_page: '... 前のページから続く.',
       info_generation: 'この履歴書は、AngularCVプロジェクトを使用して自己ホスト型のオンライン履歴書から生成されました。',
       info_headhunter: 'あなたがヘッドハンターからこれを受け取ったなら、彼は私のウェブページからそれをダウンロードして私の同意なしにあなたに送ったかもしれません。',
+    },
+    print: {
+      button_tooltip: '履歴書全体を印刷',
     },
     projects: {
       title: 'プロジェクト',
@@ -602,6 +623,9 @@ export const L10N = {
       info_generation: '이 커리큘럼 이력서는 AngularCV 프로젝트를 사용하여 자체 호스팅 온라인 이력서에서 생성되었습니다.',
       info_headhunter: '헤드 헌터로부터이 정보를받은 경우 내 웹 페이지에서 다운로드하여 동의하지 않고 보낸 것입니다.',
     },
+    print: {
+      button_tooltip: '전체 이력서를 인쇄하세요',
+    },
     projects: {
       title: '프로젝트',
     },
@@ -678,6 +702,9 @@ export const L10N = {
       continued_from_last_page: '... 从上一页继续。',
       info_generation: '该简历是使用AngularCV项目从自托管的在线简历生成的。',
       info_headhunter: '如果您是从猎头那里收到的，则他可能只是从我的网页上下载了它，并且未经我的同意将其发送给您。',
+    },
+    print: {
+      button_tooltip: '打印完整简历',
     },
     projects: {
       title: '专案',
