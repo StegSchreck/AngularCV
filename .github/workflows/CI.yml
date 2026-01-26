@@ -35,6 +35,7 @@ jobs:
     - name: Lighthouse CI Action
       uses: treosh/lighthouse-ci-action@12.6.1
       with:
+        configPath: './lighthouserc.json'
         uploadArtifacts: true
 
   release:
