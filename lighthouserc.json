@@ -1,7 +1,7 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./dist",
+      "staticDistDir": "./dist/angular-cv",
       "url": [
         "http://localhost/index.html"
       ]
