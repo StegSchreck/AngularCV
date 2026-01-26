@@ -32,7 +32,8 @@ jobs:
       with:
         api-token: ${{ secrets.CODACY_API_TOKEN }}
         project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-    - name: Lighthouse CI Action
+    - name: Run Lighthouse CI
+      if: matrix.node-version == 'lts/*'
       uses: treosh/lighthouse-ci-action@12.6.1
       with:
         configPath: './lighthouserc.json'

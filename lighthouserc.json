@@ -2,6 +2,9 @@
   "ci": {
     "collect": {
       "staticDistDir": "./dist/browser",
+      "url": [
+        "/index.html"
+      ],
       "numberOfRuns": 1
     }
   }
