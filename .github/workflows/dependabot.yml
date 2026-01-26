@@ -11,14 +11,15 @@ jobs:
     if: github.actor == 'dependabot[bot]'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Use Node.js latest
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: latest
-      - name: install, build, and test
+      - name: install, lint, test, build
         run: |
-          npm install -g npm@latest @angular/cli yarn
+          npm install -g npm@latest @angular/cli
+          corepack enable
           yarn install --immutable
           ng lint
           ng test --watch false --browsers ChromeHeadless --code-coverage
