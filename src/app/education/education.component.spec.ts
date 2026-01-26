@@ -9,14 +9,14 @@ import { CvItemComponent } from '../cv-item/cv-item.component';
 
 import { EducationComponent } from './education.component';
 
-describe('PublicationsComponent', () => {
+describe('EducationComponent', () => {
   let component: EducationComponent;
   let fixture: ComponentFixture<EducationComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ EducationComponent, CvItemComponent ],
+      imports: [ MaterialModule, EducationComponent, CvItemComponent ],
+      declarations: [],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

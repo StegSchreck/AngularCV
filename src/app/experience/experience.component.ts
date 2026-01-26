@@ -14,7 +14,7 @@ import { CvItemComponent } from '../cv-item/cv-item.component';
 })
 export class ExperienceComponent implements OnInit {
   public l10n;
-  public experienceItems: CvItem[]; // Renamed from cvItems
+  public experienceItems: CvItem[];
 
   private cvItemService = inject(CvItemService);
   private localizationService = inject(LocalizationService);
@@ -31,7 +31,7 @@ export class ExperienceComponent implements OnInit {
   }
 
   private getItems(): void {
-    this.cvItemService.getCvItems().then(items => this.experienceItems = items); // Renamed from cvItems
+    this.cvItemService.getCvItems().then(items => this.experienceItems = items);
   }
 
   ngOnInit() {

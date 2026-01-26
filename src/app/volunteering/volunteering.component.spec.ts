@@ -15,8 +15,8 @@ describe('VolunteeringComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ VolunteeringComponent, CvItemComponent ],
+      imports: [ MaterialModule, VolunteeringComponent, CvItemComponent ],
+      declarations: [],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

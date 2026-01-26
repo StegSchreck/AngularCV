@@ -25,10 +25,22 @@ describe('HeaderComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule, RouterModule, AppRoutingModule ],
-      declarations: [
-        HeaderComponent, OverviewComponent, ExperienceComponent, EducationComponent, ProjectsComponent, VolunteeringComponent,
-        PublicationsComponent, ContactComponent, AboutComponent, CvItemComponent ],
+      imports: [
+        MaterialModule,
+        RouterModule,
+        AppRoutingModule,
+        HeaderComponent,
+        OverviewComponent,
+        ExperienceComponent,
+        EducationComponent,
+        ProjectsComponent,
+        VolunteeringComponent,
+        PublicationsComponent,
+        ContactComponent,
+        AboutComponent,
+        CvItemComponent
+      ],
+      declarations: [],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

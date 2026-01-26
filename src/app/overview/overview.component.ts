@@ -1,5 +1,5 @@
 import { Component, OnInit, inject } from '@angular/core';
-import { CommonModule } from '@angular/common'; // Import CommonModule
+import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { CvItemService } from '../cv-item/cv-item.service';
 import { LocalizationService } from '../l10n/l10n.service';
@@ -11,7 +11,7 @@ import { MaterialModule } from '../material/material.module';
     templateUrl: './overview.component.html',
     styleUrls: ['./overview.component.css'],
     standalone: true,
-    imports: [MaterialModule, CommonModule] // Add CommonModule here
+    imports: [MaterialModule, CommonModule]
 })
 export class OverviewComponent implements OnInit {
   public l10n;

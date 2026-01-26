@@ -13,8 +13,8 @@ describe('PrintComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ PrintComponent ],
+      imports: [ MaterialModule, PrintComponent ],
+      declarations: [],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

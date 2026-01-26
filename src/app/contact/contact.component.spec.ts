@@ -15,8 +15,8 @@ describe('ContactComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ AboutComponent, ContactComponent ],
+      imports: [ MaterialModule, AboutComponent, ContactComponent ],
+      declarations: [],
       providers: [ CvItemService, FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

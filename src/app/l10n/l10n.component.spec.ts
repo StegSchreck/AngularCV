@@ -12,8 +12,8 @@ describe('LocalizationComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ LocalizationComponent ],
+      imports: [ MaterialModule, LocalizationComponent ],
+      declarations: [],
       providers: [ FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

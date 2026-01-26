@@ -12,8 +12,8 @@ describe('PictureModalComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ PictureModalComponent ],
+      imports: [ MaterialModule, PictureModalComponent ],
+      declarations: [],
       providers: [ { provide: MatDialogRef, useValue: {} }, { provide: MAT_DIALOG_DATA, useValue: {} }, ],
     });
 

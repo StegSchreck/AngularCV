@@ -13,8 +13,8 @@ describe('CvItemComponent', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ MaterialModule ],
-      declarations: [ CvItemComponent, CvItemDirective ],
+      imports: [ MaterialModule, CvItemComponent, CvItemDirective ],
+      declarations: [],
       providers: [ FeatureToggleService, LocalizationService ],
     })
     .compileComponents();

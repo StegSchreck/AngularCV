@@ -24,12 +24,24 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      imports: [ AppRoutingModule, MaterialModule, ],
-      declarations: [
-        AppComponent, AboutComponent, ExperienceComponent, EducationComponent, FooterComponent, HeaderComponent, OverviewComponent,
-        PublicationsComponent, ProjectsComponent, VolunteeringComponent, ContactComponent, CvItemComponent,
+      imports: [
+        AppRoutingModule,
+        MaterialModule,
+        AppComponent,
+        AboutComponent,
+        ExperienceComponent,
+        EducationComponent,
+        FooterComponent,
+        HeaderComponent,
+        OverviewComponent,
+        PublicationsComponent,
+        ProjectsComponent,
+        VolunteeringComponent,
+        ContactComponent,
+        CvItemComponent,
         LocalizationComponent,
       ],
+      declarations: [],
       providers: [ CvItemService, FeatureToggleService, LocalizationService, ],
     }).compileComponents();
   }));
