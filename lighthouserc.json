@@ -1,10 +1,8 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./dist/angular-cv",
-      "url": [
-        "http://localhost/index.html"
-      ]
+      "staticDistDir": "./dist/browser",
+      "numberOfRuns": 1
     }
   }
 }
