@@ -1,30 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { CvItemService } from '../cv-item/cv-item.service';
 import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from '../cv-item/cv-item';
+import { MaterialModule } from '../material/material.module';
 
 @Component({
   selector: 'app-print-layout',
   templateUrl: './print-layout.component.html',
   styleUrls: ['./print-layout.component.css'],
-  standalone: false
+  standalone: true,
+  imports: [CommonModule, MaterialModule]
 })
 export class PrintLayoutComponent implements OnInit {
-  public l10n: any;
-  public generalData: any;
-  public contactItems: any;
+  public l10n;
+  public generalData;
+  public contactItems;
   public cvItems: CvItem[];
   public educationItems: CvItem[];
   public certificationItems: CvItem[];
-  public languageItems: CvItem[];
+  public languageItems;
   public talkItems: CvItem[];
   public projectItems: CvItem[];
   public volunteerItems: CvItem[];
 
-  constructor(
-    private cvItemService: CvItemService,
-    private localizationService: LocalizationService,
-  ) {
+  private cvItemService = inject(CvItemService);
+  private localizationService = inject(LocalizationService);
+
+  constructor() {
     this.localizationService.languageChanged.subscribe(data => {
       this.l10n = data;
       this.loadData();
@@ -39,6 +42,7 @@ export class PrintLayoutComponent implements OnInit {
   private loadData(): void {
     this.generalData = this.cvItemService.getGeneralData();
     this.cvItemService.getContactItems().then(items => this.contactItems = items);
+
     this.cvItemService.getCvItems().then(items => this.cvItems = items);
     this.cvItemService.getEducationItems().then(items => this.educationItems = items);
     this.cvItemService.getCertificationItems().then(items => this.certificationItems = items);

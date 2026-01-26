@@ -1,81 +1,58 @@
-import { Component, OnInit, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnInit, HostListener, inject } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
-import { LocalizationService } from '../l10n/l10n.service';
-import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 import { CvItemService } from '../cv-item/cv-item.service';
+import { LocalizationService } from '../l10n/l10n.service';
+import { MaterialModule } from '../material/material.module';
+import { PrintComponent } from '../print/print.component';
 
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
     styleUrls: ['./header.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [CommonModule, RouterModule, MaterialModule, PrintComponent]
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit {
   public l10n;
-  public featureToggles;
   public generalData;
-  public navLinks = [];
+  public windowWidth;
+  public navLinks;
 
-  public windowWidth: number = window.innerWidth;
+  private cvItemService = inject(CvItemService);
+  private localizationService = inject(LocalizationService);
 
-  // initial values, the window object may still be undefined during this hook
-  ngAfterViewInit() {
-    this.windowWidth = window.innerWidth;
-  }
-
-  // if screen size changes it'll update
-  @HostListener('window:resize', ['$event'])
-  resize(event) {
-    this.windowWidth = window.innerWidth;
-  }
-
-  constructor(
-    private localizationService: LocalizationService,
-    private featureToggleService: FeatureToggleService,
-    private cvItemService: CvItemService,
-  ) {
-    this.localizationService.languageChanged.subscribe(
-      (data) => {
-        this.l10n = data;
-        this.populateNavLinks();
-      });
-  }
-
-  private getLocalization(): void {
-    this.l10n = this.localizationService.getDefault();
-  }
-
-  private getFeatureToggles(): void {
-    this.featureToggles = this.featureToggleService.getFeatureToggles();
-  }
-
-  private getItems(): void {
-    this.generalData = this.cvItemService.getGeneralData();
-  }
-
-  private populateNavLinks(): void {
-    this.navLinks.splice(0, this.navLinks.length);
-    this.navLinks.push({   location: '/overview',       label: this.l10n.header.menu_overiew,          icon: 'account_circle' });
-    this.navLinks.push({   location: '/experience',     label: this.l10n.header.menu_experience,       icon: 'work' });
-    this.navLinks.push({   location: '/education',      label: this.l10n.header.menu_education,        icon: 'school' });
-    if (this.featureToggles.tab_publications === true) {
-      this.navLinks.push({ location: '/publications',   label: this.l10n.header.menu_publications,     icon: 'record_voice_over' });
-    }
-    if (this.featureToggles.tab_projects === true) {
-      this.navLinks.push({ location: '/projects',       label: this.l10n.header.menu_projects,         icon: 'assignment' });
-    }
-    if (this.featureToggles.tab_volunteering === true) {
-      this.navLinks.push({ location: '/volunteering',   label: this.l10n.header.menu_volunteering,     icon: 'favorite' });
-    }
-    this.navLinks.push({   location: '/contact',        label: this.l10n.header.menu_contact,          icon: 'email' });
-    // { location:'/about',         label: this.l10n.header.menu_about,             icon:'info' },
+  constructor() {
+    this.localizationService.languageChanged.subscribe(data => {
+      this.l10n = data;
+      this.generalData = this.cvItemService.getGeneralData();
+      this.setNavLinks();
+    });
   }
 
   ngOnInit() {
-    this.getLocalization();
-    this.getFeatureToggles();
-    this.getItems();
-    this.populateNavLinks();
+    this.l10n = this.localizationService.getDefault();
+    this.generalData = this.cvItemService.getGeneralData();
+    this.windowWidth = window.innerWidth;
+    this.setNavLinks();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.windowWidth = event.target.innerWidth;
+  }
+
+  private setNavLinks() {
+    this.navLinks = [
+      { label: this.l10n.header.menu_overview, location: 'overview', icon: 'person' },
+      { label: this.l10n.header.menu_experience, location: 'experience', icon: 'history' },
+      { label: this.l10n.header.menu_education, location: 'education', icon: 'school' },
+      { label: this.l10n.header.menu_projects, location: 'projects', icon: 'developer_board' },
+      { label: this.l10n.header.menu_publications, location: 'publications', icon: 'chrome_reader_mode' },
+      { label: this.l10n.header.menu_volunteering, location: 'volunteering', icon: 'favorite' },
+      { label: this.l10n.header.menu_contact, location: 'contact', icon: 'contact_mail' },
+    ];
   }
 
 }

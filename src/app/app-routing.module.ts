@@ -10,7 +10,7 @@ import { VolunteeringComponent } from './volunteering/volunteering.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '',               redirectTo: '/overview', pathMatch: 'full' },
   { path: 'overview',       component: OverviewComponent },
   { path: 'experience',     component: ExperienceComponent },

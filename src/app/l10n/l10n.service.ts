@@ -1,45 +1,38 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter, Output, inject } from '@angular/core';
 
+import { L10N as DATA } from './l10n.data';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
-import { L10N } from './l10n.data';
-import { Subject } from 'rxjs';
 
 @Injectable()
 export class LocalizationService {
-  private featureToggles;
-  languageChanged = new Subject();
+  @Output() languageChanged: EventEmitter<any> = new EventEmitter();
+  public featureToggles;
 
-  constructor(
-    private featureToggleService: FeatureToggleService,
-  ) {
+  private featureToggleService = inject(FeatureToggleService);
+
+  constructor() {
     this.getFeatureToggles();
   }
 
-  protected getFeatureToggles(): void {
+  private getFeatureToggles(): void {
     this.featureToggles = this.featureToggleService.getFeatureToggles();
-  }
-
-  public changeLanguage(language): void {
-    this.languageChanged.next(L10N[language]);
-  }
-
-  public getAll() {
-    return L10N;
-  }
-
-  public get(language: string) {
-    if (L10N.hasOwnProperty(language)) {
-      return L10N[language]; // TODO merge with EN as default values
-    }
-    return this.getDefault();
   }
 
   public getDefault() {
     let language = this.featureToggles.default_language;
     try {
-      language = JSON.parse(localStorage.getItem('l10n')).language;
+      const stored_language = JSON.parse(localStorage.getItem('l10n')).language;
+      if (DATA.hasOwnProperty(stored_language)) {
+        language = stored_language;
+      }
     } catch (err) { }
-    return L10N[language];
+    return DATA[language];
   }
 
+  public change(language: string) {
+    if (DATA.hasOwnProperty(language)) {
+      localStorage.setItem('l10n', JSON.stringify({ language: language }));
+      this.languageChanged.emit(DATA[language]);
+    }
+  }
 }

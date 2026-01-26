@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 
 import { CvItem } from './cv-item';
 import { DATA } from './data/cv-items.data';
@@ -8,9 +8,9 @@ import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
 export class CvItemService {
   public featureToggles;
 
-  constructor(
-    private featureToggleService: FeatureToggleService,
-  ) {
+  private featureToggleService = inject(FeatureToggleService);
+
+  constructor() {
     this.getFeatureToggles();
   }
 

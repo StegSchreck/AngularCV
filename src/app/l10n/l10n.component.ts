@@ -1,49 +1,48 @@
-import { Component, OnInit } from '@angular/core';
-
-import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { Component, OnInit, inject } from '@angular/core';
 import { LocalizationService } from './l10n.service';
+import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { MaterialModule } from '../material/material.module';
+import { L10N } from './l10n.data';
 
 @Component({
     selector: 'app-l10n',
     templateUrl: './l10n.component.html',
     styleUrls: ['./l10n.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [MaterialModule]
 })
 export class LocalizationComponent implements OnInit {
-  public l10n_languages = [];
-  public featureToggles;
+    public l10n;
+    public featureToggles;
+    public l10n_languages: { id: string, name: string }[] = [];
 
-  constructor(
-    private localizationService: LocalizationService,
-    private featureToggleService: FeatureToggleService,
-  ) { }
+    private localizationService = inject(LocalizationService);
+    private featureToggleService = inject(FeatureToggleService);
 
-  private getLocalization(): void {
-    const all = this.localizationService.getAll();
-    for (const language_id in all) {
-      if (all.hasOwnProperty(language_id)) {
-        this.l10n_languages.push({ 'id': language_id, 'name': all[language_id].language_name });
-      }
+    constructor() {
+        this.localizationService.languageChanged.subscribe((data) => {
+            this.l10n = data;
+        });
     }
-  }
 
-  private getFeatureToggles(): void {
-    this.featureToggles = this.featureToggleService.getFeatureToggles();
-  }
-
-  ngOnInit() {
-    this.getLocalization();
-    this.getFeatureToggles();
-  }
-
-  private changeLocalization(language: string) {
-    let current_language = this.featureToggles.default_language;
-    try {
-      current_language = JSON.parse(localStorage.getItem('l10n')).language;
-    } catch (err) { }
-    localStorage.setItem('l10n', JSON.stringify({ language: language }));
-    if (current_language !== language) {
-      this.localizationService.changeLanguage(language);
+    ngOnInit() {
+        this.l10n = this.localizationService.getDefault();
+        this.featureToggles = this.featureToggleService.getFeatureToggles();
+        this.getLanguages();
     }
-  }
+
+    private getLanguages(): void {
+        for (const lang in L10N) {
+            if (L10N.hasOwnProperty(lang)) {
+                this.l10n_languages.push({
+                    id: lang,
+                    name: L10N[lang].language_name,
+                });
+            }
+        }
+    }
+
+    public changeLocalization(language: string) {
+        this.localizationService.change(language);
+    }
 }

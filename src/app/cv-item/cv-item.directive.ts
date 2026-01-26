@@ -1,9 +1,7 @@
-import { Directive, ElementRef } from '@angular/core';
+import { Directive } from '@angular/core';
 
 @Directive({
     selector: '[appCvItem]',
-    standalone: false
+    standalone: true
 })
-export class CvItemDirective {
-  constructor(public elementRef: ElementRef) {}
-}
+export class CvItemDirective {}

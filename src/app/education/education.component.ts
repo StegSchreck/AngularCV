@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, inject } from '@angular/core';
+import { CvItemService } from '../cv-item/cv-item.service';
 import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from '../cv-item/cv-item';
-import { CvItemService } from '../cv-item/cv-item.service';
+import { MaterialModule } from '../material/material.module';
+import { CvItemComponent } from '../cv-item/cv-item.component';
 
 @Component({
     selector: 'app-education',
     templateUrl: './education.component.html',
     styleUrls: ['./education.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [MaterialModule, CvItemComponent]
 })
 export class EducationComponent implements OnInit {
   public l10n;
@@ -16,10 +18,10 @@ export class EducationComponent implements OnInit {
   public certificationItems: CvItem[];
   public languageItems;
 
-  constructor(
-    private localizationService: LocalizationService,
-    private cvItemService: CvItemService,
-  ) {
+  private cvItemService = inject(CvItemService);
+  private localizationService = inject(LocalizationService);
+
+  constructor() {
     this.localizationService.languageChanged.subscribe((data) => {
       this.l10n = data;
       this.getItems();
@@ -31,35 +33,9 @@ export class EducationComponent implements OnInit {
   }
 
   private getItems(): void {
-    this.cvItemService
-      .getEducationItems()
-      .then(items => this.educationItems = items);
-    this.cvItemService
-      .getCertificationItems()
-      .then(items => this.certificationItems = items);
-    this.cvItemService
-      .getLanguageItems()
-      .then(items => this.languageItems = items);
-  }
-
-  public getLanguageLevelDescription(level: number): String {
-    // 100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
-    if (level >= 100) {
-      return this.l10n.education.language_native;
-    }
-    if (level >= 80) {
-      return this.l10n.education.language_fluent;
-    }
-    if (level >= 60) {
-      return this.l10n.education.language_advanced;
-    }
-    if (level >= 40) {
-      return this.l10n.education.language_intermediate;
-    }
-    if (level >= 20) {
-      return this.l10n.education.language_elementary;
-    }
-    return this.l10n.education.language_beginner;
+    this.cvItemService.getEducationItems().then(items => this.educationItems = items);
+    this.cvItemService.getCertificationItems().then(items => this.certificationItems = items);
+    this.cvItemService.getLanguageItems().then(items => this.languageItems = items);
   }
 
   ngOnInit() {
@@ -67,4 +43,20 @@ export class EducationComponent implements OnInit {
     this.getItems();
   }
 
+  public getLanguageLevelDescription(level: number): string {
+    // 100% = NATIVE;  80-99% = FLUENT;  60-79% = ADVANCED;  40-59% = INTERMEDIATE;  20-39% = ELEMENTARY;  0-19% = BEGINNER
+    if (level >= 100) {
+      return this.l10n.education.language_level.native;
+    } else if (level >= 80) {
+      return this.l10n.education.language_level.fluent;
+    } else if (level >= 60) {
+      return this.l10n.education.language_level.advanced;
+    } else if (level >= 40) {
+      return this.l10n.education.language_level.intermediate;
+    } else if (level >= 20) {
+      return this.l10n.education.language_level.elementary;
+    } else {
+      return this.l10n.education.language_level.beginner;
+    }
+  }
 }

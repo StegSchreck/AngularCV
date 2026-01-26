@@ -1,23 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, inject } from '@angular/core';
+import { CvItemService } from '../cv-item/cv-item.service';
 import { LocalizationService } from '../l10n/l10n.service';
 import { CvItem } from '../cv-item/cv-item';
-import { CvItemService } from '../cv-item/cv-item.service';
+import { MaterialModule } from '../material/material.module';
+import { CvItemComponent } from '../cv-item/cv-item.component';
 
 @Component({
     selector: 'app-projects',
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [MaterialModule, CvItemComponent]
 })
 export class ProjectsComponent implements OnInit {
   public l10n;
   public projectItems: CvItem[];
 
-  constructor(
-    private localizationService: LocalizationService,
-    private cvItemService: CvItemService,
-  ) {
+  private cvItemService = inject(CvItemService);
+  private localizationService = inject(LocalizationService);
+
+  constructor() {
     this.localizationService.languageChanged.subscribe((data) => {
       this.l10n = data;
       this.getItems();
@@ -29,14 +31,11 @@ export class ProjectsComponent implements OnInit {
   }
 
   private getItems(): void {
-    this.cvItemService
-      .getProjectItems()
-      .then(items => this.projectItems = items);
+    this.cvItemService.getProjectItems().then(items => this.projectItems = items);
   }
 
   ngOnInit() {
     this.getLocalization();
     this.getItems();
   }
-
 }

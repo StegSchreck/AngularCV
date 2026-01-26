@@ -1,22 +1,23 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit, inject } from '@angular/core';
 import { LocalizationService } from '../l10n/l10n.service';
 import { FeatureToggleService } from '../feature-toggle/feature-toggle.service';
+import { MaterialModule } from '../material/material.module';
 
 @Component({
     selector: 'app-print',
     templateUrl: './print.component.html',
     styleUrls: ['./print.component.css'],
-    standalone: false
+    standalone: true,
+    imports: [MaterialModule]
 })
 export class PrintComponent implements OnInit {
   public l10n;
   public featureToggles;
 
-  constructor(
-    private localizationService: LocalizationService,
-    private featureToggleService: FeatureToggleService,
-  ) {
+  private localizationService = inject(LocalizationService);
+  private featureToggleService = inject(FeatureToggleService);
+
+  constructor() {
     this.localizationService.languageChanged.subscribe((data) => {
       this.l10n = data;
     });
