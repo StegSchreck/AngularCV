@@ -20,7 +20,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: install, build, and test
       run: |
-        npm install -g npm@latest @angular/cli yarn
+        npm install -g npm@latest @angular/cli
+        corepack enable
         yarn install --immutable
         ng lint
         ng test --watch false --browsers ChromeHeadless --code-coverage
@@ -57,7 +58,9 @@ jobs:
       with:
         node-version: latest
     - name: Install Dependencies
-      run: yarn install --immutable
+      run: |
+        yarn install --immutable
+        corepack enable
       env:
         CI: true
         NPM_CONFIG_PRODUCTION: false
@@ -85,7 +88,8 @@ jobs:
           node-version: latest
       - name: install, build, and test
         run: |
-          npm install -g npm@latest @angular/cli yarn
+          npm install -g npm@latest @angular/cli
+          corepack enable
           yarn install --immutable
           ng build --configuration production --aot
         env:
