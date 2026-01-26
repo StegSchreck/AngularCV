@@ -1,1 +1,10 @@
-{ "ci": { "collect": { "staticDistDir": "./dist" } } }
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist",
+      "url": [
+        "http://localhost/index.html"
+      ]
+    }
+  }
+}
