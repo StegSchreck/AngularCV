@@ -37,6 +37,11 @@ jobs:
       with:
         configPath: './lighthouserc.json'
         uploadArtifacts: true
+        artifactName: lighthouse-results-${{ github.run_number }}
+      env:
+        ORGANIZATION_PROVIDER: gh
+        OWNER_NAME: StegSchreck
+        REPOSITORY_NAME: AngularCV
 
   release:
     needs: build
