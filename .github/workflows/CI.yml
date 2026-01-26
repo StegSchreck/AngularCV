@@ -59,8 +59,8 @@ jobs:
         node-version: latest
     - name: Install Dependencies
       run: |
-        yarn install --immutable
         corepack enable
+        yarn install --immutable
       env:
         CI: true
         NPM_CONFIG_PRODUCTION: false
