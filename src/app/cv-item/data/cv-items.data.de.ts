@@ -3,7 +3,7 @@ import { CvItem } from '../cv-item';
 /* eslint-disable max-len */
 export const GENERAL = {
   name: 'Sebastian Schreck',
-  position: 'Principal Software Entwickler',
+  position: 'Staff Software Entwickler',
   description: `Sebastian ist ein erfahrener Technologieexperte und Softwareentwickler mit über zehn Jahren Erfahrung, der fundierte technische Kompetenzen in Softwareentwicklung, Cloud-Architektur, und DevOps mit wirkungsstarker Führung und Mentoring kombiniert. Nach seinem Karriere-Start als QA-Werkstudent und Backend-/Frontend-Entwickler wechselte er in Führungspositionen, in denen er erfolgreich Legacy-Architekturen modernisierte, DevOps-Prinzipien und kollaborative Verantwortung etablierte und groß angelegte Cloud-Migrationsprojekte leitete. Sebastian hat umfangreiche Erfahrung in der Gestaltung skalierbarer Systeme, der Automatisierung von CI/CD-Pipelines und im Mentoring funktionsübergreifender Teams, um technische Exzellenz und Innovation voranzutreiben.
 
 Sebastian fühlt sich in Umgebungen wohl, in denen er alle Phasen des Software-Lebenszyklus aktiv begleiten kann – von der Konzeption und Entwicklung bis hin zur Bereitstellung und Überwachung. Seine Expertise umfasst dabei Technologien wie Python, Java, AWS, Terraform, Docker, Kubernetes und CI/CD ebenso wie agile Methoden wie Scrum, Kanban und SAFe. Besonders wichtig sind ihm Software craftsmanship, sowie saubere Architekturen und Automatisierung, um Teams dazu zu befähigen, innovative, wartbare und zuverlässige Systeme zu entwickeln.
@@ -13,6 +13,16 @@ Darüber hinaus trägt Sebastian aktiv zur Skalierung von Organisationen bei –
 /* eslint-enable max-len */
 
 export const CVITEMS: CvItem[] = [
+  {
+    title: 'Enpal B.V.',
+    subtitle: 'Staff Engineer',
+    begin: '2025-02',
+    end: '',
+    description: '',
+    tags: ['Engineering Leadership', 'Software Architektur', 'Projektmanagement', 'Mentoring', 'Coaching'],
+    link: 'https://www.enpal.de',
+    thumbnail: 'Enpal.svg'
+  },
   {
     title: 'Netlight Consulting GmbH',
     subtitle: 'IT Consultant - Associate Manager',
@@ -306,7 +316,7 @@ export const EDUCATION: CvItem[] = [
   //   subtitle: 'Abitur',
   //   begin: '2001-08',
   //   end: '2007-06',
-  //   description: '',
+  //   description: 'Gesamtnote: 1,9',
   //   link: 'https://www.mbo-berlin.de',
   //   thumbnail: 'MBO.png',
   // },
@@ -327,7 +337,8 @@ export const PROJECTS: CvItem[] = [
     subtitle: 'Ein einfacher selbst-gehosteter Online-Lebenslauf',
     begin: '2017-09',
     end: '',
-    description: 'Dieses Projekt wurde erstellt um einen simplen Online-Lebenslauf erstellen zu können, welchen jeder selbst hosten kann. Dieser Internetauftritt ist das Ergebnis davon.',
+    description: 'Dieses Projekt wurde erstellt um einen simplen Online-Lebenslauf erstellen zu können, welchen jeder selbst hosten kann. ' +
+      'Dieser Internetauftritt ist das Ergebnis davon: https://cv.schreck.berlin',
     tags: ['Angular', 'MaterialDesign', 'GitHub', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'jsPDF', 'yarn', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
     thumbnail: '../AngularCV.svg',
@@ -335,11 +346,11 @@ export const PROJECTS: CvItem[] = [
   {
     title: 'THW Wallet',
     subtitle: 'Einscannen eines Barcodes und Umwandlung in einen Google Wallet Pass.',
-    begin: '2025-10',
-    end: '',
+    begin: '',
+    end: '2025-10',
     description: 'Eine Single-Page Application (SPA) die einen Barcode einliest und den entsprechenden Google Wallet Pass erstellt.',
     tags: ['Go', 'React', 'CSS', 'JavaScript', 'JetBrains GoLand', 'AWS', 'serverless', 'Lambda', 'DynamoDB', 'API Gateway', 'S3', 'CloudFront', 'Terraform', 'Gitlab CI', 'npm'],
-    link: '',
+    link: 'https://thw-wallet.stegschreck.de/',
     thumbnail: 'thw-wallet.svg',
   },
   {
@@ -425,7 +436,7 @@ export const PROJECTS: CvItem[] = [
     thumbnail: 'TU_DIMA_GoOLAP.png',
   },
   {
-    title: 'Global Phenological Monitoring Programm (GPM)',
+    title: 'Global Phenological Monitoring Program (GPM)',
     subtitle: 'Webanwendung für die Humboldt Universität',
     begin: '',
     end: '2010',
@@ -452,10 +463,10 @@ export const PROJECTS: CvItem[] = [
 export const VOLUNTEERING: CvItem[] = [
   {
     title: 'Technisches Hilfswerk',
-    subtitle: 'Ehrenamtliche Einsatzkraft',
-    begin: '2025',
+    subtitle: 'Ehrenamtliche Einsatzkraft im Zivilschutz und  in der Katastrophenhilfe',
+    begin: '2025-02',
     end: '',
-    description: 'Ehrenamtliche Einsatzkraft in der Fachgruppe Wasserschaden/Pumpen (WP) im THW Ortsverband Berlin-Mitte.',
+    description: 'Fachhelfer in der Fachgruppe Wasserschaden/Pumpen (WP) im THW Ortsverband Berlin-Mitte.',
     link: 'https://www.thw.de',
     thumbnail: 'THW.svg',
   },
@@ -604,9 +615,10 @@ export const VOLUNTEERING: CvItem[] = [
   {
     title: 'UEFA Champions League Finals 2015 Berlin',
     subtitle: 'Teamleiter',
-    begin: '',
-    end: '2015',
-    description: 'Teamleiter Besucherservice beim Finale der Frauen sowie beim Finale der Männer',
+    begin: '2015-05',
+    end: '2015-06',
+    description: '- Besucherservice beim Finale der Frauen\n' +
+      '- Teamleiter Besucherservice beim Finale der Männer',
     link: 'https://www.uefa.com',
     thumbnail: 'UEFA_Champions_League.svg',
     // positions: [
@@ -626,7 +638,7 @@ export const VOLUNTEERING: CvItem[] = [
     title: 'CEV Champions League Final Four 2015 Berlin',
     subtitle: 'Teamleiter',
     begin: '',
-    end: '2015',
+    end: '2015-03',
     description: 'Leiter Backstage-Sicherheit',
     link: 'https://www.cev.eu/',
     thumbnail: 'CEV.png',
@@ -636,7 +648,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Technischer Eventmanager',
     begin: '2010',
     end: '2015',
-    description: 'Technischer Aufbau und Zeitmessung',
+    description: 'Technischer Leiter für Aufbau und Zeitmessung',
     link: 'https://www.concept2.de/indoor-rowers/indoor-regatten/dirm',
     thumbnail: 'Concept2_DIRS.png',
   },
@@ -682,7 +694,7 @@ export const VOLUNTEERING: CvItem[] = [
     title: 'FISA Ruder-Weltmeisterschaft Junioren 2014 Hamburg',
     subtitle: 'IT-Netzwerktechnik',
     begin: '',
-    end: '2014',
+    end: '2014-08',
     description: '',
     link: 'https://www.worldrowing.com/',
     thumbnail: 'FISA_JWM_2014.png',
@@ -701,25 +713,25 @@ export const VOLUNTEERING: CvItem[] = [
     title: 'FIFA Fußball-Weltmeisterschaft Frauen 2011 Deutschland',
     subtitle: 'Besucherservice',
     begin: '',
-    end: '2011',
+    end: '2011-06',
     description: 'Besucherservice für Besucher der WM-Spiele im Olympiastadion Berlin.',
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_Womens_World_Cup_2011.svg',
   },
-  // {
-  //   title: 'EHF EuroHockey Club-Champions-Cup Berlin',
-  //   subtitle: 'Besucherservice',
-  //   begin: '',
-  //   end: '2010',
-  //   description: 'Betreuung von Gästen während der Spiele im Hockeystadion im Olympiapark Berlin',
-  //   link: '',
-  //   thumbnail: 'EHF.jpg',
-  // },
+  {
+    title: 'EHF EuroHockey Club-Champions-Cup Berlin',
+    subtitle: 'Besucherservice',
+    begin: '',
+    end: '2010-04',
+    description: 'Betreuung von Gästen während der Spiele im Hockeystadion im Olympiapark Berlin',
+    link: '',
+    thumbnail: 'EHF.jpg',
+  },
   {
     title: 'IAAF Leichtathletik-Weltmeisterschaft 2009 Berlin',
     subtitle: 'Anti-Doping-Chaperone',
     begin: '',
-    end: '2009',
+    end: '2009-05',
     description: '',
     link: 'https://www.iaaf.org/',
     thumbnail: 'IAAF_World_Championship_2009_Berlin.svg',
@@ -727,8 +739,8 @@ export const VOLUNTEERING: CvItem[] = [
   {
     title: 'ULEB Euroleague Final Four 2009 Berlin',
     subtitle: 'Teambegleiter',
-    begin: '',
-    end: '2009',
+    begin: '2009-05',
+    end: '2009-04',
     description: 'Teambegleiter für die Basketball-Mannschaft von Montepaschi Siena (Italien)',
     link: 'https://www.euroleague.net/',
     thumbnail: 'ULEB_FinalFour_2009.png',
@@ -736,8 +748,8 @@ export const VOLUNTEERING: CvItem[] = [
   {
     title: 'FIFA Fußball-Weltmeisterschaft 2006 Deutschland',
     subtitle: 'Besucherservice',
-    begin: '',
-    end: '2006',
+    begin: '2006-06',
+    end: '2006-07',
     description: 'Besucherservice für Besucher der WM-Spiele im Olympiastadion Berlin.',
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_WM_2006_Deutschland.svg',

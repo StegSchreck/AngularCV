@@ -3,7 +3,7 @@ import { CvItem } from '../cv-item';
 /* eslint-disable max-len */
 export const GENERAL = {
   name: 'Sebastian Schreck',
-  position: 'Principal Software Engineer',
+  position: 'Staff Software Engineer',
   description: `Sebastian is a technology leader and seasoned software engineer with over ten years of experience, bridging strong technical expertise in cloud architecture, DevOps, and software development with impactful leadership and mentoring roles. Beginning his career as a QA working student and backend/frontend developer, he transitioned into leadership positions where he successfully modernized legacy architectures, championed DevOps principles and collaborative responsibility, and drove large-scale cloud migration projects. Sebastian has extensive experience designing scalable systems, automating CI/CD pipelines, and mentoring cross-functional teams to foster engineering excellence and innovation.
 
 Passionate about modern technologies, continuous learning, and cultivating shared ownership, Sebastian thrives in environments where he can participate in every stage of the software lifecycle — from ideation and development to deployment and monitoring. Sebastian’s expertise spans technologies like Python, Java, AWS, Terraform, Docker, Kubernetes, and CI/CD, alongside agile methodologies like Scrum, KanBan, and SAFe. He is passionate about software craftsmanship, clean architecture, automation, and enabling teams to build innovative, maintainable, reliable systems. Beyond technical prowess, Sebastian has been actively involved in scaling organizations through recruitment, mentoring, and strategic knowledge-sharing events, such as organizing Netlight's largest internal knowledge-sharing event focussing on software engineering and architecture topics.
@@ -13,6 +13,16 @@ His strong leadership capabilities in stakeholder alignment, recruitment, and co
 /* eslint-enable max-len */
 
 export const CVITEMS: CvItem[] = [
+  {
+    title: 'Enpal B.V.',
+    subtitle: 'Staff Engineer',
+    begin: '2025-02',
+    end: '',
+    description: '',
+    tags: ['Engineering Leadership', 'Software Architecture', 'Project Management', 'Mentoring', 'Coaching'],
+    link: 'https://www.enpal.com',
+    thumbnail: 'Enpal.svg'
+  },
   {
     title: 'Netlight Consulting GmbH',
     subtitle: 'IT Consultant - Associate Manager',
@@ -313,7 +323,7 @@ export const PROJECTS: CvItem[] = [
     begin: '2017-09',
     end: '',
     description: 'This project was created for the purpose of having a basic online-CV, which anyone can host by themselves. ' +
-      'This very website is the result of it.',
+      'This very website is the result of it: https://cv.schreck.berlin',
     tags: ['Angular', 'MaterialDesign', 'CSS', 'TypeScript', 'JetBrains WebStorm', 'AWS', 'S3', 'CloudFront', 'jsPDF', 'GitHub Actions', 'yarn', 'npm'],
     link: 'https://github.com/StegSchreck/AngularCV',
     thumbnail: '../AngularCV.svg',
@@ -321,11 +331,11 @@ export const PROJECTS: CvItem[] = [
   {
     title: 'THW Wallet',
     subtitle: 'Convert a barcode into a Google Wallet pass',
-    begin: '2025-10',
-    end: '',
+    begin: '',
+    end: '2025-10',
     description: 'A single-page application (SPA) for scanning a barcode and transfer it into a Google Wallet pass.',
     tags: ['Go', 'React', 'CSS', 'JavaScript', 'JetBrains GoLand', 'AWS', 'serverless', 'Lambda', 'DynamoDB', 'API Gateway', 'S3', 'CloudFront', 'Terraform', 'Gitlab CI', 'npm'],
-    link: '',
+    link: 'https://thw-wallet.stegschreck.de/',
     thumbnail: 'thw-wallet.svg',
   },
   {
@@ -366,7 +376,7 @@ export const PROJECTS: CvItem[] = [
     end: '2023-07',
     description: 'This script creates a CSV with the interests you received for your investments at Auxmoney. ' +
       'The CSV is created in a format to be imported to Portfolio Performance.',
-    tags: ['Python', 'Git', 'Selenium', 'Beautifulsoup', 'CSV'],
+    tags: ['Python', 'Git', 'Selenium', 'Beautifulsoup', 'CSV', 'pip'],
     link: 'https://github.com/StegSchreck/PP-Auxmoney-Parser',
     thumbnail: 'PP-Auxmoney-Parser.png',
   },
@@ -421,7 +431,7 @@ export const PROJECTS: CvItem[] = [
     thumbnail: 'TU_DIMA_GoOLAP.png',
   },
   {
-    title: 'Global Phenological Monitoring Programm (GPM)',
+    title: 'Global Phenological Monitoring Program (GPM)',
     subtitle: 'Web-application for the Humboldt University',
     begin: '',
     end: '2010',
@@ -448,8 +458,8 @@ export const PROJECTS: CvItem[] = [
 export const VOLUNTEERING: CvItem[] = [
   {
     title: 'Technisches Hilfswerk',
-    subtitle: 'Volunteer',
-    begin: '2025',
+    subtitle: 'Volunteer emergency responder in civil protection and disaster relief',
+    begin: '2025-02',
     end: '',
     description: 'The German Federal Agency for Technical Relief is specialised in providing technical and humanitarian assistance. ' +
       'Its 88,000 volunteer operatives help in the wake of natural disasters, accidents and other emergencies, both in Germany and abroad.',
@@ -478,9 +488,10 @@ export const VOLUNTEERING: CvItem[] = [
   {
     title: 'UEFA Champions League Finals 2015 Berlin',
     subtitle: 'Team lead',
-    begin: '',
-    end: '2015',
-    description: "Team lead visitor service at the women's finals as well as at the men's finals",
+    begin: '2015-05',
+    end: '2015-06',
+    description: "- Visitor service at the women's finals\n" +
+      "-Team lead visitor service at the men's finals",
     link: 'https://www.uefa.com',
     thumbnail: 'UEFA_Champions_League.svg',
   },
@@ -488,7 +499,7 @@ export const VOLUNTEERING: CvItem[] = [
     title: 'CEV Champions League Final Four 2015 Berlin',
     subtitle: 'Team lead',
     begin: '',
-    end: '2015',
+    end: '2015-03',
     description: 'Team lead backstage security',
     link: 'https://www.cev.eu/',
     thumbnail: 'CEV.png',
@@ -498,7 +509,7 @@ export const VOLUNTEERING: CvItem[] = [
     subtitle: 'Technical event manager',
     begin: '2010',
     end: '2015',
-    description: 'Technical setup and time measurements',
+    description: 'Technical supervisor for event setup and time measurements',
     link: 'https://www.concept2.de/indoor-rowers/indoor-regatten/dirm',
     thumbnail: 'Concept2_DIRS.png',
   },
@@ -542,7 +553,7 @@ export const VOLUNTEERING: CvItem[] = [
     title: 'FISA World Rowing Junior Championships 2014 Hamburg',
     subtitle: 'IT network setup',
     begin: '',
-    end: '2014',
+    end: '2014-08',
     description: '',
     link: 'https://www.worldrowing.com/',
     thumbnail: 'FISA_JWM_2014.png',
@@ -561,25 +572,25 @@ export const VOLUNTEERING: CvItem[] = [
     title: "FIFA Women's World Cup 2011 Germany",
     subtitle: 'Visitor service',
     begin: '',
-    end: '2011',
+    end: '2011-06',
     description: 'Guiding visitors in the Olympic Stadium of Berlin.',
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_Womens_World_Cup_2011.svg',
   },
-  // {
-  //   title: 'EHF EuroHockey Club-Champions-Cup Berlin',
-  //   subtitle: 'Visitor service',
-  //   begin: '',
-  //   end: '2010',
-  //   description: 'Guiding visitors in the Olympic Hockey Stadium, located at the Olympic Park Berlin',
-  //   link: '',
-  //   thumbnail: 'EHF.jpg',
-  // },
+  {
+    title: 'EHF EuroHockey Club-Champions-Cup Berlin',
+    subtitle: 'Visitor service',
+    begin: '',
+    end: '2010-04',
+    description: 'Guiding visitors in the Olympic Hockey Stadium, located at the Olympic Park Berlin',
+    link: '',
+    thumbnail: 'EHF.jpg',
+  },
   {
     title: 'IAAF World Championships 2009 Berlin',
     subtitle: 'Anti-Doping-Chaperone',
     begin: '',
-    end: '2009',
+    end: '2009-05',
     description: '',
     link: 'https://www.iaaf.org/',
     thumbnail: 'IAAF_World_Championship_2009_Berlin.svg',
@@ -587,8 +598,8 @@ export const VOLUNTEERING: CvItem[] = [
   {
     title: 'ULEB Euroleague Final Four 2009 Berlin',
     subtitle: 'Team delegate',
-    begin: '',
-    end: '2009',
+    begin: '2009-05',
+    end: '2009-04',
     description: 'Team delegate of a basketeball team of Montepaschi Siena, Italy',
     link: 'https://www.euroleague.net/',
     thumbnail: 'ULEB_FinalFour_2009.png',
@@ -596,21 +607,21 @@ export const VOLUNTEERING: CvItem[] = [
   {
     title: 'FIFA World Cup 2006 Germany',
     subtitle: 'Visitor service',
-    begin: '',
-    end: '2006',
+    begin: '2006-06',
+    end: '2006-07',
     description: 'Guiding visitors in the Olympic Stadium of Berlin.',
     link: 'https://www.fifa.com/',
     thumbnail: 'FIFA_World_Cup_2006_Germany_.svg',
   },
-  // {
-  //   title: 'Ruder-Verein „Preußen“ e.V.',
-  //   subtitle: 'Club President, Vice President, and other roles',
-  //   begin: '2001',
-  //   end: '2013',
-  //   description: 'Rowing club in the north-west of Berlin.',
-  //   link: '',
-  //   thumbnail: 'RVP_Flagge.jpg',
-  // },
+  {
+    title: 'Ruder-Verein „Preußen“ e.V.',
+    subtitle: 'Club president, vice president, youth trainer, and other roles',
+    begin: '2001',
+    end: '2013',
+    description: 'Rowing club in the north-west of Berlin.',
+    link: '',
+    thumbnail: 'RVP_Flagge.jpg',
+  },
 ];
 
 export const CONTACT = {
