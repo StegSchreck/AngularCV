@@ -372,9 +372,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular-eslint/builder@npm:^21.1.0":
-  version: 21.1.0
-  resolution: "@angular-eslint/builder@npm:21.1.0"
+"@angular-eslint/builder@npm:^21.2.0":
+  version: 21.2.0
+  resolution: "@angular-eslint/builder@npm:21.2.0"
   dependencies:
     "@angular-devkit/architect": "npm:>= 0.2100.0 < 0.2200.0"
     "@angular-devkit/core": "npm:>= 21.0.0 < 22.0.0"
@@ -382,7 +382,7 @@ __metadata:
     "@angular/cli": ">= 21.0.0 < 22.0.0"
     eslint: ^8.57.0 || ^9.0.0
     typescript: "*"
-  checksum: 10c0/20740aae061faaba6e4cde60c9de9a8fae6dcce6f3f7a484ba4cb03c3e1b589e43fd0aac1d1c4770b03a4a1b29dc143bf376c746b2f7d6f45be636eaabc05f88
+  checksum: 10c0/0f94f9de29d6b41df638eb124e952e2f23da8d968bc5c542019323bd7ac5aa163dcd87c49d7221c4647ca4c3ccba606bedeaf1e8182108fef976c41507dd5f44
   languageName: node
   linkType: hard
 
@@ -5289,7 +5289,7 @@ __metadata:
   resolution: "angular-cv@workspace:."
   dependencies:
     "@angular-devkit/build-angular": "npm:^21.0.5"
-    "@angular-eslint/builder": "npm:^21.1.0"
+    "@angular-eslint/builder": "npm:^21.2.0"
     "@angular-eslint/eslint-plugin": "npm:21.1.0"
     "@angular-eslint/eslint-plugin-template": "npm:21.1.0"
     "@angular-eslint/schematics": "npm:21.1.0"
