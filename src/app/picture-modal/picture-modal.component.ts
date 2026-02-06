@@ -1,4 +1,4 @@
-import { Component, Inject, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { MaterialModule } from '../material/material.module';
 
@@ -15,10 +15,12 @@ export class PictureModalComponent {
 
     public imagePath: string;
     public title: string;
+    public subtitle: string;
 
     constructor() {
         this.imagePath = this.data.picture;
         this.title = this.data.title;
+        this.subtitle = this.data.subtitle;
     }
 
     onNoClick(): void {

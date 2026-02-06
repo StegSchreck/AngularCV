@@ -46,7 +46,9 @@ export class OverviewComponent implements OnInit {
   public showAvatar() {
     this.dialog.open(PictureModalComponent, {
       data: {
-        picture: 'assets/img/avatar.jpg'
+        picture: 'assets/img/avatar.jpeg',
+        title: this.generalData.name,
+        subtitle: this.generalData.position,
       }
     });
   }
