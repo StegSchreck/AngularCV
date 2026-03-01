@@ -65,7 +65,7 @@
     "karma-jasmine-html-reporter": "^2.2.0",
     "karma-spec-reporter": "^0.0.36",
     "protractor": "^7.0.0",
-    "puppeteer": "^24.37.2",
+    "puppeteer": "^24.37.5",
     "semantic-release": "^25.0.3",
     "semantic-release-yarn": "^3.0.2",
     "ts-node": "~10.9.2",
