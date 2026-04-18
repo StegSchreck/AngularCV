@@ -178,8 +178,7 @@ His leadership is exemplified by his role in organising Netlight’s largest glo
     subtitle: 'Working student Product Management / Quality Assurance',
     begin: '2012-10',
     end: '2015-05',
-    description: 'Ensuring the quality and functionality of the web shop, ERP software and their interfaces. ' +
-      'Planning and conduct releases.',
+    description: 'During my studies I worked at Mister Spex as QA, which was part of Product Management back then. My tasks included feature testing, exploratory testing, smoke testing, test design, user flow definition, release management, and test automation with selenium. But also some tasks for the PM regarding competitor analysis and comparison as well as user test evaluation.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
     thumbnail: 'MisterSpex.svg',

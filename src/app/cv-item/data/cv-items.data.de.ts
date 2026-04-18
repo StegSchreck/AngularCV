@@ -104,7 +104,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
       },
       {
         title: 'Führende deutsche Preisvergleichsseite',
-        subtitle: 'Lead Software Engineer & Architect',
+        subtitle: 'Lead Software Engineer & Architekt',
         begin: '2019-08',
         end: '2020-12',
         description: 'Als Teil der Umstellung der monolithischen Webshop-Applikation hin zu Service-based Architektur, ' +
@@ -171,8 +171,7 @@ Sebastians Führungsqualitäten zeigen sich besonders in seiner Verantwortung f�
     subtitle: 'Werkstudent Produktmanagement / Quality Assurance',
     begin: '2012-10',
     end: '2015-05',
-    description: 'Sicherstellung der Qualität und Funktionalität des Webshops, der ERP-Software und deren Schnittstellen. ' +
-      'Planung und Durchführung von Releases.',
+    description: 'Während meines Studiums arbeitete ich bei Mister Spex im Bereich Qualitätssicherung, damals noch Teil des Produktmanagements. Zu meinen Aufgaben gehörten Feature-Tests, exploratives Testen, Smoke-Tests, Testdesign, die Definition von Benutzerabläufen, Release-Management und Testautomatisierung mit Selenium. Darüber hinaus unterstützte ich das Produktmanagement bei Wettbewerbsanalysen und -vergleichen sowie der Auswertung von Benutzertests.',
     tags: ['Selenium', 'Scrum', 'Quality Assurance', 'Release Management', 'Testrail', 'Subversion', 'trac', 'Microsoft Dynamics NAV'],
     link: 'https://www.misterspex.com',
     thumbnail: 'MisterSpex.svg',
