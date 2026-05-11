@@ -16,10 +16,10 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Enpal B.V.',
     subtitle: 'Staff Engineer',
-    begin: '2025-02',
+    begin: '2026-02',
     end: '',
-    description: '',
-    tags: ['Engineering Leadership', 'Software Architektur', 'Projektmanagement', 'Mentoring', 'Coaching'],
+    description: 'Staff Engineer in der Abteilung Energy Platform, verantwortlich für die Leitung von Architektur und Engineering-Exzellenz innerhalb des gesamten Fachbereichs. Sebastian treibt teamübergreifende technische Initiativen voran – einschließlich einer unternehmensweiten Konsolidierung der „Cloud-to-Device“-Befehlsverarbeitung – und trage zugleich die technische Gesamtverantwortung für ein Portfolio produktiver IoT-Dienste, die mit Wärmepumpenherstellern integriert sind. Sein Fokus liegt auf Observability, Incident Readiness, Software Craftsmanship, Engineering-Exzellenz und ISO-27001-Compliance – mit einem starken Schwerpunkt darauf, das Team zu befähigen und dessen Kompetenzen auszubauen, parallel zur Bereitstellung skalierbarer und wartbarer Systeme.',
+    tags: ['Engineering Leadership', 'Software Architektur', 'Software Craftsmanship', 'Engineering Excellence', 'Projektmanagement', 'Mentoring', 'Coaching'],
     link: 'https://www.enpal.de',
     thumbnail: 'Enpal.svg'
   },

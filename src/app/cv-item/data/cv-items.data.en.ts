@@ -16,10 +16,10 @@ export const CVITEMS: CvItem[] = [
   {
     title: 'Enpal B.V.',
     subtitle: 'Staff Engineer',
-    begin: '2025-02',
+    begin: '2026-02',
     end: '',
-    description: '',
-    tags: ['Engineering Leadership', 'Software Architecture', 'Project Management', 'Mentoring', 'Coaching'],
+    description: 'Staff Engineer in the Energy Platform department, leading architecture and engineering excellence across the domain. Drive cross-team technical initiatives — including a company-wide consolidation of cloud-to-device command handling — while owning the technical direction of a portfolio of production IoT services integrating with heatpump manufacturers. Focus on observability, incident readiness, software craftsmanship, engineering excellence, and ISO 27001 compliance - with a strong emphasis on enabling and upskilling the team alongside delivering scalable, maintainable systems.',
+    tags: ['Engineering Leadership', 'Software Architecture', 'Software Craftsmanship', 'Engineering Excellence', 'Project Management', 'Mentoring', 'Coaching'],
     link: 'https://www.enpal.com',
     thumbnail: 'Enpal.svg'
   },
