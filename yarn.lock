@@ -851,17 +851,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/router@npm:21.2.11":
-  version: 21.2.11
-  resolution: "@angular/router@npm:21.2.11"
+"@angular/router@npm:21.2.15":
+  version: 21.2.15
+  resolution: "@angular/router@npm:21.2.15"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/common": 21.2.11
-    "@angular/core": 21.2.11
-    "@angular/platform-browser": 21.2.11
+    "@angular/common": 21.2.15
+    "@angular/core": 21.2.15
+    "@angular/platform-browser": 21.2.15
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/55bb1e80ac7f1feff5079a2a49a7bfdb34bf0ae3b469315f8da22658e12dabc9866644833ee0c157aa4ec4f99a7d6bd08e9a36edb6c6c9ed01361614b3845293
+  checksum: 10c0/e6cf23168b9f646bf32ae9785f3d49df30ac5e30a63468caa4f854ff59fc828a0df0d61a2c0384fdab9322910bd5f7d6e33bc1e2fee0ef8cb613f657285f52a7
   languageName: node
   linkType: hard
 
@@ -5598,7 +5598,7 @@ __metadata:
     "@angular/material": "npm:21.2.9"
     "@angular/platform-browser": "npm:21.2.9"
     "@angular/platform-browser-dynamic": "npm:21.2.11"
-    "@angular/router": "npm:21.2.11"
+    "@angular/router": "npm:21.2.15"
     "@angular/service-worker": "npm:21.2.15"
     "@semantic-release/changelog": "npm:^6.0.3"
     "@semantic-release/exec": "npm:^7.1.0"
