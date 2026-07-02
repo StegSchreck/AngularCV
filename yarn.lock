@@ -783,18 +783,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/forms@npm:21.2.11":
-  version: 21.2.11
-  resolution: "@angular/forms@npm:21.2.11"
+"@angular/forms@npm:22.0.5":
+  version: 22.0.5
+  resolution: "@angular/forms@npm:22.0.5"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     tslib: "npm:^2.3.0"
+    zod: "npm:^4.0.10"
   peerDependencies:
-    "@angular/common": 21.2.11
-    "@angular/core": 21.2.11
-    "@angular/platform-browser": 21.2.11
+    "@angular/common": 22.0.5
+    "@angular/core": 22.0.5
+    "@angular/platform-browser": 22.0.5
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10c0/20cb1afd0bdf442bf0a98f2a6fb2c07ef7c7982a474361a7e5e796d33e2e91c39736816ae55168752cbb332d67b5d358bc77c72f546d745081a882e7206cb7ea
+  checksum: 10c0/4b305b4971ceb209e135d474ece194f40081aeee3d4f1ff0f554b6f03d906d2abb39b11dd1a2ddd8a094b07aa22c94d275a75198ca7255c9adba8f67c2af5761
   languageName: node
   linkType: hard
 
@@ -5562,7 +5563,7 @@ __metadata:
     "@angular/compiler": "npm:21.2.17"
     "@angular/compiler-cli": "npm:^21.2.9"
     "@angular/core": "npm:21.2.17"
-    "@angular/forms": "npm:21.2.11"
+    "@angular/forms": "npm:22.0.5"
     "@angular/language-service": "npm:21.2.9"
     "@angular/material": "npm:21.2.9"
     "@angular/platform-browser": "npm:21.2.9"
@@ -15791,6 +15792,13 @@ __metadata:
   version: 4.3.5
   resolution: "zod@npm:4.3.5"
   checksum: 10c0/5a2db7e59177a3d7e202543f5136cb87b97b047b77c8a3d824098d3fa8b80d3aa40a0a5f296965c3b82dfdccdd05dbbfacce91347f16a39c675680fd7b1ab109
+  languageName: node
+  linkType: hard
+
+"zod@npm:^4.0.10":
+  version: 4.4.3
+  resolution: "zod@npm:4.4.3"
+  checksum: 10c0/7ea31b558e88f9faf44f31dd185e2e1cbf51fed3081787fb96cc2534749b50c0acfc6da7f0922a7353ed092dd358c7d50c28ea96c94d04af64191bd33152eca3
   languageName: node
   linkType: hard
 
